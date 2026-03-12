@@ -21,18 +21,11 @@ const partners = [
     accent: 'text-lm-yellow dark:text-dm-yellow',
   },
   {
-    name: 'UNICAL (DIMEG)',
-    role: 'Partner accademico – Ingegneria Meccanica, Energetica e Gestionale',
+    name: 'UNICAL (DIMEG e DICES)',
+    role: 'Partner accademico',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     color: 'bg-lm-bg-green dark:bg-dm-bg-green',
-    accent: 'text-lm-green dark:text-dm-green',
-  },
-  {
-    name: 'UNICAL (DICES)',
-    role: 'Partner accademico – Culture, Educazione e Società',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    color: 'bg-lm-bg-green dark:bg-dm-bg-green',
-    accent: 'text-lm-green dark:text-dm-green',
+    accent: 'text-lm-green dark:text-dm-green'
   }
 ]
 
