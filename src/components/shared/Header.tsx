@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { toggleDarkMode, isDarkMode } from '../../utils/darkMode'
+import logoGAIA from '../../assets/gaia_logo_cut.png'
 
 const navLinks = [
   { to: '/scopri-gaia', label: 'Scopri GAIA' },
@@ -30,7 +31,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
 
         <NavLink to="/" aria-label="GAIA – Homepage" className="flex items-center gap-2">
-          <img src="/logo-gaia.svg" alt="Logo GAIA" className="h-10 w-auto" />
+          <img src={logoGAIA} alt="Logo GAIA" className="h-10 w-auto" />
         </NavLink>
 
         {/* nav desktop */}
