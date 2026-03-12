@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light mode */
+  --color-lm-pink: #A11756;
+  --color-lm-blue: #005A8C;
+  --color-lm-yellow: #946200;
+  --color-lm-green: #1E6B1A;
+  --color-lm-bg-primary: #FFFFFF;
+  --color-lm-bg-secondary: #F5F5F5;
+  --color-lm-text-primary: #1A1A1A;
+  --color-lm-text-secondary: #4F4F4F;
+  --color-lm-bg-pink: #FFE8F1;
+  --color-lm-bg-blue: #E5F4FC;
+  --color-lm-bg-yellow: #FFF8E0;
+  --color-lm-bg-green: #E8F7E6;
+
+  /* Dark mode */
+  --color-dm-pink: #FFB3D1;
+  --color-dm-blue: #66CDFF;
+  --color-dm-yellow: #FFE866;
+  --color-dm-green: #7FE076;
+  --color-dm-bg-primary: #1A1A1A;
+  --color-dm-bg-secondary: #2A2A2A;
+  --color-dm-text-primary: #FFFFFF;
+  --color-dm-text-secondary: #B0B0B0;
+  --color-dm-bg-pink: #3D1A2B;
+  --color-dm-bg-blue: #0A2633;
+  --color-dm-bg-yellow: #3D3310;
+  --color-dm-bg-green: #1A2D18;
+
+  /* Logo originale */
+  --color-logo-pink: #EC608F;
+  --color-logo-blue: #0095DB;
+  --color-logo-yellow: #FFD500;
+  --color-logo-green: #3AAA35;
+}
+
+@variant dark (&:where(.dark, .dark *));
