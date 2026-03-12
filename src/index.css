@@ -63,4 +63,28 @@
   h2 { font-size: 2rem; }
   h3 { font-size: 1.5rem; }
   h4 { font-size: 1.25rem; }
+  
+  a {
+    color: var(--color-lm-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  html.dark a {
+    color: var(--color-dm-blue);
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-lm-blue);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  html.dark :focus-visible {
+    outline-color: var(--color-dm-blue);
+  }
 }
