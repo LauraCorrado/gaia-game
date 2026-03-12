@@ -26,16 +26,13 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card color="blue" title="Ricerca" icon={FlaskConical} as="article">
-            Approccio scientifico rigoroso per lo sviluppo di metodologie
-            inclusive basate sull'evidenza.
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi commodi totam corporis maiores quam assumenda ad sit consequuntur fugit.
           </Card>
           <Card color="pink" title="Inclusione" icon={Heart} as="article">
-            Giochi progettati con e per bambini con autismo, famiglie
-            ed educatori attraverso il metodo co-design.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis maxime explicabo, distinctio nostrum inventore asperiores sequi ut numquam fugit veritatis excepturi reiciendis odit velit est dolorum tempora? Eos, laboriosam.
           </Card>
           <Card color="green" title="Innovazione" icon={Lightbulb} as="article">
-            Tecnologie adattive e intelligenza artificiale al servizio
-            dell'accessibilità e dell'apprendimento.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sapiente dolore pariatur impedit eius. Esse quibusdam vel magnam voluptatibus alias.
           </Card>
         </div>
       </section>

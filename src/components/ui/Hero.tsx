@@ -1,51 +1,47 @@
-import type { ReactNode } from 'react'
-import Button from './Button'
+import type { ReactNode } from "react";
+import Button from "./Button";
 
-type HeroColor = 'blue' | 'pink' | 'green' | 'yellow'
+type HeroColor = "blue" | "pink" | "green" | "yellow";
 
 interface HeroAction {
-  label: string
-  href: string
-  variant?: 'primary' | 'secondary'
+  label: string;
+  href: string;
+  variant?: "primary" | "secondary";
 }
 
 interface HeroProps {
-  title: string
-  subtitle?: string
-  accentColor?: HeroColor
-  actions?: HeroAction[]
-  children?: ReactNode
-  badge?: string
+  title: string;
+  subtitle?: string;
+  accentColor?: HeroColor;
+  actions?: HeroAction[];
+  children?: ReactNode;
+  badge?: string;
 }
 
 const accentMap: Record<HeroColor, string> = {
-  blue:   'text-lm-blue dark:text-dm-blue',
-  pink:   'text-lm-pink dark:text-dm-pink',
-  green:  'text-lm-green dark:text-dm-green',
-  yellow: 'text-lm-yellow dark:text-dm-yellow',
-}
+  blue: "text-lm-blue dark:text-dm-blue",
+  pink: "text-lm-pink dark:text-dm-pink",
+  green: "text-lm-green dark:text-dm-green",
+  yellow: "text-lm-yellow dark:text-dm-yellow",
+};
 
 const decorMap: Record<HeroColor, string> = {
-  blue:   'bg-lm-bg-blue dark:bg-dm-bg-blue',
-  pink:   'bg-lm-bg-pink dark:bg-dm-bg-pink',
-  green:  'bg-lm-bg-green dark:bg-dm-bg-green',
-  yellow: 'bg-lm-bg-yellow dark:bg-dm-bg-yellow',
-}
+  blue: "bg-lm-bg-blue dark:bg-dm-bg-blue",
+  pink: "bg-lm-bg-pink dark:bg-dm-bg-pink",
+  green: "bg-lm-bg-green dark:bg-dm-bg-green",
+  yellow: "bg-lm-bg-yellow dark:bg-dm-bg-yellow",
+};
 
 export default function Hero({
   title,
   subtitle,
-  accentColor = 'blue',
+  accentColor = "blue",
   actions = [],
   children,
   badge,
 }: HeroProps) {
   return (
-    <section
-      aria-labelledby="hero-title"
-      className="relative overflow-hidden"
-    >
-
+    <section aria-labelledby="hero-title" className="relative overflow-hidden">
       <div
         aria-hidden="true"
         className={`
@@ -85,7 +81,7 @@ export default function Hero({
             {actions.map((action) => (
               <a key={action.href} href={action.href}>
                 <Button
-                  variant={action.variant ?? 'primary'}
+                  variant={action.variant ?? "primary"}
                   color={accentColor}
                 >
                   {action.label}
@@ -98,5 +94,5 @@ export default function Hero({
         {children}
       </div>
     </section>
-  )
+  );
 }
