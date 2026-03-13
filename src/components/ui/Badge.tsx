@@ -8,11 +8,11 @@ interface BadgeProps {
 }
 
 const colorMap: Record<BadgeColor, string> = {
-  blue:    'bg-lm-bg-blue text-lm-blue dark:bg-dm-bg-blue dark:text-dm-blue',
-  pink:    'bg-lm-bg-pink text-lm-pink dark:bg-dm-bg-pink dark:text-dm-pink',
-  green:   'bg-lm-bg-green text-lm-green dark:bg-dm-bg-green dark:text-dm-green',
-  yellow:  'bg-lm-bg-yellow text-lm-yellow dark:bg-dm-bg-yellow dark:text-dm-yellow',
-  neutral: 'bg-lm-bg-secondary text-lm-text-secondary dark:bg-dm-bg-secondary dark:text-dm-text-secondary',
+  blue:    'bg-lm-bg-blue    text-lm-blue    border border-lm-blue/20    dark:bg-dm-bg-blue    dark:text-dm-blue    dark:border-dm-blue/20',
+  pink:    'bg-lm-bg-pink    text-lm-pink    border border-lm-pink/20    dark:bg-dm-bg-pink    dark:text-dm-pink    dark:border-dm-pink/20',
+  green:   'bg-lm-bg-green   text-lm-green   border border-lm-green/20   dark:bg-dm-bg-green   dark:text-dm-green   dark:border-dm-green/20',
+  yellow:  'bg-lm-bg-yellow  text-lm-yellow  border border-lm-yellow/20  dark:bg-dm-bg-yellow  dark:text-dm-yellow  dark:border-dm-yellow/20',
+  neutral: 'bg-lm-bg-secondary text-lm-text-secondary border border-lm-text-secondary/10 dark:bg-dm-bg-secondary dark:text-dm-text-secondary'
 }
 
 const sizeMap: Record<BadgeSize, string> = {
