@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { toggleDarkMode, isDarkMode } from '../../utils/darkMode'
-import logoGAIA from '../../assets/gaia_logo_cut.png'
+import logoGAIA from '../../assets/img/gaia_logo_cut.png'
 
 const navLinks = [
   { to: '/scopri-gaia', label: 'Scopri GAIA' },
