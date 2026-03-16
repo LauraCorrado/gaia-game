@@ -17,7 +17,7 @@ export const partners: Partner[] = [
   {
     name: "TEA SRL",
     role: "Capofila del progetto",
-    logo: "/logos/tea.svg",
+    logo: "/logos/tea_logo.png",
     description:
       "TEA S.r.l., fondata nel 1996, opera da oltre 20 anni nello sviluppo di tecnologie per la conoscenza, la valorizzazione e la fruizione accessibile del patrimonio culturale e territoriale. L'azienda trasforma dati complessi in strumenti per la ricerca, la conservazione e l'accessibilità dei beni culturali. Tra le soluzioni sviluppate figurano sistemi di restauro virtuale basati su imaging multispettrale, come @mmira, e piattaforme multisensoriali e multimateriche come AIVES, progettate per rendere l'arte accessibile anche alle persone con disabilità visive.",
     contribution: {
@@ -34,7 +34,7 @@ export const partners: Partner[] = [
   {
     name: "Studio Rubino SRL",
     role: "Comunicazione, newsletter e brevetti",
-    logo: "/logos/studio-rubino.svg",
+    logo: "/logos/rubinoip_logo.png",
     description:
       "Con oltre 30 anni di esperienza, Rubino IP – Intellectual Property è una realtà specializzata nella tutela e valorizzazione della proprietà industriale e intellettuale a livello nazionale e internazionale. Con sedi a Roma, Catanzaro, Bari, Catania e Modena, supporta aziende e organizzazioni nella protezione e gestione di marchi, brevetti, disegni e modelli. Il team multidisciplinare di ingegneri, tecnici e consulenti legali offre servizi integrati che accompagnano l'innovazione dalla fase di ricerca fino alla valorizzazione e alla protezione sul mercato.",
     contribution: {
@@ -51,7 +51,7 @@ export const partners: Partner[] = [
   {
     name: "Ober SRL",
     role: "Partner tecnico",
-    logo: "/logos/ober.svg",
+    logo: "/logos/ober_logo.png",
     description:
       "OBER è una società che opera nel campo dell'ingegneria e della consulenza tecnologica, affiancando imprese e organizzazioni nello sviluppo di soluzioni innovative e sostenibili. Grazie a un approccio multidisciplinare, supporta l'intero ciclo di vita del prodotto, dalla progettazione alla prototipazione fino alla produzione industriale. L'integrazione tra competenze ingegneristiche, tecnologie avanzate e capacità di industrializzazione consente di trasformare esigenze progettuali complesse in soluzioni affidabili ed efficienti.",
     contribution: {
