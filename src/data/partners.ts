@@ -126,7 +126,7 @@ export const partners: Partner[] = [
         "Fornisce ai partner consulenza sugli aspetti psico-pedagogici e supporto nella definizione di indicatori di valutazione e nel coinvolgimento degli stakeholder, assicurando che il gioco risponda in modo inclusivo ai bisogni dei bambini e delle loro famiglie.",
       ],
     },
-    website: "https://www.dices.unical.it",
+    website: "https://dices.unical.it/",
     socials: [
          { platform: "facebook", url: "https://www.facebook.com/profile.php?id=61587552583257" },
         { platform: "instagram", url: "https://www.instagram.com/dices_unical/" },
