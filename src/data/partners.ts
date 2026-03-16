@@ -1,3 +1,8 @@
+export interface SocialLink {
+  platform: 'facebook' | 'instagram' | 'linkedin'
+  url: string
+}
+
 export interface Partner {
   name: string
   role: string
@@ -6,12 +11,14 @@ export interface Partner {
   contribution: {
     paragraphs: string[]
   }
+  website: string
+  socials?: SocialLink[]
+  btnLabel?: string
   color: string
   accent: string
   accentBar: string
+  btnColor: 'blue' | 'pink' | 'green' | 'yellow'
 }
-
-
 
 export const partners: Partner[] = [
   {
@@ -27,9 +34,17 @@ export const partners: Partner[] = [
         "Inoltre, favorisce il dialogo tra i partner e il coordinamento tra competenze scientifiche, tecnologiche e progettuali, accompagnando tutte le fasi di sviluppo fino alla realizzazione di un prototipo innovativo e pienamente rispondente alle finalità del progetto.",
       ],
     },
+    website: "https://www.teacz.com/",
+    socials: [
+        { platform: "facebook", url: "https://www.facebook.com/StoriedaScoprire/" },
+        { platform: "instagram", url: "https://www.instagram.com/storiedascoprire/" },
+        { platform: "linkedin", url: "https://www.linkedin.com/company/t-e-a-catanzaro/" },
+    ],
+    btnLabel: "Visita il sito",
     color: "bg-lm-bg-pink dark:bg-dm-bg-pink",
     accent: "text-lm-pink dark:text-dm-pink",
     accentBar: "bg-logo-pink",
+    btnColor: "pink",
   },
   {
     name: "Studio Rubino SRL",
@@ -44,9 +59,17 @@ export const partners: Partner[] = [
         "Parallelamente, promuove la diffusione delle conoscenze scientifiche attraverso eventi, seminari, pubblicazioni e attività di comunicazione, favorendo la visibilità del progetto e l'impatto dei risultati nel contesto scientifico e sociale.",
       ],
     },
+    website: "https://www.studiorubino.com/",
+    socials: [
+      { platform: "facebook", url: "https://www.facebook.com/RubinoIntellectualProperty" },
+        { platform: "instagram", url: "https://www.instagram.com/rubinoip/" },
+        { platform: "linkedin", url: "https://www.linkedin.com/company/rubinoip/" },
+    ],
+    btnLabel: "Visita il sito",
     color: "bg-lm-bg-blue dark:bg-dm-bg-blue",
     accent: "text-lm-blue dark:text-dm-blue",
     accentBar: "bg-logo-blue",
+    btnColor: "blue",
   },
   {
     name: "Ober SRL",
@@ -61,9 +84,12 @@ export const partners: Partner[] = [
         "Analizza, in collaborazione con l'Università della Calabria, le possibili applicazioni dell'Intelligenza Artificiale e del Machine Learning, esplorando le potenzialità di questi strumenti di rendere più efficace e adattivo il gioco, sviluppando soluzioni capaci di personalizzare l'esperienza ludica in base alle esigenze dei bambini nello spettro autistico.",
       ],
     },
+    website: "https://www.obersrl.it/it",
+    btnLabel: "Visita il sito",
     color: "bg-lm-bg-yellow dark:bg-dm-bg-yellow",
     accent: "text-lm-yellow dark:text-dm-yellow",
     accentBar: "bg-logo-yellow",
+    btnColor: "yellow",
   },
   {
     name: "UNICAL – DiMEG",
@@ -78,9 +104,14 @@ export const partners: Partner[] = [
         "Lavora allo sviluppo di algoritmi di Intelligenza Artificiale e Machine Learning per animare personaggi virtuali (NPC) e per adattare dinamicamente la difficoltà del gioco alle esigenze e alle capacità dei bambini.",
       ],
     },
+    website: "https://dimeg.unical.it/",
+    socials: [ { platform: "facebook", url: "https://www.facebook.com/DimegUnical" },
+        { platform: "instagram", url: "https://www.instagram.com/dimeg_unical/" },],
+    btnLabel: "Visita il dipartimento",
     color: "bg-lm-bg-green dark:bg-dm-bg-green",
     accent: "text-lm-green dark:text-dm-green",
     accentBar: "bg-logo-green",
+    btnColor: "green",
   },
   {
     name: "UNICAL – DiCES",
@@ -95,8 +126,15 @@ export const partners: Partner[] = [
         "Fornisce ai partner consulenza sugli aspetti psico-pedagogici e supporto nella definizione di indicatori di valutazione e nel coinvolgimento degli stakeholder, assicurando che il gioco risponda in modo inclusivo ai bisogni dei bambini e delle loro famiglie.",
       ],
     },
+    website: "https://www.dices.unical.it",
+    socials: [
+         { platform: "facebook", url: "https://www.facebook.com/profile.php?id=61587552583257" },
+        { platform: "instagram", url: "https://www.instagram.com/dices_unical/" },
+    ],
+    btnLabel: "Visita il dipartimento",
     color: "bg-lm-bg-green dark:bg-dm-bg-green",
     accent: "text-lm-green dark:text-dm-green",
     accentBar: "bg-logo-green",
-  }
+    btnColor: "green",
+  },
 ]
