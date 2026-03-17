@@ -35,7 +35,7 @@
   --color-logo-yellow: #FFD500;
   --color-logo-green: #3AAA35;
   /* banner + navbar */
-  --header-h: 112px;
+  --header-h: 50px;
 }
 
 @variant dark (&:where(.dark, .dark *));
