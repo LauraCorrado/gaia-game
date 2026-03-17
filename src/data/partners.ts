@@ -94,7 +94,7 @@ export const partners: Partner[] = [
   {
     name: "UNICAL – DiMEG",
     role: "Partner accademico · Ingegneria",
-    logo: "/logos/unical.svg",
+    logo: "/logos/dimeg_logo.png",
     description:
       "Il Dipartimento di Ingegneria Meccanica, Energetica e Gestionale (DiMEG) dell'Università della Calabria svolge attività di ricerca avanzata da oltre 20 anni nei settori della realtà virtuale, aumentata e mista, del rilievo 3D e della diagnostica non invasiva. Grazie a laboratori e infrastrutture di prototipazione avanzata, il DIMEG sviluppa soluzioni tecnologiche innovative che spaziano dalla conservazione dei beni culturali alla progettazione di sistemi e prodotti industriali complessi.",
     contribution: {
@@ -116,7 +116,7 @@ export const partners: Partner[] = [
   {
     name: "UNICAL – DiCES",
     role: "Partner accademico · Scienze psico-pedagogiche",
-    logo: "/logos/unical.svg",
+    logo: "/logos/dices_logo.png",
     description:
       "Il Dipartimento di Culture, Educazione e Società (DiCES) dell'Università della Calabria promuove attività di ricerca e formazione nei campi delle scienze psicologiche, educative e sociali con un approccio interdisciplinare. Tra le principali linee di studio rientrano gli interventi psico-pedagogici nei disturbi del neurosviluppo e nelle disabilità intellettive, con particolare attenzione ai processi di inclusione, partecipazione sociale e miglioramento della qualità della vita.",
     contribution: {

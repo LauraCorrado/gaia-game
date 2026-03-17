@@ -1,39 +1,49 @@
-import { useState } from "react"
-import { Globe, Linkedin, Instagram, Facebook, ChevronDown, ChevronUp } from "lucide-react"
-import Hero from "../components/ui/Hero"
-import Button from "../components/ui/Button"
-import { partners } from "../data/partners"
-import type { Partner, SocialLink } from "../data/partners"
+import { useState } from "react";
+import {
+  Globe,
+  Linkedin,
+  Instagram,
+  Facebook,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
+import Hero from "../components/ui/Hero";
+import Button from "../components/ui/Button";
+import { partners } from "../data/partners";
+import type { Partner, SocialLink } from "../data/partners";
+import heroTeam from "../assets/img/hero/team_hero_v02.webp";
 
 // ── Social ────────────────────────────────────────────────────────────
 const socialIconMap = {
-  linkedin:  Linkedin,
+  linkedin: Linkedin,
   instagram: Instagram,
-  facebook:  Facebook,
-}
+  facebook: Facebook,
+};
 
-const socialLabelMap: Record<SocialLink['platform'], string> = {
-  linkedin:  "LinkedIn",
+const socialLabelMap: Record<SocialLink["platform"], string> = {
+  linkedin: "LinkedIn",
   instagram: "Instagram",
-  facebook:  "Facebook",
-}
+  facebook: "Facebook",
+};
 
 function ContributionSection({
   paragraphs,
   accent,
 }: {
-  paragraphs: string[]
-  accent: string
-  btnColor: Partner['btnColor']
+  paragraphs: string[];
+  accent: string;
+  btnColor: Partner["btnColor"];
 }) {
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false);
 
-  const first = paragraphs[0]
-  const rest  = paragraphs.slice(1)
+  const first = paragraphs[0];
+  const rest = paragraphs.slice(1);
 
   return (
     <div className="border-t border-current/10 pt-4 flex flex-col gap-2">
-      <p className={`text-xs font-semibold uppercase tracking-wide mb-1 ${accent}`}>
+      <p
+        className={`text-xs font-semibold uppercase tracking-wide mb-1 ${accent}`}
+      >
         Il contributo al progetto GAIA
       </p>
 
@@ -68,15 +78,19 @@ function ContributionSection({
             `}
           >
             {expanded ? (
-              <>Mostra meno <ChevronUp size={14} aria-hidden="true" /></>
+              <>
+                Mostra meno <ChevronUp size={14} aria-hidden="true" />
+              </>
             ) : (
-              <>Leggi di più <ChevronDown size={14} aria-hidden="true" /></>
+              <>
+                Leggi di più <ChevronDown size={14} aria-hidden="true" />
+              </>
             )}
           </button>
         </>
       )}
     </div>
-  )
+  );
 }
 
 function PartnerCard({ p }: { p: Partner }) {
@@ -89,10 +103,12 @@ function PartnerCard({ p }: { p: Partner }) {
         ${p.color}
       `}
     >
-      <div className={`h-1.5 w-full shrink-0 ${p.accentBar}`} aria-hidden="true" />
+      <div
+        className={`h-1.5 w-full shrink-0 ${p.accentBar}`}
+        aria-hidden="true"
+      />
 
       <div className="p-6 flex flex-col gap-4">
-
         <div className="flex items-center gap-4">
           <img
             src={p.logo}
@@ -120,23 +136,24 @@ function PartnerCard({ p }: { p: Partner }) {
         />
 
         <div className="flex items-center justify-between gap-3 pt-2">
-
           <div className="flex items-center gap-2">
-            {p.socials && p.socials.length > 0 && p.socials.map((s) => {
-              const Icon = socialIconMap[s.platform]
-              return (
-                <a
-                  key={s.platform}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={socialLabelMap[s.platform]}
-                  className={`p-1.5 rounded-md transition-opacity hover:opacity-70 ${p.accent}`}
-                >
-                  <Icon size={18} aria-hidden="true" />
-                </a>
-              )
-            })}
+            {p.socials &&
+              p.socials.length > 0 &&
+              p.socials.map((s) => {
+                const Icon = socialIconMap[s.platform];
+                return (
+                  <a
+                    key={s.platform}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={socialLabelMap[s.platform]}
+                    className={`p-1.5 rounded-md transition-opacity hover:opacity-70 ${p.accent}`}
+                  >
+                    <Icon size={18} aria-hidden="true" />
+                  </a>
+                );
+              })}
           </div>
 
           <a href={p.website} target="_blank" rel="noopener noreferrer">
@@ -145,20 +162,20 @@ function PartnerCard({ p }: { p: Partner }) {
               {p.btnLabel ?? "Visita il sito"}
             </Button>
           </a>
-
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 export default function Team() {
   return (
     <>
       <Hero
+        badge="GAIA · Il Team"
         title="La nostra squadra"
-        subtitle="Il progetto GAIA coinvolge un partenariato interdisciplinare composto da aziende e istituzioni accademiche calabresi."
-        badge="Il Team"
+        subtitle="Persone, competenze e visioni che collaborano per costruire giochi accessibili e inclusivi"
+        image={heroTeam}
         accentColor="green"
       />
 
@@ -170,5 +187,5 @@ export default function Team() {
         </div>
       </div>
     </>
-  )
+  );
 }

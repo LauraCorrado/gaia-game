@@ -1,13 +1,14 @@
 import Hero from "../components/ui/Hero";
+import heroBackstage from "../assets/img/hero/dietrolequinte_hero_v02.webp";
 export default function DietroLeQuinte() {
   return (
     <>
-      <Hero
-        title="Dietro le quinte"
-        subtitle="Per informazioni sul progetto, proposte di collaborazione o contatti con i partner."
-        badge="Contatti"
-        accentColor="pink"
-      />
+    <Hero
+  badge="GAIA · Backstage"
+  title="Esplora la gallery del progetto"
+  image={heroBackstage}
+  accentColor="pink"
+/>
       <div className="max-w-6xl mx-auto px-4 py-16">
         <section aria-labelledby="dietro-title" className="mb-12">
           <h1
