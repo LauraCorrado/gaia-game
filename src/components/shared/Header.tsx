@@ -3,15 +3,7 @@ import { NavLink } from "react-router-dom";
 import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
 import logoGAIA from "../../assets/img/gaia_logo_cut.png";
 import { Sun, Moon } from "lucide-react";
-
-const navLinks = [
-  { to: "/", label: "Homepage" },
-  { to: "/scopri-gaia", label: "Scopri GAIA" },
-  { to: "/team", label: "Il Team" },
-  { to: "/eventi-news", label: "Eventi e News" },
-  { to: "/dietro-lequinte", label: "Dietro le quinte" },
-  { to: "/contatti", label: "Contattaci" },
-];
+import { navLinks } from "../../data/navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
