@@ -9,27 +9,39 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: ButtonColor
   size?: ButtonSize
   children: ReactNode
+
+  forceLight?: boolean
 }
 
 const colorMap: Record<ButtonColor, {
   filled: string
   outlined: string
+  filledLight: string
+  outlinedLight: string
 }> = {
   blue: {
-    filled:   'bg-lm-blue text-white dark:bg-dm-blue dark:text-dm-bg-primary hover:opacity-90',
-    outlined: 'border-2 border-lm-blue text-lm-blue dark:border-dm-blue dark:text-dm-blue hover:bg-lm-bg-blue dark:hover:bg-dm-bg-blue',
+    filled:        'bg-lm-blue text-white dark:bg-dm-blue dark:text-dm-bg-primary hover:opacity-90',
+    outlined:      'border-2 border-lm-blue text-lm-blue dark:border-dm-blue dark:text-dm-blue hover:bg-lm-bg-blue dark:hover:bg-dm-bg-blue',
+    filledLight:   'bg-lm-blue text-white hover:opacity-90',
+    outlinedLight: 'border-2 border-lm-blue text-lm-blue hover:bg-lm-bg-blue',
   },
   pink: {
-    filled:   'bg-lm-pink text-white dark:bg-dm-pink dark:text-dm-bg-primary hover:opacity-90',
-    outlined: 'border-2 border-lm-pink text-lm-pink dark:border-dm-pink dark:text-dm-pink hover:bg-lm-bg-pink dark:hover:bg-dm-bg-pink',
+    filled:        'bg-lm-pink text-white dark:bg-dm-pink dark:text-dm-bg-primary hover:opacity-90',
+    outlined:      'border-2 border-lm-pink text-lm-pink dark:border-dm-pink dark:text-dm-pink hover:bg-lm-bg-pink dark:hover:bg-dm-bg-pink',
+    filledLight:   'bg-lm-pink text-white hover:opacity-90',
+    outlinedLight: 'border-2 border-lm-pink text-lm-pink hover:bg-lm-bg-pink',
   },
   green: {
-    filled:   'bg-lm-green text-white dark:bg-dm-green dark:text-dm-bg-primary hover:opacity-90',
-    outlined: 'border-2 border-lm-green text-lm-green dark:border-dm-green dark:text-dm-green hover:bg-lm-bg-green dark:hover:bg-dm-bg-green',
+    filled:        'bg-lm-green text-white dark:bg-dm-green dark:text-dm-bg-primary hover:opacity-90',
+    outlined:      'border-2 border-lm-green text-lm-green dark:border-dm-green dark:text-dm-green hover:bg-lm-bg-green dark:hover:bg-dm-bg-green',
+    filledLight:   'bg-lm-green text-white hover:opacity-90',
+    outlinedLight: 'border-2 border-lm-green text-lm-green hover:bg-lm-bg-green',
   },
   yellow: {
-    filled:   'bg-lm-yellow text-white dark:bg-dm-yellow dark:text-dm-bg-primary hover:opacity-90',
-    outlined: 'border-2 border-lm-yellow text-lm-yellow dark:border-dm-yellow dark:text-dm-yellow hover:bg-lm-bg-yellow dark:hover:bg-dm-bg-yellow',
+    filled:        'bg-lm-yellow text-white dark:bg-dm-yellow dark:text-dm-bg-primary hover:opacity-90',
+    outlined:      'border-2 border-lm-yellow text-lm-yellow dark:border-dm-yellow dark:text-dm-yellow hover:bg-lm-bg-yellow dark:hover:bg-dm-bg-yellow',
+    filledLight:   'bg-lm-yellow text-white hover:opacity-90',
+    outlinedLight: 'border-2 border-lm-yellow text-lm-yellow hover:bg-lm-bg-yellow',
   },
 }
 
@@ -43,13 +55,15 @@ export default function Button({
   variant = 'primary',
   color = 'blue',
   size = 'md',
+  forceLight = false,
   children,
   className = '',
   ...props
 }: ButtonProps) {
-  const colorClasses = variant === 'primary'
-    ? colorMap[color].filled
-    : colorMap[color].outlined
+  const map = colorMap[color]
+  const colorClasses = forceLight
+    ? (variant === 'primary' ? map.filledLight : map.outlinedLight)
+    : (variant === 'primary' ? map.filled      : map.outlined)
 
   return (
     <button
