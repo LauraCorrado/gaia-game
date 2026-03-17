@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
 import logoGAIA from "../../assets/img/gaia_logo_cut.png";
+import { Sun, Moon } from "lucide-react";
 
 const navLinks = [
+  { to: "/", label: "Homepage" },
   { to: "/scopri-gaia", label: "Scopri GAIA" },
   { to: "/team", label: "Il Team" },
   { to: "/eventi-news", label: "Eventi e News" },
@@ -73,12 +75,12 @@ export default function Header() {
             aria-label={
               dark ? "Attiva modalità chiara" : "Attiva modalità scura"
             }
+              title={dark ? "Passa a modalità chiara" : "Passa a modalità scura"}
             className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary transition-colors"
           >
-            {dark ? "☀️" : "🌙"}
+            {dark ? <Sun className="w-7 h-7 text-dm-yellow" /> : <Moon className="w-7 h-7 text-lm-blue" />}
           </button>
 
-          {/* Hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             aria-expanded={menuOpen}
