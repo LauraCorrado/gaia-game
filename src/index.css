@@ -34,18 +34,25 @@
   --color-logo-blue: #0095DB;
   --color-logo-yellow: #FFD500;
   --color-logo-green: #3AAA35;
+  /* banner + navbar */
+  --header-h: 112px;
 }
 
 @variant dark (&:where(.dark, .dark *));
 
 /* Tipografia */
 @layer base {
+  .pt-header {
+    padding-top: var(--header-h);
+  }
+
   html {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-lm-text-primary);
     background-color: var(--color-lm-bg-primary);
+    scroll-padding-top: var(--header-h);
   }
 
   html.dark {
@@ -53,17 +60,33 @@
     background-color: var(--color-dm-bg-primary);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Lexend', sans-serif;
     line-height: 1.2;
     font-weight: 600;
   }
 
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.25rem; }
-  
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
   a {
     color: var(--color-lm-blue);
     text-decoration: underline;
