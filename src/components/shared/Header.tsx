@@ -29,97 +29,66 @@ export default function Header() {
   }
 
   return (
-    <header
-      className="
-    sticky top-0 z-40
-    bg-lm-bg-primary dark:bg-dm-bg-primary
-    border-b border-lm-bg-secondary dark:border-dm-bg-secondary
-  "
-    >
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <NavLink
-          to="/"
-          aria-label="GAIA – Homepage"
-          className="flex items-center gap-2"
-        >
-          <img src={logoGAIA} alt="Logo GAIA" className="h-10 w-auto" />
-        </NavLink>
+    <header className="fixed top-0 left-0 right-0 z-50">
 
-        {/* nav desktop */}
-        <nav
-          aria-label="Navigazione principale"
-          className="hidden md:flex items-center gap-6"
-        >
-          {navLinks.map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              className={({ isActive }) =>
-                `font-medium text-sm transition-opacity hover:opacity-70 ${
-                  isActive
-                    ? "text-lm-blue dark:text-dm-blue underline underline-offset-4"
-                    : "text-lm-text-primary dark:text-dm-text-primary"
-                }`
-              }
-            >
-              {label}
-            </NavLink>
-          ))}
-        </nav>
-
-        {/* controlli destra */}
-        <div className="flex items-center gap-3">
-          {/* Toggle dark mode */}
-          <button
-            onClick={handleToggle}
-            aria-label={
-              dark ? "Attiva modalità chiara" : "Attiva modalità scura"
-            }
-              title={dark ? "Passa a modalità chiara" : "Passa a modalità scura"}
-            className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary transition-colors"
-          >
-            {dark ? <Sun className="w-7 h-7 text-dm-yellow" /> : <Moon className="w-7 h-7 text-lm-blue" />}
-          </button>
-
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-expanded={menuOpen}
-            aria-controls="mobile-menu"
-            aria-label="Apri menu di navigazione"
-            className="md:hidden p-2 rounded hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary"
-          >
-            <span className="block w-5 h-0.5 bg-lm-text-primary dark:bg-dm-text-primary mb-1" />
-            <span className="block w-5 h-0.5 bg-lm-text-primary dark:bg-dm-text-primary mb-1" />
-            <span className="block w-5 h-0.5 bg-lm-text-primary dark:bg-dm-text-primary" />
-          </button>
-        </div>
+      <div className="bg-lm-bg-secondary dark:bg-white border-b border-lm-bg-secondary dark:border-gray-200 flex justify-center px-4 py-2">
+        <img
+          src="/logos/Logo-Coesione-Italia-21-27-Calabria.png"
+          alt="..."
+          className="h-8 w-auto object-contain"
+        />
       </div>
 
-      {/* Nav mobile */}
-      {menuOpen && (
-        <nav
-          id="mobile-menu"
-          aria-label="Navigazione mobile"
-          className="md:hidden px-4 pb-4 flex flex-col gap-3 bg-lm-bg-primary dark:bg-dm-bg-primary"
-        >
-          {navLinks.map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              onClick={() => setMenuOpen(false)}
-              className={({ isActive }) =>
-                `text-sm font-medium py-1 ${
-                  isActive
-                    ? "text-lm-blue dark:text-dm-blue underline underline-offset-4"
-                    : "text-lm-text-primary dark:text-dm-text-primary"
-                }`
-              }
+      <div className="bg-lm-bg-primary dark:bg-dm-bg-primary border-b border-lm-bg-secondary dark:border-dm-bg-secondary">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+
+          <NavLink to="/" aria-label="GAIA – Homepage" className="flex items-center gap-2">
+            <img src={logoGAIA} alt="Logo GAIA" className="h-10 w-auto" />
+          </NavLink>
+
+          <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map(({ to, label }) => (
+              <NavLink key={to} to={to} className="text-sm font-medium">
+                {label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handleToggle}
+              aria-label={dark ? "Attiva modalità chiara" : "Attiva modalità scura"}
+              title={dark ? "Passa a modalità chiara" : "Passa a modalità scura"}
+              className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary"
             >
-              {label}
-            </NavLink>
-          ))}
-        </nav>
-      )}
+              {dark ? (
+                <Sun className="w-7 h-7 text-dm-yellow" />
+              ) : (
+                <Moon className="w-7 h-7 text-lm-blue" />
+              )}
+            </button>
+
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="md:hidden p-2"
+            >
+              <span className="block w-5 h-0.5 mb-1 bg-current" />
+              <span className="block w-5 h-0.5 mb-1 bg-current" />
+              <span className="block w-5 h-0.5 bg-current" />
+            </button>
+          </div>
+        </div>
+
+        {menuOpen && (
+          <nav className="md:hidden px-4 pb-4 flex flex-col gap-3">
+            {navLinks.map(({ to, label }) => (
+              <NavLink key={to} to={to} onClick={() => setMenuOpen(false)}>
+                {label}
+              </NavLink>
+            ))}
+          </nav>
+        )}
+      </div>
     </header>
   );
 }

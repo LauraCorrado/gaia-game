@@ -19,7 +19,7 @@ export default function Layout() {
       <Header />
 
       <main
-        id="main-content" className='grow'
+        id="main-content" className='grow pt-header'
       >
         <Outlet />
       </main>
