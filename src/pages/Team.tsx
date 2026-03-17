@@ -110,11 +110,13 @@ function PartnerCard({ p }: { p: Partner }) {
 
       <div className="p-6 flex flex-col gap-4">
         <div className="flex items-center gap-4">
-          <img
-            src={p.logo}
-            alt={`Logo ${p.name}`}
-            className="h-10 w-auto object-contain shrink-0"
-          />
+          <div className="p-2 rounded-md dark:bg-white">
+    <img
+      src={p.logo}
+      alt={`Logo ${p.name}`}
+      className="h-14 w-auto object-contain shrink-0"
+    />
+  </div>
           <div>
             <h2 className={`text-xl font-semibold leading-tight ${p.accent}`}>
               {p.name}
