@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import ScrollToTopBtn from "./ScrollToTop";
 import CookieBanner from "./CookieBanner";
 import InstitutionalBanner from "./InstitutionalBanner";
 
@@ -32,6 +33,7 @@ export default function Layout() {
 
       <Footer />
       <CookieBanner />
+      <ScrollToTopBtn />
     </div>
   );
 }
