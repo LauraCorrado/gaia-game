@@ -24,7 +24,7 @@ export default function ScrollToTopBtn() {
       className={`
         fixed bottom-6 right-6 z-50
         p-3 rounded-full
-        bg-lm-green text-white
+        bg-lm-blue text-white
         dark:bg-dm-pink dark:text-lm-text-primary
         shadow-md
         transition-all duration-300
