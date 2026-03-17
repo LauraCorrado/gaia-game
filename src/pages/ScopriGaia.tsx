@@ -1,11 +1,12 @@
 import Hero from "../components/ui/Hero";
+import heroProgetto from "../assets/img/hero/scoprigaia_hero_v01.webp";
 export default function ScopriGaia() {
   return (
     <>
       <Hero
-        title="Scopri il mondo di GAIA"
-        subtitle="Il progetto"
-        badge="Contatti"
+        badge="GAIA · Scopri GAIA"
+        title="Il progetto GAIA"
+        image={heroProgetto}
         accentColor="pink"
       />
       <div className="max-w-6xl mx-auto px-4 py-16">

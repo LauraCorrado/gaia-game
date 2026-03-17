@@ -1,14 +1,15 @@
 import Hero from "../components/ui/Hero";
+import heroContatti from "../assets/img/hero/contatti_hero_v01.webp";
 
 export default function Contatti() {
   return (
     <>
-      <Hero
-        title="Vuoi parlare con noi?"
-        subtitle="Per informazioni sul progetto, proposte di collaborazione o contatti con i partner."
-        badge="Contatti"
-        accentColor="blue"
-      />
+        <Hero
+  badge="GAIA · Contatti"
+  title="Entriamo in contatto"
+  image={heroContatti}
+  accentColor="blue"
+/>
       <div className="max-w-6xl mx-auto px-4 py-16">
         <section aria-labelledby="contatti-title" className="mb-12">
           <h1

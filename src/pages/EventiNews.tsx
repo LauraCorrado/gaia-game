@@ -5,14 +5,15 @@ const placeholderItems = [
 ];
 
 import Hero from "../components/ui/Hero";
+import heroNewsletter from "../assets/img/hero/eventienews_hero_v02.webp";
 
 export default function EventiNews() {
   return (
     <>
       <Hero
-        title="Rimani aggiornato"
-        subtitle="Aggiornamenti e newsletter."
-        badge="Contatti"
+        badge="GAIA · Eventi & Newsletter"
+        title="Rimani aggiornato su eventi e news"
+        image={heroNewsletter}
         accentColor="yellow"
       />
       <div className="max-w-6xl mx-auto px-4 py-16">
