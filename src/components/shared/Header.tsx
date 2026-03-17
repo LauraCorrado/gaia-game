@@ -1,41 +1,53 @@
-import { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
-import { toggleDarkMode, isDarkMode } from '../../utils/darkMode'
-import logoGAIA from '../../assets/img/gaia_logo_cut.png'
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
+import logoGAIA from "../../assets/img/gaia_logo_cut.png";
 
 const navLinks = [
-  { to: '/scopri-gaia', label: 'Scopri GAIA' },
-  { to: '/team', label: 'Il Team' },
-  { to: '/eventi-news', label: 'Eventi e News' },
-  { to: '/dietro-lequinte', label: 'Dietro le quinte' },
-  { to: '/contatti', label: 'Contattaci' },
-]
+  { to: "/scopri-gaia", label: "Scopri GAIA" },
+  { to: "/team", label: "Il Team" },
+  { to: "/eventi-news", label: "Eventi e News" },
+  { to: "/dietro-lequinte", label: "Dietro le quinte" },
+  { to: "/contatti", label: "Contattaci" },
+];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [dark, setDark] = useState(isDarkMode)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dark, setDark] = useState(isDarkMode);
 
   useEffect(() => {
-    const handler = () => setDark(isDarkMode())
-    window.addEventListener('gaia-theme-change', handler)
-    return () => window.removeEventListener('gaia-theme-change', handler)
-  }, [])
+    const handler = () => setDark(isDarkMode());
+    window.addEventListener("gaia-theme-change", handler);
+    return () => window.removeEventListener("gaia-theme-change", handler);
+  }, []);
 
   function handleToggle() {
-    toggleDarkMode()
-    setDark(isDarkMode())
+    toggleDarkMode();
+    setDark(isDarkMode());
   }
 
   return (
-    <header className="bg-lm-bg-primary dark:bg-dm-bg-primary border-b border-lm-bg-secondary dark:border-dm-bg-secondary sticky top-0 z-40">
+    <header
+      className="
+    sticky top-0 z-40
+    bg-lm-bg-primary dark:bg-dm-bg-primary
+    border-b border-lm-bg-secondary dark:border-dm-bg-secondary
+  "
+    >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-
-        <NavLink to="/" aria-label="GAIA – Homepage" className="flex items-center gap-2">
+        <NavLink
+          to="/"
+          aria-label="GAIA – Homepage"
+          className="flex items-center gap-2"
+        >
           <img src={logoGAIA} alt="Logo GAIA" className="h-10 w-auto" />
         </NavLink>
 
         {/* nav desktop */}
-        <nav aria-label="Navigazione principale" className="hidden md:flex items-center gap-6">
+        <nav
+          aria-label="Navigazione principale"
+          className="hidden md:flex items-center gap-6"
+        >
           {navLinks.map(({ to, label }) => (
             <NavLink
               key={to}
@@ -43,8 +55,8 @@ export default function Header() {
               className={({ isActive }) =>
                 `font-medium text-sm transition-opacity hover:opacity-70 ${
                   isActive
-                    ? 'text-lm-blue dark:text-dm-blue underline underline-offset-4'
-                    : 'text-lm-text-primary dark:text-dm-text-primary'
+                    ? "text-lm-blue dark:text-dm-blue underline underline-offset-4"
+                    : "text-lm-text-primary dark:text-dm-text-primary"
                 }`
               }
             >
@@ -58,10 +70,12 @@ export default function Header() {
           {/* Toggle dark mode */}
           <button
             onClick={handleToggle}
-            aria-label={dark ? 'Attiva modalità chiara' : 'Attiva modalità scura'}
+            aria-label={
+              dark ? "Attiva modalità chiara" : "Attiva modalità scura"
+            }
             className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary transition-colors"
           >
-            {dark ? '☀️' : '🌙'}
+            {dark ? "☀️" : "🌙"}
           </button>
 
           {/* Hamburger */}
@@ -94,8 +108,8 @@ export default function Header() {
               className={({ isActive }) =>
                 `text-sm font-medium py-1 ${
                   isActive
-                    ? 'text-lm-blue dark:text-dm-blue underline underline-offset-4'
-                    : 'text-lm-text-primary dark:text-dm-text-primary'
+                    ? "text-lm-blue dark:text-dm-blue underline underline-offset-4"
+                    : "text-lm-text-primary dark:text-dm-text-primary"
                 }`
               }
             >
@@ -105,5 +119,5 @@ export default function Header() {
         </nav>
       )}
     </header>
-  )
+  );
 }
