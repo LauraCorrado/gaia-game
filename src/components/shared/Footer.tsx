@@ -4,11 +4,11 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-lm-bg-secondary dark:bg-dm-bg-secondary border-t border-lm-bg-secondary dark:border-dm-bg-secondary mt-auto">
+    <footer className="bg-lm-bg-blue dark:bg-dm-bg-secondary border-t border-lm-bg-secondary dark:border-dm-bg-secondary mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-lm-text-secondary dark:text-dm-text-secondary">
 
-        <p>
-          © {year} <span className="font-semibold text-lm-text-primary dark:text-dm-text-primary">Progetto GAIA</span> – Finanziato dalla Regione Calabria ...
+        <p className="text-sm md:text-base">
+          © {year} <span className="font-semibold text-lm-text-primary dark:text-dm-text-primary"> GAIA</span> – Progetto finanziato dalla Regione Calabria
         </p>
 
         <nav aria-label="Link legali" className="flex gap-4">
