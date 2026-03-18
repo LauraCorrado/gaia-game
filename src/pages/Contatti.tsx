@@ -6,7 +6,8 @@ export default function Contatti() {
     <>
         <Hero
   badge="GAIA · Contatti"
-  title="Entriamo in contatto"
+  title="Restiamo in contatto"
+  subtitle="Hai domande o vuoi collaborare con noi? Contattaci!"
   image={heroContatti}
   accentColor="blue"
 />
