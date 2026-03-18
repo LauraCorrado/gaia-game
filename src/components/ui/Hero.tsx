@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Button from "./Button";
+import Badge from "./Badge";
 
 type HeroColor = "blue" | "pink" | "green" | "yellow";
 
@@ -19,13 +20,6 @@ interface HeroProps {
   image?: string;
 }
 
-const accentMap: Record<HeroColor, { base: string; darkWithImage: string }> = {
-  blue:   { base: "text-lm-blue dark:text-dm-blue",   darkWithImage: "text-lm-blue" },
-  pink:   { base: "text-lm-pink dark:text-dm-pink",   darkWithImage: "text-lm-pink" },
-  green:  { base: "text-lm-green dark:text-dm-green", darkWithImage: "text-lm-green" },
-  yellow: { base: "text-lm-yellow dark:text-dm-yellow", darkWithImage: "text-lm-yellow" },
-};
-
 export default function Hero({
   title,
   subtitle,
@@ -35,14 +29,12 @@ export default function Hero({
   badge,
   image,
 }: HeroProps) {
-  const accent = accentMap[accentColor];
 
   return (
     <section
       aria-labelledby="hero-title"
-      className={`relative overflow-hidden ${image ? "dark:bg-lm-bg-primary" : ""} md:min-h-150`}
+      className={`relative overflow-hidden ${image ? "dark:bg-dm-bg-primary" : ""} md:min-h-150`}
     >
-
       {image && (
         <>
           {/* Mobile */}
@@ -53,11 +45,31 @@ export default function Hero({
             <img
               src={image}
               alt=""
-              className="w-full h-full object-cover object-right opacity-60 scale-105"
+              className="w-full h-full object-cover object-right scale-105 dark:invert
+  dark:hue-rotate-180
+  dark:brightness-90
+  dark:contrast-90
+  dark:saturate-75"
             />
-            <div className="absolute inset-0 bg-linear-to-r from-lm-bg-primary via-lm-bg-primary/70 to-transparent" />
-            <div className="absolute inset-x-0 top-0 h-1/4 bg-linear-to-b from-lm-bg-primary to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 h-[8%] bg-linear-to-t from-lm-bg-primary to-transparent" />
+            <div
+              className="absolute inset-0 
+  bg-linear-to-r 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  via-lm-bg-primary/70 dark:via-dm-bg-primary/70 
+  to-transparent"
+            />
+            <div
+              className="absolute inset-x-0 top-0 h-1/4 
+  bg-linear-to-b 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  to-transparent"
+            />
+            <div
+              className="absolute inset-x-0 bottom-0 h-[8%] 
+  bg-linear-to-t 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  to-transparent"
+            />
           </div>
 
           {/* Desktop */}
@@ -68,12 +80,36 @@ export default function Hero({
             <img
               src={image}
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover dark:invert
+  dark:hue-rotate-180
+  dark:brightness-90
+  dark:contrast-90
+  dark:saturate-75"
             />
-            <div className="absolute inset-y-0 left-0 w-1/4 bg-linear-to-r from-lm-bg-primary to-transparent" />
-            <div className="absolute inset-y-0 right-0 w-[8%] bg-linear-to-l from-lm-bg-primary to-transparent" />
-            <div className="absolute inset-x-0 top-0 h-[12%] bg-linear-to-b from-lm-bg-primary to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 h-[8%] bg-linear-to-t from-lm-bg-primary to-transparent" />
+            <div
+              className="absolute inset-y-0 left-0 w-1/4 
+  bg-linear-to-r 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  to-transparent"
+            />
+            <div
+              className="absolute inset-y-0 right-0 w-[8%] 
+  bg-linear-to-l 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  to-transparent"
+            />
+            <div
+              className="absolute inset-x-0 top-0 h-[12%] 
+  bg-linear-to-b 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  to-transparent"
+            />
+            <div
+              className="absolute inset-x-0 bottom-0 h-[8%] 
+  bg-linear-to-t 
+  from-lm-bg-primary dark:from-dm-bg-primary 
+  to-transparent"
+            />
           </div>
         </>
       )}
@@ -81,24 +117,24 @@ export default function Hero({
       <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32">
         <div className="max-w-xl">
           {badge && (
-            <span
-              className={`block text-xs font-semibold uppercase tracking-widest mb-4 ${image ? accent.darkWithImage : accent.base}`}
-            >
-              {badge}
-            </span>
+            <div className="mb-4">
+    <Badge 
+      label={badge} 
+      color={accentColor} 
+      size="sm" 
+    />
+  </div>
           )}
 
           <h1
             id="hero-title"
-            className={`mb-6 ${image ? "text-lm-text-primary dark:text-lm-text-primary" : "text-lm-text-primary dark:text-dm-text-primary"}`}
+            className="mb-6 tracking-wide text-lm-text-primary dark:text-dm-text-primary dark:[text-shadow:-2px_2px_1px_black]"
           >
             {title}
           </h1>
 
           {subtitle && (
-            <p
-              className={`text-lg md:text-xl mb-8 leading-relaxed ${image ? "text-lm-text-secondary dark:text-lm-text-secondary" : "text-lm-text-secondary dark:text-dm-text-secondary"}`}
-            >
+            <p className="text-lg tracking-wide md:text-xl mb-8 leading-relaxed text-lm-text-primary dark:text-dm-text-primary dark:[text-shadow:-1px_1px_1px_black]">
               {subtitle}
             </p>
           )}
@@ -107,7 +143,11 @@ export default function Hero({
             <div className="flex flex-wrap gap-3">
               {actions.map((action) => (
                 <a key={action.href} href={action.href}>
-                  <Button variant={action.variant ?? "primary"} color={accentColor} forceLight={!!image}>
+                  <Button
+                    variant={action.variant ?? "primary"}
+                    color={accentColor}
+                    forceLight={!!image}
+                  >
                     {action.label}
                   </Button>
                 </a>
@@ -118,7 +158,6 @@ export default function Hero({
           {children}
         </div>
       </div>
-
     </section>
   );
 }

@@ -11,7 +11,7 @@ import Hero from "../components/ui/Hero";
 import Button from "../components/ui/Button";
 import { partners } from "../data/partners";
 import type { Partner, SocialLink } from "../data/partners";
-import heroTeam from "../assets/img/hero/team_hero_v02.webp";
+import heroTeam from "../assets/img/hero/team_hero.webp";
 
 // ── Social ────────────────────────────────────────────────────────────
 const socialIconMap = {

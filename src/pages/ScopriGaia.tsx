@@ -1,11 +1,12 @@
 import Hero from "../components/ui/Hero";
-import heroProgetto from "../assets/img/hero/scoprigaia_hero_v01.webp";
+import heroProgetto from "../assets/img/hero/scoprigaia_hero.webp";
 export default function ScopriGaia() {
   return (
     <>
       <Hero
         badge="GAIA · Scopri GAIA"
         title="Il progetto GAIA"
+        subtitle="GAIA nasce dalla ricerca volta a sviluppare esperienze ludiche multisensoriali accessibili, progettate insieme a famiglie, educatori e professionisti"
         image={heroProgetto}
         accentColor="pink"
       />

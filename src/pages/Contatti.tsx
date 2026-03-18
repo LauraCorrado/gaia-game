@@ -1,12 +1,13 @@
 import Hero from "../components/ui/Hero";
-import heroContatti from "../assets/img/hero/contatti_hero_v01.webp";
+import heroContatti from "../assets/img/hero/contatti_hero.webp";
 
 export default function Contatti() {
   return (
     <>
         <Hero
   badge="GAIA · Contatti"
-  title="Entriamo in contatto"
+  title="Restiamo in contatto"
+  subtitle="Hai domande o vuoi collaborare con noi? Contattaci!"
   image={heroContatti}
   accentColor="blue"
 />

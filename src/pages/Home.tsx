@@ -1,16 +1,16 @@
 import Hero from "../components/ui/Hero";
 import Card from "../components/ui/Card";
 import Badge from "../components/ui/Badge";
-import heroHome from "../assets/img/hero/home_hero_v01.webp";
+import heroHome from "../assets/img/hero/home_hero.webp";
 import { FlaskConical, Heart, Lightbulb } from "lucide-react";
 
 export default function Home() {
   return (
     <>
       <Hero
-        badge="Progetto di ricerca · Regione Calabria"
-        title="Giochi Accessibili ed Inclusivi per bambini con Autismo"
-        subtitle="Vieni a conoscere il gioco multisensoriale interattivo per bambini nello spettro autistico!"
+        badge="GAIA · Homepage"
+        title="Benvenuti in GAIA!"
+        subtitle="Un’esperienza multisensoriale inclusiva pensata per stimolare l’apprendimento, favorire l’interazione e valorizzare ogni unicità"
         image={heroHome}
         accentColor="blue"
         actions={[

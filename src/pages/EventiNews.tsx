@@ -5,7 +5,7 @@ const placeholderItems = [
 ];
 
 import Hero from "../components/ui/Hero";
-import heroNewsletter from "../assets/img/hero/eventienews_hero_v02.webp";
+import heroNewsletter from "../assets/img/hero/eventienews_hero.webp";
 
 export default function EventiNews() {
   return (
@@ -13,6 +13,7 @@ export default function EventiNews() {
       <Hero
         badge="GAIA · Eventi & Newsletter"
         title="Rimani aggiornato su eventi e news"
+        subtitle="Scopri le attività, gli eventi e i risultati del progetto"
         image={heroNewsletter}
         accentColor="yellow"
       />

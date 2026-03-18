@@ -1,11 +1,12 @@
 import Hero from "../components/ui/Hero";
-import heroBackstage from "../assets/img/hero/dietrolequinte_hero_v02.webp";
+import heroBackstage from "../assets/img/hero/dietrolequinte_hero.webp";
 export default function DietroLeQuinte() {
   return (
     <>
     <Hero
   badge="GAIA · Backstage"
-  title="Esplora la gallery del progetto"
+  title="Dietro le quinte di Gaia"
+  subtitle="Entra nel processo creativo: idee, test e sviluppo dietro GAIA"
   image={heroBackstage}
   accentColor="pink"
 />
