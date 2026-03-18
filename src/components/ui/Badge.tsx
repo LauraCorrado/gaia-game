@@ -16,7 +16,7 @@ const colorMap: Record<BadgeColor, string> = {
 }
 
 const sizeMap: Record<BadgeSize, string> = {
-  sm: 'text-xs px-2 py-0.5',
+  sm: 'text-xs px-3 py-1',
   md: 'text-sm px-3 py-1',
 }
 
