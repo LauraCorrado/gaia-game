@@ -49,7 +49,13 @@ export default function Footer() {
           <img
             src="/logos/gaia_logo.png"
             alt="GAIA – Giochi Accessibili ed Inclusivi per bambini con Autismo"
-            className="h-20 w-auto"
+            className="h-20 w-auto dark:hidden"
+          />
+
+          <img
+            src="/logos/gaia_logo_dm.png"
+            alt="GAIA – Giochi Accessibili ed Inclusivi per bambini con Autismo"
+            className="h-20 w-auto hidden dark:block"
           />
 
           <p className="text-sm">
