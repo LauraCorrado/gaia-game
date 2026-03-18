@@ -45,7 +45,11 @@ export default function Hero({
             <img
               src={image}
               alt=""
-              className="w-full h-full object-cover object-right opacity-60 scale-105"
+              className="w-full h-full object-cover object-right scale-105 dark:invert
+  dark:hue-rotate-180
+  dark:brightness-90
+  dark:contrast-90
+  dark:saturate-75"
             />
             <div
               className="absolute inset-0 
