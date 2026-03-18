@@ -5,7 +5,8 @@ export default function DietroLeQuinte() {
     <>
     <Hero
   badge="GAIA · Backstage"
-  title="Esplora la gallery del progetto"
+  title="Dietro le quinte di Gaia"
+  subtitle="Entra nel processo creativo: idee, test e sviluppo dietro GAIA"
   image={heroBackstage}
   accentColor="pink"
 />

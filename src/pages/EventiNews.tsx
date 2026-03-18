@@ -13,6 +13,7 @@ export default function EventiNews() {
       <Hero
         badge="GAIA · Eventi & Newsletter"
         title="Rimani aggiornato su eventi e news"
+        subtitle="Scopri le attività, gli eventi e i risultati del progetto"
         image={heroNewsletter}
         accentColor="yellow"
       />

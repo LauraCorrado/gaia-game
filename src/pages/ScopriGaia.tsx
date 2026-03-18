@@ -6,6 +6,7 @@ export default function ScopriGaia() {
       <Hero
         badge="GAIA · Scopri GAIA"
         title="Il progetto GAIA"
+        subtitle="GAIA nasce dalla ricerca volta a sviluppare esperienze ludiche multisensoriali accessibili, progettate insieme a famiglie, educatori e professionisti"
         image={heroProgetto}
         accentColor="pink"
       />
