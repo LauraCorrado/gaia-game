@@ -1,6 +1,6 @@
 import Hero from "../components/ui/Hero";
 import Card from "../components/ui/Card";
-import Badge from "../components/ui/Badge";
+import Button from "../components/ui/Button";
 import heroHome from "../assets/img/hero/home_hero.webp";
 import { FlaskConical, Heart, Lightbulb } from "lucide-react";
 
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero
         badge="GAIA · Homepage"
         title="Benvenuti in GAIA!"
-        subtitle="Un’esperienza multisensoriale inclusiva pensata per stimolare l’apprendimento, favorire l’interazione e valorizzare ogni unicità"
+        subtitle="Un'esperienza multisensoriale inclusiva pensata per stimolare l'apprendimento, favorire l'interazione e valorizzare ogni unicità"
         image={heroHome}
         accentColor="blue"
         actions={[
@@ -19,71 +19,146 @@ export default function Home() {
         ]}
       />
 
-      <section
-        aria-labelledby="obiettivi-title"
-        className="max-w-6xl mx-auto px-4 py-16"
-      >
-        <h2
-          id="obiettivi-title"
-          className="text-lm-text-primary dark:text-dm-text-primary mb-8"
-        >
-          Il progetto
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card color="blue" title="Ricerca" icon={FlaskConical} as="article">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            commodi totam corporis maiores quam assumenda ad sit consequuntur
-            fugit.
-          </Card>
-          <Card color="pink" title="Inclusione" icon={Heart} as="article">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            omnis maxime explicabo, distinctio nostrum inventore asperiores
-            sequi ut numquam fugit veritatis excepturi reiciendis odit velit est
-            dolorum tempora? Eos, laboriosam.
-          </Card>
-          <Card color="green" title="Innovazione" icon={Lightbulb} as="article">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem sapiente dolore pariatur impedit eius. Esse quibusdam
-            vel magnam voluptatibus alias.
-          </Card>
+      {/* IL PROGETTO IN BREVE — griglia offset */}
+      <section className="max-w-6xl mx-auto px-4 py-24 overflow-visible">
+        <div className="flex items-end justify-start gap-6 mb-16">
+          <div className="pb-2">
+            <h2 className="text-lm-text-primary dark:text-dm-text-primary">
+              In breve
+            </h2>
+            <p className="mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores ad exercitationem pariatur sapiente eum sit praesentium error sunt dolorem dolor voluptatum ut illo laborum.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:items-start">
+          <div>
+            <Card color="pink" title="Lorem ipsum" icon={Heart} as="article">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </Card>
+          </div>
+
+          <div className="md:mt-10">
+            <Card
+              color="green"
+              title="Lorem ipsum"
+              icon={FlaskConical}
+              as="article"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </Card>
+          </div>
+
+          <div className="md:mt-20">
+            <Card
+              color="yellow"
+              title="Lorem ipsum"
+              icon={Lightbulb}
+              as="article"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </Card>
+          </div>
         </div>
       </section>
 
-      <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-20">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2>Vuoi collaborare o saperne di più su GAIA?</h2>
-          <p className="mt-4">
-            Il progetto coinvolge ricercatori, educatori e famiglie.
-          </p>
+      {/* CONOSCI LA SQUADRA */}
+      <div className="relative mt-16">
+        <div
+          className="absolute inset-x-0 top-0 h-16 bg-lm-bg-secondary dark:bg-dm-bg-secondary"
+          style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }}
+          aria-hidden="true"
+        />
 
-          <a className="mt-6 inline-block btn-primary">Contattaci</a>
+        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary pt-20 pb-24">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="flex items-end gap-6 mb-12">
+              <div className="pb-2">
+                <h2 className="text-lm-text-primary dark:text-dm-text-primary">
+                  Conosci la squadra
+                </h2>
+                <p className="mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, fugiat? Consequatur dolore sapiente, incidunt odio quibusdam..
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="h-64 rounded-2xl bg-lm-bg-primary dark:bg-dm-bg-primary order-last md:order-first" />
+
+              <div className="md:mt-16">
+                <p className="text-lm-text-secondary dark:text-dm-text-secondary mb-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic quam nemo harum amet perspiciatis fuga rerum itaque provident ab molestias suscipit illum temporibus quia accusamus fugiat, dicta at veritatis.
+                </p>
+                <a href="/team">
+                  <Button color="blue">Conosci il team</Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div
+          className="absolute inset-x-0 bottom-0 h-16 bg-lm-bg-primary dark:bg-dm-bg-primary"
+          style={{ clipPath: "polygon(0 20%, 100% 100%, 0 100%)" }}
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* EVENTI E NEWS SEZIONE */}
+      <section className="max-w-6xl mx-auto px-4 py-24">
+        <div className="relative rounded-2xl overflow-hidden bg-lm-bg-secondary dark:bg-dm-bg-secondary">
+          <div
+            className="absolute left-0 inset-y-0 w-2 bg-lm-green dark:bg-dm-green"
+            aria-hidden="true"
+          />
+
+          <div className="flex flex-col md:flex-row items-center gap-8 px-10 py-12">
+            <div className="md:-mt-4 flex-1">
+              <h2 className="text-lm-text-primary dark:text-dm-text-primary">
+                Rimani aggiornato
+              </h2>
+              <p className="mt-2 text-lm-text-secondary dark:text-dm-text-secondary max-w-lg">
+                Segui aggiornamenti, attività e risultati del progetto.
+              </p>
+            </div>
+
+            <div className="md:self-end shrink-0">
+              <a href="/eventi-news">
+                <Button color="green">Scopri le ultime news</Button>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
+      {/* SEZIONE CONTATTI */}
+      <section className="pt-10 pb-28 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4">
+          <div
+            className="flex items-center justify-center gap-4 mb-10"
+            aria-hidden="true"
+          >
+            <div className="h-px w-xl bg-lm-pink dark:bg-dm-pink" />
+          </div>
 
-      <section
-        aria-labelledby="partner-title"
-        className="max-w-6xl mx-auto px-4 py-16 border-t border-lm-bg-secondary dark:border-dm-bg-secondary"
-      >
-        <h2
-          id="partner-title"
-          className="text-lm-text-primary dark:text-dm-text-primary mb-6"
-        >
-          I partner
-        </h2>
-        <div className="flex flex-wrap gap-3">
-          {[
-            { label: "TEA SRL", color: "pink" },
-            { label: "Studio Rubino SRL", color: "blue" },
-            { label: "Ober SRL", color: "yellow" },
-            { label: "UNICAL", color: "green" },
-          ].map(({ label, color }) => (
-            <Badge
-              key={label}
-              label={label}
-              color={color as "pink" | "blue" | "yellow" | "green"}
-              size="md"
-            />
-          ))}
+          <div className="grid md:grid-cols-2 gap-8 items-end pt-10">
+            <h2 className="text-lm-text-primary dark:text-dm-text-primary text-5xl leading-tight">
+              Vuoi saperne
+              <br />
+              di più?
+            </h2>
+
+            <div className="md:pb-2">
+              <p className="text-lm-text-secondary dark:text-dm-text-secondary mb-6">
+                Siamo disponibili per informazioni, collaborazioni e
+                approfondimenti sul progetto.
+              </p>
+              <a href="/contatti">
+                <Button color="pink">Contattaci</Button>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>
