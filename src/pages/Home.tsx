@@ -10,7 +10,7 @@ export default function Home() {
       <Hero
         badge="GAIA · Homepage"
         title="Benvenuti in GAIA!"
-        subtitle="Un’esperienza di gioco inclusiva che unisce tecnologia, educazione e multisensorialità per supportare lo sviluppo e l’interazione"
+        subtitle="Un’esperienza multisensoriale inclusiva pensata per stimolare l’apprendimento, favorire l’interazione e valorizzare ogni unicità"
         image={heroHome}
         accentColor="blue"
         actions={[
