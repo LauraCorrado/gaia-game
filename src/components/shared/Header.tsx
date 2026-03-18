@@ -99,9 +99,9 @@ export default function Header() {
         </div>
 
         {menuOpen && (
-          <nav className="md:hidden px-4 pb-4 flex flex-col gap-3">
+          <nav className="md:hidden px-4 py-4 flex flex-col gap-3 text-center bg-lm-bg-secondary dark:bg-dm-bg-blue">
             {navLinks.map(({ to, label }) => (
-              <NavLink key={to} to={to} onClick={() => setMenuOpen(false)}>
+              <NavLink className="mx-5 border-x border-x-lm-blue dark:border-x-dm-blue no-underline" key={to} to={to} onClick={() => setMenuOpen(false)}>
                 {label}
               </NavLink>
             ))}
