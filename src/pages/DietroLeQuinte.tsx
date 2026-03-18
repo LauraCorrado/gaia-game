@@ -1,5 +1,5 @@
 import Hero from "../components/ui/Hero";
-import heroBackstage from "../assets/img/hero/dietrolequinte_hero_v02.webp";
+import heroBackstage from "../assets/img/hero/dietrolequinte_hero.webp";
 export default function DietroLeQuinte() {
   return (
     <>

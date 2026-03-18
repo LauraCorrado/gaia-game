@@ -1,7 +1,7 @@
 import Hero from "../components/ui/Hero";
 import Card from "../components/ui/Card";
 import Badge from "../components/ui/Badge";
-import heroHome from "../assets/img/hero/home_hero_v01.webp";
+import heroHome from "../assets/img/hero/home_hero.webp";
 import { FlaskConical, Heart, Lightbulb } from "lucide-react";
 
 export default function Home() {

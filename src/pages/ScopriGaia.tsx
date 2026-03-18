@@ -1,5 +1,5 @@
 import Hero from "../components/ui/Hero";
-import heroProgetto from "../assets/img/hero/scoprigaia_hero_v01.webp";
+import heroProgetto from "../assets/img/hero/scoprigaia_hero.webp";
 export default function ScopriGaia() {
   return (
     <>

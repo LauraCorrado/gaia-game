@@ -5,7 +5,7 @@ const placeholderItems = [
 ];
 
 import Hero from "../components/ui/Hero";
-import heroNewsletter from "../assets/img/hero/eventienews_hero_v02.webp";
+import heroNewsletter from "../assets/img/hero/eventienews_hero.webp";
 
 export default function EventiNews() {
   return (

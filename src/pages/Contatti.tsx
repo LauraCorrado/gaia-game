@@ -1,5 +1,5 @@
 import Hero from "../components/ui/Hero";
-import heroContatti from "../assets/img/hero/contatti_hero_v01.webp";
+import heroContatti from "../assets/img/hero/contatti_hero.webp";
 
 export default function Contatti() {
   return (
