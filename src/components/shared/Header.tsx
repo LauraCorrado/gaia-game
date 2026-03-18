@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
-import logoGAIA from "../../assets/img/gaia_logo_cut.png";
 import { Sun, Moon } from "lucide-react";
 import { navLinks } from "../../data/navigation";
 
@@ -35,13 +34,26 @@ export default function Header() {
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
 
           <NavLink to="/" aria-label="GAIA – Homepage" className="flex items-center gap-2">
-            <img src={logoGAIA} alt="Logo GAIA" className="h-10 w-auto" />
+            <img src="/logos/gaia_logo_cut.png" alt="Logo GAIA" className="h-10 w-auto" />
           </NavLink>
 
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map(({ to, label }) => (
-              <NavLink key={to} to={to} className="text-sm font-medium">
-                {label}
+              <NavLink key={to} to={to} className={({ isActive }) =>
+                `
+    font-medium px-3 py-1.5 relative rounded-md text-sm transition-all duration-200
+
+    no-underline border border-transparent
+    hover:text-lm-pink dark:hover:text-dm-pink
+
+    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 ${isActive ? "text-lm-pink font-bold dark:text-dm-pink" : ""}
+    `}>
+                <span className="relative z-10 font-bold">{label}</span>
+
+                <span className="absolute inset-0 pointer-events-none">
+                  <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-current rounded-xs opacity-40" />
+                  <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-current rounded-xs opacity-40" />
+                </span>
               </NavLink>
             ))}
           </nav>
