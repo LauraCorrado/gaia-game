@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Button from "./Button";
+import Badge from "./Badge";
 
 type HeroColor = "blue" | "pink" | "green" | "yellow";
 
@@ -19,25 +20,6 @@ interface HeroProps {
   image?: string;
 }
 
-const accentMap: Record<HeroColor, { base: string; darkWithImage: string }> = {
-  blue: {
-    base: "text-lm-blue dark:text-dm-blue",
-    darkWithImage: "text-lm-blue dark:text-dm-blue",
-  },
-  pink: {
-    base: "text-lm-pink dark:text-dm-pink",
-    darkWithImage: "text-lm-pink dark:text-dm-pink",
-  },
-  green: {
-    base: "text-lm-green dark:text-dm-green",
-    darkWithImage: "text-lm-green dark:text-dm-green",
-  },
-  yellow: {
-    base: "text-lm-yellow dark:text-dm-yellow",
-    darkWithImage: "text-lm-yellow dark:text-dm-yellow",
-  },
-};
-
 export default function Hero({
   title,
   subtitle,
@@ -47,7 +29,6 @@ export default function Hero({
   badge,
   image,
 }: HeroProps) {
-  const accent = accentMap[accentColor];
 
   return (
     <section
@@ -132,11 +113,13 @@ export default function Hero({
       <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32">
         <div className="max-w-xl">
           {badge && (
-            <span
-              className={`block text-xs font-semibold uppercase tracking-widest mb-4 ${image ? accent.darkWithImage : accent.base}`}
-            >
-              {badge}
-            </span>
+            <div className="mb-4">
+    <Badge 
+      label={badge} 
+      color={accentColor} 
+      size="sm" 
+    />
+  </div>
           )}
 
           <h1
