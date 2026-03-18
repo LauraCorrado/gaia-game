@@ -17,14 +17,14 @@ export default function Footer() {
                 to={to}
                 className={({ isActive }) =>
                   `
-    relative px-3 py-1.5 rounded-md text-sm transition-all duration-200
+    relative px-3 py-1.5 rounded-md text-sm transition-all duration-200 text-lm-blue dark:text-dm-blue
 
     no-underline border border-transparent
-    hover:text-lm-pink dark:hover:text-dm-pink
+    hover:text-lm-yellow dark:hover:text-dm-pink
 
     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40
 
-    ${isActive ? "text-lm-pink font-bold dark:text-dm-pink" : ""}
+    ${isActive ? "text-lm-blue font-bold dark:text-dm-pink" : ""}
     `
                 }
               >
@@ -40,6 +40,11 @@ export default function Footer() {
         </ul>
       </div>
       <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+        <nav className="flex gap-6">
+          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+          <NavLink to="/cookie-policy">Cookie Policy</NavLink>
+        </nav>
+
         <div className="flex flex-col items-center justify-center gap-6 text-center md:text-left">
           <img
             src="/logos/gaia_logo.png"
@@ -54,11 +59,6 @@ export default function Footer() {
             </strong>
           </p>
         </div>
-
-        <nav className="flex gap-6">
-          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-          <NavLink to="/cookie-policy">Cookie Policy</NavLink>
-        </nav>
 
         <a
           href="https://www.teacz.com/"
