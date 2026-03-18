@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Hero
-        badge="Progetto di ricerca · Regione Calabria"
-        title="Giochi Accessibili ed Inclusivi per bambini con Autismo"
-        subtitle="Vieni a conoscere il gioco multisensoriale interattivo per bambini nello spettro autistico!"
+        badge="GAIA · Homepage"
+        title="Benvenuti in GAIA!"
+        subtitle="Un’esperienza di gioco inclusiva che unisce tecnologia, educazione e multisensorialità per supportare lo sviluppo e l’interazione"
         image={heroHome}
         accentColor="blue"
         actions={[

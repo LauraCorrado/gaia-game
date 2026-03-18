@@ -124,13 +124,13 @@ export default function Hero({
 
           <h1
             id="hero-title"
-            className="mb-6 text-lm-text-primary dark:text-dm-text-primary dark:[text-shadow:-2px_2px_1px_black]"
+            className="mb-6 tracking-wide text-lm-text-primary dark:text-dm-text-primary dark:[text-shadow:-2px_2px_1px_black]"
           >
             {title}
           </h1>
 
           {subtitle && (
-            <p className="text-lg md:text-xl mb-8 leading-relaxed text-lm-text-secondary dark:text-dm-text-secondary">
+            <p className="text-lg tracking-wide md:text-xl mb-8 leading-relaxed text-lm-text-primary dark:text-dm-text-primary dark:[text-shadow:-1px_1px_1px_black]">
               {subtitle}
             </p>
           )}
