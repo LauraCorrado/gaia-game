@@ -24,7 +24,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           <div className="md:w-1/3">
             <img
               src={item.immagine}
-              alt=""
+              alt={item.alt || ""}
               className="w-full h-full object-cover"
             />
           </div>
