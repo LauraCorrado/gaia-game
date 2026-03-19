@@ -13,7 +13,7 @@ import { partners } from "../data/partners";
 import type { Partner, SocialLink } from "../data/partners";
 import heroTeam from "../assets/img/hero/team_hero.webp";
 
-// ── Social ────────────────────────────────────────────────────────────
+// Social
 const socialIconMap = {
   linkedin: Linkedin,
   instagram: Instagram,
@@ -181,11 +181,13 @@ export default function Team() {
         accentColor="green"
       />
 
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          {partners.map((p) => (
-            <PartnerCard key={p.name} p={p} />
-          ))}
+      <div className="border">
+        <div className="max-w-6xl mx-auto px-4 py-16 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {partners.map((p) => (
+              <PartnerCard key={p.name} p={p} />
+            ))}
+          </div>
         </div>
       </div>
     </>
