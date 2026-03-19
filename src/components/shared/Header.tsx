@@ -78,7 +78,7 @@ export default function Header() {
               title={
                 dark ? "Passa a modalità chiara" : "Passa a modalità scura"
               }
-              className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary"
+              className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary cursor-pointer"
             >
               {dark ? (
                 <Sun className="w-7 h-7 text-dm-yellow" />
