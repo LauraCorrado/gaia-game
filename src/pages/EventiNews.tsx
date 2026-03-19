@@ -22,9 +22,14 @@ export default function EventiNews() {
           >
             Scopri eventi e novità del progetto
           </h1>
+          <p className="italic text-lm-text-secondary dark:text-dm-text-secondary text-lg max-w-2xl">
+            <strong className="text-lm-blue dark:text-dm-blue">GAIA – Giochi senza barriere</strong>. Giocare è un diritto universale, un’esperienza spontanea che deve essere resa possibile, fruibile e piacevole per ogni bambino.
+          </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary text-lg max-w-2xl">
-            Aggiornamenti su attività, eventi seminariali e
-            newsletter periodiche (prodotte da Studio Rubino).
+            In questo contesto, la condivisione di conoscenze, esperienze ed eventi rappresenta uno strumento essenziale per costruire, passo dopo passo, un percorso realmente inclusivo.
+          </p>
+           <p className="text-lm-text-secondary dark:text-dm-text-secondary text-lg max-w-2xl">
+            In questa sezione è possibile trovare aggiornamenti sulle attività del progetto, eventi seminariali e newsletter periodiche. Uno spazio pensato per restare informati sui progressi di GAIA, scoprire nuove risorse e approfondire i temi legati ai giochi accessibili e inclusivi per bambini nello spettro autistico.
           </p>
         </section>
 
