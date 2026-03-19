@@ -158,6 +158,7 @@ export default function Hero({
           {children}
         </div>
       </div>
+      
     </section>
   );
 }
