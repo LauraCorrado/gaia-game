@@ -32,6 +32,7 @@ export interface NewsItem {
 }
 
 export const news: NewsItem[] = [
+    // prima newsletter
   {
     id: 1,
     indice: "#1",
@@ -146,14 +147,18 @@ export const news: NewsItem[] = [
         type: "highlight",
         label: "Contattaci!",
         to: "/contatti",
-        variant: "primary",
+        variant: "secondary",
       },
     ],
 
     pdfLinks: [
       {
-        label: "Scarica PDF completo",
-        url: "/pdf/newsletter1.pdf",
+        label: "Scarica locandina evento 18 marzo",
+        url: "/pdf/18_marzo_locandina.pdf",
+      },
+      {
+        label: "Scarica locandina evento 19-20 marzo",
+        url: "/pdf/19-20_marzo_brochure.pdf",
       },
     ],
 
