@@ -24,7 +24,7 @@ export default function EventiNews() {
           </h1>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary text-lg max-w-2xl">
             Aggiornamenti su attività, eventi seminariali e
-            newsletter periodiche (prodotte da Studio Rubino).
+            newsletter periodiche.
           </p>
         </section>
 
