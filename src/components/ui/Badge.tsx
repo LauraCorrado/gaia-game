@@ -25,7 +25,7 @@ export default function Badge({ label, color = 'neutral', size = 'sm' }: BadgePr
     <span
       className={`
         inline-block font-semibold uppercase tracking-wide
-        rounded-lg
+        rounded-lg max-w-fit
         ${colorMap[color]}
         ${sizeMap[size]}
       `}
