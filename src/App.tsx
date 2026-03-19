@@ -8,6 +8,7 @@ import DietroLeQuinte from './pages/DietroLeQuinte'
 import Contatti from './pages/Contatti'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CookiePolicy from './pages/CookiePolicy'
+import NewsDetail from './components/shared/NewsDetail'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/eventi-news/:slug" element={<NewsDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
