@@ -2,6 +2,7 @@ export interface NewsItem {
   id: number;
   indice: string;
   titolo: string;
+  sottotitolo?: string;
   categoria: "Eventi & News" | "Newsletter" | "Social";
   data: string;
   immagine?: string;
@@ -21,7 +22,8 @@ export const news: NewsItem[] = [
   {
     id: 1,
     indice: "#1",
-    titolo: "Appuntamenti 18, 19 e 20 marzo su autismo e neurodivergenze",
+    titolo: "GAIA – Giochi senza barriere",
+    sottotitolo: "Appuntamenti 18, 19 e 20 marzo su autismo e neurodivergenze",
     categoria: "Newsletter",
     data: "16-03-2026",
     immagine: "/img/newsletter1.webp",

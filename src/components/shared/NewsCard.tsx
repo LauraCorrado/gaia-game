@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 import type { NewsItem } from "../../data/news";
+import { Calendar } from "lucide-react";
 
 export default function NewsCard({ item }: { item: NewsItem }) {
   return (
@@ -33,23 +34,24 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           <div className="flex flex-col gap-2">
             <Badge label={item.categoria} color="yellow" />
 
-            <h2 className="text-lm-text-primary dark:text-dm-text-primary">
+            <h2 className="text-lm-yellow dark:text-dm-yellow">
               {item.titolo}
             </h2>
-
+            {item.sottotitolo && (
+              <h3 className="text-lg text-lm-text-secondary dark:text-dm-text-secondary">
+                {item.sottotitolo}
+              </h3>
+            )}
             <p className="text-lm-text-secondary dark:text-dm-text-secondary text-sm">
               {item.estratto}
             </p>
           </div>
 
           <div className="flex justify-between items-center mt-4">
-            <time className="text-xs text-lm-text-secondary dark:text-dm-text-secondary">
-              {new Date(item.data).toLocaleDateString("it-IT", {
-                day: "2-digit",
-                month: "long",
-                year: "numeric",
-              })}
-            </time>
+            <div className="flex items-center gap-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
+                <Calendar size={16} className="text-lm-yellow font-bold" />
+                <time>{item.data}</time>
+            </div>
 
             <Link to={`/eventi-news/${item.slug}`}>
               <Button size="sm" color="yellow" aria-label={`Leggi ${item.titolo}`}>
