@@ -73,7 +73,7 @@ export default function NewsDetail() {
           return (
             <h2
               key={i}
-              className="my-6 text-lm-text-primary dark:text-dm-text-primary font-semibold"
+              className="my-6 text-lg text-lm-text-primary dark:text-dm-text-primary font-semibold"
             >
               {block.text}
             </h2>

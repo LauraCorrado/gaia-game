@@ -36,8 +36,8 @@ export const news: NewsItem[] = [
   {
     id: 1,
     indice: "#1",
-    titolo: "GAIA – Giochi senza barriere",
-    sottotitolo: "Appuntamenti 18, 19 e 20 marzo su autismo e neurodivergenze",
+    titolo: "Seminari su autismo e neurodivergenze (marzo 2026)",
+    sottotitolo: "Appuntamenti 18, 19 e 20 marzo presso Aula Caldora - Università della Calabria",
     categoria: "Newsletter",
     data: "16-03-2026",
     immagine: locandina_1,
@@ -49,7 +49,7 @@ export const news: NewsItem[] = [
     contenuti: [
       {
         type: "heading",
-        text: "Giocare è un diritto universale, un’esperienza spontanea che deve essere resa possibile, fruibile e piacevole per ogni bambino",
+        text: "GAIA – Giochi senza barriere. Giocare è un diritto universale, un’esperienza spontanea che deve essere resa possibile, fruibile e piacevole per ogni bambino",
       },
       {
         type: "paragraph",
