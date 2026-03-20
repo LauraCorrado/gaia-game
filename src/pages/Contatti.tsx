@@ -5,8 +5,6 @@ import Button from "../components/ui/Button";
 import heroContatti from "../assets/img/hero/contatti_hero.webp";
 import { partners } from "../data/partners";
 
-// ── Social icons (inline SVG) ─────────────────────────────────────────────────
-
 function WebsiteIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
@@ -50,15 +48,15 @@ function MapPinIcon({ className }: { className?: string }) {
 }
 
 const socialIcons = {
-  facebook: FacebookIcon,
+  facebook:  FacebookIcon,
   instagram: InstagramIcon,
-  linkedin: LinkedInIcon,
+  linkedin:  LinkedInIcon,
 };
 
 const socialLabels = {
-  facebook: "Facebook",
+  facebook:  "Facebook",
   instagram: "Instagram",
-  linkedin: "LinkedIn",
+  linkedin:  "LinkedIn",
 };
 
 type FormStatus = "idle" | "loading" | "success" | "error";
@@ -70,12 +68,33 @@ interface FormData {
   message: string;
 }
 
-const iconColorMap: Record<string, string> = {
-  pink:   "hover:text-lm-pink   hover:bg-lm-bg-pink   dark:hover:text-dm-pink   dark:hover:bg-dm-bg-pink",
-  blue:   "hover:text-lm-blue   hover:bg-lm-bg-blue   dark:hover:text-dm-blue   dark:hover:bg-dm-bg-blue",
-  yellow: "hover:text-lm-yellow hover:bg-lm-bg-yellow dark:hover:text-dm-yellow dark:hover:bg-dm-bg-yellow",
-  green:  "hover:text-lm-green  hover:bg-lm-bg-green  dark:hover:text-dm-green  dark:hover:bg-dm-bg-green",
-};
+type FormErrors = Partial<Record<keyof FormData, string>>;
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function validateField(name: keyof FormData, value: string): string {
+  switch (name) {
+    case "name":
+      return value.trim().length < 2 ? "Inserisci nome e cognome." : "";
+    case "email":
+      return !EMAIL_RE.test(value.trim()) ? "Inserisci un indirizzo email valido." : "";
+    case "subject":
+      return value.trim().length < 3 ? "Inserisci l'oggetto del messaggio." : "";
+    case "message":
+      return value.trim().length < 10 ? "Il messaggio deve contenere almeno 10 caratteri." : "";
+    default:
+      return "";
+  }
+}
+
+function validateAll(data: FormData): FormErrors {
+  const errors: FormErrors = {};
+  (Object.keys(data) as (keyof FormData)[]).forEach((key) => {
+    const msg = validateField(key, data[key]);
+    if (msg) errors[key] = msg;
+  });
+  return errors;
+}
 
 export default function Contatti() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -85,14 +104,33 @@ export default function Contatti() {
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errors, setErrors]   = useState<FormErrors>({});
+  const [touched, setTouched] = useState<Partial<Record<keyof FormData, boolean>>>({});
+  const [status, setStatus]   = useState<FormStatus>("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (touched[name as keyof FormData]) {
+      setErrors((prev) => ({ ...prev, [name]: validateField(name as keyof FormData, value) }));
+    }
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setTouched((prev) => ({ ...prev, [name]: true }));
+    setErrors((prev) => ({ ...prev, [name]: validateField(name as keyof FormData, value) }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const allTouched = { name: true, email: true, subject: true, message: true };
+    setTouched(allTouched);
+    const newErrors = validateAll(formData);
+    setErrors(newErrors);
+    if (Object.values(newErrors).some(Boolean)) return;
+
     setStatus("loading");
     try {
       await emailjs.send(
@@ -108,19 +146,28 @@ export default function Contatti() {
       );
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
+      setErrors({});
+      setTouched({});
     } catch {
       setStatus("error");
     }
   };
 
-  const inputBase =
+  const inputBase = (field: keyof FormData) =>
     "w-full rounded-xl px-4 py-3 text-sm bg-lm-bg-primary dark:bg-dm-bg-secondary " +
-    "border border-lm-text-secondary/20 dark:border-dm-text-secondary/20 " +
     "text-lm-text-primary dark:text-dm-text-primary " +
     "placeholder:text-lm-text-secondary/50 dark:placeholder:text-dm-text-secondary/50 " +
-    "focus:outline-none focus:ring-2 focus:ring-lm-blue/40 dark:focus:ring-dm-blue/40 " +
-    "focus:border-lm-blue dark:focus:border-dm-blue " +
-    "transition-all duration-200";
+    "focus:outline-none focus:ring-2 transition-all duration-200 " +
+    (errors[field] && touched[field]
+      ? "border border-lm-pink dark:border-dm-pink focus:ring-lm-pink/40 dark:focus:ring-dm-pink/40"
+      : "border border-lm-text-secondary/20 dark:border-dm-text-secondary/20 focus:ring-lm-blue/40 dark:focus:ring-dm-blue/40 focus:border-lm-blue dark:focus:border-dm-blue");
+
+  const FieldError = ({ field }: { field: keyof FormData }) =>
+    errors[field] && touched[field] ? (
+      <p role="alert" className="text-xs text-lm-pink dark:text-dm-pink mt-1">
+        {errors[field]}
+      </p>
+    ) : null;
 
   return (
     <>
@@ -133,199 +180,103 @@ export default function Contatti() {
       />
 
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-
-          <aside className="lg:col-span-2 flex flex-col gap-8">
-            <div>
-              <h2 className="text-lm-text-primary dark:text-dm-text-primary mb-2">
-                I nostri partner
-              </h2>
-              <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary leading-relaxed">
-                Il progetto GAIA è un'iniziativa di ricerca collaborativa.
-                Scopri chi siamo e seguici sui social.
-              </p>
-            </div>
-
-            <ul
-              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-3"
-              aria-label="Partner del progetto"
-            >
-              {partners.map((p) => {
-                const iconHover = iconColorMap[p.btnColor];
-                const iconBase = `w-6 h-6 rounded-md flex items-center justify-center shrink-0
-                                  text-lm-text-secondary dark:text-dm-text-secondary
-                                  transition-all duration-150 ${iconHover}`;
-                return (
-                  <li key={p.name} className="flex">
-                    <div
-                      className="w-full flex flex-col items-center justify-between gap-2.5
-                                 rounded-2xl bg-lm-bg-blue dark:bg-dm-bg-blue px-4 py-4"
-                      aria-label={p.name}
-                    >
-                      <div className="h-20 flex items-center justify-center dark:bg-white rounded-lg p-2">
-                        {/* logo */}
-                        <img
-                          src={p.logo}
-                          alt={p.name}
-                          className={`max-h-full max-w-full  object-contain ${p.boostLogo ? 'max-h-full scale-110' : "max-h-[80%]"}`}
-                        />
-                      </div>
-
-                      {/* divider */}
-                      <div className="w-full h-px bg-lm-text-secondary/10 dark:bg-dm-text-secondary/10" />
-
-                      {/* icon row: website · address · socials */}
-                      <div className="flex items-center justify-center flex-wrap gap-1.5">
-                        <a
-                          href={p.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`Sito web di ${p.name}`}
-                          className={iconBase}
-                        >
-                          <WebsiteIcon className="w-5 h-5 text-lm-blue dark:text-dm-blue" />
-                        </a>
-
-                        {p.address && (
-                          <a
-                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.address)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`Indirizzo di ${p.name}: ${p.address}`}
-                            className={iconBase}
-                          >
-                            <MapPinIcon className="w-5 h-5 text-lm-green dark:text-dm-green" />
-                          </a>
-                        )}
-
-                        {p.socials?.map((s) => {
-                          const Icon = socialIcons[s.platform];
-                          return (
-                            <a
-                              key={s.platform}
-                              href={s.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label={`${p.name} su ${socialLabels[s.platform]}`}
-                              className={iconBase}
-                            >
-                              <Icon className="w-5 h-5 text-lm-blue dark:text-dm-blue" />
-                            </a>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-
-            <div className="flex justify-center">
-              <div className="rounded-2xl border border-lm-blue/20 dark:border-dm-blue/20
-                              bg-lm-bg-secondary dark:bg-dm-bg-secondary px-5 py-4 max-w-fit text-center">
-                <p className="text-lg font-semibold uppercase tracking-wide text-lm-blue dark:text-dm-blue mb-1">
-                  Email istituzionale
-                </p>
-                <a
-                  href="mailto:info@gaia-game.eu"
-                  className="text-md font-medium text-lm-text-primary dark:text-dm-text-primary hover:underline"
-                >
-                  info@gaia-game.eu
-                </a>
-              </div>
-            </div>
-          </aside>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
 
           <section aria-labelledby="form-title" className="lg:col-span-3">
-            <h2
-              id="form-title"
-              className="text-lm-text-primary dark:text-dm-text-primary mb-2"
-            >
+            <h2 id="form-title" className="text-lm-text-primary dark:text-dm-text-primary mb-2">
               Invia un messaggio
             </h2>
-            <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary mb-8 leading-relaxed">
-              Compila il modulo per richiedere informazioni, proporre collaborazioni
-              o entrare in contatto con il team GAIA.
+            <p className="text-lm-text-secondary dark:text-dm-text-secondary mb-8 leading-relaxed">
+              Compila il modulo per richiedere informazioni, entrare in contatto con il team GAIA o iscriverti alla newsletter.
             </p>
 
             {status === "success" ? (
-              <div
-                role="alert"
-                className="rounded-2xl border border-lm-green/30 dark:border-dm-green/30
-                           bg-lm-bg-green dark:bg-dm-bg-green px-6 py-8 text-center"
-              >
+              <div role="alert" className="rounded-2xl border border-lm-green/30 dark:border-dm-green/30 bg-lm-bg-green dark:bg-dm-bg-green px-6 py-8 text-center">
                 <div className="text-3xl mb-3" aria-hidden="true">✓</div>
-                <p className="font-semibold text-lm-green dark:text-dm-green mb-1">
-                  Messaggio inviato!
-                </p>
+                <p className="font-semibold text-lm-green dark:text-dm-green mb-1">Messaggio inviato con successo!</p>
                 <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary">
                   Ti risponderemo al più presto all'indirizzo fornito.
                 </p>
-                <button
-                  onClick={() => setStatus("idle")}
-                  className="mt-6 text-sm text-lm-blue dark:text-dm-blue hover:underline"
-                >
+                <button onClick={() => setStatus("idle")} className="mt-6 text-sm text-lm-blue dark:text-dm-blue hover:underline cursor-pointer">
                   Invia un altro messaggio
                 </button>
               </div>
             ) : (
               <form ref={formRef} onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="name" className="text-xs font-semibold uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
-                      Nome e cognome{" "}
-                      <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
+                      Nome e cognome <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
                     </label>
-                    <input id="name" name="name" type="text" required autoComplete="name"
-                      value={formData.name} onChange={handleChange}
-                      placeholder="Mario Rossi" className={inputBase} />
+                    <input
+                      id="name" name="name" type="text" autoComplete="name"
+                      value={formData.name} onChange={handleChange} onBlur={handleBlur}
+                      placeholder="Mario Rossi"
+                      aria-describedby={errors.name && touched.name ? "error-name" : undefined}
+                      aria-invalid={!!(errors.name && touched.name)}
+                      className={inputBase("name")}
+                    />
+                    <span id="error-name"><FieldError field="name" /></span>
                   </div>
 
                   <div className="flex flex-col gap-1.5">
                     <label htmlFor="email" className="text-xs font-semibold uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
-                      Email{" "}
-                      <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
+                      Email <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
                     </label>
-                    <input id="email" name="email" type="email" required autoComplete="email"
-                      value={formData.email} onChange={handleChange}
-                      placeholder="mario@esempio.it" className={inputBase} />
+                    <input
+                      id="email" name="email" type="email" autoComplete="email"
+                      value={formData.email} onChange={handleChange} onBlur={handleBlur}
+                      placeholder="mario@esempio.it"
+                      aria-describedby={errors.email && touched.email ? "error-email" : undefined}
+                      aria-invalid={!!(errors.email && touched.email)}
+                      className={inputBase("email")}
+                    />
+                    <span id="error-email"><FieldError field="email" /></span>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="subject" className="text-xs font-semibold uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
-                    Oggetto{" "}
-                    <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
+                    Oggetto <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
                   </label>
-                  <input id="subject" name="subject" type="text" required
-                    value={formData.subject} onChange={handleChange}
-                    placeholder="Richiesta di informazioni" className={inputBase} />
+                  <input
+                    id="subject" name="subject" type="text"
+                    value={formData.subject} onChange={handleChange} onBlur={handleBlur}
+                    placeholder="Richiesta di informazioni"
+                    aria-describedby={errors.subject && touched.subject ? "error-subject" : undefined}
+                    aria-invalid={!!(errors.subject && touched.subject)}
+                    className={inputBase("subject")}
+                  />
+                  <span id="error-subject"><FieldError field="subject" /></span>
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="message" className="text-xs font-semibold uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
-                    Messaggio{" "}
-                    <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
+                    Messaggio <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">*</span>
                   </label>
-                  <textarea id="message" name="message" required rows={6}
-                    value={formData.message} onChange={handleChange}
+                  <textarea
+                    id="message" name="message" rows={6}
+                    value={formData.message} onChange={handleChange} onBlur={handleBlur}
                     placeholder="Scrivi qui il tuo messaggio..."
-                    className={`${inputBase} resize-none`} />
+                    aria-describedby={errors.message && touched.message ? "error-message" : undefined}
+                    aria-invalid={!!(errors.message && touched.message)}
+                    className={`${inputBase("message")} resize-none`}
+                  />
+                  <span id="error-message"><FieldError field="message" /></span>
                 </div>
 
+                {/* errore invio */}
                 {status === "error" && (
-                  <div role="alert" className="rounded-xl border border-lm-pink/30 dark:border-dm-pink/30
-                               bg-lm-bg-pink dark:bg-dm-bg-pink px-4 py-3
-                               text-sm text-lm-pink dark:text-dm-pink">
+                  <div role="alert" className="rounded-xl border border-lm-pink/30 dark:border-dm-pink/30 bg-lm-bg-pink dark:bg-dm-bg-pink px-4 py-3 text-sm text-lm-pink dark:text-dm-pink">
                     Invio non riuscito. Riprova o scrivi direttamente a{" "}
-                    <a href="mailto:info@gaia-game.eu" className="font-semibold underline">
-                      info@gaia-game.eu
-                    </a>.
+                    <a href="mailto:info@gaia-game.eu" className="font-semibold underline">info@gaia-game.eu</a>.
                   </div>
                 )}
 
+                {/* submit */}
                 <div className="flex items-center justify-between gap-4 pt-1">
-                  <p className="text-xs text-lm-text-secondary dark:text-dm-text-secondary">
+                  <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary">
                     <span aria-hidden="true" className="text-lm-pink dark:text-dm-pink">* </span>
                     Campi obbligatori
                   </p>
@@ -337,6 +288,73 @@ export default function Contatti() {
               </form>
             )}
           </section>
+
+          <aside className="lg:col-span-2 flex flex-col gap-8 
+                  lg:border-l lg:border-lm-text-secondary/10 
+                  lg:dark:border-dm-text-secondary/10 
+                  lg:pl-10">
+            <div>
+              <h2 className="text-lm-text-primary dark:text-dm-text-primary mb-2">
+                Informazioni di contatto
+              </h2>
+              <p className="text-lm-text-secondary dark:text-dm-text-secondary leading-relaxed">
+                Il progetto GAIA è un'iniziativa di ricerca collaborativa.
+                Scopri chi siamo e seguici sui social.
+              </p>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="rounded-2xl border border-lm-blue/20 dark:border-dm-blue/20
+                              bg-lm-bg-secondary dark:bg-dm-bg-secondary px-5 py-4 max-w-fit text-center">
+                <p className="text-lg font-semibold uppercase tracking-wide text-lm-blue dark:text-dm-blue mb-1">
+                  Email istituzionale
+                </p>
+                <a href="mailto:info@gaia-game.eu"
+                  className="text-md font-medium text-lm-text-primary dark:text-dm-text-primary hover:underline">
+                  info@gaia-game.eu
+                </a>
+              </div>
+            </div>
+
+            <ul className="flex flex-col divide-y divide-lm-text-secondary/10 dark:divide-dm-text-secondary/10">
+              {partners.map((p) => (
+                <li key={p.name} className="py-4 flex items-start gap-4">
+                                  <div className="flex flex-col gap-1 text-sm">
+                    <p className="font-semibold text-lm-text-primary dark:text-dm-text-primary">{p.name}</p>
+                    {p.address && (
+                      <p className="text-lm-text-secondary dark:text-dm-text-secondary">{p.address}</p>
+                    )}
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
+                      <a href={p.website} target="_blank" rel="noopener noreferrer"
+                        className="flex items-center gap-1 hover:underline">
+                        <WebsiteIcon className="w-3.5 h-3.5" />
+                        <span>Sito web</span>
+                      </a>
+                      {p.address && (
+                        <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.address)}`}
+                          target="_blank" rel="noopener noreferrer"
+                          className="flex items-center gap-1 hover:underline">
+                          <MapPinIcon className="w-3.5 h-3.5" />
+                          <span>Mappa</span>
+                        </a>
+                      )}
+                      {p.socials?.map((s) => {
+                        const Icon = socialIcons[s.platform];
+                        return (
+                          <a key={s.platform} href={s.url} target="_blank" rel="noopener noreferrer"
+                            aria-label={`${p.name} su ${socialLabels[s.platform]}`}
+                            className="flex items-center gap-1 hover:underline ">
+                            <Icon className="w-3.5 h-3.5" />
+                            <span>{socialLabels[s.platform]}</span>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </aside>
 
         </div>
       </div>
