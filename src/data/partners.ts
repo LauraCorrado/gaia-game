@@ -7,12 +7,14 @@ export interface Partner {
   name: string
   role: string
   logo: string
+  boostLogo: boolean,
   description: string
   contribution: {
     paragraphs: string[]
   }
   website: string
   socials?: SocialLink[]
+  address?: string
   btnLabel?: string
   color: string
   accent: string
@@ -25,6 +27,7 @@ export const partners: Partner[] = [
     name: "TEA SRL",
     role: "Capofila del progetto",
     logo: "/logos/tea_logo.png",
+    boostLogo: false,
     description:
       "TEA S.r.l., fondata nel 1996, opera da oltre 20 anni nello sviluppo di tecnologie per la conoscenza, la valorizzazione e la fruizione accessibile del patrimonio culturale e territoriale. L'azienda trasforma dati complessi in strumenti per la ricerca, la conservazione e l'accessibilità dei beni culturali. Tra le soluzioni sviluppate figurano sistemi di restauro virtuale basati su imaging multispettrale, come @mmira, e piattaforme multisensoriali e multimateriche come AIVES, progettate per rendere l'arte accessibile anche alle persone con disabilità visive.",
     contribution: {
@@ -40,6 +43,7 @@ export const partners: Partner[] = [
         { platform: "instagram", url: "https://www.instagram.com/storiedascoprire/" },
         { platform: "linkedin", url: "https://www.linkedin.com/company/t-e-a-catanzaro/" },
     ],
+    address: "C.da Santa Domenica, 48E | 88100 - Catanzaro (CZ)",
     btnLabel: "Visita il sito",
     color: "bg-lm-bg-pink dark:bg-dm-bg-pink",
     accent: "text-lm-pink dark:text-dm-pink",
@@ -50,6 +54,7 @@ export const partners: Partner[] = [
     name: "Studio Rubino SRL",
     role: "Comunicazione, newsletter e brevetti",
     logo: "/logos/rubinoip_logo.png",
+    boostLogo: false,
     description:
       "Con oltre 30 anni di esperienza, Rubino IP – Intellectual Property è una realtà specializzata nella tutela e valorizzazione della proprietà industriale e intellettuale a livello nazionale e internazionale. Con sedi a Roma, Catanzaro, Bari, Catania e Modena, supporta aziende e organizzazioni nella protezione e gestione di marchi, brevetti, disegni e modelli. Il team multidisciplinare di ingegneri, tecnici e consulenti legali offre servizi integrati che accompagnano l'innovazione dalla fase di ricerca fino alla valorizzazione e alla protezione sul mercato.",
     contribution: {
@@ -65,6 +70,7 @@ export const partners: Partner[] = [
         { platform: "instagram", url: "https://www.instagram.com/rubinoip/" },
         { platform: "linkedin", url: "https://www.linkedin.com/company/rubinoip/" },
     ],
+    address: "Via Cola di Rienzo, 265 | 00193 Roma (RM)",
     btnLabel: "Visita il sito",
     color: "bg-lm-bg-blue dark:bg-dm-bg-blue",
     accent: "text-lm-blue dark:text-dm-blue",
@@ -75,6 +81,7 @@ export const partners: Partner[] = [
     name: "Ober SRL",
     role: "Partner tecnico",
     logo: "/logos/ober_logo.png",
+    boostLogo: false,
     description:
       "OBER è una società che opera nel campo dell'ingegneria e della consulenza tecnologica, affiancando imprese e organizzazioni nello sviluppo di soluzioni innovative e sostenibili. Grazie a un approccio multidisciplinare, supporta l'intero ciclo di vita del prodotto, dalla progettazione alla prototipazione fino alla produzione industriale. L'integrazione tra competenze ingegneristiche, tecnologie avanzate e capacità di industrializzazione consente di trasformare esigenze progettuali complesse in soluzioni affidabili ed efficienti.",
     contribution: {
@@ -85,6 +92,7 @@ export const partners: Partner[] = [
       ],
     },
     website: "https://www.obersrl.it/it",
+    address: "Via XX Settembre, 62 | 88100 - Catanzaro (CZ)",
     btnLabel: "Visita il sito",
     color: "bg-lm-bg-yellow dark:bg-dm-bg-yellow",
     accent: "text-lm-yellow dark:text-dm-yellow",
@@ -95,6 +103,7 @@ export const partners: Partner[] = [
     name: "UNICAL – DiMEG",
     role: "Partner accademico · Ingegneria",
     logo: "/logos/dimeg_logo.png",
+    boostLogo: true,
     description:
       "Il Dipartimento di Ingegneria Meccanica, Energetica e Gestionale (DiMEG) dell'Università della Calabria svolge attività di ricerca avanzata da oltre 20 anni nei settori della realtà virtuale, aumentata e mista, del rilievo 3D e della diagnostica non invasiva. Grazie a laboratori e infrastrutture di prototipazione avanzata, il DIMEG sviluppa soluzioni tecnologiche innovative che spaziano dalla conservazione dei beni culturali alla progettazione di sistemi e prodotti industriali complessi.",
     contribution: {
@@ -107,6 +116,7 @@ export const partners: Partner[] = [
     website: "https://dimeg.unical.it/",
     socials: [ { platform: "facebook", url: "https://www.facebook.com/DimegUnical" },
         { platform: "instagram", url: "https://www.instagram.com/dimeg_unical/" },],
+    address: "Via P. Bucci - Cubo 46C, ponte carrabile | 87036 - Arcavacata di Rende (CS)",
     btnLabel: "Visita il dipartimento",
     color: "bg-lm-bg-green dark:bg-dm-bg-green",
     accent: "text-lm-green dark:text-dm-green",
@@ -117,6 +127,7 @@ export const partners: Partner[] = [
     name: "UNICAL – DiCES",
     role: "Partner accademico · Scienze psico-pedagogiche",
     logo: "/logos/dices_logo.png",
+    boostLogo: true,
     description:
       "Il Dipartimento di Culture, Educazione e Società (DiCES) dell'Università della Calabria promuove attività di ricerca e formazione nei campi delle scienze psicologiche, educative e sociali con un approccio interdisciplinare. Tra le principali linee di studio rientrano gli interventi psico-pedagogici nei disturbi del neurosviluppo e nelle disabilità intellettive, con particolare attenzione ai processi di inclusione, partecipazione sociale e miglioramento della qualità della vita.",
     contribution: {
@@ -131,6 +142,7 @@ export const partners: Partner[] = [
          { platform: "facebook", url: "https://www.facebook.com/profile.php?id=61587552583257" },
         { platform: "instagram", url: "https://www.instagram.com/dices_unical/" },
     ],
+    address: "Via P. Bucci - Cubo 20B | 87036 - Arcavacata di Rende (CS)",
     btnLabel: "Visita il dipartimento",
     color: "bg-lm-bg-green dark:bg-dm-bg-green",
     accent: "text-lm-green dark:text-dm-green",
