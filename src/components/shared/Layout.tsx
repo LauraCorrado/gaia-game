@@ -27,9 +27,32 @@ export default function Layout() {
       <InstitutionalBanner />
       <Header />
 
-      <main id="main-content" className="grow pt-header">
-        <Outlet />
-      </main>
+      <main
+  id="main-content"
+  className="
+    relative grow pt-header
+    bg-lm-bg-primary dark:bg-dm-bg-primary
+  "
+>
+  <div
+    aria-hidden="true"
+    className="
+      pointer-events-none absolute inset-0 z-0
+      opacity-[0.06] dark:opacity-[0.08]
+      mix-blend-overlay
+    "
+    style={{
+      backgroundImage: `
+        radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)
+      `,
+      backgroundSize: "5px 5px",
+    }}
+  />
+
+  <div className="relative z-10">
+    <Outlet />
+  </div>
+</main>
 
       <Footer />
       <CookieBanner />

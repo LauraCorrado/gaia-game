@@ -1,25 +1,25 @@
 export interface SocialLink {
-  platform: 'facebook' | 'instagram' | 'linkedin'
-  url: string
+  platform: "facebook" | "instagram" | "linkedin";
+  url: string;
 }
 
 export interface Partner {
-  name: string
-  role: string
-  logo: string
-  boostLogo: boolean,
-  description: string
+  name: string;
+  role: string;
+  logo: string;
+  boostLogo: boolean;
+  description: string;
   contribution: {
-    paragraphs: string[]
-  }
-  website: string
-  socials?: SocialLink[]
-  address?: string
-  btnLabel?: string
-  color: string
-  accent: string
-  accentBar: string
-  btnColor: 'blue' | 'pink' | 'green' | 'yellow'
+    paragraphs: string[];
+  };
+  website: string;
+  socials?: SocialLink[];
+  address?: string;
+  btnLabel?: string;
+  color: string;
+  accent: string;
+  accentBar: string;
+  btnColor: "blue" | "pink" | "green" | "yellow";
 }
 
 export const partners: Partner[] = [
@@ -39,13 +39,22 @@ export const partners: Partner[] = [
     },
     website: "https://www.teacz.com/",
     socials: [
-        { platform: "facebook", url: "https://www.facebook.com/StoriedaScoprire/" },
-        { platform: "instagram", url: "https://www.instagram.com/storiedascoprire/" },
-        { platform: "linkedin", url: "https://www.linkedin.com/company/t-e-a-catanzaro/" },
+      {
+        platform: "facebook",
+        url: "https://www.facebook.com/StoriedaScoprire/",
+      },
+      {
+        platform: "instagram",
+        url: "https://www.instagram.com/storiedascoprire/",
+      },
+      {
+        platform: "linkedin",
+        url: "https://www.linkedin.com/company/t-e-a-catanzaro/",
+      },
     ],
     address: "C.da Santa Domenica, 48E | 88100 - Catanzaro (CZ)",
     btnLabel: "Visita il sito",
-    color: "bg-lm-bg-pink dark:bg-dm-bg-pink",
+    color: "bg-lm-bg-pink/80 dark:bg-dm-bg-pink/80",
     accent: "text-lm-pink dark:text-dm-pink",
     accentBar: "bg-logo-pink",
     btnColor: "pink",
@@ -66,13 +75,19 @@ export const partners: Partner[] = [
     },
     website: "https://www.studiorubino.com/",
     socials: [
-      { platform: "facebook", url: "https://www.facebook.com/RubinoIntellectualProperty" },
-        { platform: "instagram", url: "https://www.instagram.com/rubinoip/" },
-        { platform: "linkedin", url: "https://www.linkedin.com/company/rubinoip/" },
+      {
+        platform: "facebook",
+        url: "https://www.facebook.com/RubinoIntellectualProperty",
+      },
+      { platform: "instagram", url: "https://www.instagram.com/rubinoip/" },
+      {
+        platform: "linkedin",
+        url: "https://www.linkedin.com/company/rubinoip/",
+      },
     ],
     address: "Via Cola di Rienzo, 265 | 00193 Roma (RM)",
     btnLabel: "Visita il sito",
-    color: "bg-lm-bg-blue dark:bg-dm-bg-blue",
+    color: "bg-lm-bg-blue/80 dark:bg-dm-bg-blue/80",
     accent: "text-lm-blue dark:text-dm-blue",
     accentBar: "bg-logo-blue",
     btnColor: "blue",
@@ -94,7 +109,7 @@ export const partners: Partner[] = [
     website: "https://www.obersrl.it/it",
     address: "Via XX Settembre, 62 | 88100 - Catanzaro (CZ)",
     btnLabel: "Visita il sito",
-    color: "bg-lm-bg-yellow dark:bg-dm-bg-yellow",
+    color: "bg-lm-bg-yellow/80 dark:bg-dm-bg-yellow/80",
     accent: "text-lm-yellow dark:text-dm-yellow",
     accentBar: "bg-logo-yellow",
     btnColor: "yellow",
@@ -114,11 +129,14 @@ export const partners: Partner[] = [
       ],
     },
     website: "https://dimeg.unical.it/",
-    socials: [ { platform: "facebook", url: "https://www.facebook.com/DimegUnical" },
-        { platform: "instagram", url: "https://www.instagram.com/dimeg_unical/" },],
-    address: "Via P. Bucci - Cubo 46C, ponte carrabile | 87036 - Arcavacata di Rende (CS)",
+    socials: [
+      { platform: "facebook", url: "https://www.facebook.com/DimegUnical" },
+      { platform: "instagram", url: "https://www.instagram.com/dimeg_unical/" },
+    ],
+    address:
+      "Via P. Bucci - Cubo 46C, ponte carrabile | 87036 - Arcavacata di Rende (CS)",
     btnLabel: "Visita il dipartimento",
-    color: "bg-lm-bg-green dark:bg-dm-bg-green",
+    color: "bg-lm-bg-green/80 dark:bg-dm-bg-green/80",
     accent: "text-lm-green dark:text-dm-green",
     accentBar: "bg-logo-green",
     btnColor: "green",
@@ -139,14 +157,17 @@ export const partners: Partner[] = [
     },
     website: "https://dices.unical.it/",
     socials: [
-         { platform: "facebook", url: "https://www.facebook.com/profile.php?id=61587552583257" },
-        { platform: "instagram", url: "https://www.instagram.com/dices_unical/" },
+      {
+        platform: "facebook",
+        url: "https://www.facebook.com/profile.php?id=61587552583257",
+      },
+      { platform: "instagram", url: "https://www.instagram.com/dices_unical/" },
     ],
     address: "Via P. Bucci - Cubo 20B | 87036 - Arcavacata di Rende (CS)",
     btnLabel: "Visita il dipartimento",
-    color: "bg-lm-bg-green dark:bg-dm-bg-green",
+    color: "bg-lm-bg-green/80 dark:bg-dm-bg-green/80",
     accent: "text-lm-green dark:text-dm-green",
     accentBar: "bg-logo-green",
     btnColor: "green",
   },
-]
+];
