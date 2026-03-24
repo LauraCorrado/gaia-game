@@ -70,7 +70,7 @@ function ContributionSection({
             onClick={() => setExpanded((v) => !v)}
             aria-expanded={expanded}
             className={`
-              self-start flex items-center gap-1
+              self-start flex items-center gap-1 border p-2 rounded border-dashed
               text-xs font-semibold uppercase tracking-wide
               cursor-pointer transition-opacity hover:opacity-70
               focus-visible:outline-2 focus-visible:outline-offset-2
@@ -111,12 +111,12 @@ function PartnerCard({ p }: { p: Partner }) {
       <div className="p-6 flex flex-col gap-4">
         <div className="flex items-center gap-4">
           <div className="p-2 rounded-md dark:bg-white">
-    <img
-      src={p.logo}
-      alt={`Logo ${p.name}`}
-      className="h-14 w-auto object-contain shrink-0"
-    />
-  </div>
+            <img
+              src={p.logo}
+              alt={`Logo ${p.name}`}
+              className="h-14 w-auto object-contain shrink-0"
+            />
+          </div>
           <div>
             <h2 className={`text-xl font-semibold leading-tight ${p.accent}`}>
               {p.name}
@@ -150,7 +150,7 @@ function PartnerCard({ p }: { p: Partner }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={socialLabelMap[s.platform]}
-                    className={`p-1.5 rounded-md transition-opacity hover:opacity-70 ${p.accent}`}
+                    className={`p-1.5 rounded-md transition-opacity hover:opacity-70 hover:border ${p.accent}`}
                   >
                     <Icon size={18} aria-hidden="true" />
                   </a>
@@ -182,10 +182,28 @@ export default function Team() {
       />
 
       <div className="max-w-6xl mx-auto px-4 py-16 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          {partners.map((p) => (
-            <PartnerCard key={p.name} p={p} />
-          ))}
+        <div className="max-w-6xl mx-auto px-4 py-16">
+          <section aria-labelledby="team-intro-title" className="mb-12">
+            <h1
+              id="team-intro-title"
+              className="text-lm-text-primary dark:text-dm-text-primary mb-4"
+            >
+              Un partenariato solido e consolidato
+            </h1>
+
+            <p className="text-lg text-lm-text-secondary dark:text-dm-text-secondary max-w-3xl md:max-w-5xl">
+              Grazie al lavoro di squadra, GAIA crea un ecosistema di gioco
+              inclusivo in cui i bambini con ASD possono apprendere,
+              socializzare e divertirsi, abbattendo le barriere e valorizzando
+              le loro capacità.
+            </p>
+          </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {partners.map((p) => (
+              <PartnerCard key={p.name} p={p} />
+            ))}
+          </div>
         </div>
       </div>
     </>
