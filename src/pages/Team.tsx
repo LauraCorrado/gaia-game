@@ -130,7 +130,7 @@ function PartnerCard({ p }: { p: Partner }) {
         </div>
 
         {p.role.toLowerCase().includes("capofila") && (
-          <span className="relative z-10 text-xs px-3 py-1 rounded-full bg-black/10 text-lm-text-primary">
+          <span className="relative z-10 text-xs px-3 py-1 rounded-full bg-black/10 text-lm-text-primary dark:bg-white/10 dark:text-dm-text-primary font-semibold uppercase">
             Capofila
           </span>
         )}

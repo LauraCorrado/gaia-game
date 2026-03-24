@@ -174,7 +174,7 @@ export default function Contatti() {
       <Hero
         badge="GAIA · Contatti"
         title="Restiamo in contatto"
-        subtitle="Hai domande o vuoi collaborare con noi? Scrivici!"
+        subtitle="Hai domande o vuoi collaborare con noi? Compila il modulo, ti risponderemo il prima possibile!"
         image={heroContatti}
         accentColor="blue"
       />
