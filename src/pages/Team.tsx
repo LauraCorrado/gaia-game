@@ -13,7 +13,6 @@ import { partners } from "../data/partners";
 import type { Partner, SocialLink } from "../data/partners";
 import heroTeam from "../assets/img/hero/team_hero.webp";
 
-// Social
 const socialIconMap = {
   linkedin: Linkedin,
   instagram: Instagram,
@@ -41,7 +40,7 @@ function ContributionSection({
 
   return (
     <div className="border-t border-current/10 pt-4 flex flex-col gap-2">
-            <p className="text-lm-text-secondary dark:text-dm-text-secondary text-sm leading-relaxed">
+      <p className="text-lm-text-secondary dark:text-dm-text-secondary text-sm leading-relaxed">
         {first}
       </p>
 
@@ -101,55 +100,51 @@ function PartnerCard({ p }: { p: Partner }) {
     >
       <div className={`h-1.5 w-full ${p.accentBar}`} />
       <div className="relative p-5 flex items-center justify-between">
-
-  <div
-    className={`
+        <div
+          className={`
       absolute inset-0 opacity-0
       transition-opacity duration-300
       ${p.color}
       group-hover:opacity-100
     `}
-  />
+        />
 
-  {/* contenuto */}
-  <div className="relative z-10 flex items-center gap-4">
-    <div className="p-2 rounded-md bg-white/80 dark:bg-white">
-      <img
-        src={p.logo}
-        alt={`Logo ${p.name}`}
-        className="h-12 w-auto object-contain"
-      />
-    </div>
+        {/* contenuto */}
+        <div className="relative z-10 flex items-center gap-4">
+          <div className="p-2 rounded-md bg-white/80 dark:bg-white">
+            <img
+              src={p.logo}
+              alt={`Logo ${p.name}`}
+              className="h-12 w-auto object-contain"
+            />
+          </div>
 
-    <div>
-      <h2 className="text-lg font-semibold text-lm-text-primary dark:text-dm-text-primary">
-        {p.name}
-      </h2>
-      <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary">
-        {p.role}
-      </p>
-    </div>
-  </div>
+          <div>
+            <h2 className="text-lg font-semibold text-lm-text-primary dark:text-dm-text-primary">
+              {p.name}
+            </h2>
+            <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary">
+              {p.role}
+            </p>
+          </div>
+        </div>
 
-  {/* badge */}
-  {p.role.toLowerCase().includes("capofila") && (
-    <span className="relative z-10 text-xs px-3 py-1 rounded-full bg-black/10 text-lm-text-primary">
-      Capofila
-    </span>
-  )}
-</div>
+        {p.role.toLowerCase().includes("capofila") && (
+          <span className="relative z-10 text-xs px-3 py-1 rounded-full bg-black/10 text-lm-text-primary">
+            Capofila
+          </span>
+        )}
+      </div>
 
-      {/* CONTENUTO */}
       <div className="p-6 flex flex-col gap-5 border-t border-current/10 relative">
-
-        {/* DESCRIZIONE */}
         <p className="text-sm text-lm-text-primary dark:text-dm-text-primary leading-relaxed">
           {p.description}
         </p>
 
-        {/* BLOCCO CONTRIBUTO */}
         <div className="relative rounded-xl p-4 bg-black/5 dark:bg-white/5">
-          <div className={`absolute left-0 top-0 h-full w-1 rounded-l-xl ${p.accentBar}`} />
+          <div
+            className={`absolute left-0 top-0 h-full w-1 rounded-l-xl ${p.accentBar}`}
+          />
 
           <p className={`text-xs font-semibold uppercase mb-2 ${p.accent}`}>
             Contributo al progetto GAIA
@@ -162,10 +157,7 @@ function PartnerCard({ p }: { p: Partner }) {
           />
         </div>
 
-        {/* FOOTER */}
         <div className="flex items-center justify-between pt-2">
-
-          {/* SOCIAL */}
           <div className="flex items-center gap-2">
             {p.socials?.map((s) => {
               const Icon = socialIconMap[s.platform];
@@ -189,7 +181,6 @@ function PartnerCard({ p }: { p: Partner }) {
             })}
           </div>
 
-          {/* CTA */}
           <a href={p.website} target="_blank" rel="noopener noreferrer">
             <Button variant="secondary" color={p.btnColor} size="sm">
               <Globe size={14} />
