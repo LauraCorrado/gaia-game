@@ -11,7 +11,7 @@ export default function NewsDetail() {
   if (!articolo) return <p>Articolo non trovato</p>;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-16">
+    <div className="max-w-3xl mx-auto p-10 my-16 bg-lm-bg-secondary/40 dark:bg-dm-bg-secondary rounded-xl">
       <div className="mb-6">
         <Link to="/eventi-news">
           <Button
@@ -65,7 +65,17 @@ export default function NewsDetail() {
       )}
 
       {articolo.immagine && (
-        <img src={articolo.immagine} alt="" className="my-6 rounded-lg" />
+        <figure className="my-8 flex flex-col items-center">
+          <img
+            src={articolo.immagine}
+            alt={articolo.alt || ""}
+            className="rounded-lg max-w-full h-auto"
+          />
+
+          <figcaption className="mt-2 italic text-sm text-center text-lm-text-secondary dark:text-dm-text-secondary">
+            {articolo.alt}
+          </figcaption>
+        </figure>
       )}
 
       {articolo.contenuti.map((block, i) => {

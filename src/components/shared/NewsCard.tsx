@@ -5,19 +5,35 @@ import type { NewsItem } from "../../data/news";
 import { Calendar } from "lucide-react";
 
 export default function NewsCard({ item }: { item: NewsItem }) {
+  const categoryStyleMap = {
+    Articoli: {
+      color: "green",
+    },
+    Newsletter: {
+      color: "yellow",
+    },
+    Social: {
+      color: "pink",
+    },
+  } as const;
+
+  const style = categoryStyleMap[item.categoria];
+
   return (
-    <article className="relative bg-lm-bg-secondary dark:bg-dm-bg-secondary rounded-xl overflow-hidden">
-      <span
-        aria-hidden="true"
-        className="
+    <article className="relative bg-lm-bg-secondary dark:bg-dm-bg-secondary rounded-xl overflow-hidden mb-5">
+      {item.indice && (
+        <span
+          aria-hidden="true"
+          className="
     absolute top-2 right-4
     text-7xl md:text-8xl font-bold
     text-lm-text-primary/5 dark:text-dm-text-primary/5
     pointer-events-none select-none
   "
-      >
-        {item.indice}
-      </span>
+        >
+          {item.indice}
+        </span>
+      )}
       <div className="flex flex-col md:flex-row gap-4">
         {item.immagine && (
           <div className="md:w-1/3">
@@ -31,9 +47,15 @@ export default function NewsCard({ item }: { item: NewsItem }) {
 
         <div className="flex flex-col justify-between p-4 md:w-2/3">
           <div className="flex flex-col gap-2">
-            <Badge label={item.categoria} color="yellow" />
-
-            <h2 className="text-lm-yellow dark:text-dm-yellow whitespace-pre-line">
+            <Badge label={item.categoria} color={style.color} />
+            <h2
+              className={`
+    whitespace-pre-line
+    ${style.color === "yellow" ? "text-lm-yellow dark:text-dm-yellow" : ""}
+    ${style.color === "green" ? "text-lm-green dark:text-dm-green" : ""}
+    ${style.color === "pink" ? "text-lm-pink dark:text-dm-pink" : ""}
+  `}
+            >
               {item.titolo}
             </h2>
             {item.sottotitolo && (
@@ -48,7 +70,12 @@ export default function NewsCard({ item }: { item: NewsItem }) {
 
           <div className="flex justify-between items-center mt-4">
             <div className="flex items-center gap-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
-              <Calendar size={16} className="text-lm-yellow font-bold" />
+              <Calendar
+                size={16}
+                className={`font-bold ${style.color === "yellow" ? "text-lm-yellow dark:text-dm-yellow" : ""}
+    ${style.color === "green" ? "text-lm-green dark:text-dm-green" : ""}
+    ${style.color === "pink" ? "text-lm-pink dark:text-dm-pink" : ""}`}
+              />
               <time>
                 {new Date(item.data).toLocaleDateString("it-IT", {
                   day: "numeric",
@@ -61,7 +88,8 @@ export default function NewsCard({ item }: { item: NewsItem }) {
             <Link to={`/eventi-news/${item.slug}`}>
               <Button
                 size="sm"
-                color="yellow"
+                color="blue"
+                variant="secondary"
                 aria-label={`Leggi ${item.titolo}`}
               >
                 Leggi di più
