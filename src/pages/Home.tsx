@@ -10,16 +10,15 @@ export default function Home() {
       <Hero
         badge="GAIA · Homepage"
         title="Benvenuti in GAIA!"
-        subtitle="Un'esperienza multisensoriale inclusiva pensata per stimolare l'apprendimento, favorire l'interazione e valorizzare ogni unicità"
+        subtitle="Giochi Accessibili e Inclusivi per bambini con Autismo: un'esperienza multisensoriale inclusiva pensata per stimolare l'apprendimento, favorire l'interazione e valorizzare ogni unicità"
         image={heroHome}
         accentColor="blue"
         actions={[
-          { label: "Scopri il progetto", href: "/scopri-gaia" },
+          { label: "Il progetto", href: "/scopri-gaia" },
           { label: "Contattaci", href: "/contatti", variant: "secondary" },
         ]}
       />
 
-      {/* IL PROGETTO IN BREVE — griglia offset */}
       <section className="max-w-6xl mx-auto px-4 py-24 overflow-visible">
         <div className="flex items-end justify-start gap-6 mb-16">
           <div className="pb-2">
@@ -63,7 +62,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONOSCI LA SQUADRA */}
       <div className="relative mt-16">
         <div
           className="absolute inset-x-0 top-0 h-16 bg-lm-bg-secondary dark:bg-dm-bg-secondary"
@@ -106,7 +104,6 @@ export default function Home() {
         />
       </div>
 
-      {/* EVENTI E NEWS SEZIONE */}
       <section className="max-w-6xl mx-auto px-4 py-24">
         <div className="relative rounded-2xl overflow-hidden bg-lm-bg-secondary dark:bg-dm-bg-secondary">
           <div
@@ -132,7 +129,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* SEZIONE CONTATTI */}
       <section className="pt-10 pb-28 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4">
           <div
