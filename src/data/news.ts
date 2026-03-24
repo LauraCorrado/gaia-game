@@ -36,15 +36,15 @@ export const news: NewsItem[] = [
   {
     id: 1,
     indice: "#1",
-    titolo: "Seminari su autismo e neurodivergenze (marzo 2026)",
-    sottotitolo: "Appuntamenti 18, 19 e 20 marzo presso Aula Caldora - Università della Calabria",
+    titolo: "GAIA\nGiochi senza barriere",
+    sottotitolo: "Giocare è un diritto universale, un’esperienza spontanea che deve essere resa possibile, fruibile e piacevole per ogni bambino",
     categoria: "Newsletter",
-    data: "16-03-2026",
+    data: "2026-03-16",
     immagine: locandina_1,
     alt: "Locandine eventi del 18, 19 e 20 marzo su autismo e neurodivergenze",
 
     estratto:
-      "Due giornate di approfondimento dedicate alle neurodivergenze e all’autismo presso l’Università della Calabria: 18 marzo – convegno su benessere psicologico e ricerca scientifica; 19–20 marzo – corso su diagnosi, intervento e Early Start Denver Model (ESDM).Un’occasione per aggiornarsi su pratiche cliniche, educative e approcci evidence-based.",
+      "Appuntamenti 18, 19 e 20 marzo presso Aula Caldora - Università della Calabria. Due giornate di approfondimento dedicate alle neurodivergenze e all’autismo presso l’Università della Calabria: 18 marzo – convegno su benessere psicologico e ricerca scientifica; 19–20 marzo – corso su diagnosi, intervento e Early Start Denver Model (ESDM).Un’occasione per aggiornarsi su pratiche cliniche, educative e approcci evidence-based.",
 
     contenuti: [
       {
@@ -53,7 +53,7 @@ export const news: NewsItem[] = [
       },
       {
         type: "paragraph",
-        text: "Il progetto “GAIA – Giochi accessibili e inclusivi per bambini con autismo” nasce dalla convinzione che il gioco sia un diritto universale e uno strumento fondamentale di relazione, apprendimento ed espressione per tutti i bambini. Promosso da TEA S.r.l. (capofila) insieme a Studio Rubino S.r.l., Ober S.r.l. e all’Università della Calabria, e finanziato dalla Regione Calabria, GAIA si propone di progettare e sviluppare giochi multisensoriali e interattivi pensati per favorire l’inclusione e la partecipazione dei bambini autistici.",
+        text: "Il progetto “GAIA – Giochi Accessibili e Inclusivi per bambini con Autismo” nasce dalla convinzione che il gioco sia un diritto universale e uno strumento fondamentale di relazione, apprendimento ed espressione per tutti i bambini. Promosso da TEA S.r.l. (capofila) insieme a Studio Rubino S.r.l., Ober S.r.l. e all’Università della Calabria, e finanziato dalla Regione Calabria, GAIA si propone di progettare e sviluppare giochi multisensoriali e interattivi pensati per favorire l’inclusione e la partecipazione dei bambini autistici.",
       },
       {
         type: "paragraph",

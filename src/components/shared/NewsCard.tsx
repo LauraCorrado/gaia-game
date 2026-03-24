@@ -7,19 +7,18 @@ import { Calendar } from "lucide-react";
 export default function NewsCard({ item }: { item: NewsItem }) {
   return (
     <article className="relative bg-lm-bg-secondary dark:bg-dm-bg-secondary rounded-xl overflow-hidden">
-        <span
-  aria-hidden="true"
-  className="
+      <span
+        aria-hidden="true"
+        className="
     absolute top-2 right-4
     text-7xl md:text-8xl font-bold
     text-lm-text-primary/5 dark:text-dm-text-primary/5
     pointer-events-none select-none
   "
->
-  {item.indice}
-</span>
+      >
+        {item.indice}
+      </span>
       <div className="flex flex-col md:flex-row gap-4">
-        
         {item.immagine && (
           <div className="md:w-1/3">
             <img
@@ -34,7 +33,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           <div className="flex flex-col gap-2">
             <Badge label={item.categoria} color="yellow" />
 
-            <h2 className="text-lm-yellow dark:text-dm-yellow">
+            <h2 className="text-lm-yellow dark:text-dm-yellow whitespace-pre-line">
               {item.titolo}
             </h2>
             {item.sottotitolo && (
@@ -49,12 +48,22 @@ export default function NewsCard({ item }: { item: NewsItem }) {
 
           <div className="flex justify-between items-center mt-4">
             <div className="flex items-center gap-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
-                <Calendar size={16} className="text-lm-yellow font-bold" />
-                <time>{item.data}</time>
+              <Calendar size={16} className="text-lm-yellow font-bold" />
+              <time>
+                {new Date(item.data).toLocaleDateString("it-IT", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
             </div>
 
             <Link to={`/eventi-news/${item.slug}`}>
-              <Button size="sm" color="yellow" aria-label={`Leggi ${item.titolo}`}>
+              <Button
+                size="sm"
+                color="yellow"
+                aria-label={`Leggi ${item.titolo}`}
+              >
                 Leggi di più
               </Button>
             </Link>

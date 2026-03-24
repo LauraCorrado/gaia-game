@@ -14,44 +14,55 @@ export default function NewsDetail() {
     <div className="max-w-3xl mx-auto px-4 py-16">
       <div className="mb-6">
         <Link to="/eventi-news">
-          <Button variant="secondary" color="blue" aria-label="Torna a Eventi e News" className="text-sm">
+          <Button
+            variant="secondary"
+            color="blue"
+            aria-label="Torna a Eventi e News"
+            className="text-sm"
+          >
             ← Torna a Eventi e News
           </Button>
         </Link>
       </div>
 
-      <h1 className="text-lm-text-primary dark:text-dm-text-primary mb-4">
+      <h1 className="text-lm-text-primary dark:text-dm-text-primary mb-4 whitespace-pre-line">
         {articolo.titolo}
       </h1>
 
       <div className="flex items-center gap-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
         <Calendar size={16} className="text-lm-blue font-bold" />
-        <time>{articolo.data}</time>
+        <time>
+          {new Date(articolo.data).toLocaleDateString("it-IT", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
+        </time>
       </div>
 
-    {articolo.pdfLinks && (
-  <div className="mt-3 flex flex-col gap-1">
-    {articolo.pdfLinks.map((pdf, i) => (
-      <a
-        key={i}
-        href={pdf.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
+      {articolo.pdfLinks && (
+        <div className="mt-3 flex flex-col gap-1">
+          {articolo.pdfLinks.map((pdf, i) => (
+            <a
+              key={i}
+              href={pdf.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
           inline-flex items-center gap-2
           text-sm
           text-lm-blue dark:text-dm-blue
           hover:text-lm-green dark:hover:text-dm-green
           underline
         "
-      >
-        <Paperclip size={16} />
-        <span className="font-medium">Download</span>
-        <span className="opacity-80">– {pdf.label}</span>
-      </a>
-    ))}
-  </div>
-)}
+            >
+              <Paperclip size={16} />
+              <span className="font-medium">Download</span>
+              <span className="opacity-80">– {pdf.label}</span>
+            </a>
+          ))}
+        </div>
+      )}
 
       {articolo.immagine && (
         <img src={articolo.immagine} alt="" className="my-6 rounded-lg" />
@@ -141,7 +152,12 @@ export default function NewsDetail() {
 
       <div className="mb-6">
         <Link to="/eventi-news">
-          <Button variant="secondary" color="blue" aria-label="Torna a Eventi e News" className="text-sm">
+          <Button
+            variant="secondary"
+            color="blue"
+            aria-label="Torna a Eventi e News"
+            className="text-sm"
+          >
             ← Torna a Eventi e News
           </Button>
         </Link>
