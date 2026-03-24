@@ -167,17 +167,6 @@ export const news: NewsItem[] = [
       },
     ],
 
-    pdfLinks: [
-      {
-        label: "Scarica locandina evento 18 marzo",
-        url: "/pdf/18_marzo_locandina.pdf",
-      },
-      {
-        label: "Scarica locandina evento 19-20 marzo",
-        url: "/pdf/19-20_marzo_brochure.pdf",
-      },
-    ],
-
     slug: "articolo-1",
   },
   //prima newsletter
