@@ -41,13 +41,7 @@ function ContributionSection({
 
   return (
     <div className="border-t border-current/10 pt-4 flex flex-col gap-2">
-      <p
-        className={`text-xs font-semibold uppercase tracking-wide mb-1 ${accent}`}
-      >
-        Il contributo al progetto GAIA
-      </p>
-
-      <p className="text-lm-text-secondary dark:text-dm-text-secondary text-sm leading-relaxed">
+            <p className="text-lm-text-secondary dark:text-dm-text-secondary text-sm leading-relaxed">
         {first}
       </p>
 
@@ -96,71 +90,109 @@ function ContributionSection({
 function PartnerCard({ p }: { p: Partner }) {
   return (
     <article
-      className={`
-        rounded-xl overflow-hidden flex flex-col
-        border border-current/10 backdrop-blur-sm
-        transition-shadow duration-200 hover:shadow-md
-        ${p.color}
-      `}
+      className="
+    group
+    rounded-2xl overflow-hidden flex flex-col
+    border border-current/10
+    transition-all duration-300
+    hover:shadow-lg
+    bg-lm-bg-secondary dark:bg-dm-bg-secondary
+  "
     >
-      <div
-        className={`h-1.5 w-full shrink-0 ${p.accentBar}`}
-        aria-hidden="true"
+      <div className={`h-1.5 w-full ${p.accentBar}`} />
+      <div className="relative p-5 flex items-center justify-between">
+
+  <div
+    className={`
+      absolute inset-0 opacity-0
+      transition-opacity duration-300
+      ${p.color}
+      group-hover:opacity-100
+    `}
+  />
+
+  {/* contenuto */}
+  <div className="relative z-10 flex items-center gap-4">
+    <div className="p-2 rounded-md bg-white/80 dark:bg-white">
+      <img
+        src={p.logo}
+        alt={`Logo ${p.name}`}
+        className="h-12 w-auto object-contain"
       />
+    </div>
 
-      <div className="p-6 flex flex-col gap-4">
-        <div className="flex items-center gap-4">
-          <div className="p-2 rounded-md dark:bg-white">
-            <img
-              src={p.logo}
-              alt={`Logo ${p.name}`}
-              className="h-14 w-auto object-contain shrink-0"
-            />
-          </div>
-          <div>
-            <h2 className={`text-xl font-semibold leading-tight ${p.accent}`}>
-              {p.name}
-            </h2>
-            <p className="text-sm font-medium text-lm-text-secondary dark:text-dm-text-secondary">
-              {p.role}
-            </p>
-          </div>
-        </div>
+    <div>
+      <h2 className="text-lg font-semibold text-lm-text-primary dark:text-dm-text-primary">
+        {p.name}
+      </h2>
+      <p className="text-sm text-lm-text-secondary dark:text-dm-text-secondary">
+        {p.role}
+      </p>
+    </div>
+  </div>
 
-        <p className="text-lm-text-primary dark:text-dm-text-primary text-sm leading-relaxed">
+  {/* badge */}
+  {p.role.toLowerCase().includes("capofila") && (
+    <span className="relative z-10 text-xs px-3 py-1 rounded-full bg-black/10 text-lm-text-primary">
+      Capofila
+    </span>
+  )}
+</div>
+
+      {/* CONTENUTO */}
+      <div className="p-6 flex flex-col gap-5 border-t border-current/10 relative">
+
+        {/* DESCRIZIONE */}
+        <p className="text-sm text-lm-text-primary dark:text-dm-text-primary leading-relaxed">
           {p.description}
         </p>
 
-        <ContributionSection
-          paragraphs={p.contribution.paragraphs}
-          accent={p.accent}
-          btnColor={p.btnColor}
-        />
+        {/* BLOCCO CONTRIBUTO */}
+        <div className="relative rounded-xl p-4 bg-black/5 dark:bg-white/5">
+          <div className={`absolute left-0 top-0 h-full w-1 rounded-l-xl ${p.accentBar}`} />
 
-        <div className="flex items-center justify-between gap-3 pt-2">
+          <p className={`text-xs font-semibold uppercase mb-2 ${p.accent}`}>
+            Contributo al progetto GAIA
+          </p>
+
+          <ContributionSection
+            paragraphs={p.contribution.paragraphs}
+            accent={p.accent}
+            btnColor={p.btnColor}
+          />
+        </div>
+
+        {/* FOOTER */}
+        <div className="flex items-center justify-between pt-2">
+
+          {/* SOCIAL */}
           <div className="flex items-center gap-2">
-            {p.socials &&
-              p.socials.length > 0 &&
-              p.socials.map((s) => {
-                const Icon = socialIconMap[s.platform];
-                return (
-                  <a
-                    key={s.platform}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={socialLabelMap[s.platform]}
-                    className={`p-1.5 rounded-md transition-opacity hover:opacity-70 hover:border ${p.accent}`}
-                  >
-                    <Icon size={18} aria-hidden="true" />
-                  </a>
-                );
-              })}
+            {p.socials?.map((s) => {
+              const Icon = socialIconMap[s.platform];
+              return (
+                <a
+                  key={s.platform}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={socialLabelMap[s.platform]}
+                  className={`
+                    p-2 rounded-md
+                    transition-colors duration-200
+                    hover:bg-black/10 dark:hover:bg-white/10
+                    ${p.accent}
+                  `}
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
           </div>
 
+          {/* CTA */}
           <a href={p.website} target="_blank" rel="noopener noreferrer">
             <Button variant="secondary" color={p.btnColor} size="sm">
-              <Globe size={14} aria-hidden="true" />
+              <Globe size={14} />
               {p.btnLabel ?? "Visita il sito"}
             </Button>
           </a>
@@ -169,7 +201,6 @@ function PartnerCard({ p }: { p: Partner }) {
     </article>
   );
 }
-
 export default function Team() {
   return (
     <>
