@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 import type { NewsItem } from "../../data/news";
 import { Calendar } from "lucide-react";
+import { generateSlug } from "../../utils/slug";
 
 export default function NewsCard({ item }: { item: NewsItem }) {
   const categoryStyleMap = {
@@ -85,7 +86,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
               </time>
             </div>
 
-            <Link to={`/eventi-news/${item.slug}`}>
+            <Link to={`/eventi-news/${generateSlug(item)}` || "#"} aria-label={`Leggi di più su ${item.titolo}`}>
               <Button
                 size="sm"
                 color="blue"

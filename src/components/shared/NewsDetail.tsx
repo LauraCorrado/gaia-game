@@ -2,11 +2,12 @@ import { useParams, Link } from "react-router-dom";
 import { news } from "../../data/news";
 import Button from "../ui/Button";
 import { Calendar, Paperclip } from "lucide-react";
+import { generateSlug } from "../../utils/slug";
 
 export default function NewsDetail() {
   const { slug } = useParams();
 
-  const articolo = news.find((n) => n.slug === slug);
+const articolo = news.find((n) => generateSlug(n) === slug);
 
   if (!articolo) return <p>Articolo non trovato</p>;
 

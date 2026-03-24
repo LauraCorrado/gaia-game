@@ -25,11 +25,11 @@ export default function EventiNews() {
             id="news-title"
             className="text-lm-text-primary dark:text-dm-text-primary mb-4"
           >
-            Scopri la nostra newsletter
+            News e aggiornamenti su GAIA
           </h1>
 
           <p className="text-lg text-lm-text-secondary dark:text-dm-text-secondary mb-6">
-            Benvenuti in{" "}
+            Scopri eventi e novità attraverso{" "}
             <strong className="text-lm-blue dark:text-dm-blue">
               GAIA – Giochi senza barriere
             </strong>
