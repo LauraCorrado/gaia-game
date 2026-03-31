@@ -20,7 +20,7 @@ export default function CookieBanner() {
     <div
       role="region"
       aria-label="Informativa cookie"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-lm-bg-secondary dark:bg-dm-bg-secondary border-t border-lm-bg-secondary dark:border-dm-bg-primary px-4 py-4 shadow-lg"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-lm-bg-secondary dark:bg-dm-bg-secondary border-t border-lm-text-primary dark:border-dm-text-primary px-4 py-4 shadow-lg"
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
         <p className="text-sm text-lm-text-primary dark:text-dm-text-primary">
