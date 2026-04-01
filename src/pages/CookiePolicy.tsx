@@ -42,7 +42,7 @@ export default function CookiePolicy() {
 
         <section>
           <h2 className="text-lm-text-primary dark:text-dm-text-primary mb-2">
-            Risorse di terze parti (Google Fonts)
+            Risorse di terze parti
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
             Il sito utilizza, previo consenso dell’utente, il servizio Google Fonts fornito da Google LLC per la visualizzazione dei caratteri tipografici.
