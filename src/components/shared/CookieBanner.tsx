@@ -50,14 +50,14 @@ export default function CookieBanner() {
         <div className="flex gap-2">
           <button
             onClick={rejectOptional}
-            className="px-4 py-2 border rounded hover:bg-black/5"
+            className="cursor-pointer px-4 py-2 border rounded hover:bg-black/5"
           >
             Rifiuta
           </button>
 
           <button
             onClick={acceptAll}
-            className="px-4 py-2 bg-lm-blue text-white rounded hover:opacity-90"
+            className="cursor-pointer px-4 py-2 border border-lm-green dark:border-dm-green rounded bg-lm-bg-green dark:bg-dm-bg-green text-lm-green dark:text-dm-green hover:opacity-70"
           >
             Accetta
           </button>
