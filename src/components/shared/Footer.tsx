@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../../data/navigation";
+import { InstagramIcon } from "./SocialIcons";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -40,9 +41,36 @@ export default function Footer() {
         </ul>
       </div>
       <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
-        <nav className="flex gap-6">
-          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-          <NavLink to="/cookie-policy">Cookie Policy</NavLink>
+        <nav className="flex flex-col items-center gap-3 text-center">
+          <div className="flex gap-4">
+            <NavLink
+              to="/privacy-policy"
+              className="hover:underline text-lm-blue dark:text-dm-blue"
+            >
+              Privacy Policy
+            </NavLink>
+
+            <NavLink
+              to="/cookie-policy"
+              className="hover:underline text-lm-blue dark:text-dm-blue"
+            >
+              Cookie Policy
+            </NavLink>
+          </div>
+          <a
+            href="https://www.instagram.com/progettogaia2025/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+      flex items-center gap-2
+      text-lm-blue dark:text-dm-blue
+      hover:text-lm-pink dark:hover:text-dm-pink
+      transition
+    "
+          >
+            <InstagramIcon className="w-4 h-4" />
+            <span className="text-md font-medium">Seguici!</span>
+          </a>
         </nav>
 
         <div className="flex flex-col items-center justify-center gap-6 text-center md:text-left">
