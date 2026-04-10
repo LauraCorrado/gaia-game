@@ -35,7 +35,7 @@ const kickoffImages = import.meta.glob(
 
 const kickoffGallery = createGallerySection(
   kickoffImages,
-  "Kick-off Meeting del 14/11/2025",
+  "Riunione di apertura | 14/11/2025",
   "kickoff"
 );
 
