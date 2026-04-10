@@ -1,15 +1,18 @@
 import Hero from "../components/ui/Hero";
 import heroBackstage from "../assets/img/hero/dietrolequinte_hero.webp";
+
+import { galleryItems } from "../data/gallery";
+
 export default function DietroLeQuinte() {
   return (
     <>
-    <Hero
-  badge="GAIA · Backstage"
-  title="Dietro le quinte di GAIA"
-  subtitle="Entra nel processo creativo: idee, test e sviluppo dietro GAIA"
-  image={heroBackstage}
-  accentColor="pink"
-/>
+      <Hero
+        badge="GAIA · Backstage"
+        title="Dietro le quinte di GAIA"
+        subtitle="Entra nel processo creativo: idee, test e sviluppo dietro GAIA"
+        image={heroBackstage}
+        accentColor="pink"
+      />
       <div className="max-w-6xl mx-auto px-4 py-16">
         <section aria-labelledby="dietro-title" className="mb-12">
           <h1
@@ -26,16 +29,19 @@ export default function DietroLeQuinte() {
 
         <section aria-label="Galleria multimediale">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div
-                key={i}
-                className="bg-lm-bg-secondary dark:bg-dm-bg-secondary rounded-lg aspect-video flex items-center justify-center"
-                aria-hidden="true"
+            {galleryItems.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                className="group relative overflow-hidden rounded-2xl aspect-4/3 bg-lm-bg-secondary dark:bg-dm-bg-secondary focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink dark:focus-visible:ring-dm-pink cursor-pointer"
               >
-                <span className="text-lm-text-secondary dark:text-dm-text-secondary text-sm">
-                  Immagine placeholder...
-                </span>
-              </div>
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
+                />
+              </button>
             ))}
           </div>
         </section>
