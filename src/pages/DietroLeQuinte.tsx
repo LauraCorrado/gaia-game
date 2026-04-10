@@ -80,6 +80,7 @@ export default function DietroLeQuinte() {
                 onClick={() => setSelectedImage(item.id)}
                 className="group relative overflow-hidden rounded-2xl aspect-4/3 bg-lm-bg-secondary dark:bg-dm-bg-secondary focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink dark:focus-visible:ring-dm-pink cursor-pointer"
                 aria-label={`Apri immagine: ${item.title}`}
+                onContextMenu={(e) => e.preventDefault()}
               >
                 <img
                   src={item.src}
@@ -112,17 +113,17 @@ export default function DietroLeQuinte() {
                 onClick={() => setSelectedImage(null)}
                 aria-label="Chiudi immagine ingrandita"
                 className="
-    absolute top-4 right-4
-    w-10 h-10 flex items-center justify-center
-    rounded-full
-    bg-lm-bg-pink dark:bg-dm-bg-pink
-    text-lm-pink dark:text-dm-pink
-    shadow-lg backdrop-blur-sm
-    transition-all duration-200
-    hover:scale-110 hover:bg-lm-bg-pink/80 dark:hover:bg-dm-bg-pink/80 hover:text-lm-pink/80 dark:hover:text-dm-pink/80
-    focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
-    cursor-pointer
-  "
+                absolute top-4 right-4
+                w-10 h-10 flex items-center justify-center
+                rounded-full
+                bg-lm-bg-pink dark:bg-dm-bg-pink
+                text-lm-pink dark:text-dm-pink
+                shadow-lg backdrop-blur-sm
+                transition-all duration-200
+                hover:scale-110 hover:bg-lm-bg-pink/80 dark:hover:bg-dm-bg-pink/80 hover:text-lm-pink/80 dark:hover:text-dm-pink/80
+                focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
+                cursor-pointer
+            "
               >
                 ✕
               </button>
@@ -130,17 +131,17 @@ export default function DietroLeQuinte() {
               <button
                 onClick={prevImage}
                 className="
-    absolute left-4 top-1/2 -translate-y-1/2
-    w-11 h-11 flex items-center justify-center
-    rounded-full
-    bg-lm-pink/90 dark:bg-dm-pink/90
-    text-white
-    shadow-lg backdrop-blur-sm
-    transition-all duration-200
-    hover:scale-110 hover:bg-lm-pink dark:hover:bg-dm-pink
-    focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
-    cursor-pointer
-  "
+                absolute left-4 top-1/2 -translate-y-1/2
+                w-11 h-11 flex items-center justify-center
+                rounded-full
+                bg-lm-pink/90 dark:bg-dm-pink/90
+                text-white
+                shadow-lg backdrop-blur-sm
+                transition-all duration-200
+                hover:scale-110 hover:bg-lm-pink dark:hover:bg-dm-pink
+                focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
+                cursor-pointer
+                "
                 aria-label="Immagine precedente"
               >
                 ←
@@ -149,16 +150,16 @@ export default function DietroLeQuinte() {
               <button
                 onClick={nextImage}
                 className="
-    absolute right-4 top-1/2 -translate-y-1/2
-    w-11 h-11 flex items-center justify-center
-    rounded-full
-    bg-lm-pink/90 dark:bg-dm-pink/90
-    text-white
-    shadow-lg backdrop-blur-sm
-    transition-all duration-200
-    hover:scale-110 hover:bg-lm-pink dark:hover:bg-dm-pink
-    focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
-    cursor-pointer
+                absolute right-4 top-1/2 -translate-y-1/2
+                w-11 h-11 flex items-center justify-center
+                rounded-full
+                bg-lm-pink/90 dark:bg-dm-pink/90
+                text-white
+                shadow-lg backdrop-blur-sm
+                transition-all duration-200
+                hover:scale-110 hover:bg-lm-pink dark:hover:bg-dm-pink
+                focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
+                cursor-pointer
   "
                 aria-label="Immagine successiva"
               >
@@ -169,6 +170,7 @@ export default function DietroLeQuinte() {
                 src={activeItem.src}
                 alt={activeItem.alt}
                 className="w-full max-h-[75vh] object-contain rounded-xl"
+                onContextMenu={(e) => e.preventDefault()}
               />
 
               <div className="mt-6 text-center flex flex-col items-center text-white">
