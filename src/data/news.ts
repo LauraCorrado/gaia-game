@@ -1,5 +1,6 @@
 import locandina_1 from "../assets/img/newsletter/locandina_1.webp";
 import articolo_1 from "../assets/img/newsletter/gaia_articolo_1.webp";
+import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
   | { type: "paragraph"; text: string }
@@ -301,5 +302,51 @@ export const news: NewsItem[] = [
     ],
 
     slug: "newsletter-1",
+  },
+  {
+    id: 3,
+    titolo:
+      "Apertura della pagina Instagram di GAIA",
+    sottotitolo:
+      "Un nuovo spazio per condividere storie, idee e aggiornamenti sul progetto!",
+    categoria: "Social",
+    data: "2026-04-07",
+    immagine: social_1,
+    alt: "Primo post Instagram di GAIA",
+
+    estratto:
+      "GAIA ha ora il suo spazio nei social! Seguiteci su Instagram per scoprire storie, aggiornamenti e dietro le quinte del nostro progetto dedicato a giochi accessibili e inclusivi per bambini autistici. Unisciti a noi in questo viaggio verso un mondo di gioco senza barriere!",
+
+    contenuti: [
+      {
+        type: "heading",
+        text: "GAIA – Un nuovo spazio nei social per condividere storie, idee e aggiornamenti sul progetto!",
+      },
+      {
+        type: "paragraph",
+        text: "Siamo entusiasti di annunciare l’apertura della pagina Instagram di GAIA! Questo nuovo spazio sarà dedicato a condividere storie, idee, aggiornamenti e momenti speciali legati al nostro progetto di giochi accessibili e inclusivi per bambini autistici.",
+      },    
+      {
+        type: "paragraph",
+        text: "Visita il profilo Instagram di GAIA per scoprire i nostri post e non dimenticare di seguirci per rimanere aggiornato sulle ultime novità!",
+      },
+      {
+        type: "link",
+        text: "Pagina Instagram di GAIA",
+        url: "https://www.instagram.com/progettogaia2025/",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+
+    slug: "social-1",
   },
 ];
