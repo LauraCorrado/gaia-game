@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
 import { Sun, Moon } from "lucide-react";
+import { InstagramIcon } from "./SocialIcons";
 import { navLinks } from "../../data/navigation";
 
 export default function Header() {
@@ -69,7 +70,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <button
               onClick={handleToggle}
               aria-label={
@@ -87,6 +88,30 @@ export default function Header() {
               )}
             </button>
 
+            <div className="hidden md:block w-px h-6 bg-lm-text-secondary/20 dark:bg-dm-text-secondary/20" />
+
+            <div className="hidden md:flex flex-col items-center leading-none">
+              <a
+                href="https://www.instagram.com/progettogaia2025/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Vai alla pagina Instagram di GAIA"
+                className="
+      mt-1
+      p-2 rounded-full
+      text-lm-pink dark:text-dm-pink
+      hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary
+      hover:text-lm-blue dark:hover:text-dm-blue
+      transition-all duration-200
+    "
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
+              <span className="text-[10px] uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
+                Seguici
+              </span>
+            </div>
+
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="md:hidden p-2"
@@ -101,10 +126,32 @@ export default function Header() {
         {menuOpen && (
           <nav className="md:hidden px-4 py-4 flex flex-col gap-3 text-center bg-lm-bg-secondary dark:bg-dm-bg-blue">
             {navLinks.map(({ to, label }) => (
-              <NavLink className="mx-5 border-x border-x-lm-blue dark:border-x-dm-blue no-underline" key={to} to={to} onClick={() => setMenuOpen(false)}>
+              <NavLink
+                className="mx-5 border-x border-x-lm-blue dark:border-x-dm-blue no-underline"
+                key={to}
+                to={to}
+                onClick={() => setMenuOpen(false)}
+              >
                 {label}
               </NavLink>
             ))}
+            <a
+              href="https://www.instagram.com/progettogaia2025/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+    mt-3 mx-5 py-3
+    border-t border-lm-blue/20 dark:border-dm-blue/20
+    text-lm-blue dark:text-dm-blue
+    flex items-center justify-center gap-2
+    no-underline
+    hover:text-lm-pink dark:hover:text-dm-pink
+    transition
+  "
+            >
+              <InstagramIcon className="w-4 h-4" />
+              <span className="text-sm font-medium">Instagram</span>
+            </a>
           </nav>
         )}
       </div>
