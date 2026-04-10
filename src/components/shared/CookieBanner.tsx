@@ -1,16 +1,32 @@
 import { useState, useEffect } from 'react'
-import { X } from "lucide-react";
+import { loadGoogleFonts } from '../../utils/loadFonts'
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const dismissed = localStorage.getItem('gaia-banner-dismissed')
-    if (!dismissed) setVisible(true)
+    const consent = localStorage.getItem('gaia-cookie-consent')
+    if (!consent) setVisible(true)
   }, [])
 
-  function closeBanner() {
-    localStorage.setItem('gaia-banner-dismissed', 'true')
+  function acceptAll() {
+    const preferences = {
+      necessary: true,
+      fonts: true,
+    }
+
+    localStorage.setItem('gaia-cookie-consent', JSON.stringify(preferences))
+    loadGoogleFonts()
+    setVisible(false)
+  }
+
+  function rejectOptional() {
+    const preferences = {
+      necessary: true,
+      fonts: false,
+    }
+
+    localStorage.setItem('gaia-cookie-consent', JSON.stringify(preferences))
     setVisible(false)
   }
 
@@ -18,32 +34,35 @@ export default function CookieBanner() {
 
   return (
     <div
-      role="region"
-      aria-label="Informativa cookie"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-lm-bg-secondary dark:bg-dm-bg-secondary border-t border-lm-text-primary dark:border-dm-text-primary px-4 py-4 shadow-lg"
+      role="dialog"
+      aria-live="polite"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-lm-bg-secondary dark:bg-dm-bg-secondary border-t px-4 py-4 shadow-lg"
     >
-      <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+
         <p className="text-sm text-lm-text-primary dark:text-dm-text-primary">
-          Questo sito non utilizza cookie di profilazione né strumenti di tracciamento.{' '}
-          <a href="/cookie-policy" className="underline underline-offset-2">
-            Leggi la Cookie Policy
+          Utilizziamo cookie tecnici necessari al funzionamento del sito e, previo consenso, anche per le finalità indicate nella nostra
+          <a href="/cookie-policy" className="underline ml-1 text-lm-blue dark:text-dm-blue">
+            Cookie Policy
           </a>.
         </p>
 
-        <button
-          onClick={closeBanner}
-          aria-label="Chiudi informativa"
-          className=" w-8 h-8 font-bold
-    flex items-center justify-center
-    rounded-full
-    border border-lm-text-primary dark:border-dm-text-primary
-    text-lm-text-primary dark:text-dm-text-primary
-    hover:bg-lm-text-primary/10 dark:hover:bg-dm-text-primary/10
-    focus:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue
-    transition cursor-pointer"
-        >
-          <X size={16} />
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={rejectOptional}
+            className="cursor-pointer px-4 py-2 border rounded hover:bg-black/5"
+          >
+            Rifiuta
+          </button>
+
+          <button
+            onClick={acceptAll}
+            className="cursor-pointer px-4 py-2 border border-lm-green dark:border-dm-green rounded bg-lm-bg-green dark:bg-dm-bg-green text-lm-green dark:text-dm-green hover:opacity-70"
+          >
+            Accetta
+          </button>
+        </div>
+
       </div>
     </div>
   )
