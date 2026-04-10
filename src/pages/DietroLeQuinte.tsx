@@ -51,7 +51,7 @@ export default function DietroLeQuinte() {
       <Hero
         badge="GAIA · Backstage"
         title="Dietro le quinte di GAIA"
-        subtitle="Entra nel processo creativo: idee, test e sviluppo dietro GAIA"
+        subtitle="Eventi, attività e fasi di sviluppo fino alla realizzazione: attraverso immagini e materiali visivi, esplora il percorso che accompagna l'intero ciclo di vita di GAIA!"
         image={heroBackstage}
         accentColor="pink"
       />
@@ -62,12 +62,11 @@ export default function DietroLeQuinte() {
             id="dietro-title"
             className="text-lm-text-primary dark:text-dm-text-primary mb-4"
           >
-            Esplora la galleria
+            Uno sguardo dietro le quinte
           </h1>
 
           <p className="text-lm-text-secondary dark:text-dm-text-secondary text-lg max-w-2xl">
-            Documentazione visiva e multimediale delle attività progettuali:
-            foto, video, materiali tecnici, sessioni di test, ecc.
+            Scopri il processo dietro GAIA: incontri, test e momenti di sviluppo raccontati per immagini.
           </p>
         </section>
 
