@@ -1,26 +1,42 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Hero from "../components/ui/Hero";
+import Badge from "../components/ui/Badge";
 import heroBackstage from "../assets/img/hero/dietrolequinte_hero.webp";
 import { galleryItems } from "../data/gallery";
 
 export default function DietroLeQuinte() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  const activeItem = galleryItems.find((item) => item.id === selectedImage);
+  const currentIndex = galleryItems.findIndex(
+    (item) => item.id === selectedImage,
+  );
+
+  const activeItem = currentIndex !== -1 ? galleryItems[currentIndex] : null;
+
+  const nextImage = () => {
+    if (currentIndex === -1) return;
+    const nextIndex = (currentIndex + 1) % galleryItems.length;
+    setSelectedImage(galleryItems[nextIndex].id);
+  };
+
+  const prevImage = () => {
+    if (currentIndex === -1) return;
+    const prevIndex =
+      (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    setSelectedImage(galleryItems[prevIndex].id);
+  };
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setSelectedImage(null);
-      }
+      if (e.key === "Escape") setSelectedImage(null);
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
     };
 
     window.addEventListener("keydown", handleKey);
-
-    return () => {
-      window.removeEventListener("keydown", handleKey);
-    };
-  }, []);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [currentIndex]);
 
   useEffect(() => {
     document.body.style.overflow = selectedImage !== null ? "hidden" : "auto";
@@ -77,42 +93,100 @@ export default function DietroLeQuinte() {
         </section>
       </div>
 
-      {activeItem && (
-        <div
-          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center px-4"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="gallery-modal-title"
-          onClick={() => setSelectedImage(null)}
-        >
+      {activeItem &&
+        createPortal(
           <div
-            className="relative max-w-5xl w-full"
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-9999 bg-black/80 flex items-end justify-center px-4 pb-4 pt-30"
+            style={{ zIndex: 55 }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="gallery-modal-title"
+            onClick={() => setSelectedImage(null)}
           >
-            <button
-              type="button"
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-10 right-0 text-white text-sm cursor-pointer"
-              aria-label="Chiudi immagine ingrandita"
+            <div
+              className="relative max-w-5xl w-full"
+              onClick={(e) => e.stopPropagation()}
             >
-              Chiudi
-            </button>
+              <button
+                type="button"
+                onClick={() => setSelectedImage(null)}
+                aria-label="Chiudi immagine ingrandita"
+                className="
+    absolute top-4 right-4
+    w-10 h-10 flex items-center justify-center
+    rounded-full
+    bg-lm-bg-pink dark:bg-dm-bg-pink
+    text-lm-pink dark:text-dm-pink
+    shadow-lg backdrop-blur-sm
+    transition-all duration-200
+    hover:scale-110 hover:bg-lm-bg-pink/80 dark:hover:bg-dm-bg-pink/80 hover:text-lm-pink/80 dark:hover:text-dm-pink/80
+    focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
+    cursor-pointer
+  "
+              >
+                ✕
+              </button>
 
-            <img
-              src={activeItem.src}
-              alt={activeItem.alt}
-              className="w-full max-h-[80vh] object-contain rounded-xl"
-            />
+              <button
+                onClick={prevImage}
+                className="
+    absolute left-4 top-1/2 -translate-y-1/2
+    w-11 h-11 flex items-center justify-center
+    rounded-full
+    bg-lm-pink/90 dark:bg-dm-pink/90
+    text-white
+    shadow-lg backdrop-blur-sm
+    transition-all duration-200
+    hover:scale-110 hover:bg-lm-pink dark:hover:bg-dm-pink
+    focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
+    cursor-pointer
+  "
+                aria-label="Immagine precedente"
+              >
+                ←
+              </button>
 
-            <p
-              id="gallery-modal-title"
-              className="text-white mt-4 text-sm"
-            >
-              {activeItem.title}
-            </p>
-          </div>
-        </div>
-      )}
+              <button
+                onClick={nextImage}
+                className="
+    absolute right-4 top-1/2 -translate-y-1/2
+    w-11 h-11 flex items-center justify-center
+    rounded-full
+    bg-lm-pink/90 dark:bg-dm-pink/90
+    text-white
+    shadow-lg backdrop-blur-sm
+    transition-all duration-200
+    hover:scale-110 hover:bg-lm-pink dark:hover:bg-dm-pink
+    focus:outline-none focus-visible:ring-4 focus-visible:ring-lm-pink/40 dark:focus-visible:ring-dm-pink/40
+    cursor-pointer
+  "
+                aria-label="Immagine successiva"
+              >
+                →
+              </button>
+
+              <img
+                src={activeItem.src}
+                alt={activeItem.alt}
+                className="w-full max-h-[75vh] object-contain rounded-xl"
+              />
+
+              <div className="mt-6 text-center flex flex-col items-center text-white">
+                {activeItem.category === "kickoff" && (
+                  <Badge label="Kick-off Meeting" color="pink" size="sm" />
+                )}
+
+                <p
+                  id="gallery-modal-title"
+                  className="text-lg font-semibold tracking-wide mt-5"
+                >
+                  {activeItem.title}
+                </p>
+              </div>
+            </div>
+          </div>,
+          document.body,
+        )}
     </>
   );
 }
