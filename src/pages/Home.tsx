@@ -60,9 +60,20 @@ export default function Home() {
       </section>
 
       {/* PERCHÉ GAIA */}
+      {/* PERCHÉ GAIA */}
       <section className="max-w-6xl mx-auto px-4 pb-16">
-        <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-12 items-start">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Colonna immagine */}
+          <div className="order-2 md:order-1">
+            <img
+              src=""
+              alt="IMMAGINE"
+              className="w-full rounded-2xl object-cover shadow-sm"
+            />
+          </div>
+
+          {/* Colonna testo */}
+          <div className="order-1 md:order-2">
             <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
               <Lightbulb className="w-4 h-4" />
               Perché GAIA
@@ -73,21 +84,21 @@ export default function Home() {
               <span className="text-lm-yellow dark:text-dm-yellow">gioco</span>{" "}
               come strumento di crescita
             </h2>
-          </div>
 
-          <div className="space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
-            <p>
-              L’attività ludica è fondamentale nello{" "}
-              <strong>sviluppo cognitivo, motorio e sociale</strong> dei
-              bambini. Per i bambini autistici, tuttavia, il gioco può risultare
-              complesso e poco accessibile.
-            </p>
+            <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
+              <p>
+                L’attività ludica è fondamentale nello{" "}
+                <strong>sviluppo cognitivo, motorio e sociale</strong> dei
+                bambini. Per i bambini autistici, tuttavia, il gioco può
+                risultare complesso e poco accessibile.
+              </p>
 
-            <p>
-              GAIA nasce per trasformare il gioco in uno spazio inclusivo,
-              stimolante e condiviso, capace di favorire l'autonomia e
-              l'interazione sociale.
-            </p>
+              <p>
+                GAIA nasce per trasformare il gioco in uno spazio inclusivo,
+                stimolante e condiviso, capace di favorire l'autonomia e
+                l'interazione sociale.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -186,9 +197,17 @@ export default function Home() {
 
                 <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
                   Dall'
-                  <span className="text-lm-green dark:text-dm-green">arte</span>{" "}
+                  <span className="text-lm-green dark:text-dm-green">
+                    arte
+                  </span>{" "}
                   al gioco
                 </h2>
+
+                <img
+                  src=""
+                  alt="IMMAGINE"
+                  className="mt-8 w-full rounded-2xl object-cover shadow-sm"
+                />
               </div>
 
               <div className="rounded-2xl bg-lm-bg-primary dark:bg-dm-bg-primary p-8 shadow-sm">
@@ -222,7 +241,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <a href="https://www.aives.eu/" target="_blank">
+                  <a href="https://www.aives.eu/" target="_blank" rel="noreferrer">
                     <Button color="green">Scopri AIVES</Button>
                   </a>
                 </div>
@@ -316,7 +335,7 @@ export default function Home() {
 
         <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary pt-20 pb-16">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="flex items-end gap-6 mb-12">
+            <div className="flex items-end gap-6 mb-5">
               <div className="pb-2 max-w-3xl">
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
                   <Users className="w-4 h-4" />
@@ -339,7 +358,8 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="md:mt-16">
+              {/* Contenuto */}
+              <div className="md:my-5">
                 <ul className="space-y-4 text-lm-text-secondary dark:text-dm-text-secondary">
                   <li>
                     <strong className="text-lm-text-primary dark:text-dm-text-primary">
@@ -382,6 +402,15 @@ export default function Home() {
                     <Button color="yellow">I partner</Button>
                   </a>
                 </div>
+              </div>
+
+              {/* Immagine */}
+              <div>
+                <img
+                  src=""
+                  alt="IMMAGINE"
+                  className="w-full rounded-2xl object-cover shadow-sm"
+                />
               </div>
             </div>
           </div>
