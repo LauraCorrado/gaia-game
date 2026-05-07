@@ -162,8 +162,7 @@ export default function ScopriGaia() {
 
               <p>
                 Nel caso dei bambini nello spettro autistico, questa dimensione
-                mantiene lo stesso valore. Il gioco può offrire occasioni per
-                <strong>
+                mantiene lo stesso valore. Il gioco può offrire occasioni per <strong>
                   sostenere la motivazione, favorire l’interazione sociale e
                   stimolare competenze legate alla partecipazione condivisa
                 </strong>
@@ -402,9 +401,9 @@ export default function ScopriGaia() {
                 id="tecnologia-title"
                 className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
               >
-                Tecnologia al servizio della{" "}
+                Il supporto{" "}
                 <span className="text-lm-pink dark:text-dm-pink">
-                  relazione
+                  tecnologico e digitale
                 </span>
               </h2>
             </div>
