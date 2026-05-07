@@ -2,9 +2,13 @@ import Hero from "../components/ui/Hero";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
 import heroHome from "../assets/img/hero/home_hero.webp";
+import whyGaiaIMG from "../assets/img/homepage/home1.webp";
+import aivesIMG from "../assets/img/homepage/home2.webp";
+import teamIMG from "../assets/img/homepage/home3.webp";
 import { MdFamilyRestroom, MdTexture } from "react-icons/md";
 import { BsFillMortarboardFill } from "react-icons/bs";
-import { FaChild, FaBriefcase } from "react-icons/fa";
+import { FaBriefcase, FaNewspaper } from "react-icons/fa";
+import { FaPeopleGroup, FaPuzzlePiece } from "react-icons/fa6";
 import {
   Brain,
   PersonStanding,
@@ -13,10 +17,8 @@ import {
   Gamepad2,
   HandHeart,
   Lightbulb,
-  Puzzle,
   Sparkles,
   Users,
-  Newspaper,
 } from "lucide-react";
 
 export default function Home() {
@@ -35,69 +37,76 @@ export default function Home() {
       />
 
       {/* BENVENUTI IN GAIA */}
-      <section className="max-w-6xl mx-auto px-4 py-24">
-        <div className="max-w-3xl">
-          <h2 className="text-lm-text-primary dark:text-dm-text-primary">
-            Giochi{" "}
-            <span className="text-lm-blue dark:text-dm-blue">accessibili</span>{" "}
-            e <span className="text-lm-blue dark:text-dm-blue">inclusivi</span>{" "}
-            per bambini con ASD
-          </h2>
-
-          <p className="mt-4 text-lm-text-secondary dark:text-dm-text-secondary">
-            Il progetto GAIA nasce con l'obiettivo di{" "}
-            <strong>creare giochi inclusivi e multisensoriali</strong> pensati
-            per bambini con Disturbo dello Spettro Autistico, offrendo
-            esperienze accessibili, stimolanti e condivise.
-          </p>
-
-          <div className="mt-8">
-            <a href="/scopri-gaia">
-              <Button color="blue">Scopri di più</Button>
-            </a>
+      <section className="bg-lm-bg-primary dark:bg-dm-bg-primary">
+        <div className="max-w-6xl mx-auto px-4 py-24">
+          <div className="max-w-3xl">
+            <h2 className="text-lm-text-primary dark:text-dm-text-primary">
+              Giochi{" "}
+              <span className="text-lm-blue dark:text-dm-blue">
+                Accessibili
+              </span>{" "}
+              e{" "}
+              <span className="text-lm-blue dark:text-dm-blue">Inclusivi</span>{" "}
+              per bambini con ASD
+            </h2>
+            <p className="mt-4 text-lm-text-secondary dark:text-dm-text-secondary">
+              Il progetto GAIA nasce con l'obiettivo di{" "}
+              <strong>creare giochi inclusivi e multisensoriali</strong> pensati
+              per bambini con Disturbo dello Spettro Autistico, offrendo
+              esperienze accessibili, stimolanti e condivise.
+            </p>
+            <div className="mt-8">
+              <a href="/scopri-gaia">
+                <Button color="blue">Scopri di più</Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* PERCHÉ GAIA */}
-      {/* PERCHÉ GAIA */}
-      <section className="max-w-6xl mx-auto px-4 pb-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Colonna immagine */}
-          <div className="order-2 md:order-1">
-            <img
-              src=""
-              alt="IMMAGINE"
-              className="w-full rounded-2xl object-cover shadow-sm"
-            />
-          </div>
-
-          {/* Colonna testo */}
-          <div className="order-1 md:order-2">
-            <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-              <Lightbulb className="w-4 h-4" />
-              Perché GAIA
-            </span>
-
-            <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
-              Il{" "}
-              <span className="text-lm-yellow dark:text-dm-yellow">gioco</span>{" "}
-              come strumento di crescita
-            </h2>
-
-            <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
-              <p>
-                L’attività ludica è fondamentale nello{" "}
-                <strong>sviluppo cognitivo, motorio e sociale</strong> dei
-                bambini. Per i bambini autistici, tuttavia, il gioco può
-                risultare complesso e poco accessibile.
-              </p>
-
-              <p>
-                GAIA nasce per trasformare il gioco in uno spazio inclusivo,
-                stimolante e condiviso, capace di favorire l'autonomia e
-                l'interazione sociale.
-              </p>
+      <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary">
+        <div className="max-w-6xl mx-auto px-4 py-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <img
+                src={whyGaiaIMG}
+                alt="Illustrazione di un bambino che sale su dei cubi alfabetici"
+                className="
+    w-full rounded-2xl object-cover
+    dark:invert
+    dark:hue-rotate-180
+    dark:brightness-90
+    dark:contrast-90
+    dark:saturate-75
+  "
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
+                <Lightbulb className="w-4 h-4" />
+                Perché GAIA
+              </span>
+              <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+                Il{" "}
+                <span className="text-lm-yellow dark:text-dm-yellow">
+                  gioco
+                </span>{" "}
+                come strumento di crescita
+              </h2>
+              <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
+                <p>
+                  L’attività ludica è fondamentale nello{" "}
+                  <strong>sviluppo cognitivo, motorio e sociale</strong> dei
+                  bambini. Per i bambini autistici, tuttavia, il gioco può
+                  risultare complesso e poco accessibile.
+                </p>
+                <p>
+                  GAIA nasce per trasformare il gioco in uno spazio inclusivo,
+                  stimolante e condiviso, capace di favorire l'autonomia e
+                  l'interazione sociale.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -139,7 +148,7 @@ export default function Home() {
           <div>
             <Card
               color="pink"
-              title="Multisensorialità"
+              title="Sensorialità diversificata"
               icon={Sparkles}
               as="article"
               className="tracking-wide"
@@ -186,12 +195,12 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary pt-20 pb-16">
+        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-24">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-start">
+            <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-end">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-green/10 dark:bg-dm-green/10 px-4 py-2 text-sm font-medium text-lm-green dark:text-dm-green">
-                  <Puzzle className="w-4 h-4" />
+                  <FaPuzzlePiece className="w-4 h-4" />
                   Il metodo AIVES
                 </span>
 
@@ -204,17 +213,31 @@ export default function Home() {
                 </h2>
 
                 <img
-                  src=""
-                  alt="IMMAGINE"
-                  className="mt-8 w-full rounded-2xl object-cover shadow-sm"
+                  src={aivesIMG}
+                  alt="Illustrazione di una donna che tocca con la mano un quadro multisensoriale AIVES, rappresentante 'I Girasoli' di Van Gogh"
+                  className="
+    w-full rounded-2xl object-cover
+    dark:invert
+    dark:hue-rotate-180
+    dark:brightness-90
+    dark:contrast-90
+    dark:saturate-75
+  "
                 />
               </div>
 
-              <div className="rounded-2xl bg-lm-bg-primary dark:bg-dm-bg-primary p-8 shadow-sm">
+              <div className="rounded-2xl bg-lm-bg-primary dark:bg-dm-bg-primary/50 p-8 shadow-sm">
                 <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-                  GAIA si basa sull'evoluzione di <strong>AIVES</strong>, il
-                  sistema multisensoriale di fruizione delle opere d'arte per
-                  persone con disabilità visive, già premiato con brevetti
+                  GAIA si basa sull'evoluzione di{" "}
+                  <a
+                    href="https://www.aives.eu/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    AIVES
+                  </a>
+                  , il sistema multisensoriale di fruizione delle opere d'arte
+                  per persone con disabilità visive, già premiato con brevetti
                   europei, internazionali e nazionali. Da AIVES, GAIA riprende i
                   concetti di accessibilità, multisensorialità e
                   multimatericità, portandoli dal mondo dell'arte a quello del
@@ -238,12 +261,6 @@ export default function Home() {
                     <Joystick className="w-4 h-4" />
                     Gioco inclusivo
                   </span>
-                </div>
-
-                <div className="mt-8">
-                  <a href="https://www.aives.eu/" target="_blank" rel="noreferrer">
-                    <Button color="green">Scopri AIVES</Button>
-                  </a>
                 </div>
               </div>
             </div>
@@ -278,15 +295,15 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="rounded-2xl bg-lm-bg-secondary dark:bg-dm-bg-secondary p-6">
-            <FaChild className="w-7 h-7 text-lm-pink dark:text-dm-pink mb-4" />
+            <MdFamilyRestroom className="w-7 h-7 text-lm-pink dark:text-dm-pink mb-4" />
             <h3 className="text-lm-text-primary dark:text-dm-text-primary">
-              Bambini
+              Bambini e famiglie
             </h3>
             <p className="mt-2 text-sm text-lm-text-secondary dark:text-dm-text-secondary">
-              Bambini in età scolare, con esigenze specifiche di gioco e
-              apprendimento.
+              Genitori e caregiver che accompagnano il bambino in esperienze di
+              gioco condivise.
             </p>
           </div>
 
@@ -298,17 +315,6 @@ export default function Home() {
             <p className="mt-2 text-sm text-lm-text-secondary dark:text-dm-text-secondary">
               Figure educative coinvolte nei percorsi di apprendimento,
               relazione e crescita.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-lm-bg-secondary dark:bg-dm-bg-secondary p-6">
-            <MdFamilyRestroom className="w-7 h-7 text-lm-green dark:text-dm-green mb-4" />
-            <h3 className="text-lm-text-primary dark:text-dm-text-primary">
-              Famiglie
-            </h3>
-            <p className="mt-2 text-sm text-lm-text-secondary dark:text-dm-text-secondary">
-              Genitori e caregiver che accompagnano il bambino in esperienze di
-              gioco condivise.
             </p>
           </div>
 
@@ -333,12 +339,12 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary pt-20 pb-16">
+        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-24">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex items-end gap-6 mb-5">
               <div className="pb-2 max-w-3xl">
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-                  <Users className="w-4 h-4" />
+                  <FaPeopleGroup className="w-4 h-4" />
                   La nostra squadra
                 </span>
 
@@ -358,7 +364,6 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Contenuto */}
               <div className="md:my-5">
                 <ul className="space-y-4 text-lm-text-secondary dark:text-dm-text-secondary">
                   <li>
@@ -392,9 +397,10 @@ export default function Home() {
 
                 <p className="mt-6 text-lm-text-secondary dark:text-dm-text-secondary">
                   Grazie a questo lavoro di squadra e al mix di competenze, GAIA
-                  crea un ecosistema di gioco inclusivo in cui i bambini con
-                  diagnosi di ASD possono apprendere, socializzare e divertirsi,
-                  abbattendo le barriere e valorizzando le loro capacità.
+                  crea un <strong>ecosistema di gioco inclusivo</strong> in cui
+                  i bambini con diagnosi di ASD possono apprendere, socializzare
+                  e divertirsi, abbattendo le barriere e valorizzando le loro
+                  capacità.
                 </p>
 
                 <div className="mt-8">
@@ -404,12 +410,18 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Immagine */}
               <div>
                 <img
-                  src=""
-                  alt="IMMAGINE"
-                  className="w-full rounded-2xl object-cover shadow-sm"
+                  src={teamIMG}
+                  alt="Illustrazione del team di GAIA"
+                  className="
+    w-full rounded-2xl object-cover
+    dark:invert
+    dark:hue-rotate-180
+    dark:brightness-90
+    dark:contrast-90
+    dark:saturate-75
+  "
                 />
               </div>
             </div>
@@ -434,7 +446,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 px-10 py-12">
             <div className="md:-mt-4 flex-1">
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-pink/10 dark:bg-dm-pink/10 px-4 py-2 text-sm font-medium text-lm-pink dark:text-dm-pink">
-                <Newspaper className="w-4 h-4" />
+                <FaNewspaper className="w-4 h-4" />
                 Rimani aggiornato
               </span>
 
@@ -459,8 +471,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA FINALE */}
-      <section className="pt-10 pb-28 overflow-hidden">
+      <section className="py-24 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4">
           <div
             className="flex items-center justify-center gap-4 mb-10"
