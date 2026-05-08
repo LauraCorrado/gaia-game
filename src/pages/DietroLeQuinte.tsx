@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Hero from "../components/ui/Hero";
 import Badge from "../components/ui/Badge";
@@ -27,7 +27,17 @@ export default function DietroLeQuinte() {
     setSelectedImage(galleryItems[prevIndex].id);
   };
 
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
   useEffect(() => {
+    if (selectedImage !== null) {
+      closeButtonRef.current?.focus();
+    }
+  }, [selectedImage]);
+
+  useEffect(() => {
+    if (selectedImage === null) return;
+
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setSelectedImage(null);
       if (e.key === "ArrowRight") nextImage();
@@ -36,13 +46,17 @@ export default function DietroLeQuinte() {
 
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [currentIndex]);
+  }, [selectedImage, currentIndex]);
 
   useEffect(() => {
-    document.body.style.overflow = selectedImage !== null ? "hidden" : "auto";
+    const previousOverflow = document.body.style.overflow;
+
+    if (selectedImage !== null) {
+      document.body.style.overflow = "hidden";
+    }
 
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = previousOverflow;
     };
   }, [selectedImage]);
 
@@ -66,7 +80,8 @@ export default function DietroLeQuinte() {
           </h1>
 
           <p className="text-lm-text-secondary dark:text-dm-text-secondary text-lg max-w-2xl">
-            Scopri il processo dietro GAIA: incontri, test e momenti di sviluppo raccontati per immagini.
+            Scopri il processo dietro GAIA: incontri, test e momenti di sviluppo
+            raccontati per immagini.
           </p>
         </section>
 
@@ -101,6 +116,7 @@ export default function DietroLeQuinte() {
             role="dialog"
             aria-modal="true"
             aria-labelledby="gallery-modal-title"
+            aria-describedby="gallery-modal-description"
             onClick={() => setSelectedImage(null)}
           >
             <div
@@ -108,6 +124,7 @@ export default function DietroLeQuinte() {
               onClick={(e) => e.stopPropagation()}
             >
               <button
+                ref={closeButtonRef}
                 type="button"
                 onClick={() => setSelectedImage(null)}
                 aria-label="Chiudi immagine ingrandita"
@@ -128,6 +145,7 @@ export default function DietroLeQuinte() {
               </button>
 
               <button
+                type="button"
                 onClick={prevImage}
                 className="
                 absolute left-4 top-1/2 -translate-y-1/2
@@ -147,6 +165,7 @@ export default function DietroLeQuinte() {
               </button>
 
               <button
+                type="button"
                 onClick={nextImage}
                 className="
                 absolute right-4 top-1/2 -translate-y-1/2
@@ -182,6 +201,11 @@ export default function DietroLeQuinte() {
                   className="text-lg font-semibold tracking-wide mt-5"
                 >
                   {activeItem.title}
+                </p>
+
+                <p id="gallery-modal-description" className="sr-only">
+                  Usa i tasti freccia sinistra e destra per navigare tra le
+                  immagini. Premi Escape per chiudere.
                 </p>
               </div>
             </div>

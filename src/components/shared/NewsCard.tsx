@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 import type { NewsItem } from "../../data/news";
@@ -72,12 +71,13 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           <div className="flex justify-between items-center mt-4">
             <div className="flex items-center gap-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
               <Calendar
+                aria-hidden="true"
                 size={16}
                 className={`font-bold ${style.color === "yellow" ? "text-lm-yellow dark:text-dm-yellow" : ""}
     ${style.color === "green" ? "text-lm-green dark:text-dm-green" : ""}
     ${style.color === "pink" ? "text-lm-pink dark:text-dm-pink" : ""}`}
               />
-              <time>
+              <time dateTime={item.data}>
                 {new Date(item.data).toLocaleDateString("it-IT", {
                   day: "numeric",
                   month: "long",
@@ -86,16 +86,16 @@ export default function NewsCard({ item }: { item: NewsItem }) {
               </time>
             </div>
 
-            <Link to={`/eventi-news/${generateSlug(item)}` || "#"} aria-label={`Leggi di più su ${item.titolo}`}>
-              <Button
-                size="sm"
-                color="blue"
-                variant="secondary"
-                aria-label={`Leggi ${item.titolo}`}
-              >
-                Leggi di più
-              </Button>
-            </Link>
+            <Button
+              as="link"
+              to={`/eventi-news/${generateSlug(item)}`}
+              size="sm"
+              color="blue"
+              variant="secondary"
+              aria-label={`Leggi di più su ${item.titolo}`}
+            >
+              Leggi di più
+            </Button>
           </div>
         </div>
       </div>

@@ -4,11 +4,25 @@ import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
 import { Sun, Moon } from "lucide-react";
 import { InstagramIcon } from "./SocialIcons";
 import { navLinks } from "../../data/navigation";
-import { logos } from "../../data/logos"
+import { logos } from "../../data/logos";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dark, setDark] = useState(isDarkMode);
+
+  useEffect(() => {
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
+    }
+
+    if (menuOpen) {
+      window.addEventListener("keydown", handleEscape);
+    }
+
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [menuOpen]);
 
   useEffect(() => {
     const handler = () => setDark(isDarkMode());
@@ -22,11 +36,11 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="bg-lm-bg-secondary dark:bg-lm-bg-secondary border-b border-lm-bg-secondary dark:border-gray-200 flex justify-center px-4 py-2">
+    <header className="sticky top-0 z-50">
+      <div className="bg-lm-bg-secondary dark:bg-lm-bg-yellow border-b border-lm-bg-secondary dark:border-gray-200 flex justify-center px-4 py-2">
         <img
           src={logos.coesione}
-          alt="Logo Coesione Italia (Calabria)"
+          alt="Loghi istituzionali del programma Coesione Italia 2021-2027 Calabria"
           className="h-auto w-150 object-contain"
         />
       </div>
@@ -38,14 +52,13 @@ export default function Header() {
             aria-label="GAIA – Homepage"
             className="flex items-center gap-2"
           >
-            <img
-              src={logos.gaiaCut}
-              alt="Logo GAIA"
-              className="h-10 w-auto"
-            />
+            <img src={logos.gaiaCut} alt="Logo GAIA" className="h-10 w-auto" />
           </NavLink>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav
+            aria-label="Menu principale"
+            className="hidden md:flex items-center gap-6"
+          >
             {navLinks.map(({ to, label }) => (
               <NavLink
                 key={to}
@@ -80,12 +93,12 @@ export default function Header() {
               title={
                 dark ? "Passa a modalità chiara" : "Passa a modalità scura"
               }
-              className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary cursor-pointer"
+              className="p-2 rounded-full hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40"
             >
               {dark ? (
-                <Sun className="w-7 h-7 text-dm-yellow" />
+                <Sun aria-hidden="true" className="w-7 h-7 text-dm-yellow" />
               ) : (
-                <Moon className="w-7 h-7 text-lm-blue" />
+                <Moon aria-hidden="true" className="w-7 h-7 text-lm-blue" />
               )}
             </button>
 
@@ -96,7 +109,7 @@ export default function Header() {
                 href="https://www.instagram.com/progettogaia2025/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Vai alla pagina Instagram di GAIA"
+                aria-label="Vai alla pagina Instagram di GAIA. Si apre in una nuova scheda"
                 className="
       mt-1
       p-2 rounded-full
@@ -106,7 +119,7 @@ export default function Header() {
       transition-all duration-200
     "
               >
-                <InstagramIcon className="w-4 h-4" />
+                <InstagramIcon aria-hidden="true" className="w-4 h-4" />
               </a>
               <span className="text-[10px] uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
                 Seguici
@@ -114,8 +127,16 @@ export default function Header() {
             </div>
 
             <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden p-2"
+              type="button"
+              onClick={() => setMenuOpen((prev) => !prev)}
+              aria-label={
+                menuOpen
+                  ? "Chiudi menu di navigazione"
+                  : "Apri menu di navigazione"
+              }
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              className="md:hidden p-2 rounded-md text-lm-blue dark:text-dm-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40"
             >
               <span className="block w-5 h-0.5 mb-1 bg-current" />
               <span className="block w-5 h-0.5 mb-1 bg-current" />
@@ -125,7 +146,11 @@ export default function Header() {
         </div>
 
         {menuOpen && (
-          <nav className="md:hidden px-4 py-4 flex flex-col gap-3 text-center bg-lm-bg-secondary dark:bg-dm-bg-blue">
+          <nav
+            id="mobile-menu"
+            aria-label="Menu principale mobile"
+            className="md:hidden px-4 py-4 flex flex-col gap-3 text-center bg-lm-bg-secondary dark:bg-dm-bg-blue"
+          >
             {navLinks.map(({ to, label }) => (
               <NavLink
                 className="mx-5 border-x border-x-lm-blue dark:border-x-dm-blue no-underline"
@@ -139,6 +164,7 @@ export default function Header() {
             <a
               href="https://www.instagram.com/progettogaia2025/"
               target="_blank"
+              aria-label="Vai alla pagina Instagram di GAIA. Si apre in una nuova scheda"
               rel="noopener noreferrer"
               className="
     mt-3 mx-5 py-3

@@ -37,10 +37,16 @@ export default function Home() {
       />
 
       {/* BENVENUTI IN GAIA */}
-      <section className="bg-lm-bg-primary dark:bg-dm-bg-primary">
+      <section
+        aria-labelledby="welcome-gaia-title"
+        className="bg-lm-bg-primary dark:bg-dm-bg-primary"
+      >
         <div className="max-w-6xl mx-auto px-4 py-24">
           <div className="max-w-3xl">
-            <h2 className="text-lm-text-primary dark:text-dm-text-primary">
+            <h2
+              id="welcome-gaia-title"
+              className="text-lm-text-primary dark:text-dm-text-primary"
+            >
               Giochi{" "}
               <span className="text-lm-blue dark:text-dm-blue">
                 Accessibili
@@ -56,16 +62,19 @@ export default function Home() {
               esperienze accessibili, stimolanti e condivise.
             </p>
             <div className="mt-8">
-              <a href="/scopri-gaia">
-                <Button color="blue">Scopri di più</Button>
-              </a>
+              <Button as="link" to="/scopri-gaia" color="blue">
+                Scopri di più
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* PERCHÉ GAIA */}
-      <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary">
+      <section
+        aria-labelledby="why-gaia-title"
+        className="bg-lm-bg-secondary dark:bg-dm-bg-secondary"
+      >
         <div className="max-w-6xl mx-auto px-4 py-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
@@ -84,10 +93,13 @@ export default function Home() {
             </div>
             <div className="order-1 md:order-2">
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-                <Lightbulb className="w-4 h-4" />
+                <Lightbulb aria-hidden="true" className="w-4 h-4" />
                 Perché GAIA
               </span>
-              <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+              <h2
+                id="why-gaia-title"
+                className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+              >
                 Il{" "}
                 <span className="text-lm-yellow dark:text-dm-yellow">
                   gioco
@@ -113,15 +125,21 @@ export default function Home() {
       </section>
 
       {/* COSA FACCIAMO */}
-      <section className="max-w-6xl mx-auto px-4 py-24 overflow-visible">
+      <section
+        aria-labelledby="doing-title"
+        className="max-w-6xl mx-auto px-4 py-24 overflow-visible"
+      >
         <div className="flex items-end justify-start gap-6 mb-16">
           <div className="pb-2 max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-lm-pink/10 dark:bg-dm-pink/10 px-4 py-2 text-sm font-medium text-lm-pink dark:text-dm-pink">
-              <Gamepad2 className="w-4 h-4" />
+              <Gamepad2 aria-hidden="true" className="w-4 h-4" />
               Cosa facciamo
             </span>
 
-            <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+            <h2
+              id="doing-title"
+              className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+            >
               Creiamo{" "}
               <span className="text-lm-pink dark:text-dm-pink">
                 spazi di relazione
@@ -195,16 +213,22 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-24">
+        <section
+          aria-labelledby="aives-link-title"
+          className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-24"
+        >
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-end">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-green/10 dark:bg-dm-green/10 px-4 py-2 text-sm font-medium text-lm-green dark:text-dm-green">
-                  <FaPuzzlePiece className="w-4 h-4" />
+                  <FaPuzzlePiece aria-hidden="true" className="w-4 h-4" />
                   Il metodo AIVES
                 </span>
 
-                <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+                <h2
+                  id="aives-link-title"
+                  className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+                >
                   Dall'
                   <span className="text-lm-green dark:text-dm-green">
                     arte
@@ -232,7 +256,8 @@ export default function Home() {
                   <a
                     href="https://www.aives.eu/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    aria-label="Visita il sito AIVES. Si apre in una nuova scheda"
                   >
                     AIVES
                   </a>
@@ -246,19 +271,22 @@ export default function Home() {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <span className="inline-flex items-center gap-1 rounded-full bg-lm-green/10 dark:bg-dm-green/10 px-4 py-2 text-sm font-medium text-lm-green dark:text-dm-green">
-                    <PersonStanding className="w-4 h-4" /> Accessibilità
+                    <PersonStanding aria-hidden="true" className="w-4 h-4" />{" "}
+                    Accessibilità
                   </span>
 
                   <span className="inline-flex items-center gap-1  rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-                    <Ear className="w-4 h-4" /> Multisensorialità
+                    <Ear aria-hidden="true" className="w-4 h-4" />{" "}
+                    Multisensorialità
                   </span>
 
                   <span className="inline-flex items-center gap-1  rounded-full bg-lm-blue/10 dark:bg-dm-blue/10 px-4 py-2 text-sm font-medium text-lm-blue dark:text-dm-blue">
-                    <MdTexture className="w-4 h-4" /> Multimatericità
+                    <MdTexture aria-hidden="true" className="w-4 h-4" />{" "}
+                    Multimatericità
                   </span>
 
                   <span className="inline-flex items-center gap-1  rounded-full bg-lm-pink/10 dark:bg-dm-pink/10 px-4 py-2 text-sm font-medium text-lm-pink dark:text-dm-pink">
-                    <Joystick className="w-4 h-4" />
+                    <Joystick aria-hidden="true" className="w-4 h-4" />
                     Gioco inclusivo
                   </span>
                 </div>
@@ -275,13 +303,19 @@ export default function Home() {
       </div>
 
       {/* A CHI SI RIVOLGE */}
-      <section className="max-w-6xl mx-auto px-4 py-24">
+      <section
+        aria-labelledby="users-title"
+        className="max-w-6xl mx-auto px-4 py-24"
+      >
         <div className="mb-12 max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-lm-blue/10 dark:bg-dm-blue/10 px-4 py-2 text-sm font-medium text-lm-blue dark:text-dm-blue">
-            <Users className="w-4 h-4" />A chi si rivolge
+            <Users aria-hidden="true" className="w-4 h-4" />A chi si rivolge
           </span>
 
-          <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+          <h2
+            id="users-title"
+            className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+          >
             Un progetto pensato per{" "}
             <span className="text-lm-blue dark:text-dm-blue">
               bambini, famiglie e professionisti
@@ -297,7 +331,10 @@ export default function Home() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="rounded-2xl bg-lm-bg-secondary dark:bg-dm-bg-secondary p-6">
-            <MdFamilyRestroom className="w-7 h-7 text-lm-pink dark:text-dm-pink mb-4" />
+            <MdFamilyRestroom
+              aria-hidden="true"
+              className="w-7 h-7 text-lm-pink dark:text-dm-pink mb-4"
+            />
             <h3 className="text-lm-text-primary dark:text-dm-text-primary">
               Bambini e famiglie
             </h3>
@@ -308,7 +345,10 @@ export default function Home() {
           </div>
 
           <div className="rounded-2xl bg-lm-bg-secondary dark:bg-dm-bg-secondary p-6">
-            <BsFillMortarboardFill className="w-7 h-7 text-lm-blue dark:text-dm-blue mb-4" />
+            <BsFillMortarboardFill
+              aria-hidden="true"
+              className="w-7 h-7 text-lm-blue dark:text-dm-blue mb-4"
+            />
             <h3 className="text-lm-text-primary dark:text-dm-text-primary">
               Educatori
             </h3>
@@ -319,7 +359,10 @@ export default function Home() {
           </div>
 
           <div className="rounded-2xl bg-lm-bg-secondary dark:bg-dm-bg-secondary p-6">
-            <FaBriefcase className="w-7 h-7 text-lm-yellow dark:text-dm-yellow mb-4" />
+            <FaBriefcase
+              aria-hidden="true"
+              className="w-7 h-7 text-lm-yellow dark:text-dm-yellow mb-4"
+            />
             <h3 className="text-lm-text-primary dark:text-dm-text-primary">
               Professionisti
             </h3>
@@ -339,16 +382,22 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <section className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-24">
+        <section
+          aria-labelledby="team-title"
+          className="bg-lm-bg-secondary dark:bg-dm-bg-secondary py-24"
+        >
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex items-end gap-6 mb-5">
               <div className="pb-2 max-w-3xl">
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-                  <FaPeopleGroup className="w-4 h-4" />
+                  <FaPeopleGroup aria-hidden="true" className="w-4 h-4" />
                   La nostra squadra
                 </span>
 
-                <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+                <h2
+                  id="team-title"
+                  className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+                >
                   Competenze diverse, un{" "}
                   <span className="text-lm-yellow dark:text-dm-yellow">
                     obiettivo comune
@@ -404,9 +453,9 @@ export default function Home() {
                 </p>
 
                 <div className="mt-8">
-                  <a href="/team">
-                    <Button color="yellow">I partner</Button>
-                  </a>
+                  <Button as="link" to="/team" color="yellow">
+                    I partner
+                  </Button>
                 </div>
               </div>
 
@@ -436,7 +485,10 @@ export default function Home() {
       </div>
 
       {/* RIMANI AGGIORNATO */}
-      <section className="max-w-6xl mx-auto px-4 py-24">
+      <section
+        aria-labelledby="updates-title"
+        className="max-w-6xl mx-auto px-4 py-24"
+      >
         <div className="relative rounded-2xl overflow-hidden bg-lm-bg-secondary dark:bg-dm-bg-secondary">
           <div
             className="absolute left-0 inset-y-0 w-2 bg-lm-pink dark:bg-dm-pink"
@@ -446,11 +498,14 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 px-10 py-12">
             <div className="md:-mt-4 flex-1">
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-pink/10 dark:bg-dm-pink/10 px-4 py-2 text-sm font-medium text-lm-pink dark:text-dm-pink">
-                <FaNewspaper className="w-4 h-4" />
+                <FaNewspaper aria-hidden="true" className="w-4 h-4" />
                 Rimani aggiornato
               </span>
 
-              <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+              <h2
+                id="updates-title"
+                className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+              >
                 Segui il{" "}
                 <span className="text-lm-pink dark:text-dm-pink">
                   percorso di GAIA
@@ -463,15 +518,18 @@ export default function Home() {
             </div>
 
             <div className="md:self-end shrink-0">
-              <a href="/eventi-news">
-                <Button color="pink">Scopri le ultime news</Button>
-              </a>
+              <Button as="link" to="/eventi-news" color="pink">
+                Scopri le ultime news
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 overflow-hidden">
+      <section
+        aria-labelledby="contact-home-title"
+        className="py-24 overflow-hidden"
+      >
         <div className="max-w-6xl mx-auto px-4">
           <div
             className="flex items-center justify-center gap-4 mb-10"
@@ -481,7 +539,10 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-end pt-10">
-            <h2 className="text-lm-text-primary dark:text-dm-text-primary text-5xl leading-tight">
+            <h2
+              id="contact-home-title"
+              className="text-lm-text-primary dark:text-dm-text-primary text-5xl leading-tight"
+            >
               Vuoi saperne
               <br />
               di più?
@@ -493,9 +554,9 @@ export default function Home() {
                 approfondimenti sul progetto GAIA.
               </p>
 
-              <a href="/contatti">
-                <Button color="green">Contattaci</Button>
-              </a>
+              <Button as="link" to="/contatti" color="green">
+                Contattaci
+              </Button>
             </div>
           </div>
         </div>

@@ -1,11 +1,17 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import Hero from "../components/ui/Hero";
 import Button from "../components/ui/Button";
 import heroContatti from "../assets/img/hero/contatti_hero.webp";
 import { partners } from "../data/partners";
-import { FacebookIcon, InstagramIcon, LinkedInIcon, MapPinIcon, WebsiteIcon } from "../components/shared/SocialIcons";
-
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  MapPinIcon,
+  WebsiteIcon,
+} from "../components/shared/SocialIcons";
 
 const socialIcons = {
   facebook: FacebookIcon,
@@ -135,6 +141,7 @@ export default function Contatti() {
       );
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
+      setPrivacyAccepted(false);
       setErrors({});
       setTouched({});
     } catch {
@@ -356,7 +363,7 @@ export default function Contatti() {
                     Invio non riuscito. Riprova o scrivi direttamente a{" "}
                     <a
                       href="mailto:info@gaia-game.eu"
-                      className="font-semibold underline"
+                      className="font-semibold underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm"
                     >
                       info@gaia-game.eu
                     </a>
@@ -370,6 +377,10 @@ export default function Contatti() {
                     type="checkbox"
                     checked={privacyAccepted}
                     onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                    aria-invalid={!!errors.privacy}
+                    aria-describedby={
+                      errors.privacy ? "error-privacy" : undefined
+                    }
                     className="mt-1"
                     required
                   />
@@ -378,9 +389,12 @@ export default function Contatti() {
                     className="text-sm text-lm-text-secondary dark:text-dm-text-secondary"
                   >
                     Acconsento al trattamento dei dati personali secondo la{" "}
-                    <a href="/privacy-policy" className="underline">
-                      Privacy Policy{" "}
-                    </a>
+                    <Link
+                      to="/privacy-policy"
+                      className="underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm"
+                    >
+                      Privacy Policy
+                    </Link>
                     <span
                       aria-hidden="true"
                       className="text-lm-pink dark:text-dm-pink"
@@ -391,10 +405,14 @@ export default function Contatti() {
                 </div>
 
                 {errors.privacy && (
-  <p role="alert" className="text-xs text-lm-pink dark:text-dm-pink mt-1">
-    {errors.privacy}
-  </p>
-)}
+                  <p
+                    id="error-privacy"
+                    role="alert"
+                    className="text-xs text-lm-pink dark:text-dm-pink mt-1"
+                  >
+                    {errors.privacy}
+                  </p>
+                )}
 
                 {/* submit */}
                 <div className="flex items-center justify-between gap-4 pt-1">
@@ -474,9 +492,13 @@ export default function Contatti() {
                         href={p.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 hover:underline"
+                        aria-label={`Vai al sito web di ${p.name}. Si apre in una nuova scheda`}
+                        className="flex items-center gap-1 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm"
                       >
-                        <WebsiteIcon className="w-3.5 h-3.5" />
+                        <WebsiteIcon
+                          aria-hidden="true"
+                          className="w-3.5 h-3.5"
+                        />
                         <span>Sito web</span>
                       </a>
                       {p.address && (
@@ -484,9 +506,13 @@ export default function Contatti() {
                           href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.address)}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-1 hover:underline"
+                          aria-label={`Apri la posizione di ${p.name} su Google Maps. Si apre in una nuova scheda`}
+                          className="flex items-center gap-1 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm"
                         >
-                          <MapPinIcon className="w-3.5 h-3.5" />
+                          <MapPinIcon
+                            aria-hidden="true"
+                            className="w-3.5 h-3.5"
+                          />
                           <span>Mappa</span>
                         </a>
                       )}
@@ -498,10 +524,10 @@ export default function Contatti() {
                             href={s.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label={`${p.name} su ${socialLabels[s.platform]}`}
-                            className="flex items-center gap-1 hover:underline "
+                            aria-label={`Vai alla pagina ${socialLabels[s.platform]} di ${p.name}. Si apre in una nuova scheda`}
+                            className="flex items-center gap-1 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm"
                           >
-                            <Icon className="w-3.5 h-3.5" />
+                            <Icon aria-hidden="true" className="w-3.5 h-3.5" />
                             <span>{socialLabels[s.platform]}</span>
                           </a>
                         );

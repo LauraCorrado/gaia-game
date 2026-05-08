@@ -1,6 +1,5 @@
 import { news } from "../data/news";
 import NewsCard from "../components/shared/NewsCard";
-import { Link } from "react-router-dom";
 import Button from "../components/ui/Button";
 
 import Hero from "../components/ui/Hero";
@@ -54,15 +53,15 @@ export default function EventiNews() {
             realmente inclusivo.
           </p>
           <div className="mt-6">
-            <Link to="/contatti">
-              <Button
-                color="blue"
-                variant="primary"
-                aria-label="Contattaci per ricevere aggiornamenti sul progetto GAIA"
-              >
-                Vuoi iscriverti? Contattaci!
-              </Button>
-            </Link>
+            <Button
+              as="link"
+              to="/contatti"
+              color="blue"
+              variant="primary"
+              aria-label="Contattaci per ricevere aggiornamenti sul progetto GAIA"
+            >
+              Vuoi iscriverti? Contattaci!
+            </Button>
           </div>
         </section>
 
