@@ -58,7 +58,7 @@ export default function CookiePolicy() {
           </p>
         </section>
 
-        {/* 3 (nota: numerazione originale incoerente → mantenuta) */}
+        {/* 3 */}
         <section>
           <h2 className="text-lm-text-primary dark:text-dm-text-primary mb-2">
             3. Cookie e tecnologie utilizzati

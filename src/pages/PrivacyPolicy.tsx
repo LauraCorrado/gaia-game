@@ -26,11 +26,11 @@ export default function PrivacyPolicy() {
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
             Il Titolare del trattamento dei dati personali è{" "}
             <strong className="text-lm-green dark:text-dm-green">
-              [Inserire nome/ente del Titolare]
+              TEA SRL - TERRITORIO, ECONOMIA, AMBIENTE E ARTE
             </strong>{" "}
             con sede legale{" "}
             <strong className="text-lm-green dark:text-dm-green">
-              [inserire indirizzo completo]
+              CONTRADA CNT SANTA DOMENICA 48/E - 88100 - CATANZARO (CZ)
             </strong>
             <br />
             E-mail di contatto:{" "}
