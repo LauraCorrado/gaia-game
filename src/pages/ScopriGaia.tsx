@@ -50,14 +50,14 @@ export default function ScopriGaia() {
               </h2>
 
               <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
-                <p>
+                {/* <p>
                   Il progetto parte da una domanda semplice ma centrale:{" "}
                   <strong>
-                    è possibile fornire supporto allo sviluppo dell'interazione
+                    in che maniera è possibile fornire supporto allo sviluppo dell'interazione
                     sociale nei bambini nello spettro autistico attraverso il
                     gioco?
                   </strong>
-                </p>
+                </p> */}
 
                 <p>
                   GAIA si fonda su una precisa idea di gioco: uno{" "}
@@ -318,11 +318,9 @@ export default function ScopriGaia() {
           <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
             <div className="space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
               <p>
-                GAIA si configura come un{" "}
-                <strong>
-                  <em>serious game</em> multisensoriale
-                </strong>
-                : un gioco progettato per essere coinvolgente e motivante, pur
+                GAIA si configurerà come <strong>
+                  gioco multisensoriale
+                </strong> e sarà progettato per essere coinvolgente e motivante, pur
                 essendo capace di sostenere apprendimenti e forme di
                 partecipazione condivisa.
               </p>
@@ -337,15 +335,12 @@ export default function ScopriGaia() {
               </p>
 
               <p>
-                Il gioco prevede il coinvolgimento di famiglie, educatori,
-                caregiver o professionisti come figure di supporto. Il loro
-                ruolo non sarà dirigenziale, bensì di accompagnamento e di
-                sostegno all'iniziativa del bambino.
+                Il gioco prevederà delle modalità di cooperazione, che mireranno a sostenere le relazioni sociali e l'iniziativa del bambino.
               </p>
 
               <p>
                 Il gioco potrà inoltre aprire a{" "}
-                <strong>forme di partecipazione tra pari</strong>, favorendo
+                <strong>forme di partecipazione tra bambini</strong>, favorendo
                 occasioni di interazione tra bambini in un contesto accessibile
                 e mediato.
               </p>
@@ -502,7 +497,7 @@ export default function ScopriGaia() {
                   <p>
                     Questa scelta non vuole cancellare le preferenze
                     individuali, né imporre una formula unica. Al contrario,
-                    nasce dalla consapevolezza che il linguaggio è forma di
+                    nasce dalla consapevolezza che il linguaggio è forma del
                     pensiero e non può essere dato per scontato nell’ambito
                     dell’accessibilità.
                   </p>
@@ -517,61 +512,6 @@ export default function ScopriGaia() {
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-lm-blue dark:text-dm-blue">
-                  Alcuni spunti per praticare un linguaggio inclusivo
-                </h3>
-
-                <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
-                  <p>
-                    Nel parlare di autismo, GAIA evita espressioni che
-                    suggeriscono una gerarchia di valore tra persone. Termini
-                    come “alto funzionamento” e “basso funzionamento” rischiano
-                    di semplificare eccessivamente profili complessi e di
-                    produrre una distinzione implicita tra forme di autismo
-                    considerate più o meno accettabili. È preferibile parlare di{" "}
-                    <strong>livelli di supporto</strong>{" "}
-                    <span className="text-sm">
-                      (cfr. American Psychiatric Association,{" "}
-                      <em>
-                        Desk Reference to the Diagnostic Criteria From DSM-5-TR®
-                      </em>
-                      , American Psychiatric Association Publishing, Washington
-                      DC, 2013, p. 30)
-                    </span>
-                    .
-                  </p>
-
-                  <p>
-                    GAIA evita di usare il termine “normale” per indicare le
-                    persone non autistiche. Questa parola, anche quando
-                    utilizzata in modo involontario, suggerisce implicitamente
-                    una “norma”: un modello di comportamento atteso, considerato
-                    corretto o desiderabile, che trasforma la differenza in
-                    deviazione, mancanza o anomalia.
-                  </p>
-
-                  <p>
-                    Per questo GAIA evita di contrapporre persone autistiche e
-                    persone “normali”, preferendo formule più precise e
-                    rispettose come <strong>persone non autistiche</strong> o{" "}
-                    <strong>persone neurotipiche</strong>.
-                  </p>
-
-                  <p>
-                    GAIA preferisce inoltre parlare di{" "}
-                    <strong>
-                      tratti, caratteristiche o modi di funzionamento
-                    </strong>
-                    , piuttosto che di “sintomi” dell’autismo, quando non si fa
-                    riferimento a specifiche condizioni mediche o psicologiche
-                    in comorbidità. L’autismo non è una malattia da curare, ma
-                    una condizione del neurosviluppo che può comportare sfide,
-                    bisogni di supporto e, allo stesso tempo, modalità
-                    specifiche di percepire, interagire e costruire significato.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
