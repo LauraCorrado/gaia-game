@@ -210,7 +210,7 @@ export default function Team() {
               id="team-intro-title"
               className="text-lm-text-primary dark:text-dm-text-primary mb-4"
             >
-              Un partenariato solido e consolidato
+              Un partenariato consolidato e multidisciplinare
             </h1>
 
             <p className="text-lg text-lm-text-secondary dark:text-dm-text-secondary max-w-3xl md:max-w-5xl">
