@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../../data/navigation";
 import { InstagramIcon } from "./SocialIcons";
+import { logos } from "../../data/logos";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -75,14 +76,14 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-center gap-6 text-center md:text-left">
           <img
-            src="/logos/gaia_logo.png"
-            alt="GAIA – Giochi Accessibili ed Inclusivi per bambini con Autismo"
+            src={logos.gaia}
+            alt="Logo GAIA – Giochi Accessibili ed Inclusivi per bambini con Autismo"
             className="h-20 w-auto dark:hidden"
           />
 
           <img
-            src="/logos/gaia_logo_dm.png"
-            alt="GAIA – Giochi Accessibili ed Inclusivi per bambini con Autismo"
+            src={logos.gaiaDm}
+            alt="Logo GAIA – Giochi Accessibili ed Inclusivi per bambini con Autismo"
             className="h-20 w-auto hidden dark:block"
           />
 
@@ -101,13 +102,13 @@ export default function Footer() {
           className="text-sm opacity-70 gap-2 flex items-center justify-center flex-col hover:opacity-100 transition"
         >
           <img
-            src="/logos/tea_logo.png"
+            src={logos.tea}
             alt="Logo TEA srl"
             className="h-10 w-auto block dark:hidden"
           />
 
           <img
-            src="/logos/tea_logo_neg.png"
+            src={logos.teaNeg}
             alt="Logo TEA srl"
             className="h-10 w-auto hidden dark:block"
           />

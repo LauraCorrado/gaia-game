@@ -4,6 +4,7 @@ import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
 import { Sun, Moon } from "lucide-react";
 import { InstagramIcon } from "./SocialIcons";
 import { navLinks } from "../../data/navigation";
+import { logos } from "../../data/logos"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,8 +25,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="bg-lm-bg-secondary dark:bg-lm-bg-secondary border-b border-lm-bg-secondary dark:border-gray-200 flex justify-center px-4 py-2">
         <img
-          src="/logos/Logo-Coesione-Italia-21-27-Calabria.png"
-          alt="..."
+          src={logos.coesione}
+          alt="Logo Coesione Italia (Calabria)"
           className="h-auto w-150 object-contain"
         />
       </div>
@@ -38,7 +39,7 @@ export default function Header() {
             className="flex items-center gap-2"
           >
             <img
-              src="/logos/gaia_logo_cut.png"
+              src={logos.gaiaCut}
               alt="Logo GAIA"
               className="h-10 w-auto"
             />

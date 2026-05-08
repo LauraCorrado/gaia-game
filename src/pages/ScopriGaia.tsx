@@ -2,12 +2,12 @@ import Hero from "../components/ui/Hero";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
 import heroProgetto from "../assets/img/hero/scoprigaia_hero.webp";
-import scoprigaia1 from "../assets/img/detailsPage/scoprigaia1.png";
-import scoprigaia2 from "../assets/img/detailsPage/scoprigaia2.png";
-import scoprigaia3 from "../assets/img/detailsPage/scoprigaia3.png";
-import scoprigaia4 from "../assets/img/detailsPage/scoprigaia4.png";
-import scoprigaia5 from "../assets/img/detailsPage/scoprigaia5.png";
-import scoprigaia6 from "../assets/img/detailsPage/scoprigaia6.png";
+import scoprigaia1 from "../assets/img/detailsPage/scoprigaia1.webp";
+import scoprigaia2 from "../assets/img/detailsPage/scoprigaia2.webp";
+import scoprigaia3 from "../assets/img/detailsPage/scoprigaia3.webp";
+import scoprigaia4 from "../assets/img/detailsPage/scoprigaia4.webp";
+import scoprigaia5 from "../assets/img/detailsPage/scoprigaia5.webp";
+import scoprigaia6 from "../assets/img/detailsPage/scoprigaia6.webp";
 import { HiMiniRocketLaunch } from "react-icons/hi2";
 import { LuRainbow } from "react-icons/lu";
 import { GiThreeFriends } from "react-icons/gi";
@@ -72,7 +72,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia1}
-              alt="..."
+              alt="La mano di un bambino e la mano di un adulto reggono il pezzo di un puzzle"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -113,7 +113,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia2}
-              alt="Due bambini giocano insieme all'aperto con dinosauri e razzi giocattolo"
+              alt="Due bambini giocano insieme all'aperto con i giocattoli di un dinosauro e di un razzo"
               className="
       order-2 md:order-1
       w-full rounded-2xl object-cover
@@ -181,7 +181,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia3}
-              alt="..."
+              alt="Una bambina porge il giocattolo di un cavallo a una donna adulta, chinata verso la bambina"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -249,7 +249,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia4}
-              alt="..."
+              alt="Tre bambini in casa dipingono un arcobaleno con la vernice su un telo bianco. Accanto al telo, tre barattoli di vernice, blu, gialla e rossa."
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -348,7 +348,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia5}
-              alt="..."
+              alt="Due bambini sotto i 10 anni di età giocano assieme a un uomo adulto al gioco da tavolo 'Shangai'"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -422,7 +422,7 @@ export default function ScopriGaia() {
           <div className="mt-14 grid md:grid-cols-[1fr_1fr] gap-10 items-center">
             <img
               src={scoprigaia6}
-              alt="..."
+              alt="Un bambino crea una torre giocando a Jenga, ricevendo feedback uditivi da un tablet accanto a lui"
               className="
     w-full rounded-2xl object-cover
     dark:invert
