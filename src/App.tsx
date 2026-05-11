@@ -14,7 +14,7 @@ import NewsDetail from './components/shared/NewsDetail'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/laura">
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
