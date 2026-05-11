@@ -153,7 +153,7 @@ export default function Header() {
           >
             {navLinks.map(({ to, label }) => (
               <NavLink
-                className="mx-5 border-x border-x-lm-blue dark:border-x-dm-blue no-underline"
+                className="mx-5 no-underline"
                 key={to}
                 to={to}
                 onClick={() => setMenuOpen(false)}

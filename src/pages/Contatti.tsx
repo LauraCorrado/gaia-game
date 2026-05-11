@@ -174,6 +174,7 @@ export default function Contatti() {
         subtitle="Hai domande o vuoi collaborare con noi? Compila il modulo, ti risponderemo il prima possibile!"
         image={heroContatti}
         accentColor="blue"
+        mirrorImageOnMobile
       />
 
       <div className="max-w-6xl mx-auto px-4 py-16">
