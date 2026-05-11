@@ -29,9 +29,8 @@ export default function Hero({
   children,
   badge,
   image,
-  mirrorImageOnMobile = false
+  mirrorImageOnMobile = false,
 }: HeroProps) {
-
   return (
     <section
       aria-labelledby="hero-title"
@@ -44,17 +43,17 @@ export default function Hero({
             aria-hidden="true"
             className="md:hidden absolute inset-0 pointer-events-none"
           >
-<img
-  src={image}
-  alt=""
-  className={`w-full h-full object-cover object-right 
+            <img
+              src={image}
+              alt=""
+              className={`w-full h-full object-cover object-right 
     ${mirrorImageOnMobile ? "-scale-x-105 scale-y-105" : "scale-105"}
     dark:invert
     dark:hue-rotate-180
     dark:brightness-90
     dark:contrast-90
     dark:saturate-75`}
-/>
+            />
             <div
               className="absolute inset-0 
   bg-linear-to-r 
@@ -122,12 +121,8 @@ export default function Hero({
         <div className="max-w-xl">
           {badge && (
             <div className="mb-4">
-    <Badge 
-      label={badge} 
-      color={accentColor} 
-      size="sm" 
-    />
-  </div>
+              <Badge label={badge} color={accentColor} size="sm" />
+            </div>
           )}
 
           <h1
@@ -162,7 +157,6 @@ export default function Hero({
           {children}
         </div>
       </div>
-      
     </section>
   );
 }
