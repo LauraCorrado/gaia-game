@@ -18,6 +18,7 @@ interface HeroProps {
   children?: ReactNode;
   badge?: string;
   image?: string;
+  mirrorImageOnMobile?: boolean;
 }
 
 export default function Hero({
@@ -28,6 +29,7 @@ export default function Hero({
   children,
   badge,
   image,
+  mirrorImageOnMobile = false
 }: HeroProps) {
 
   return (
@@ -42,15 +44,17 @@ export default function Hero({
             aria-hidden="true"
             className="md:hidden absolute inset-0 pointer-events-none"
           >
-            <img
-              src={image}
-              alt=""
-              className="w-full h-full object-cover object-right scale-105 dark:invert
-  dark:hue-rotate-180
-  dark:brightness-90
-  dark:contrast-90
-  dark:saturate-75"
-            />
+<img
+  src={image}
+  alt=""
+  className={`w-full h-full object-cover object-right 
+    ${mirrorImageOnMobile ? "-scale-x-105 scale-y-105" : "scale-105"}
+    dark:invert
+    dark:hue-rotate-180
+    dark:brightness-90
+    dark:contrast-90
+    dark:saturate-75`}
+/>
             <div
               className="absolute inset-0 
   bg-linear-to-r 
