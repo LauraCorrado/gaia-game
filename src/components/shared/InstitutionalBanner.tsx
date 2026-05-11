@@ -1,3 +1,4 @@
+import {logos} from "../../data/logos"
 export default function InstitutionalBanner() {
   return (
     <div
@@ -10,8 +11,8 @@ export default function InstitutionalBanner() {
       "
     >
       <img
-        src="/logos/Logo-Coesione-Italia-21-27-Calabria.png"
-        alt="..."
+        src={logos.coesione}
+        alt="Logo Coesione Italia (Calabria)"
         className="h-12 w-auto object-contain"
       />
     </div>

@@ -22,11 +22,13 @@ export interface Partner {
   btnColor: "blue" | "pink" | "green" | "yellow";
 }
 
+import { logos } from "../data/logos";
+
 export const partners: Partner[] = [
   {
     name: "TEA SRL",
     role: "Capofila del progetto",
-    logo: "/logos/tea_logo.png",
+    logo: logos.tea,
     boostLogo: false,
     description:
       "TEA S.r.l., fondata nel 1996, opera da oltre 20 anni nello sviluppo di tecnologie per la conoscenza, la valorizzazione e la fruizione accessibile del patrimonio culturale e territoriale. L'azienda trasforma dati complessi in strumenti per la ricerca, la conservazione e l'accessibilità dei beni culturali. Tra le soluzioni sviluppate figurano sistemi di restauro virtuale basati su imaging multispettrale, come @mmira, e piattaforme multisensoriali e multimateriche come AIVES, progettate per rendere l'arte accessibile anche alle persone con disabilità visive.",
@@ -62,7 +64,7 @@ export const partners: Partner[] = [
   {
     name: "Studio Rubino SRL",
     role: "Comunicazione, newsletter e brevetti",
-    logo: "/logos/rubinoip_logo.png",
+    logo: logos.rubino,
     boostLogo: false,
     description:
       "Con oltre 30 anni di esperienza, Rubino IP – Intellectual Property è una realtà specializzata nella tutela e valorizzazione della proprietà industriale e intellettuale a livello nazionale e internazionale. Con sedi a Roma, Catanzaro, Bari, Catania e Modena, supporta aziende e organizzazioni nella protezione e gestione di marchi, brevetti, disegni e modelli. Il team multidisciplinare di ingegneri, tecnici e consulenti legali offre servizi integrati che accompagnano l'innovazione dalla fase di ricerca fino alla valorizzazione e alla protezione sul mercato.",
@@ -95,7 +97,7 @@ export const partners: Partner[] = [
   {
     name: "Ober SRL",
     role: "Partner tecnico",
-    logo: "/logos/ober_logo.png",
+    logo: logos.ober,
     boostLogo: false,
     description:
       "OBER è una società che opera nel campo dell'ingegneria e della consulenza tecnologica, affiancando imprese e organizzazioni nello sviluppo di soluzioni innovative e sostenibili. Grazie a un approccio multidisciplinare, supporta l'intero ciclo di vita del prodotto, dalla progettazione alla prototipazione fino alla produzione industriale. L'integrazione tra competenze ingegneristiche, tecnologie avanzate e capacità di industrializzazione consente di trasformare esigenze progettuali complesse in soluzioni affidabili ed efficienti.",
@@ -117,7 +119,7 @@ export const partners: Partner[] = [
   {
     name: "UNICAL – DiMEG",
     role: "Partner accademico · Ingegneria",
-    logo: "/logos/dimeg_logo.png",
+    logo: logos.dimeg,
     boostLogo: true,
     description:
       "Il Dipartimento di Ingegneria Meccanica, Energetica e Gestionale (DiMEG) dell'Università della Calabria svolge attività di ricerca avanzata da oltre 20 anni nei settori della realtà virtuale, aumentata e mista, del rilievo 3D e della diagnostica non invasiva. Grazie a laboratori e infrastrutture di prototipazione avanzata, il DIMEG sviluppa soluzioni tecnologiche innovative che spaziano dalla conservazione dei beni culturali alla progettazione di sistemi e prodotti industriali complessi.",
@@ -144,7 +146,7 @@ export const partners: Partner[] = [
   {
     name: "UNICAL – DiCES",
     role: "Partner accademico · Scienze psico-pedagogiche",
-    logo: "/logos/dices_logo.png",
+    logo: logos.dices,
     boostLogo: true,
     description:
       "Il Dipartimento di Culture, Educazione e Società (DiCES) dell'Università della Calabria promuove attività di ricerca e formazione nei campi delle scienze psicologiche, educative e sociali con un approccio interdisciplinare. Tra le principali linee di studio rientrano gli interventi psico-pedagogici nei disturbi del neurosviluppo e nelle disabilità intellettive, con particolare attenzione ai processi di inclusione, partecipazione sociale e miglioramento della qualità della vita.",

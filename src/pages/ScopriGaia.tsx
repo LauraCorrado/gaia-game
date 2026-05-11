@@ -2,12 +2,12 @@ import Hero from "../components/ui/Hero";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
 import heroProgetto from "../assets/img/hero/scoprigaia_hero.webp";
-import scoprigaia1 from "../assets/img/detailsPage/scoprigaia1.png";
-import scoprigaia2 from "../assets/img/detailsPage/scoprigaia2.png";
-import scoprigaia3 from "../assets/img/detailsPage/scoprigaia3.png";
-import scoprigaia4 from "../assets/img/detailsPage/scoprigaia4.png";
-import scoprigaia5 from "../assets/img/detailsPage/scoprigaia5.png";
-import scoprigaia6 from "../assets/img/detailsPage/scoprigaia6.png";
+import scoprigaia1 from "../assets/img/detailsPage/scoprigaia1.webp";
+import scoprigaia2 from "../assets/img/detailsPage/scoprigaia2.webp";
+import scoprigaia3 from "../assets/img/detailsPage/scoprigaia3.webp";
+import scoprigaia4 from "../assets/img/detailsPage/scoprigaia4.webp";
+import scoprigaia5 from "../assets/img/detailsPage/scoprigaia5.webp";
+import scoprigaia6 from "../assets/img/detailsPage/scoprigaia6.webp";
 import { HiMiniRocketLaunch } from "react-icons/hi2";
 import { LuRainbow } from "react-icons/lu";
 import { GiThreeFriends } from "react-icons/gi";
@@ -35,7 +35,7 @@ export default function ScopriGaia() {
           <div className="grid md:grid-cols-[0.95fr_1.05fr] gap-12 items-center">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-pink/10 dark:bg-dm-pink/10 px-4 py-2 text-sm font-medium text-lm-pink dark:text-dm-pink">
-                <HiMiniRocketLaunch className="w-4 h-4" />
+                <HiMiniRocketLaunch aria-hidden="true" className="w-4 h-4" />
                 Il punto di partenza
               </span>
 
@@ -43,36 +43,32 @@ export default function ScopriGaia() {
                 id="punto-partenza-title"
                 className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
               >
-                Una domanda sul{" "}
+                L'idea di un{" "}
                 <span className="text-lm-pink dark:text-dm-pink">
-                  valore del gioco
+                  gioco multisensoriale
                 </span>
               </h2>
 
               <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
-                {/* <p>
-                  Il progetto parte da una domanda semplice ma centrale:{" "}
-                  <strong>
-                    in che maniera è possibile fornire supporto allo sviluppo dell'interazione
-                    sociale nei bambini nello spettro autistico attraverso il
-                    gioco?
-                  </strong>
-                </p> */}
-
+               
                 <p>
-                  GAIA si fonda su una precisa idea di gioco: uno{" "}
+                  GAIA si fonda su una precisa idea: utilizzare il gioco come{" "}
                   <strong>
                     spazio di esplorazione, relazione e partecipazione
                   </strong>
                   , da non ridurre semplicemente a mera attività educativa o
                   terapeutica.
                 </p>
+
+                <p>
+                  A partire da questo principio, il progetto indaga come le <strong>tecnologie multisensoriali</strong> possano inserirsi nell’esperienza di gioco, contribuendo a renderla più accessibile, coinvolgente e favorevole allo sviluppo dell’interazione sociale.
+                </p>
               </div>
             </div>
 
             <img
               src={scoprigaia1}
-              alt="..."
+              alt="La mano di un bambino e la mano di un adulto reggono il pezzo di un puzzle"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -113,7 +109,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia2}
-              alt="Due bambini giocano insieme all'aperto con dinosauri e razzi giocattolo"
+              alt="Due bambini giocano insieme all'aperto con i giocattoli di un dinosauro e di un razzo"
               className="
       order-2 md:order-1
       w-full rounded-2xl object-cover
@@ -136,7 +132,7 @@ export default function ScopriGaia() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <div className="mb-14 max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-lm-blue/10 dark:bg-dm-blue/10 px-4 py-2 text-sm font-medium text-lm-blue dark:text-dm-blue">
-              <GiThreeFriends className="w-4 h-4" />
+              <GiThreeFriends aria-hidden="true" className="w-4 h-4" />
               L’obiettivo
             </span>
 
@@ -162,7 +158,8 @@ export default function ScopriGaia() {
 
               <p>
                 Nel caso dei bambini nello spettro autistico, questa dimensione
-                mantiene lo stesso valore. Il gioco può offrire occasioni per <strong>
+                mantiene lo stesso valore. Il gioco può offrire occasioni per{" "}
+                <strong>
                   sostenere la motivazione, favorire l’interazione sociale e
                   stimolare competenze legate alla partecipazione condivisa
                 </strong>
@@ -181,7 +178,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia3}
-              alt="..."
+              alt="Una bambina porge il giocattolo di un cavallo a una donna adulta, chinata verso la bambina"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -213,7 +210,7 @@ export default function ScopriGaia() {
           <div className="grid md:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-                <LuRainbow className="w-4 h-4" />
+                <LuRainbow aria-hidden="true" className="w-4 h-4" />
                 Adattività
               </span>
 
@@ -249,7 +246,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia4}
-              alt="..."
+              alt="Tre bambini in casa dipingono un arcobaleno con la vernice su un telo bianco. Accanto al telo, tre barattoli di vernice, blu, gialla e rossa."
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -299,7 +296,7 @@ export default function ScopriGaia() {
         <div className="max-w-6xl mx-auto px-4 py-24">
           <div className="mb-14 max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-lm-green/10 dark:bg-dm-green/10 px-4 py-2 text-sm font-medium text-lm-green dark:text-dm-green">
-              <FaHandshake className="w-4 h-4" />
+              <FaHandshake aria-hidden="true" className="w-4 h-4" />
               Il gioco collaborativo
             </span>
 
@@ -318,9 +315,8 @@ export default function ScopriGaia() {
           <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
             <div className="space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
               <p>
-                GAIA si configurerà come <strong>
-                  gioco multisensoriale
-                </strong> e sarà progettato per essere coinvolgente e motivante, pur
+                GAIA si configurerà come <strong>gioco multisensoriale</strong>{" "}
+                e sarà progettato per essere coinvolgente e motivante, pur
                 essendo capace di sostenere apprendimenti e forme di
                 partecipazione condivisa.
               </p>
@@ -335,7 +331,8 @@ export default function ScopriGaia() {
               </p>
 
               <p>
-                Il gioco prevederà delle modalità di cooperazione, che mireranno a sostenere le relazioni sociali e l'iniziativa del bambino.
+                Il gioco prevederà delle modalità di cooperazione, che mireranno
+                a sostenere le relazioni sociali e l'iniziativa del bambino.
               </p>
 
               <p>
@@ -348,7 +345,7 @@ export default function ScopriGaia() {
 
             <img
               src={scoprigaia5}
-              alt="..."
+              alt="Due bambini giocano a Shangai insieme a un adulto"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -388,7 +385,7 @@ export default function ScopriGaia() {
           <div className="grid md:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-pink/10 dark:bg-dm-pink/10 px-4 py-2 text-sm font-medium text-lm-pink dark:text-dm-pink">
-                <FaKeyboard className="w-4 h-4" />
+                <FaKeyboard aria-hidden="true" className="w-4 h-4" />
                 Tecnologia e multisensorialità
               </span>
 
@@ -422,7 +419,7 @@ export default function ScopriGaia() {
           <div className="mt-14 grid md:grid-cols-[1fr_1fr] gap-10 items-center">
             <img
               src={scoprigaia6}
-              alt="..."
+              alt="Un bambino crea una torre giocando a Jenga, ricevendo feedback uditivi da un tablet accanto a lui"
               className="
     w-full rounded-2xl object-cover
     dark:invert
@@ -456,7 +453,7 @@ export default function ScopriGaia() {
           <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
             <aside className="rounded-3xl bg-lm-bg-primary dark:bg-dm-bg-primary/50 p-8 lg:sticky lg:top-28">
               <span className="inline-flex items-center gap-2 rounded-full bg-lm-blue/10 dark:bg-dm-blue/10 px-4 py-2 text-sm font-medium text-lm-blue dark:text-dm-blue">
-                <IoAccessibility className="w-4 h-4" />
+                <IoAccessibility aria-hidden="true" className="w-4 h-4" />
                 Linguaggio e inclusione
               </span>
 
@@ -511,13 +508,15 @@ export default function ScopriGaia() {
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-lm-bg-primary dark:bg-dm-bg-primary py-24">
+      <section
+        aria-labelledby="follow-project-title"
+        className="bg-lm-bg-primary dark:bg-dm-bg-primary py-24"
+      >
         <div className="max-w-6xl mx-auto px-4">
           <div className="relative rounded-2xl overflow-hidden bg-lm-bg-secondary dark:bg-dm-bg-secondary p-10 md:p-12 shadow-sm">
             <div
@@ -528,11 +527,14 @@ export default function ScopriGaia() {
             <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-8 items-end">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-yellow/10 dark:bg-dm-yellow/10 px-4 py-2 text-sm font-medium text-lm-yellow dark:text-dm-yellow">
-                  <Workflow className="w-4 h-4" />
+                  <Workflow aria-hidden="true" className="w-4 h-4" />
                   Vuoi seguire il progetto?
                 </span>
 
-                <h2 className="mt-6 text-lm-text-primary dark:text-dm-text-primary">
+                <h2
+                  id="follow-project-title"
+                  className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
+                >
                   Scopri aggiornamenti, eventi e risultati
                 </h2>
 
@@ -543,15 +545,18 @@ export default function ScopriGaia() {
               </div>
 
               <div className="flex flex-wrap gap-3 md:justify-end">
-                <a href="/eventi-news">
-                  <Button color="yellow">Eventi e news</Button>
-                </a>
+                <Button as="link" to="/eventi-news" color="yellow">
+                  Eventi e news
+                </Button>
 
-                <a href="/contatti">
-                  <Button color="yellow" variant="secondary">
-                    Contattaci
-                  </Button>
-                </a>
+                <Button
+                  as="link"
+                  to="/contatti"
+                  color="yellow"
+                  variant="secondary"
+                >
+                  Contattaci
+                </Button>
               </div>
             </div>
           </div>

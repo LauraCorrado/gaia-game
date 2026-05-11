@@ -28,9 +28,11 @@ const socialLabelMap: Record<SocialLink["platform"], string> = {
 function ContributionSection({
   paragraphs,
   accent,
+  id,
 }: {
   paragraphs: string[];
   accent: string;
+  id: string;
   btnColor: Partner["btnColor"];
 }) {
   const [expanded, setExpanded] = useState(false);
@@ -47,7 +49,7 @@ function ContributionSection({
       {rest.length > 0 && (
         <>
           {expanded && (
-            <div className="flex flex-col gap-2">
+            <div id={id} className="flex flex-col gap-2">
               {rest.map((para, i) => (
                 <p
                   key={i}
@@ -62,6 +64,7 @@ function ContributionSection({
           <button
             onClick={() => setExpanded((v) => !v)}
             aria-expanded={expanded}
+            aria-controls={id}
             className={`
               self-start flex items-center gap-1 border p-2 rounded border-dashed
               text-xs font-semibold uppercase tracking-wide
@@ -151,6 +154,7 @@ function PartnerCard({ p }: { p: Partner }) {
           </p>
 
           <ContributionSection
+            id={`contribution-${p.name.toLowerCase().replace(/\s+/g, "-")}`}
             paragraphs={p.contribution.paragraphs}
             accent={p.accent}
             btnColor={p.btnColor}
@@ -167,23 +171,28 @@ function PartnerCard({ p }: { p: Partner }) {
                   href={s.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={socialLabelMap[s.platform]}
+                  aria-label={`Vai alla pagina ${socialLabelMap[s.platform]} di ${p.name}. Si apre in una nuova scheda`}
                   className={`
                     p-2 rounded-md
                     transition-colors duration-200
                     hover:bg-black/10 dark:hover:bg-white/10
-                    ${p.accent}
+                    ${p.accent} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40
                   `}
                 >
-                  <Icon size={18} />
+                  <Icon aria-hidden="true" size={18} />
                 </a>
               );
             })}
           </div>
 
-          <a href={p.website} target="_blank" rel="noopener noreferrer">
+          <a
+            href={p.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Visita il sito di ${p.name}. Si apre in una nuova scheda`}
+          >
             <Button variant="secondary" color={p.btnColor} size="sm">
-              <Globe size={14} />
+              <Globe aria-hidden="true" size={14} />
               {p.btnLabel ?? "Visita il sito"}
             </Button>
           </a>
@@ -203,29 +212,27 @@ export default function Team() {
         accentColor="green"
       />
 
-      <div className="max-w-6xl mx-auto px-4 py-16 ">
-        <div className="max-w-6xl mx-auto px-4 py-16">
-          <section aria-labelledby="team-intro-title" className="mb-12">
-            <h1
-              id="team-intro-title"
-              className="text-lm-text-primary dark:text-dm-text-primary mb-4"
-            >
-              Un partenariato consolidato e multidisciplinare
-            </h1>
+      <div className="max-w-6xl mx-auto px-4 py-24">
+        <section aria-labelledby="team-intro-title" className="mb-12">
+          <h1
+            id="team-intro-title"
+            className="text-lm-text-primary dark:text-dm-text-primary mb-4"
+          >
+            Un partenariato consolidato e multidisciplinare
+          </h1>
 
-            <p className="text-lg text-lm-text-secondary dark:text-dm-text-secondary max-w-3xl md:max-w-5xl">
-              Grazie al lavoro di squadra, GAIA crea un ecosistema di gioco
-              inclusivo in cui i bambini con ASD possono apprendere,
-              socializzare e divertirsi, abbattendo le barriere e valorizzando
-              le loro capacità.
-            </p>
-          </section>
+          <p className="text-lg text-lm-text-secondary dark:text-dm-text-secondary max-w-3xl md:max-w-5xl">
+            Grazie al lavoro di squadra, GAIA crea un ecosistema di gioco
+            inclusivo in cui i bambini con ASD possono apprendere, socializzare
+            e divertirsi, abbattendo le barriere e valorizzando le loro
+            capacità.
+          </p>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            {partners.map((p) => (
-              <PartnerCard key={p.name} p={p} />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          {partners.map((p) => (
+            <PartnerCard key={p.name} p={p} />
+          ))}
         </div>
       </div>
     </>

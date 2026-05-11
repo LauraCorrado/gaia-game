@@ -1,12 +1,21 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-16">
-      <h1 className="text-lm-text-primary dark:text-dm-text-primary mb-4">
+    <section
+      aria-labelledby="privacy-policy-title"
+      className="max-w-3xl mx-auto px-4 py-16"
+    >
+      <h1
+        id="privacy-policy-title"
+        className="text-lm-text-primary dark:text-dm-text-primary mb-4"
+      >
         Privacy Policy
       </h1>
 
       <p className="text-lm-text-secondary dark:text-dm-text-secondary mb-8">
-        La presente informativa descrive le modalità di trattamento dei dati personali degli utenti che consultano il sito <em>GAIA - Giochi Accessibili ed Inclusivi per bambini con Autismo</em>, ai sensi del Regolamento UE 2016/679 (GDPR).
+        La presente informativa descrive le modalità di trattamento dei dati
+        personali degli utenti che consultano il sito{" "}
+        <em>GAIA - Giochi Accessibili ed Inclusivi per bambini con Autismo</em>,
+        ai sensi del Regolamento UE 2016/679 (GDPR).
       </p>
 
       <div className="flex flex-col gap-8">
@@ -17,23 +26,24 @@ export default function PrivacyPolicy() {
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
             Il Titolare del trattamento dei dati personali è{" "}
             <strong className="text-lm-green dark:text-dm-green">
-              [Inserire nome/ente del Titolare]
+              TEA SRL - TERRITORIO, ECONOMIA, AMBIENTE E ARTE
             </strong>{" "}
             con sede legale{" "}
             <strong className="text-lm-green dark:text-dm-green">
-              [inserire indirizzo completo]
+              CONTRADA CNT SANTA DOMENICA 48/E - 88100 - CATANZARO (CZ)
             </strong>
             <br />
             E-mail di contatto:{" "}
             <a
               href="mailto:info@gaia-game.eu"
-              className="text-lm-blue dark:text-dm-blue"
+              className="underline text-lm-blue dark:text-dm-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm"
             >
               info@gaia-game.eu
             </a>
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Il Titolare determina le finalità e i mezzi del trattamento dei dati personali raccolti tramite il presente sito.
+            Il Titolare determina le finalità e i mezzi del trattamento dei dati
+            personali raccolti tramite il presente sito.
           </p>
         </section>
 
@@ -55,14 +65,16 @@ export default function PrivacyPolicy() {
             <li>contenuto del messaggio</li>
           </ul>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Il conferimento dei dati è facoltativo, ma necessario per poter rispondere alle richieste dell’utente.
+            Il conferimento dei dati è facoltativo, ma necessario per poter
+            rispondere alle richieste dell’utente.
           </p>
 
           <h3 className="text-lm-text-primary dark:text-dm-text-primary mt-4 mb-2">
             2.2 Dati di navigazione
           </h3>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Durante la navigazione possono essere raccolti automaticamente alcuni dati tecnici, quali:
+            Durante la navigazione possono essere raccolti automaticamente
+            alcuni dati tecnici, quali:
           </p>
           <ul className="list-disc pl-6 mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
             <li>indirizzo IP</li>
@@ -71,7 +83,8 @@ export default function PrivacyPolicy() {
             <li>dati di log e interazione con il sito</li>
           </ul>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Questi dati non sono raccolti per identificare l’utente, ma possono permettere l’identificazione indiretta in determinate circostanze.
+            Questi dati non sono raccolti per identificare l’utente, ma possono
+            permettere l’identificazione indiretta in determinate circostanze.
           </p>
         </section>
 
@@ -83,7 +96,9 @@ export default function PrivacyPolicy() {
             I dati personali sono trattati per le seguenti finalità:
           </p>
           <ul className="list-disc pl-6 mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
-            <li>rispondere alle richieste inviate tramite modulo di contatto</li>
+            <li>
+              rispondere alle richieste inviate tramite modulo di contatto
+            </li>
             <li>garantire il corretto funzionamento tecnico del sito</li>
             <li>prevenire abusi o utilizzi fraudolenti del servizio</li>
             <li>migliorare la stabilità e la sicurezza del sito</li>
@@ -95,17 +110,31 @@ export default function PrivacyPolicy() {
             4. Base giuridica del trattamento
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Il trattamento dei dati personali si basa sulle seguenti basi giuridiche:
+            Il trattamento dei dati personali si basa sulle seguenti basi
+            giuridiche:
           </p>
           <ul className="list-disc pl-6 mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
             <li>
-              <strong>Esecuzione di misure precontrattuali (art. 6(1)(b) GDPR)</strong>: per la gestione e la risposta alle richieste inviate dall’utente tramite il modulo di contatto. Il conferimento dei dati è necessario per poter fornire riscontro.
+              <strong>
+                Esecuzione di misure precontrattuali (art. 6(1)(b) GDPR)
+              </strong>
+              : per la gestione e la risposta alle richieste inviate dall’utente
+              tramite il modulo di contatto. Il conferimento dei dati è
+              necessario per poter fornire riscontro.
             </li>
             <li>
-              <strong>Legittimo interesse del Titolare (art. 6(1)(f) GDPR)</strong>: per garantire la sicurezza, il corretto funzionamento e la manutenzione del sito, nonché per la prevenzione di abusi o utilizzi fraudolenti.
+              <strong>
+                Legittimo interesse del Titolare (art. 6(1)(f) GDPR)
+              </strong>
+              : per garantire la sicurezza, il corretto funzionamento e la
+              manutenzione del sito, nonché per la prevenzione di abusi o
+              utilizzi fraudolenti.
             </li>
             <li>
-              <strong>Consenso dell’utente (art. 6(1)(a) GDPR)</strong>: per l’utilizzo di servizi di terze parti non strettamente necessari al funzionamento del sito, quali Google Fonts fornito da Google LLC, attivato solo previa accettazione tramite apposito banner.
+              <strong>Consenso dell’utente (art. 6(1)(a) GDPR)</strong>: per
+              l’utilizzo di servizi di terze parti non strettamente necessari al
+              funzionamento del sito, quali Google Fonts fornito da Google LLC,
+              attivato solo previa accettazione tramite apposito banner.
             </li>
           </ul>
         </section>
@@ -115,10 +144,14 @@ export default function PrivacyPolicy() {
             5. Modalità del trattamento
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Il trattamento dei dati avviene mediante strumenti elettronici e informatici, secondo principi di liceità, correttezza, trasparenza, minimizzazione dei dati e limitazione delle finalità.
+            Il trattamento dei dati avviene mediante strumenti elettronici e
+            informatici, secondo principi di liceità, correttezza, trasparenza,
+            minimizzazione dei dati e limitazione delle finalità.
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Sono adottate misure tecniche e organizzative adeguate a proteggere i dati da accessi non autorizzati, perdita, distruzione o divulgazione.
+            Sono adottate misure tecniche e organizzative adeguate a proteggere
+            i dati da accessi non autorizzati, perdita, distruzione o
+            divulgazione.
           </p>
         </section>
 
@@ -131,7 +164,8 @@ export default function PrivacyPolicy() {
             6.1 Google Fonts
           </h3>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Il sito utilizza, previo consenso dell’utente, il servizio Google LLC per la visualizzazione dei font tramite Google Fonts.
+            Il sito utilizza, previo consenso dell’utente, il servizio Google
+            LLC per la visualizzazione dei font tramite Google Fonts.
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
             Questo servizio può comportare:
@@ -141,20 +175,25 @@ export default function PrivacyPolicy() {
             <li>raccolta di dati tecnici del browser</li>
           </ul>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            I dati possono essere trasferiti verso Paesi extra UE. In tal caso il trasferimento avviene sulla base di Clausole Contrattuali Standard (SCC) adottate dalla Commissione Europea.
+            I dati possono essere trasferiti verso Paesi extra UE. In tal caso
+            il trasferimento avviene sulla base di Clausole Contrattuali
+            Standard (SCC) adottate dalla Commissione Europea.
           </p>
 
           <h3 className="text-lm-text-primary dark:text-dm-text-primary mt-4 mb-2">
             6.2 Servizio di invio email (EmailJS)
           </h3>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Il sito utilizza EmailJS per la gestione dell’invio dei messaggi tramite modulo di contatto.
+            Il sito utilizza EmailJS per la gestione dell’invio dei messaggi
+            tramite modulo di contatto.
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            EmailJS tratta i dati esclusivamente per consentire la trasmissione delle richieste dell’utente al Titolare.
+            EmailJS tratta i dati esclusivamente per consentire la trasmissione
+            delle richieste dell’utente al Titolare.
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Non viene effettuato utilizzo dei dati per finalità proprie del servizio.
+            Non viene effettuato utilizzo dei dati per finalità proprie del
+            servizio.
           </p>
         </section>
 
@@ -167,14 +206,22 @@ export default function PrivacyPolicy() {
           </p>
           <ul className="list-disc pl-6 mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
             <li>il tempo necessario a rispondere alla richiesta dell’utente</li>
-            <li>un periodo massimo ragionevole successivo per eventuale gestione amministrativa o legale</li>
+            <li>
+              un periodo massimo ragionevole successivo per eventuale gestione
+              amministrativa o legale
+            </li>
           </ul>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
             In generale:
           </p>
           <ul className="list-disc pl-6 mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
-            <li>dati del modulo di contatto: fino a <strong>12 mesi</strong></li>
-            <li>dati tecnici: secondo tempi strettamente necessari alla sicurezza e manutenzione del sito</li>
+            <li>
+              dati del modulo di contatto: fino a <strong>12 mesi</strong>
+            </li>
+            <li>
+              dati tecnici: secondo tempi strettamente necessari alla sicurezza
+              e manutenzione del sito
+            </li>
           </ul>
         </section>
 
@@ -186,7 +233,9 @@ export default function PrivacyPolicy() {
             I dati personali non vengono diffusi.
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Possono essere trattati da fornitori esterni (es. servizi tecnici), nominati se necessario <strong>Responsabili del trattamento</strong> ai sensi dell’art. 28 GDPR.
+            Possono essere trattati da fornitori esterni (es. servizi tecnici),
+            nominati se necessario <strong>Responsabili del trattamento</strong>{" "}
+            ai sensi dell’art. 28 GDPR.
           </p>
         </section>
 
@@ -195,7 +244,8 @@ export default function PrivacyPolicy() {
             9. Trasferimento dei dati verso Paesi terzi
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Alcuni servizi (es. Google) possono comportare il trasferimento di dati verso Paesi extra UE.
+            Alcuni servizi (es. Google) possono comportare il trasferimento di
+            dati verso Paesi extra UE.
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
             Tale trasferimento avviene nel rispetto del GDPR tramite:
@@ -211,7 +261,8 @@ export default function PrivacyPolicy() {
             10. Diritti dell’interessato
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            L’utente può esercitare in qualsiasi momento i diritti previsti dagli artt. 15–22 del GDPR, tra cui:
+            L’utente può esercitare in qualsiasi momento i diritti previsti
+            dagli artt. 15–22 del GDPR, tra cui:
           </p>
           <ul className="list-disc pl-6 mt-2 text-lm-text-secondary dark:text-dm-text-secondary">
             <li>accesso ai dati</li>
@@ -220,10 +271,14 @@ export default function PrivacyPolicy() {
             <li>limitazione del trattamento</li>
             <li>opposizione al trattamento</li>
             <li>portabilità dei dati</li>
-            <li>revoca del consenso (senza pregiudicare la liceità del trattamento precedente)</li>
+            <li>
+              revoca del consenso (senza pregiudicare la liceità del trattamento
+              precedente)
+            </li>
           </ul>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            L’utente ha inoltre diritto di proporre reclamo al <strong>Garante per la protezione dei dati personali</strong>.
+            L’utente ha inoltre diritto di proporre reclamo al{" "}
+            <strong>Garante per la protezione dei dati personali</strong>.
           </p>
         </section>
 
@@ -232,7 +287,8 @@ export default function PrivacyPolicy() {
             11. Modalità di esercizio dei diritti
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Le richieste possono essere inviate al Titolare del trattamento all’indirizzo email:{" "}
+            Le richieste possono essere inviate al Titolare del trattamento
+            all’indirizzo email:{" "}
             <a
               href="mailto:info@gaia-game.eu"
               className="text-lm-blue dark:text-dm-blue"
@@ -241,7 +297,8 @@ export default function PrivacyPolicy() {
             </a>
           </p>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary mt-2">
-            Il Titolare risponderà entro i termini previsti dalla normativa vigente (di norma entro 30 giorni).
+            Il Titolare risponderà entro i termini previsti dalla normativa
+            vigente (di norma entro 30 giorni).
           </p>
         </section>
 
@@ -250,10 +307,18 @@ export default function PrivacyPolicy() {
             12. Modifiche alla presente informativa
           </h2>
           <p className="text-lm-text-secondary dark:text-dm-text-secondary">
-            Il Titolare si riserva il diritto di modificare la presente Privacy Policy in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con data di aggiornamento aggiornata.
+            Il Titolare si riserva il diritto di modificare la presente Privacy
+            Policy in qualsiasi momento. Le modifiche saranno pubblicate su
+            questa pagina con data di aggiornamento aggiornata.
+          </p>
+        </section>
+
+        <section>
+          <p className="text-sm text-lm-green dark:text-dm-green mb-8">
+            Ultimo aggiornamento: <strong>maggio 2026</strong>
           </p>
         </section>
       </div>
-    </div>
+    </section>
   );
 }

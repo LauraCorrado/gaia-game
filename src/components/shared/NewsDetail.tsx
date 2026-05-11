@@ -7,23 +7,34 @@ import { generateSlug } from "../../utils/slug";
 export default function NewsDetail() {
   const { slug } = useParams();
 
-const articolo = news.find((n) => generateSlug(n) === slug);
+  const articolo = news.find((n) => generateSlug(n) === slug);
 
-  if (!articolo) return <p>Articolo non trovato</p>;
+  if (!articolo) {
+    return (
+      <section className="max-w-3xl mx-auto p-10 my-16">
+        <h1>Articolo non trovato</h1>
+        <p>
+          Il contenuto richiesto non è disponibile o potrebbe essere stato
+          spostato.
+        </p>
+        <Link to="/eventi-news">Torna a Eventi e News</Link>
+      </section>
+    );
+  }
 
   return (
     <div className="max-w-3xl mx-auto p-10 my-16 bg-lm-bg-secondary/40 dark:bg-dm-bg-secondary rounded-xl">
       <div className="mb-6">
-        <Link to="/eventi-news">
-          <Button
-            variant="secondary"
-            color="blue"
-            aria-label="Torna a Eventi e News"
-            className="text-sm"
-          >
-            ← Torna a Eventi e News
-          </Button>
-        </Link>
+        <Button
+          as="link"
+          to="/eventi-news"
+          variant="secondary"
+          color="blue"
+          aria-label="Torna a Eventi e News"
+          className="text-sm"
+        >
+          ← Torna a Eventi e News
+        </Button>
       </div>
 
       <h1 className="text-lm-text-primary dark:text-dm-text-primary mb-4 whitespace-pre-line">
@@ -31,8 +42,12 @@ const articolo = news.find((n) => generateSlug(n) === slug);
       </h1>
 
       <div className="flex items-center gap-1 text-xs text-lm-text-secondary dark:text-dm-text-secondary">
-        <Calendar size={16} className="text-lm-blue font-bold" />
-        <time>
+        <Calendar
+          aria-hidden="true"
+          size={16}
+          className="text-lm-blue font-bold"
+        />
+        <time dateTime={articolo.data}>
           {new Date(articolo.data).toLocaleDateString("it-IT", {
             day: "numeric",
             month: "long",
@@ -49,15 +64,16 @@ const articolo = news.find((n) => generateSlug(n) === slug);
               href={pdf.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Scarica ${pdf.label}. Si apre in una nuova scheda`}
               className="
           inline-flex items-center gap-2
           text-sm
           text-lm-blue dark:text-dm-blue
           hover:text-lm-green dark:hover:text-dm-green
-          underline
+          underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-sm
         "
             >
-              <Paperclip size={16} />
+              <Paperclip aria-hidden="true" size={16} />
               <span className="font-medium">Download</span>
               <span className="opacity-80">– {pdf.label}</span>
             </a>
@@ -73,9 +89,11 @@ const articolo = news.find((n) => generateSlug(n) === slug);
             className="rounded-lg max-w-full h-auto"
           />
 
-          <figcaption className="mt-2 italic text-sm text-center text-lm-text-secondary dark:text-dm-text-secondary">
-            {articolo.alt}
-          </figcaption>
+          {articolo.alt && (
+            <figcaption className="mt-2 italic text-sm text-center text-lm-text-secondary dark:text-dm-text-secondary">
+              {articolo.alt}
+            </figcaption>
+          )}
         </figure>
       )}
 
@@ -109,6 +127,7 @@ const articolo = news.find((n) => generateSlug(n) === slug);
               href={block.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${block.text}. Si apre in una nuova scheda`}
               className="block my-1 text-lm-blue dark:text-dm-blue hover:text-lm-green hover:dark:text-dm-green underline wrap-break-word"
             >
               {block.text}
@@ -162,16 +181,16 @@ const articolo = news.find((n) => generateSlug(n) === slug);
       })}
 
       <div className="mb-6">
-        <Link to="/eventi-news">
-          <Button
-            variant="secondary"
-            color="blue"
-            aria-label="Torna a Eventi e News"
-            className="text-sm"
-          >
-            ← Torna a Eventi e News
-          </Button>
-        </Link>
+        <Button
+          as="link"
+          to="/eventi-news"
+          variant="secondary"
+          color="blue"
+          aria-label="Torna a Eventi e News"
+          className="text-sm"
+        >
+          ← Torna a Eventi e News
+        </Button>
       </div>
     </div>
   );
