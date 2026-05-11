@@ -43,29 +43,25 @@ export default function ScopriGaia() {
                 id="punto-partenza-title"
                 className="mt-6 text-lm-text-primary dark:text-dm-text-primary"
               >
-                Una domanda sul{" "}
+                L'idea di un{" "}
                 <span className="text-lm-pink dark:text-dm-pink">
-                  valore del gioco
+                  gioco multisensoriale
                 </span>
               </h2>
 
               <div className="mt-6 space-y-5 text-lm-text-secondary dark:text-dm-text-secondary">
-                {/* <p>
-                  Il progetto parte da una domanda semplice ma centrale:{" "}
-                  <strong>
-                    in che maniera è possibile fornire supporto allo sviluppo dell'interazione
-                    sociale nei bambini nello spettro autistico attraverso il
-                    gioco?
-                  </strong>
-                </p> */}
-
+               
                 <p>
-                  GAIA si fonda su una precisa idea di gioco: uno{" "}
+                  GAIA si fonda su una precisa idea: utilizzare il gioco come{" "}
                   <strong>
                     spazio di esplorazione, relazione e partecipazione
                   </strong>
                   , da non ridurre semplicemente a mera attività educativa o
                   terapeutica.
+                </p>
+
+                <p>
+                  A partire da questo principio, il progetto indaga come le <strong>tecnologie multisensoriali</strong> possano inserirsi nell’esperienza di gioco, contribuendo a renderla più accessibile, coinvolgente e favorevole allo sviluppo dell’interazione sociale.
                 </p>
               </div>
             </div>
