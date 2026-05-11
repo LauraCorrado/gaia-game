@@ -144,7 +144,8 @@ export default function Contatti() {
       setPrivacyAccepted(false);
       setErrors({});
       setTouched({});
-    } catch {
+    } catch (error) {
+      console.error("Errore EmailJS:", error);
       setStatus("error");
     }
   };
