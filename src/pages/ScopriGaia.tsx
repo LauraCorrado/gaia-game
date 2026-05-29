@@ -331,14 +331,14 @@ export default function ScopriGaia() {
               </p>
 
               <p>
-                Il gioco prevederà delle modalità di cooperazione, che mireranno
+                Il gioco prevederà delle <strong>modalità di cooperazione</strong>, che mireranno
                 a sostenere le relazioni sociali e l'iniziativa del bambino.
               </p>
 
               <p>
-                Il gioco potrà inoltre aprire a{" "}
+                Potrà inoltre aprirsi a{" "}
                 <strong>forme di partecipazione tra bambini</strong>, favorendo
-                occasioni di interazione tra bambini in un contesto accessibile
+                occasioni di interazione tra pari in un contesto accessibile
                 e mediato.
               </p>
             </div>
