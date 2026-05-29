@@ -31,7 +31,7 @@ export const partners: Partner[] = [
     logo: logos.tea,
     boostLogo: false,
     description:
-      "TEA S.r.l., fondata nel 1996, opera da oltre 20 anni nello sviluppo di tecnologie per la conoscenza, la valorizzazione e la fruizione accessibile del patrimonio culturale e territoriale. L'azienda trasforma dati complessi in strumenti per la ricerca, la conservazione e l'accessibilità dei beni culturali. Tra le soluzioni sviluppate figurano sistemi di restauro virtuale basati su imaging multispettrale, come @mmira, e piattaforme multisensoriali e multimateriche come AIVES, progettate per rendere l'arte accessibile anche alle persone con disabilità visive.",
+      "TEA S.r.l., fondata nel 1996, opera da oltre 20 anni nello sviluppo di tecnologie per la conoscenza, la valorizzazione e la fruizione accessibile del patrimonio culturale e territoriale. L'azienda trasforma dati complessi in strumenti per la ricerca, la conservazione e l'accessibilità dei beni culturali. Tra le soluzioni sviluppate figurano sistemi di restauro virtuale basati su imaging multispettrale, come @mmira, e piattaforme multisensoriali e multimateriche come AIVES®, progettate per rendere l'arte accessibile anche alle persone con disabilità visive.",
     contribution: {
       paragraphs: [
         "TEA partecipa al progetto GAIA con il ruolo di capofila, garantendo il coordinamento generale delle attività e contribuendo alla definizione dell'impostazione metodologica del sistema di gioco multisensoriale.",

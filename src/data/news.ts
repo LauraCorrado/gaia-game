@@ -76,11 +76,11 @@ export const news: NewsItem[] = [
       },
       {
         type: "heading",
-        text: "Un'evoluzione di AIVES",
+        text: "Un'evoluzione di AIVES®",
       },
       {
         type: "paragraph",
-        text: "GAIA nasce come evoluzione naturale di AIVES, un precedente progetto di TEA srl, in cui la tecnologia è stata messa al servizio dell’arte, attraverso riproduzioni tattili e sensoristica avanzata per la fruizione universale di opere d’arte.",
+        text: "GAIA nasce come evoluzione naturale di AIVES®, un precedente progetto di TEA srl, in cui la tecnologia è stata messa al servizio dell’arte, attraverso riproduzioni tattili e sensoristica avanzata per la fruizione universale di opere d’arte.",
       },
       {
         type: "paragraph",
