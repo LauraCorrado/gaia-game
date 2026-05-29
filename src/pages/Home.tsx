@@ -205,7 +205,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* METODO AIVES */}
       <div className="relative mt-16">
         <div
           className="absolute inset-x-0 top-0 h-16 bg-lm-bg-secondary dark:bg-dm-bg-secondary"
@@ -222,7 +221,7 @@ export default function Home() {
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-lm-green/10 dark:bg-dm-green/10 px-4 py-2 text-sm font-medium text-lm-green dark:text-dm-green">
                   <FaPuzzlePiece aria-hidden="true" className="w-4 h-4" />
-                  Il metodo AIVES
+                  Il metodo AIVES®
                 </span>
 
                 <h2
@@ -259,11 +258,11 @@ export default function Home() {
                     rel="noopener noreferrer"
                     aria-label="Visita il sito AIVES. Si apre in una nuova scheda"
                   >
-                    AIVES
+                    AIVES®
                   </a>
                   , il sistema multisensoriale di fruizione delle opere d'arte
                   per persone con disabilità visive, già premiato con brevetti
-                  europei, internazionali e nazionali. Da AIVES, GAIA riprende i
+                  europei, internazionali e nazionali. Da AIVES®, GAIA riprende i
                   concetti di accessibilità, multisensorialità e
                   multimatericità, portandoli dal mondo dell'arte a quello del
                   gioco.
