@@ -102,7 +102,7 @@ export default function NewsDetail() {
           return (
             <p
               key={i}
-              className="text-lm-text-secondary dark:text-dm-text-secondary leading-relaxed"
+              className="text-lm-text-secondary dark:text-dm-text-secondary leading-relaxed mb-3"
             >
               {block.text}
             </p>
