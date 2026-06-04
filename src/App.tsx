@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Button from "./components/ui/Button";
 import { Home as Casa, AlertCircle } from "lucide-react";
-import Layout from './components/shared/Layout'
-import Home from './pages/Home'
-import ScopriGaia from './pages/ScopriGaia'
-import Team from './pages/Team'
-import EventiNews from './pages/EventiNews'
-import DietroLeQuinte from './pages/DietroLeQuinte'
-import Contatti from './pages/Contatti'
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import CookiePolicy from './pages/CookiePolicy'
-import NewsDetail from './components/shared/NewsDetail'
+import Layout from "./components/shared/Layout";
+import Home from "./pages/Home";
+import ScopriGaia from "./pages/ScopriGaia";
+import Team from "./pages/Team";
+import EventiNews from "./pages/EventiNews";
+import DietroLeQuinte from "./pages/DietroLeQuinte";
+import Contatti from "./pages/Contatti";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import NewsDetail from "./components/shared/NewsDetail";
 
 export default function App() {
   return (
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/scopri-gaia" element={<ScopriGaia />} />
           <Route path="/team" element={<Team />} />
           <Route path="/eventi-news" element={<EventiNews />} />
-          <Route path="/dietro-lequinte" element={<DietroLeQuinte />} />
+          <Route path="/dietro-le-quinte" element={<DietroLeQuinte />} />
           <Route path="/contatti" element={<Contatti />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
@@ -30,7 +30,7 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 function NotFound() {

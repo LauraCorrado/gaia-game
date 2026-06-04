@@ -1,5 +1,6 @@
 import locandina_1 from "../assets/img/newsletter/locandina_1.webp";
 import articolo_1 from "../assets/img/newsletter/gaia_articolo_1.webp";
+import articolo_2 from "../assets/img/newsletter/articolo_connessione_cerebrale.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -34,7 +35,7 @@ export interface NewsItem {
 }
 
 export const news: NewsItem[] = [
-  //articolo
+  //articolo1
   {
     id: 1,
     titolo:
@@ -170,7 +171,7 @@ export const news: NewsItem[] = [
 
     slug: "articolo-1",
   },
-  //prima newsletter
+  //newsletter_1
   {
     id: 2,
     indice: "#1",
@@ -303,6 +304,7 @@ export const news: NewsItem[] = [
 
     slug: "newsletter-1",
   },
+  //social_1
   {
     id: 3,
     titolo:
@@ -349,4 +351,114 @@ export const news: NewsItem[] = [
 
     slug: "social-1",
   },
+  //articolo2
+  {
+    id: 4,
+    titolo:
+      "Autismo: il cervello non comunica sempre allo stesso modo",
+    sottotitolo:
+      "Nuove scoperte aprono la strada a terapie più personalizzate",
+    categoria: "Articoli",
+    data: "2026-06-03",
+    immagine: articolo_2,
+    alt: "Immagine ad acquarello di un cervello umano con connessioni neurali evidenziate",
+
+    estratto:
+      "La ricerca mostra che dietro determinati comportamenti possono esistere profili biologici molto diversi, legati al modo in cui le aree del cervello comunicano tra loro. Comprendere queste differenze potrebbe rendere gli interventi più mirati, efficaci e vicini alle esigenze individuali.",
+
+    contenuti: [
+      {
+        type: "heading",
+        text: "Autismo: nuove scoperte sulla connessione cerebrale aprono la strada a terapie più personalizzate",
+      },
+      {
+        type: "paragraph",
+        text: "Per anni si è parlato di autismo come di una condizione unica, caratterizzata da difficoltà nella comunicazione, nell’interazione sociale e nella gestione degli stimoli. Oggi, però, la ricerca scientifica sta mostrando un quadro molto più complesso: dietro comportamenti simili potrebbero nascondersi meccanismi cerebrali profondamente diversi tra loro.",
+      },
+      {
+        type: "paragraph",
+        text: "Uno studio coordinato da Alessandro Gozzi presso il centro di Neuroscienze dell’Istituto Italiano di Tecnologia ha individuato almeno due differenti profili biologici nello spettro autistico, legati al modo in cui le varie aree del cervello comunicano tra loro.",
+      },
+      {
+        type: "heading",
+        text: "Due modalità opposte di funzionamento cerebrale",
+      },
+      {
+        type: "paragraph",
+        text: "Secondo i ricercatori, alcune persone autistiche presentano una condizione di “ipoconnessione”: le aree cerebrali comunicano in modo debole e poco sincronizzato, come un’orchestra in cui i musicisti non riescono a mantenere il ritmo.",
+      },
+      {
+        type: "paragraph",
+        text: "In altri casi avviene invece il contrario. Si parla di “iperconnessione”, una situazione in cui le connessioni tra le aree del cervello risultano eccessive. In questo caso il cervello tende a elaborare le informazioni in modo troppo uniforme, con una riduzione della flessibilità necessaria per integrare correttamente gli stimoli.",
+      },
+      {
+        type: "paragraph",
+        text: "La scoperta è importante perché dimostra che persone con comportamenti simili possono avere basi biologiche molto differenti.",
+      },
+      {
+        type: "heading",
+        text: "La genetica non basta a spiegare lo spettro autistico",
+      },
+      {
+        type: "paragraph",
+        text: "L’autismo presenta una forte componente ereditaria, ma la genetica da sola non riesce ancora a spiegare tutta la variabilità dello spettro. Negli anni sono stati identificati numerosi geni coinvolti nello sviluppo della condizione, ma nessuno di essi è sufficiente, da solo, a definire un preciso “tipo” di autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo gli studiosi stanno concentrando l’attenzione sulla connettività cerebrale, cioè sul modo in cui le diverse regioni del cervello collaborano e si sincronizzano.",
+      },
+      {
+        type: "heading",
+        text: "Perché questa scoperta potrebbe cambiare le terapie",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli aspetti più interessanti dello studio riguarda le possibili implicazioni terapeutiche.",
+      },
+      {
+        type: "paragraph",
+        text: "Se esistono forme biologicamente diverse di autismo, allora anche i trattamenti potrebbero dover essere personalizzati. Una terapia utile per un cervello ipoconnesso potrebbe infatti risultare inefficace o addirittura controproducente per chi presenta iperconnessione.",
+      },
+      {
+        type: "paragraph",
+        text: "Secondo i ricercatori, questa potrebbe essere una delle ragioni per cui molti trial clinici condotti negli ultimi anni hanno prodotto risultati poco chiari o contraddittori: pazienti con caratteristiche biologiche opposte venivano spesso inclusi nello stesso gruppo di studio.",
+      },
+      {
+        type: "heading",
+        text: "Verso una medicina di precisione"
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo futuro è arrivare a una classificazione più precisa dello spettro autistico, basata non solo sui comportamenti osservabili ma anche sulle caratteristiche biologiche e neurologiche individuali."
+      },
+      {
+        type: "paragraph",
+        text: "Un approccio simile permetterebbe di sviluppare percorsi terapeutici più mirati, migliorando la qualità degli interventi e offrendo un supporto sempre più personalizzato alle persone autistiche e alle loro famiglie."
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sull’autismo continua quindi a evolversi, mostrando quanto sia importante superare l’idea di uno spettro uniforme per comprendere davvero la complessità del funzionamento del cervello umano."
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:"
+      },
+      {
+        type: "link",
+        text: "Repubblica - 02/04/2926",
+        url: "https://www.repubblica.it/salute/2026/04/02/news/autismo_genetica_terapie-425257254/"
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-2",
+  }
 ];
