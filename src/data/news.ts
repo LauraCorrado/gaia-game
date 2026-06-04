@@ -445,7 +445,7 @@ export const news: NewsItem[] = [
       },
       {
         type: "link",
-        text: "Repubblica - 02/04/2926",
+        text: "Repubblica - 02/04/2026",
         url: "https://www.repubblica.it/salute/2026/04/02/news/autismo_genetica_terapie-425257254/"
       },
       {
