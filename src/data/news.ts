@@ -1,6 +1,7 @@
 import locandina_1 from "../assets/img/newsletter/locandina_1.webp";
 import articolo_1 from "../assets/img/newsletter/gaia_articolo_1.webp";
 import articolo_2 from "../assets/img/newsletter/articolo_connessione_cerebrale.webp";
+import articolo_3 from "../assets/img/newsletter/articolo_robot_sociali.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -460,5 +461,120 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "articolo-2",
+  },
+  //articolo3
+  {
+    id: 5,
+    titolo:
+      "Robot sociali e autismo: nuove strade per comunicare",
+    sottotitolo:
+      "Uno studio osserva il ruolo dei robot sociali nel favorire attenzione e interazione nei bambini autistici",
+    categoria: "Articoli",
+    data: "2026-06-16",
+    immagine: articolo_3,
+    alt: "Illustrazione ad acquerello di un bambino seduto di fronte a un piccolo robot sociale",
+
+    estratto:
+      "I robot sociali possono offrire interazioni più semplici, strutturate e prevedibili rispetto alla comunicazione umana quotidiana. Per alcuni bambini autistici, questo può facilitare l’attenzione, il coinvolgimento e la costruzione di un primo aggancio relazionale nei percorsi terapeutici.",
+
+    contenuti: [
+      {
+        type: "heading",
+        text: "Quando i robot sociali aiutano i bambini autistici a comunicare",
+      },
+      {
+        type: "paragraph",
+        text: "Per molti bambini con ASD, interagire con le persone può essere complesso: gli stimoli sociali sono numerosi, imprevedibili e a volte difficili da interpretare. Proprio per questo, strumenti tecnologici progettati in modo mirato potrebbero diventare un valido supporto nei percorsi terapeutici e riabilitativi.",
+      },
+      {
+        type: "paragraph",
+        text: "Una recente ricerca coordinata dalla Fondazione Don Gnocchi in collaborazione con il Politecnico di Milano ha osservato come alcuni bambini con autismo mostrino una maggiore attenzione nei confronti di un robot sociale rispetto a un interlocutore umano durante specifiche attività comunicative.",
+      },
+      {
+        type: "heading",
+        text: "Lo studio: attenzione condivisa e interazione sociale",
+      },
+      {
+        type: "paragraph",
+        text: "L’indagine ha coinvolto bambini in età prescolare, sia con diagnosi di disturbo dello spettro autistico (ASD) sia a sviluppo tipico. L’obiettivo era analizzare l’attenzione condivisa, cioè quella capacità che permette di orientarsi insieme a un’altra persona verso un oggetto, un gesto o un evento.",
+      },
+      {
+        type: "paragraph",
+        text: "Questa abilità rappresenta uno degli aspetti fondamentali dello sviluppo relazionale e della comunicazione nei primi anni di vita.",
+      },
+      {
+        type: "paragraph",
+        text: "Durante l’esperimento, i bambini hanno svolto alcune attività sia con un terapista sia con un robot sociale programmato per utilizzare segnali semplici e prevedibili, come movimenti della testa, gesti e direzione dello sguardo.",
+      },
+      {
+        type: "paragraph",
+        text: "I ricercatori hanno poi osservato le reazioni dei partecipanti, registrando il tempo di attenzione, la rapidità delle risposte e la capacità di seguire gli stimoli proposti.",
+      },
+
+      {
+        type: "heading",
+        text: "Perché il robot cattura maggiormente l’attenzione",
+      },
+      {
+        type: "paragraph",
+        text: "Dai risultati è emerso che i bambini con ASD tendevano a seguire meno i segnali comunicativi dell’adulto, mentre mostravano una partecipazione visiva più alta durante l’interazione con il robot.",
+      },
+      {
+        type: "paragraph",
+        text: "Secondo gli esperti, questo non significa che i bambini “preferiscano” le macchine alle persone. Il punto centrale è che i robot sociali offrono interazioni più strutturate e prevedibili, riducendo la complessità tipica della comunicazione umana.",
+      },
+      {
+        type: "paragraph",
+        text: "Per molti bambini con diagnosi di autismo, un ambiente meno caotico e più lineare può facilitare l’attenzione e il coinvolgimento.",
+      },
+      {
+        type: "heading",
+        text: "Un supporto alla terapia, non un sostituto",
+      },
+      {
+        type: "paragraph",
+        text: "Gli studiosi sottolineano che il ruolo dei robot sociali non è sostituire terapisti, educatori o genitori. Al contrario, questi strumenti potrebbero diventare un supporto utile per creare un primo aggancio relazionale e favorire lo sviluppo delle competenze sociali e comunicative.",
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo finale resta sempre quello di trasferire quanto appreso nella vita quotidiana: a scuola, in famiglia e nelle relazioni con gli altri.",
+      },
+      {
+        type: "heading",
+        text: "Nuove prospettive per interventi più precoci"
+      },
+      {
+        type: "paragraph",
+        text: "Le tecnologie robotiche applicate alla neuropsichiatria infantile stanno aprendo scenari interessanti anche sul fronte della valutazione precoce e della personalizzazione dei percorsi terapeutici."
+      },
+      {
+        type: "paragraph",
+        text: "Comprendere meglio come i bambini autistici reagiscono agli stimoli sociali potrebbe infatti aiutare specialisti e famiglie a costruire interventi sempre più efficaci, accessibili e calibrati sui bisogni individuali."
+      },
+      {
+        type: "paragraph",
+        text: "In questo contesto, i robot sociali non rappresentano il futuro delle relazioni umane, ma uno strumento in più per facilitare la comunicazione e sostenere lo sviluppo dei bambini con ASD."
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:"
+      },
+      {
+        type: "link",
+        text: "Quotidiano Nazionale - 11/04/2026",
+        url: "https://www.quotidiano.net/luce/attualita/robot-autismo-bambini-b82a92ba"
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-3",
   }
 ];
