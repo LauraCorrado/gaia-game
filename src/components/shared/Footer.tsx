@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../../data/navigation";
-import { InstagramIcon } from "./SocialIcons";
+import { InstagramIcon, FacebookIcon } from "./SocialIcons";
 import { logos } from "../../data/logos";
 
 export default function Footer() {
@@ -69,21 +69,42 @@ export default function Footer() {
               Cookie Policy
             </NavLink>
           </div>
-          <a
-            href="https://www.instagram.com/progettogaia2025/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Vai alla pagina Instagram di GAIA. Si apre in una nuova scheda"
-            className="
-      flex items-center gap-2
-      text-lm-blue dark:text-dm-blue
-      hover:text-lm-pink dark:hover:text-dm-pink
-      transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-md
-    "
-          >
-            <InstagramIcon className="w-4 h-4" />
-            <span className="text-md font-medium">Seguici!</span>
-          </a>
+
+          <span className="text-lm-blue dark:text-dm-blue text-lg font-medium">
+            Seguici sui social!
+          </span>
+
+          <div className="flex gap-4">
+            <a
+              href="https://www.instagram.com/progettogaia2025/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vai alla pagina Instagram di GAIA. Si apre in una nuova scheda"
+              className="
+                  flex items-center gap-2
+                  text-lm-blue dark:text-dm-blue
+                  hover:text-lm-pink dark:hover:text-dm-pink
+                  transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-md
+                "
+            >
+              <InstagramIcon className="w-4 h-4" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=61590897885288"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vai alla pagina Facebook di GAIA. Si apre in una nuova scheda"
+              className="
+                  flex items-center gap-2
+                  text-lm-blue dark:text-dm-blue
+                  hover:text-lm-pink dark:hover:text-dm-pink
+                  transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lm-blue/40 dark:focus-visible:ring-dm-blue/40 rounded-md
+                "
+            >
+              <FacebookIcon className="w-4 h-4" />
+            </a>
+          </div>
         </nav>
 
         <div className="flex flex-col items-center justify-center gap-6 text-center md:text-left">

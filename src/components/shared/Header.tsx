@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { toggleDarkMode, isDarkMode } from "../../utils/darkMode";
 import { Sun, Moon } from "lucide-react";
-import { InstagramIcon } from "./SocialIcons";
+import { InstagramIcon, FacebookIcon } from "./SocialIcons";
 import { navLinks } from "../../data/navigation";
 import { logos } from "../../data/logos";
 
@@ -105,25 +105,40 @@ export default function Header() {
             <div className="hidden md:block w-px h-6 bg-lm-text-secondary/20 dark:bg-dm-text-secondary/20" />
 
             <div className="hidden md:flex flex-col items-center leading-none">
-              <a
-                href="https://www.instagram.com/progettogaia2025/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Vai alla pagina Instagram di GAIA. Si apre in una nuova scheda"
-                className="
-      mt-1
-      p-2 rounded-full
-      text-lm-pink dark:text-dm-pink
-      hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary
-      hover:text-lm-blue dark:hover:text-dm-blue
-      transition-all duration-200
-    "
-              >
-                <InstagramIcon aria-hidden="true" className="w-4 h-4" />
-              </a>
-              <span className="text-[10px] uppercase tracking-wide text-lm-text-secondary dark:text-dm-text-secondary">
-                Seguici
-              </span>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.instagram.com/progettogaia2025/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Vai alla pagina Instagram di GAIA. Si apre in una nuova scheda"
+                  className="
+                      mt-1
+                      p-2 rounded-full
+                      text-lm-pink dark:text-dm-pink
+                      hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary
+                      hover:text-lm-pink/90 dark:hover:text-dm-pink/90
+                      transition-all duration-200
+                    "
+                >
+                  <InstagramIcon aria-hidden="true" className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61590897885288"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Vai alla pagina Facebook di GAIA. Si apre in una nuova scheda"
+                  className="
+                      mt-1
+                      p-2 rounded-full
+                      text-lm-blue dark:text-dm-blue
+                      hover:bg-lm-bg-secondary dark:hover:bg-dm-bg-secondary
+                      hover:text-lm-blue/90 dark:hover:text-dm-blue/90
+                      transition-all duration-200
+                    "
+                >
+                  <FacebookIcon aria-hidden="true" className="w-4 h-4" />
+                </a>
+              </div>
             </div>
 
             <button
@@ -169,15 +184,33 @@ export default function Header() {
               className="
     mt-3 mx-5 py-3
     border-t border-lm-blue/20 dark:border-dm-blue/20
-    text-lm-blue dark:text-dm-blue
+    text-lm-pink dark:text-dm-pink
     flex items-center justify-center gap-2
     no-underline
-    hover:text-lm-pink dark:hover:text-dm-pink
+    hover:text-lm-pink/90 dark:hover:text-dm-pink/90
     transition
   "
             >
               <InstagramIcon className="w-4 h-4" />
               <span className="text-sm font-medium">Instagram</span>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61590897885288"
+              target="_blank"
+              aria-label="Vai alla pagina Facebook di GAIA. Si apre in una nuova scheda"
+              rel="noopener noreferrer"
+              className="
+   mx-5 py-3
+  
+    text-lm-blue dark:text-dm-blue
+    flex items-center justify-center gap-2
+    no-underline
+    hover:text-lm-blue/90 dark:hover:text-dm-blue/90
+    transition
+  "
+            >
+              <FacebookIcon className="w-4 h-4" />
+              <span className="text-sm font-medium">Facebook</span>
             </a>
           </nav>
         )}
