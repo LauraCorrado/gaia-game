@@ -2,6 +2,7 @@ import locandina_1 from "../assets/img/newsletter/locandina_1.webp";
 import articolo_1 from "../assets/img/newsletter/gaia_articolo_1.webp";
 import articolo_2 from "../assets/img/newsletter/articolo_connessione_cerebrale.webp";
 import articolo_3 from "../assets/img/newsletter/articolo_robot_sociali.webp";
+import articolo_4 from "../assets/img/newsletter/articolo_diagnosi.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -308,8 +309,7 @@ export const news: NewsItem[] = [
   //social_1
   {
     id: 3,
-    titolo:
-      "Apertura della pagina Instagram di GAIA",
+    titolo: "Apertura della pagina Instagram di GAIA",
     sottotitolo:
       "Un nuovo spazio per condividere storie, idee e aggiornamenti sul progetto!",
     categoria: "Social",
@@ -328,7 +328,7 @@ export const news: NewsItem[] = [
       {
         type: "paragraph",
         text: "Siamo entusiasti di annunciare l’apertura della pagina Instagram di GAIA! Questo nuovo spazio sarà dedicato a condividere storie, idee, aggiornamenti e momenti speciali legati al nostro progetto di giochi accessibili e inclusivi per bambini autistici.",
-      },    
+      },
       {
         type: "paragraph",
         text: "Visita il profilo Instagram di GAIA per scoprire i nostri post e non dimenticare di seguirci per rimanere aggiornato sulle ultime novità!",
@@ -355,10 +355,8 @@ export const news: NewsItem[] = [
   //articolo2
   {
     id: 4,
-    titolo:
-      "Autismo: il cervello non comunica sempre allo stesso modo",
-    sottotitolo:
-      "Nuove scoperte aprono la strada a terapie più personalizzate",
+    titolo: "Autismo: il cervello non comunica sempre allo stesso modo",
+    sottotitolo: "Nuove scoperte aprono la strada a terapie più personalizzate",
     categoria: "Articoli",
     data: "2026-06-03",
     immagine: articolo_2,
@@ -426,28 +424,28 @@ export const news: NewsItem[] = [
       },
       {
         type: "heading",
-        text: "Verso una medicina di precisione"
+        text: "Verso una medicina di precisione",
       },
       {
         type: "paragraph",
-        text: "L’obiettivo futuro è arrivare a una classificazione più precisa dello spettro autistico, basata non solo sui comportamenti osservabili ma anche sulle caratteristiche biologiche e neurologiche individuali."
+        text: "L’obiettivo futuro è arrivare a una classificazione più precisa dello spettro autistico, basata non solo sui comportamenti osservabili ma anche sulle caratteristiche biologiche e neurologiche individuali.",
       },
       {
         type: "paragraph",
-        text: "Un approccio simile permetterebbe di sviluppare percorsi terapeutici più mirati, migliorando la qualità degli interventi e offrendo un supporto sempre più personalizzato alle persone autistiche e alle loro famiglie."
+        text: "Un approccio simile permetterebbe di sviluppare percorsi terapeutici più mirati, migliorando la qualità degli interventi e offrendo un supporto sempre più personalizzato alle persone autistiche e alle loro famiglie.",
       },
       {
         type: "paragraph",
-        text: "La ricerca sull’autismo continua quindi a evolversi, mostrando quanto sia importante superare l’idea di uno spettro uniforme per comprendere davvero la complessità del funzionamento del cervello umano."
+        text: "La ricerca sull’autismo continua quindi a evolversi, mostrando quanto sia importante superare l’idea di uno spettro uniforme per comprendere davvero la complessità del funzionamento del cervello umano.",
       },
       {
         type: "paragraph",
-        text: "Fonte primaria:"
+        text: "Fonte primaria:",
       },
       {
         type: "link",
         text: "Repubblica - 02/04/2026",
-        url: "https://www.repubblica.it/salute/2026/04/02/news/autismo_genetica_terapie-425257254/"
+        url: "https://www.repubblica.it/salute/2026/04/02/news/autismo_genetica_terapie-425257254/",
       },
       {
         type: "plus",
@@ -465,8 +463,7 @@ export const news: NewsItem[] = [
   //articolo3
   {
     id: 5,
-    titolo:
-      "Robot sociali e autismo: nuove strade per comunicare",
+    titolo: "Robot sociali e autismo: nuove strade per comunicare",
     sottotitolo:
       "Uno studio osserva il ruolo dei robot sociali nel favorire attenzione e interazione nei bambini autistici",
     categoria: "Articoli",
@@ -541,28 +538,28 @@ export const news: NewsItem[] = [
       },
       {
         type: "heading",
-        text: "Nuove prospettive per interventi più precoci"
+        text: "Nuove prospettive per interventi più precoci",
       },
       {
         type: "paragraph",
-        text: "Le tecnologie robotiche applicate alla neuropsichiatria infantile stanno aprendo scenari interessanti anche sul fronte della valutazione precoce e della personalizzazione dei percorsi terapeutici."
+        text: "Le tecnologie robotiche applicate alla neuropsichiatria infantile stanno aprendo scenari interessanti anche sul fronte della valutazione precoce e della personalizzazione dei percorsi terapeutici.",
       },
       {
         type: "paragraph",
-        text: "Comprendere meglio come i bambini autistici reagiscono agli stimoli sociali potrebbe infatti aiutare specialisti e famiglie a costruire interventi sempre più efficaci, accessibili e calibrati sui bisogni individuali."
+        text: "Comprendere meglio come i bambini autistici reagiscono agli stimoli sociali potrebbe infatti aiutare specialisti e famiglie a costruire interventi sempre più efficaci, accessibili e calibrati sui bisogni individuali.",
       },
       {
         type: "paragraph",
-        text: "In questo contesto, i robot sociali non rappresentano il futuro delle relazioni umane, ma uno strumento in più per facilitare la comunicazione e sostenere lo sviluppo dei bambini con ASD."
+        text: "In questo contesto, i robot sociali non rappresentano il futuro delle relazioni umane, ma uno strumento in più per facilitare la comunicazione e sostenere lo sviluppo dei bambini con ASD.",
       },
       {
         type: "paragraph",
-        text: "Fonte primaria:"
+        text: "Fonte primaria:",
       },
       {
         type: "link",
         text: "Quotidiano Nazionale - 11/04/2026",
-        url: "https://www.quotidiano.net/luce/attualita/robot-autismo-bambini-b82a92ba"
+        url: "https://www.quotidiano.net/luce/attualita/robot-autismo-bambini-b82a92ba",
       },
       {
         type: "plus",
@@ -576,5 +573,99 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "articolo-3",
-  }
+  },
+  //articolo4
+  {
+    id: 6,
+    titolo:
+      "Autismo in Italia: diagnosi in aumento e nuove sfide per i servizi",
+    sottotitolo:
+      "Crescono le diagnosi e l'attenzione verso l'autismo: ricerca, servizi e inclusione al centro del cambiamento.",
+    categoria: "Articoli",
+    data: "2026-07-09",
+    immagine: articolo_4,
+    alt: "Illustrazione ad acquarello dedicata all'inclusione e al supporto delle persone autistiche",
+
+    estratto:
+      "In Italia aumentano le diagnosi di autismo e si rafforzano gli investimenti nella diagnosi precoce e nei servizi territoriali. Restano però importanti differenze regionali e nuove sfide per garantire percorsi di cura e inclusione lungo tutto l'arco della vita.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Negli ultimi anni il disturbo dello spettro autistico è diventato sempre più centrale nel dibattito sanitario e sociale. In Italia si stima che riguardi circa 1 bambino ogni 77, per un totale complessivo di circa 500.000 persone. Un dato in crescita che riflette anche un miglioramento delle capacità di individuazione precoce e una maggiore attenzione da parte dei servizi sanitari.",
+      },
+      {
+        type: "paragraph",
+        text: "Secondo le principali società scientifiche italiane e i dati dell’Istituto Superiore di Sanità, l’età media della diagnosi si è progressivamente abbassata fino a circa 3 anni, un elemento fondamentale per poter avviare interventi tempestivi e più efficaci.",
+      },
+      {
+        type: "heading",
+        text: "Investimenti e potenziamento dei servizi",
+      },
+      {
+        type: "paragraph",
+        text: "Per rafforzare la rete di assistenza è stato annunciato un investimento di circa 10 milioni di euro, destinato a migliorare i percorsi di diagnosi precoce e a potenziare i servizi territoriali dedicati all’autismo. L’obiettivo è quello di sviluppare un modello di intervento più integrato, capace di mettere in relazione ambito sanitario, sociale ed educativo.",
+      },
+      {
+        type: "paragraph",
+        text: "L’intento è anche quello di garantire una maggiore continuità assistenziale lungo tutto l’arco della vita della persona, superando la frammentazione dei servizi attualmente presente in alcune aree del Paese.",
+      },
+      {
+        type: "heading",
+        text: "Disuguaglianze territoriali ancora presenti",
+      },
+      {
+        type: "paragraph",
+        text: "Nonostante i progressi, permangono ancora differenze significative tra le diverse regioni italiane. Le famiglie, in alcune zone, possono incontrare difficoltà nell’accesso a valutazioni tempestive, nella presa in carico multidisciplinare e nella continuità dei percorsi terapeutici.",
+      },
+      {
+        type: "paragraph",
+        text: "Le associazioni del settore sottolineano inoltre la necessità di rafforzare i servizi dedicati all’età adulta, spesso meno strutturati rispetto a quelli dell’infanzia.",
+      },
+      {
+        type: "heading",
+        text: "Ricerca e nuove prospettive terapeutiche",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca scientifica sta esplorando nuove strade per migliorare il supporto alle persone con disturbo dello spettro autistico. Tra queste, uno studio italiano ha evidenziato come alcuni bambini possano mostrare maggiore attenzione verso i robot sociali rispetto agli esseri umani in specifiche attività strutturate.",
+      },
+      {
+        type: "paragraph",
+        text: "Questi risultati potrebbero aprire la strada a nuovi strumenti di supporto terapeutico, pensati per favorire l’attenzione, la comunicazione e le competenze sociali in contesti controllati.",
+      },
+      {
+        type: "heading",
+        text: "Un tema sempre più centrale",
+      },
+      {
+        type: "paragraph",
+        text: "L’aumento delle diagnosi non deve essere interpretato solo come una crescita del fenomeno, ma anche come il risultato di una maggiore capacità di riconoscimento e di una sensibilità crescente verso il tema.",
+      },
+      {
+        type: "paragraph",
+        text: "L’autismo resta una condizione complessa che richiede interventi personalizzati, continuità assistenziale e un forte investimento in inclusione sociale.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "Rai News - 02/04/2026",
+        url: "https://www.rainews.it/articoli/2026/04/autismo-in-italia-colpito-un-bambino-su-77-diagnosi-in-crescita-d3f86d1d-6125-46e5-ab3d-61ddd0a1c8de.html",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-4",
+  },
 ];
