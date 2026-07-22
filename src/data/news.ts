@@ -680,7 +680,7 @@ export const news: NewsItem[] = [
     categoria: "Articoli",
     data: "2026-07-22",
     immagine: articolo_5,
-    alt: "Acquarello di due bambini, posizionati specularmente",
+    alt: "Due bambini di spalle illustrati ad acquarello",
 
     estratto:
       "Sebbene possano essere talvolta confuse, ADHD e autismo si manifestano con caratteristiche e bisogni differenti e, in alcuni casi, possono anche coesistere nella stessa persona. Conoscere le loro peculiarità è il primo passo per favorire inclusione, consapevolezza e supporto personalizzato.",
