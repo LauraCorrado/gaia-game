@@ -1,8 +1,10 @@
 import locandina_1 from "../assets/img/newsletter/locandina_1.webp";
 import articolo_1 from "../assets/img/newsletter/gaia_articolo_1.webp";
-import articolo_2 from "../assets/img/newsletter/articolo_connessione_cerebrale.webp";
-import articolo_3 from "../assets/img/newsletter/articolo_robot_sociali.webp";
-import articolo_4 from "../assets/img/newsletter/articolo_diagnosi.webp";
+import articolo_2 from "../assets/img/newsletter/gaia_articolo_2.webp";
+import articolo_3 from "../assets/img/newsletter/gaia_articolo_3.webp";
+import articolo_4 from "../assets/img/newsletter/gaia_articolo_4.webp";
+import articolo_5 from "../assets/img/newsletter/gaia_articolo_5.webp";
+
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -667,5 +669,147 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "articolo-4",
+  },
+  //articolo5
+  {
+    id: 7,
+    titolo:
+      "ADHD e autismo",
+    sottotitolo:
+      "Differenze e somiglianze tra due condizioni neuroevolutive",
+    categoria: "Articoli",
+    data: "2026-07-22",
+    immagine: articolo_5,
+    alt: "Acquarello di due bambini, posizionati specularmente",
+
+    estratto:
+      "Sebbene possano essere talvolta confuse, ADHD e autismo si manifestano con caratteristiche e bisogni differenti e, in alcuni casi, possono anche coesistere nella stessa persona. Conoscere le loro peculiarità è il primo passo per favorire inclusione, consapevolezza e supporto personalizzato.",
+
+    contenuti: [
+      {
+        type: "heading",
+        text: "ADHD e autismo: differenze e somiglianze",
+      },
+      {
+        type: "paragraph",
+        text: "ADHD e disturbo dello spettro autistico sono due condizioni del neurosviluppo che possono presentare alcune somiglianze, motivo per cui vengono talvolta confuse. Tuttavia, si tratta di disturbi distinti, con caratteristiche specifiche e modalità diverse di manifestarsi. In alcuni casi, possono anche coesistere nella stessa persona.",
+      },
+      {
+        type: "heading",
+        text: "Cos'è l'ADHD?",
+      },
+      {
+        type: "paragraph",
+        text: "L’ADHD (Attention Deficit Hyperactivity Disorder) è una condizione che influisce principalmente su attenzione, controllo degli impulsi e livello di attività.",
+      },
+      {
+        type: "paragraph",
+        text: "Le persone con ADHD possono avere difficoltà a mantenere la concentrazione su compiti prolungati, tendere a distrarsi facilmente e agire in modo impulsivo. In alcuni casi è presente anche iperattività o irrequietezza, che rende difficile restare fermi o seguire lunghe attività senza variazioni.",
+      },
+      {
+        type: "paragraph",
+        text: "L’ADHD può presentarsi in forme diverse, con sintomi più legati alla disattenzione, all’iperattività-impulsività oppure a una combinazione di entrambe.",
+      },
+      {
+        type: "heading",
+        text: "Cos’è l’autismo?",
+      },
+      {
+        type: "paragraph",
+        text: "Il disturbo dello spettro autistico riguarda soprattutto la comunicazione sociale, l’interazione con gli altri e alcuni comportamenti ripetitivi o interessi ristretti.",
+      },
+      {
+        type: "paragraph",
+        text: "Le persone autistiche possono avere modalità diverse di comunicare ed esprimere emozioni, oltre a difficoltà nel comprendere alcune dinamiche sociali. Spesso mostrano interessi molto intensi e specifici e possono preferire routine stabili e prevedibili, mentre i cambiamenti improvvisi possono risultare faticosi.",
+      },
+      {
+        type: "paragraph",
+        text: "L’autismo è uno spettro molto ampio: ogni persona può presentare caratteristiche molto diverse.",
+      },
+      {
+        type: "heading",
+        text: "ADHD e autismo: le principali differenze",
+      },
+      {
+        type: "paragraph",
+        text: "Anche se alcune caratteristiche possono sembrare simili, ci sono differenze importanti.",
+      },
+      {
+        type: "plus",
+        text: "Attenzione",
+      },
+      {
+        type: "paragraph",
+        text: "Nell'ADHD, la difficoltà principale riguarda il mantenimento dell'attenzione: è frequente distrarsi facilmente e passare rapidamente da uno stimolo all'altro.",
+      },
+      {
+        type: "paragraph",
+        text: "Nell'autismo, invece, può emergere una capacità di concentrazione molto intensa su interessi specifici, mantenuta anche per lunghi periodi.",
+      },
+      {
+        type: "plus",
+        text: "Comunicazione",
+      },
+      {
+        type: "paragraph",
+        text: "Le persone con ADHD possono tendere a parlare impulsivamente, interrompere gli altri o intervenire senza riflettere.",
+      },
+      {
+        type: "paragraph",
+        text: "Nelle persone autistiche, invece, le difficoltà riguardano più spesso la comprensione delle dinamiche sociali e della comunicazione non verbale, come gesti, espressioni del viso e tono della voce.",
+      },
+      {
+        type: "plus",
+        text: "Routine e cambiamento",
+      },
+      {
+        type: "paragraph",
+        text: "Chi ha l'ADHD ricerca spesso nuovi stimoli e può annoiarsi facilmente in contesti ripetitivi.",
+      },
+      {
+        type: "paragraph",
+        text: "Le persone autistiche, al contrario, trovano generalmente sicurezza nella prevedibilità e nelle routine, mentre i cambiamenti improvvisi possono risultare fonte di disagio.",
+      },
+      {
+        type: "heading",
+        text: "Possono coesistere?",
+      },
+      {
+        type: "paragraph",
+        text: "Sì, ADHD e autismo possono presentarsi insieme nella stessa persona. In questi casi, alcune caratteristiche possono sovrapporsi o influenzarsi tra loro, rendendo il quadro più complesso.",
+      },
+      {
+        type: "heading",
+        text: "Conclusione",
+      },
+      {
+        type: "paragraph",
+        text: "Comprendere le differenze tra ADHD e autismo è importante per evitare semplificazioni eccessive e per favorire una maggiore consapevolezza. Ogni persona è unica e può esprimere queste condizioni in modo diverso.",
+      },
+      {
+        type: "paragraph",
+        text: "Una valutazione professionale è fondamentale per una corretta diagnosi e per costruire percorsi di supporto adeguati ai bisogni individuali.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "Portale autismo - 18/06/2020",
+        url: "https://www.portale-autismo.it/differenze-tra-autismo-e-adhd/",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-5",
   },
 ];
