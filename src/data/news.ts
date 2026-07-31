@@ -4,6 +4,7 @@ import articolo_2 from "../assets/img/newsletter/gaia_articolo_2.webp";
 import articolo_3 from "../assets/img/newsletter/gaia_articolo_3.webp";
 import articolo_4 from "../assets/img/newsletter/gaia_articolo_4.webp";
 import articolo_5 from "../assets/img/newsletter/gaia_articolo_5.webp";
+import articolo_6 from "../assets/img/newsletter/gaia_articolo_6.webp";
 
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
@@ -811,5 +812,135 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "articolo-5",
+  },
+  //articolo6
+  {
+    id: 8,
+    titolo:
+      "La ricerca europea sta trasformando la cura dei disturbi del neurosviluppo",
+    sottotitolo:
+      "Nuovi studi, tecnologie e approcci personalizzati per comprendere meglio l’autismo e migliorare il supporto alle persone e alle famiglie",
+    categoria: "Articoli",
+    data: "2026-07-28",
+    immagine: articolo_6,
+    alt: "Illustrazione ad acquarello di ricercatori in laboratorio",
+
+    estratto:
+      "La ricerca europea sull’autismo apre nuove prospettive per diagnosi precoci, interventi personalizzati e un supporto più efficace alle persone autistiche e alle loro famiglie. In occasione della Giornata Mondiale della Consapevolezza sull’Autismo 2026, HaDEA presenta alcuni dei principali progetti finanziati dall’Unione Europea.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Negli ultimi anni la ricerca scientifica ha compiuto importanti progressi nella comprensione dei disturbi del neurosviluppo, aprendo nuove prospettive per una diagnosi sempre più precoce, interventi personalizzati e un migliore supporto alle persone autistiche e alle loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "In occasione della Giornata Mondiale della Consapevolezza sull'Autismo 2026, la European Health and Digital Executive Agency (HaDEA) della Commissione Europea ha presentato alcuni dei principali progetti di ricerca finanziati dall'Unione Europea, evidenziando come l'innovazione scientifica stia contribuendo a cambiare concretamente il modo in cui vengono studiati e affrontati i disturbi del neurosviluppo.",
+      },
+      {
+        type: "heading",
+        text: "Comprendere la complessità dell'autismo",
+      },
+      {
+        type: "paragraph",
+        text: "Oggi è sempre più chiaro che l'autismo non può essere spiegato da un'unica causa. La ricerca scientifica mostra come fattori genetici, biologici, ambientali e dello sviluppo interagiscano tra loro, contribuendo alla grande variabilità con cui questa condizione si manifesta nelle diverse persone.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo i ricercatori stanno adottando un approccio multidisciplinare, che considera l'individuo nella sua globalità e non si limita all'osservazione dei soli comportamenti clinici. Comprendere questa complessità rappresenta il primo passo per sviluppare strumenti diagnostici più accurati e percorsi terapeutici realmente personalizzati.",
+      },
+      {
+        type: "heading",
+        text: "R2D2-MH: il più grande database europeo sullo sviluppo cerebrale precoce",
+      },
+      {
+        type: "paragraph",
+        text: "Tra i progetti sostenuti dall'Unione Europea figura R2D2-MH, un'iniziativa che ha l'obiettivo di raccogliere e integrare una quantità senza precedenti di dati sullo sviluppo cerebrale nelle prime fasi della vita.",
+      },
+      {
+        type: "paragraph",
+        text: "Attraverso la creazione del più ampio database europeo dedicato allo sviluppo neurologico infantile, i ricercatori possono analizzare come diversi fattori influenzino il cervello fin dai primi mesi di vita. Queste informazioni potrebbero consentire di individuare precocemente eventuali segnali di rischio, favorendo diagnosi tempestive e interventi mirati, quando il cervello presenta ancora una maggiore plasticità.",
+      },
+      {
+        type: "heading",
+        text: "Il microbiota intestinale come nuova frontiera della ricerca",
+      },
+      {
+        type: "paragraph",
+        text: "Un altro filone particolarmente promettente è quello sviluppato dal progetto CANDY, che approfondisce il rapporto tra microbiota intestinale, sistema immunitario e disturbi del neurosviluppo.",
+      },
+      {
+        type: "paragraph",
+        text: "Negli ultimi anni numerosi studi hanno evidenziato come l'intestino comunichi costantemente con il cervello attraverso quello che viene definito \"asse intestino-cervello\". Comprendere meglio questo dialogo biologico potrebbe permettere di identificare nuovi biomarcatori utili sia per la diagnosi sia per il monitoraggio dell'evoluzione della condizione.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo non è individuare una causa unica dell'autismo, ma comprendere meglio i molteplici meccanismi biologici che possono contribuire allo sviluppo dei disturbi del neurosviluppo, favorendo così approcci terapeutici sempre più personalizzati.",
+      },
+      {
+        type: "heading",
+        text: "Una ricerca costruita insieme alle persone",
+      },
+      {
+        type: "paragraph",
+        text: "L'innovazione non riguarda esclusivamente laboratori e tecnologie. Un aspetto sempre più centrale dei progetti europei è il coinvolgimento diretto delle persone neurodivergenti e delle loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "Sempre più studi adottano infatti metodologie partecipative, nelle quali le persone autistiche contribuiscono attivamente alla progettazione della ricerca, alla definizione delle priorità scientifiche e persino alla scelta di un linguaggio più rispettoso e inclusivo.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo cambiamento rappresenta un'evoluzione importante: chi vive quotidianamente l'autismo non è più soltanto destinatario della ricerca, ma diventa parte integrante del processo scientifico.",
+      },
+      {
+        type: "heading",
+        text: "La tecnologia a supporto delle famiglie",
+      },
+      {
+        type: "paragraph",
+        text: "Accanto alla ricerca biologica si sviluppano anche strumenti digitali pensati per migliorare la qualità della vita delle famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "Tra questi, il progetto ADAPPT mette a disposizione piattaforme e risorse digitali per accompagnare genitori e caregiver nella gestione delle sfide quotidiane, offrendo supporto durante le diverse fasi della crescita dei bambini con disturbi del neurosviluppo.",
+      },
+      {
+        type: "paragraph",
+        text: "Le tecnologie digitali stanno diventando un valido complemento ai percorsi clinici tradizionali, contribuendo a rendere il sostegno più accessibile, continuo e personalizzato.",
+      },
+      {
+        type: "heading",
+        text: "Investire nella ricerca significa investire nel futuro",
+      },
+      {
+        type: "paragraph",
+        text: "I progetti finanziati dall'Unione Europea dimostrano come la ricerca stia andando oltre la semplice comprensione dei meccanismi biologici dell'autismo. L'obiettivo è costruire un sistema di cura sempre più centrato sulla persona, capace di integrare competenze scientifiche, innovazione tecnologica e partecipazione attiva delle comunità coinvolte.",
+      },
+      {
+        type: "paragraph",
+        text: "Diagnosi più precoci, biomarcatori innovativi, strumenti digitali di supporto e una maggiore inclusione delle persone neurodivergenti rappresentano tasselli di un percorso che punta a migliorare concretamente la qualità della vita delle persone e delle loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "Ogni investimento nella ricerca scientifica è, infatti, un investimento nel futuro: un futuro in cui conoscenza, innovazione e inclusione possano procedere insieme per costruire una società sempre più attenta ai bisogni di tutti.",
+      },
+      {
+        type: "link",
+        text: "European Health and Digital Executive Agency (HaDEA) – Commissione Europea - 02/04/2026",
+        url: "https://hadea.ec.europa.eu/news/world-autism-awareness-day-2026-how-european-research-transforming-neurodevelopmental-care-2026-04-02_en",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-6",
   },
 ];
