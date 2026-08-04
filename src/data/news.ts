@@ -1,4 +1,5 @@
-import locandina_1 from "../assets/img/newsletter/locandina_1.webp";
+import newsletter_1 from "../assets/img/newsletter/newsletter_1.webp";
+import newsletter_2 from "../assets/img/newsletter/newsletter_2.webp";
 import articolo_1 from "../assets/img/newsletter/gaia_articolo_1.webp";
 import articolo_2 from "../assets/img/newsletter/gaia_articolo_2.webp";
 import articolo_3 from "../assets/img/newsletter/gaia_articolo_3.webp";
@@ -185,7 +186,7 @@ export const news: NewsItem[] = [
       "Giocare è un diritto universale, un’esperienza spontanea che deve essere resa possibile, fruibile e piacevole per ogni bambino",
     categoria: "Newsletter",
     data: "2026-03-16",
-    immagine: locandina_1,
+    immagine: newsletter_1,
     alt: "Locandine eventi del 18, 19 e 20 marzo su autismo e neurodivergenze",
 
     estratto:
@@ -942,5 +943,206 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "articolo-6",
+  },
+  //newsletter_2
+  {
+    id: 9,
+    indice: "#2",
+    titolo: "GAIA\nGiochi senza barriere",
+    sottotitolo:
+      "Comportamenti ripetitivi e stimming nell’autismo: comprenderne la funzione per promuovere interventi efficaci",
+    categoria: "Newsletter",
+    data: "2026-08-04",
+    immagine: newsletter_2,
+    alt: "Raffigurazione di un bambino che tamburella ritmicamente le dita (esempio di stimming)",
+
+    estratto:
+      "Lo stimming comprende movimenti, vocalizzazioni e azioni ripetitive che aiutano molte persone autistiche a regolare gli stimoli sensoriali, le emozioni e l’attenzione. Comprenderne la funzione permette di superare l’idea di un comportamento da eliminare e di promuovere interventi più rispettosi, personalizzati e centrati sul benessere della persona.",
+
+    contenuti: [
+      {
+        type: "heading",
+        text: "Stimming: perché parlarne?",
+      },
+      {
+        type: "paragraph",
+        text: "I comportamenti ripetitivi costituiscono uno dei principali criteri diagnostici del Disturbo dello Spettro Autistico (ASD) secondo il Diagnostic and Statistical Manual of Mental Disorders – Fifth Edition – Text Revision (DSM-5-TR) (American Psychiatric Association, 2022). Per lungo tempo sono stati interpretati prevalentemente come comportamenti problematici da ridurre; oggi, grazie alle evidenze scientifiche, sappiamo che rappresentano spesso importanti strategie di autoregolazione neurofisiologica.",
+      },
+      {
+        type: "paragraph",
+        text: "Tra queste manifestazioni assume particolare rilievo lo stimming (self-stimulatory behavior), termine che identifica movimenti, vocalizzazioni o azioni ripetitive attraverso cui la persona autistica regola l’elaborazione sensoriale, gestisce gli stati emotivi e mantiene un equilibrio interno.",
+      },
+      {
+        type: "heading",
+        text: "Che cos’è lo stimming?",
+      },
+      {
+        type: "paragraph",
+        text: "Lo stimming comprende una vasta gamma di comportamenti ripetitivi, tra cui:",
+      },
+      {
+        type: "paragraph",
+        text: "• battito delle mani (hand flapping);",
+      },
+      {
+        type: "paragraph",
+        text: "• dondolamento del tronco;",
+      },
+      {
+        type: "paragraph",
+        text: "• manipolazione ripetitiva di oggetti;",
+      },
+      {
+        type: "paragraph",
+        text: "• rotazione di oggetti;",
+      },
+      {
+        type: "paragraph",
+        text: "• ecolalia (ripetizione di parole o frasi);",
+      },
+      {
+        type: "paragraph",
+        text: "• vocalizzazioni ripetitive;",
+      },
+      {
+        type: "paragraph",
+        text: "• movimenti ritmici delle dita o del corpo.",
+      },
+      {
+        type: "paragraph",
+        text: "Sebbene comportamenti analoghi possano essere osservati anche nella popolazione neurotipica (ad esempio tamburellare con le dita o muovere continuamente una gamba), nelle persone autistiche essi risultano generalmente più frequenti, intensi e strettamente collegati ai processi di regolazione sensoriale ed emotiva.",
+      },
+      {
+        type: "heading",
+        text: "Qual è la funzione dello stimming?",
+      },
+      {
+        type: "paragraph",
+        text: "La letteratura scientifica attribuisce allo stimming diverse funzioni adattive.",
+      },
+      {
+        type: "plus",
+        text: "Regolazione sensoriale",
+      },
+      {
+        type: "paragraph",
+        text: "Molte persone autistiche presentano alterazioni nell’elaborazione degli stimoli sensoriali. Lo stimming contribuisce a modulare gli input provenienti dall’ambiente, favorendo una condizione di maggiore equilibrio in presenza di ipersensibilità o iposensibilità sensoriale.",
+      },
+      {
+        type: "plus",
+        text: "Autoregolazione emotiva",
+      },
+      {
+        type: "paragraph",
+        text: "Situazioni di stress, ansia, frustrazione o sovraccarico cognitivo possono determinare un incremento dei comportamenti ripetitivi. Lo stimming rappresenta, in questi casi, una risposta funzionale che consente di ridurre l’attivazione fisiologica e recuperare uno stato di calma.",
+      },
+      {
+        type: "plus",
+        text: "Supporto alle funzioni attentive",
+      },
+      {
+        type: "paragraph",
+        text: "Alcune ricerche suggeriscono che determinati comportamenti ripetitivi possano facilitare il mantenimento dell’attenzione durante attività cognitive particolarmente impegnative.",
+      },
+      {
+        type: "plus",
+        text: "Espressione delle emozioni positive",
+      },
+      {
+        type: "paragraph",
+        text: "Lo stimming non è esclusivamente associato al disagio. Può comparire anche durante esperienze di entusiasmo, soddisfazione o eccitazione, rappresentando una modalità spontanea di espressione emotiva.",
+      },
+      {
+        type: "heading",
+        text: "Eliminare lo stimming? Le evidenze suggeriscono un cambio di prospettiva",
+      },
+      {
+        type: "paragraph",
+        text: "Le attuali linee di ricerca invitano a superare una visione esclusivamente orientata alla soppressione del comportamento.",
+      },
+      {
+        type: "paragraph",
+        text: "Interrompere sistematicamente lo stimming può infatti aumentare il livello di stress, compromettere i processi di autoregolazione e incrementare il rischio di \"masking\", ovvero la tendenza a mascherare le proprie caratteristiche comportamentali per adattarsi alle aspettative sociali, con possibili ripercussioni sul benessere psicologico.",
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo dell’intervento educativo e clinico dovrebbe essere comprendere la funzione del comportamento, piuttosto che eliminarlo indiscriminatamente.",
+      },
+      {
+        type: "heading",
+        text: "Quando è opportuno intervenire?",
+      },
+      {
+        type: "paragraph",
+        text: "Un intervento specialistico è indicato quando il comportamento: ✔ comporta rischio di autolesionismo; ✔ limita significativamente l’apprendimento; ✔ compromette la partecipazione sociale; ✔ interferisce con la qualità della vita della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "In tali circostanze è raccomandata una valutazione funzionale del comportamento, finalizzata a identificarne la funzione e a individuare strategie alternative di autoregolazione che rispettino i bisogni della persona.",
+      },
+      {
+        type: "heading",
+        text: "Il punto di vista del Progetto GAIA",
+      },
+      {
+        type: "paragraph",
+        text: "Promuovere una cultura dell’inclusione significa anche comprendere che molti comportamenti osservabili nell’autismo rappresentano modalità di adattamento del sistema nervoso e non semplici manifestazioni da correggere.",
+      },
+      {
+        type: "paragraph",
+        text: "Riconoscere la funzione dello stimming consente di progettare interventi personalizzati, rispettosi della persona e basati sulle migliori evidenze scientifiche disponibili.",
+      },
+      {
+        type: "plus",
+        text: "Comprendere prima di intervenire",
+      },
+      {
+        type: "paragraph",
+        text: "Comprendere prima di intervenire rappresenta oggi uno dei principi fondamentali della presa in carico centrata sulla persona.",
+      },
+      {
+        type: "plus",
+        text: "«Il comportamento non è mai privo di significato: comprenderne la funzione è il primo passo per costruire interventi realmente efficaci e rispettosi della persona»",
+      },
+      {
+        type: "heading",
+        text: "Bibliografia",
+      },
+      {
+        type: "paragraph",
+        text: "• American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders (5th ed., Text Revision – DSM-5-TR). American Psychiatric Publishing",
+      },
+      {
+        type: "link",
+        text: "• Charlton, R. A., et al. (2021). \"It feels like holding back something you need to say\": Autistic and non-autistic adults’ accounts of sensory experiences and stimming. Research in Autism Spectrum Disorders, 90, 101879.",
+        url: "https://www.sciencedirect.com/science/article/pii/S1750946721001392?via%3Dihub"
+      },
+      {
+        type: "link",
+        text: "• Charlton, R. A., et al. (2024). Repetitive behaviours in autistic and non-autistic adults: Associations with sensory sensitivity and impact on self-efficacy. Journal of Autism and Developmental Disorders.",
+        url: "https://link.springer.com/article/10.1007/s10803-023-06133-0"
+      },
+      {
+        type: "link",
+        text: "• Kirby, A. V., et al. (2017). Sensory and repetitive behaviors among children with autism spectrum disorder at home. Journal of Autism and Developmental Disorders.",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5340079/"
+      },
+      {
+        type: "link",
+        text: "• Portale Autismo. \"Comportamenti ripetitivi e stimming nell’autismo\". Articolo divulgativo consultato come supporto introduttivo e di divulgazione del tema.",
+        url: "https://www.portale-autismo.it/comportamenti-ripetitivi-e-stimming-nellautismo/"
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "newsletter-2",
   },
 ];
