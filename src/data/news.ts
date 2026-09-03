@@ -6,6 +6,10 @@ import articolo_3 from "../assets/img/newsletter/gaia_articolo_3.webp";
 import articolo_4 from "../assets/img/newsletter/gaia_articolo_4.webp";
 import articolo_5 from "../assets/img/newsletter/gaia_articolo_5.webp";
 import articolo_6 from "../assets/img/newsletter/gaia_articolo_6.webp";
+import articolo_7 from "../assets/img/newsletter/gaia_articolo_7.webp";
+import articolo_8 from "../assets/img/newsletter/gaia_articolo_8.webp";
+import articolo_9 from "../assets/img/newsletter/gaia_articolo_9.webp";
+import articolo_10 from "../assets/img/newsletter/gaia_articolo_10.webp";
 
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
@@ -927,6 +931,10 @@ export const news: NewsItem[] = [
         text: "Ogni investimento nella ricerca scientifica è, infatti, un investimento nel futuro: un futuro in cui conoscenza, innovazione e inclusione possano procedere insieme per costruire una società sempre più attenta ai bisogni di tutti.",
       },
       {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
         type: "link",
         text: "European Health and Digital Executive Agency (HaDEA) – Commissione Europea - 02/04/2026",
         url: "https://hadea.ec.europa.eu/news/world-autism-awareness-day-2026-how-european-research-transforming-neurodevelopmental-care-2026-04-02_en",
@@ -1144,5 +1152,692 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "newsletter-2",
+  },
+  //articolo7
+  {
+    id: 10,
+    titolo:
+      "Genetica e ambiente: un nuovo modello aiuta a comprendere il rischio di autismo",
+    sottotitolo:
+      "Un nuovo studio integra genetica e ambiente per comprendere meglio la complessità dell’autismo.",
+    categoria: "Articoli",
+    data: "2026-08-05",
+    immagine: articolo_7,
+    alt: "Illustrazione ad acquarello di ricercatori che analizzano dati genetici",
+
+    estratto:
+      "Un nuovo modello sviluppato dalla Johns Hopkins analizza insieme predisposizione genetica e fattori ambientali nel rischio di autismo. Lo studio apre nuove prospettive per una ricerca più inclusiva, accurata e orientata alla medicina personalizzata.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Per molti anni la ricerca sull'autismo si è concentrata principalmente sull'individuazione dei geni coinvolti nello sviluppo dei disturbi dello spettro autistico oppure sull'analisi di possibili fattori ambientali associati al rischio. Oggi, però, la comunità scientifica è sempre più concorde nel ritenere che nessuno di questi elementi, preso singolarmente, sia sufficiente a spiegare la complessità dell'autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Un importante passo avanti in questa direzione arriva da un recente studio della Johns Hopkins Bloomberg School of Public Health, pubblicato sulla rivista \"Nature Genetics\", che propone un nuovo modello di analisi capace di valutare contemporaneamente il ruolo della predisposizione genetica e dei fattori ambientali nello sviluppo dei disturbi dello spettro autistico.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo della ricerca è offrire una visione più completa dei meccanismi che influenzano il rischio di autismo, superando l'approccio tradizionale che tendeva a considerare separatamente le diverse componenti coinvolte.",
+      },
+      {
+        type: "heading",
+        text: "L'autismo è il risultato di molteplici fattori",
+      },
+      {
+        type: "paragraph",
+        text: "Le evidenze scientifiche raccolte negli ultimi anni mostrano che l'autismo è una condizione del neurosviluppo caratterizzata da un'elevata complessità biologica.",
+      },
+      {
+        type: "paragraph",
+        text: "La componente genetica svolge certamente un ruolo importante: sono state identificate centinaia di varianti genetiche associate a un aumento del rischio. Tuttavia, queste varianti non determinano automaticamente la comparsa dell'autismo e, nella maggior parte dei casi, agiscono insieme ad altri elementi che intervengono durante lo sviluppo prenatale e nei primi anni di vita.",
+      },
+      {
+        type: "paragraph",
+        text: "Anche alcuni fattori ambientali, infatti, possono contribuire al rischio, interagendo con il patrimonio genetico individuale. Comprendere come queste componenti si influenzino reciprocamente rappresenta oggi una delle principali sfide della ricerca internazionale.",
+      },
+      {
+        type: "heading",
+        text: "Un nuovo modello per studiare l'interazione tra geni e ambiente",
+      },
+      {
+        type: "paragraph",
+        text: "Per affrontare questa complessità, i ricercatori della Johns Hopkins hanno sviluppato un innovativo modello statistico in grado di analizzare simultaneamente le informazioni genetiche del bambino, quelle dei genitori e i possibili fattori ambientali che possono influenzare il neurosviluppo.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo approccio permette di osservare le relazioni tra le diverse variabili in maniera più accurata rispetto ai modelli utilizzati in passato, offrendo una rappresentazione più realistica dei meccanismi biologici alla base dell'autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "L'idea centrale dello studio è che il rischio non derivi da un singolo gene né da un singolo fattore ambientale, ma dall'interazione dinamica di molteplici elementi che agiscono contemporaneamente.",
+      },
+      {
+        type: "heading",
+        text: "Oltre 18.000 famiglie coinvolte nello studio",
+      },
+      {
+        type: "paragraph",
+        text: "Per validare il nuovo modello, gli studiosi hanno analizzato i dati genetici e familiari di oltre 18.000 bambini con diagnosi di autismo e dei loro genitori.",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli aspetti più significativi della ricerca riguarda la presenza di partecipanti appartenenti a popolazioni con differenti origini ancestrali. Questo ha consentito di verificare come le relazioni tra genetica e ambiente possano manifestarsi in contesti differenti, migliorando l'affidabilità delle analisi.",
+      },
+      {
+        type: "paragraph",
+        text: "La disponibilità di un campione così ampio rappresenta uno degli elementi di maggiore solidità dello studio e consente di ottenere risultati più robusti rispetto a ricerche basate su gruppi di dimensioni ridotte.",
+      },
+      {
+        type: "heading",
+        text: "Una ricerca più inclusiva per risultati più affidabili",
+      },
+      {
+        type: "paragraph",
+        text: "Lo studio mette inoltre in evidenza un tema particolarmente importante per la medicina di precisione: gran parte degli strumenti genetici oggi disponibili è stata sviluppata utilizzando prevalentemente dati provenienti da popolazioni di origine europea.",
+      },
+      {
+        type: "paragraph",
+        text: "Questa limitazione può ridurre l'accuratezza delle analisi quando gli stessi strumenti vengono applicati a persone appartenenti ad altre popolazioni.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo i ricercatori sottolineano la necessità di ampliare la rappresentatività degli studi genetici, coinvolgendo comunità provenienti da differenti aree geografiche e con diverse caratteristiche ancestrali.",
+      },
+      {
+        type: "paragraph",
+        text: "Una ricerca realmente inclusiva non è soltanto una questione di equità scientifica, ma rappresenta anche una condizione indispensabile per sviluppare strumenti diagnostici affidabili e applicabili a tutta la popolazione mondiale.",
+      },
+      {
+        type: "heading",
+        text: "Quali prospettive apre questa ricerca?",
+      },
+      {
+        type: "paragraph",
+        text: "Sebbene questi risultati non abbiano un'applicazione clinica immediata, rappresentano un importante passo avanti nella comprensione delle basi biologiche dell'autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Un modello capace di integrare genetica e ambiente potrebbe infatti contribuire, nel prossimo futuro, a individuare con maggiore precisione i fattori di rischio, favorendo diagnosi sempre più precoci e percorsi di presa in carico maggiormente personalizzati.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo finale della ricerca non è prevedere con certezza lo sviluppo dell'autismo, ma comprendere meglio i processi che lo caratterizzano, così da offrire strumenti sempre più efficaci a medici, ricercatori e famiglie.",
+      },
+      {
+        type: "heading",
+        text: "La ricerca continua a costruire una medicina sempre più personalizzata",
+      },
+      {
+        type: "paragraph",
+        text: "Questo studio conferma una direzione ormai condivisa dalla comunità scientifica internazionale: comprendere l'autismo significa analizzare la complessità delle interazioni tra patrimonio genetico, ambiente e sviluppo neurologico.",
+      },
+      {
+        type: "paragraph",
+        text: "Ogni nuova scoperta contribuisce ad arricchire le conoscenze disponibili e avvicina la medicina a un approccio sempre più personalizzato, capace di rispondere alle caratteristiche e ai bisogni specifici di ogni persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Investire nella ricerca significa continuare a costruire conoscenze che, nel tempo, potranno tradursi in diagnosi più tempestive, interventi più mirati e una migliore qualità della vita per le persone autistiche e le loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "Johns Hopkins Bloomberg School of Public Health – \"New framework analyzes autism risk factors\", pubblicato su Nature Genetics - 02/06/2026",
+        url: "https://publichealth.jhu.edu/2026/new-framework-analyzes-autism-risk-factors",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-7",
+  },
+  //articolo8
+  {
+    id: 11,
+    titolo:
+      "L’intelligenza artificiale può supportare una valutazione dell’autismo più accurata e trasparente",
+    sottotitolo:
+      "Un modello di IA spiegabile apre nuove prospettive per supportare la valutazione dell’autismo.",
+    categoria: "Articoli",
+    data: "2026-08-11",
+    immagine: articolo_8,
+    alt: "Illustrazione ad acquarello di una dottoressa e una bambina che osservano insieme un tablet",
+    estratto:
+      "Un nuovo studio della University of Plymouth esplora l’uso dell’intelligenza artificiale spiegabile nella valutazione dell’autismo. L’obiettivo è affiancare i professionisti sanitari con strumenti più trasparenti, accurati e orientati al supporto personalizzato.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "L’intelligenza artificiale sta rapidamente trasformando numerosi ambiti della medicina e della ricerca scientifica, aprendo nuove possibilità anche nel campo dei disturbi del neurosviluppo.",
+      },
+      {
+        type: "paragraph",
+        text: "Tra le applicazioni più promettenti vi è il suo utilizzo come strumento di supporto nella valutazione dell’autismo, con l’obiettivo di affiancare i professionisti sanitari nell’analisi delle informazioni cliniche e nello sviluppo di percorsi sempre più personalizzati.",
+      },
+      {
+        type: "paragraph",
+        text: "Un recente studio condotto dai ricercatori della University of Plymouth ha sviluppato un nuovo modello di intelligenza artificiale in grado non solo di fornire previsioni e risultati, ma anche di spiegare il processo che porta a tali conclusioni.",
+      },
+      {
+        type: "paragraph",
+        text: "Questa caratteristica rappresenta un elemento fondamentale, soprattutto in ambito sanitario: una tecnologia efficace non deve limitarsi a produrre una risposta, ma deve permettere agli specialisti di comprendere e interpretare le informazioni generate.",
+      },
+      {
+        type: "heading",
+        text: "La valutazione dell’autismo: un processo complesso",
+      },
+      {
+        type: "paragraph",
+        text: "Attualmente la valutazione dell’autismo si basa principalmente sull’osservazione del comportamento, sulla raccolta della storia dello sviluppo della persona e sull’analisi clinica effettuata da professionisti specializzati.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tratta di un processo articolato, che richiede tempo e competenze multidisciplinari, poiché ogni persona presenta caratteristiche uniche e modalità differenti di manifestazione della condizione.",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca scientifica sta quindi esplorando nuovi strumenti capaci di integrare le informazioni disponibili e offrire un ulteriore supporto agli specialisti, senza sostituire il ruolo fondamentale della valutazione umana.",
+      },
+      {
+        type: "paragraph",
+        text: "In questo contesto l’intelligenza artificiale può rappresentare un valido alleato, grazie alla capacità di analizzare grandi quantità di dati e individuare schemi e correlazioni difficilmente rilevabili attraverso un’analisi tradizionale.",
+      },
+      {
+        type: "heading",
+        text: "L’intelligenza artificiale come supporto, non come sostituzione",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli aspetti più importanti nello sviluppo di sistemi di IA applicati alla medicina riguarda il loro ruolo.",
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo non è sostituire il professionista sanitario, ma fornire strumenti aggiuntivi che possano migliorare il processo decisionale.",
+      },
+      {
+        type: "paragraph",
+        text: "Un modello di intelligenza artificiale può infatti contribuire a organizzare informazioni complesse, evidenziare elementi rilevanti e supportare gli specialisti nell’interpretazione dei dati.",
+      },
+      {
+        type: "paragraph",
+        text: "La tecnologia diventa quindi un elemento complementare all’esperienza clinica, permettendo di unire capacità computazionali avanzate e conoscenza professionale.",
+      },
+      {
+        type: "heading",
+        text: "Un modello di IA più accurato e soprattutto spiegabile",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sviluppata dall’University of Plymouth si concentra in particolare sul concetto di \"Explainable Artificial Intelligence (XAI)\", ovvero intelligenza artificiale spiegabile.",
+      },
+      {
+        type: "paragraph",
+        text: "I tradizionali sistemi di IA, soprattutto quelli basati su algoritmi complessi, possono spesso funzionare come una “scatola nera”: restituiscono un risultato, ma non sempre è chiaro quali elementi abbiano determinato quella previsione.",
+      },
+      {
+        type: "paragraph",
+        text: "In ambito sanitario questo rappresenta un limite importante, perché medici e famiglie devono poter comprendere il motivo per cui viene proposta una determinata interpretazione.",
+      },
+      {
+        type: "paragraph",
+        text: "Un sistema di IA spiegabile, invece, permette di visualizzare quali caratteristiche abbiano avuto maggiore peso nell’elaborazione del risultato, rendendo il processo più trasparente e verificabile.",
+      },
+      {
+        type: "heading",
+        text: "Perché la trasparenza è fondamentale nella medicina del futuro",
+      },
+      {
+        type: "paragraph",
+        text: "L’utilizzo dell’intelligenza artificiale nella salute richiede necessariamente affidabilità, responsabilità e trasparenza.",
+      },
+      {
+        type: "paragraph",
+        text: "Quando una tecnologia viene utilizzata per supportare decisioni che riguardano la salute delle persone, non è sufficiente che sia precisa: deve anche essere comprensibile e valutabile da chi la utilizza.",
+      },
+      {
+        type: "paragraph",
+        text: "La possibilità di conoscere il percorso seguito dall’algoritmo consente agli specialisti di interpretare meglio i risultati ottenuti,individuare eventuali limiti o errori del sistema, integrare le informazioni tecnologiche con la valutazione clinica e utilizzare lo strumento in modo consapevole e responsabile.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo approccio contribuisce a costruire un rapporto di maggiore fiducia tra tecnologia, professionisti e famiglie.",
+      },
+      {
+        type: "heading",
+        text: "Nuove prospettive per diagnosi e supporto personalizzato",
+      },
+      {
+        type: "paragraph",
+        text: "Le potenzialità dell’intelligenza artificiale nella ricerca sull’autismo sono molteplici.",
+      },
+      {
+        type: "paragraph",
+        text: "In futuro, strumenti sempre più avanzati potrebbero contribuire a:",
+      },
+      {
+        type: "paragraph",
+        text: "•	migliorare l’analisi dei dati clinici;",
+      },
+      {
+        type: "paragraph",
+        text: "•	individuare pattern utili alla valutazione;",
+      },
+      {
+        type: "paragraph",
+        text: "•	supportare diagnosi più tempestive;",
+      },
+      {
+        type: "paragraph",
+        text: "•	favorire percorsi di intervento maggiormente personalizzati.",
+      },
+      {
+        type: "paragraph",
+        text: "Tuttavia, la tecnologia rappresenta soltanto uno degli elementi di un percorso più ampio, nel quale devono rimanere centrali la persona, la sua storia individuale e il contributo dei professionisti che la accompagnano.",
+      },
+      {
+        type: "heading",
+        text: "Innovazione tecnologica e attenzione alla persona: la sfida del futuro",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sull’intelligenza artificiale applicata ai disturbi del neurosviluppo mostra come innovazione e attenzione alla persona possano procedere insieme.",
+      },
+      {
+        type: "paragraph",
+        text: "Un futuro in cui tecnologia e competenza umana collaborano può offrire nuove opportunità per migliorare la qualità delle valutazioni, rendere i percorsi più personalizzati e fornire un supporto sempre più efficace alle persone autistiche e alle loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "L’intelligenza artificiale non rappresenta una sostituzione dell’esperienza umana, ma uno strumento che, se sviluppato e utilizzato in modo responsabile, può diventare un importante alleato della ricerca scientifica e della medicina del futuro.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "University of Plymouth – “AI model offers accurate and explainable insights to support autism assessment” - 19/09/2025",
+        url: "https://www.plymouth.ac.uk/news/ai-model-offers-accurate-and-explainable-insights-to-support-autism-assessment ",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-8",
+  },
+  //articolo9
+  {
+    id: 12,
+    titolo:
+      "L’intelligenza artificiale per ridurre i tempi di accesso alla diagnosi dell’autismo",
+    sottotitolo:
+      "Un dispositivo basato sull’IA apre nuove prospettive per rendere più rapido l’accesso alla valutazione dell’autismo.",
+    categoria: "Articoli",
+    data: "2026-08-19",
+    immagine: articolo_9,
+    alt: "Illustrazione ad acquarello di tre medici al computer",
+
+    estratto:
+      "La University of Missouri School of Medicine sta studiando un dispositivo assistito dall’intelligenza artificiale per supportare la valutazione dell’autismo. L’obiettivo è ridurre i tempi di attesa e facilitare l’accesso delle famiglie a percorsi diagnostici più tempestivi e personalizzati.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Per molte famiglie il percorso verso una valutazione dell’autismo può essere lungo e complesso. I tempi di attesa per accedere ai servizi diagnostici possono estendersi per mesi o, in alcuni casi, anche per anni, ritardando la possibilità di ricevere supporti fondamentali per lo sviluppo, l’apprendimento e il benessere della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "In questo scenario, la ricerca scientifica sta esplorando nuove soluzioni tecnologiche in grado di rendere i percorsi di valutazione più efficienti e accessibili.",
+      },
+      {
+        type: "paragraph",
+        text: "Un’importante prospettiva arriva dalla University of Missouri School of Medicine, dove un gruppo di ricercatori sta studiando il potenziale dell’intelligenza artificiale come strumento di supporto alla valutazione dell’autismo, con l’obiettivo di contribuire alla riduzione dei tempi di accesso alla diagnosi e migliorare l’organizzazione dei servizi.",
+      },
+      {
+        type: "heading",
+        text: "Il problema dei tempi di attesa nella valutazione dell’autismo",
+      },
+      {
+        type: "paragraph",
+        text: "La diagnosi dell’autismo rappresenta un passaggio fondamentale per permettere alle persone e alle famiglie di accedere a interventi e strumenti di supporto adeguati.",
+      },
+      {
+        type: "paragraph",
+        text: "Tuttavia, in molti sistemi sanitari, la crescente domanda di valutazioni specialistiche si confronta con una disponibilità limitata di professionisti e strutture dedicate. Questo può determinare tempi di attesa significativi, creando difficoltà per le famiglie che cercano risposte e indicazioni.",
+      },
+      {
+        type: "paragraph",
+        text: "Un accesso più rapido alla valutazione può essere particolarmente importante durante l’infanzia, una fase nella quale interventi personalizzati e tempestivi possono contribuire positivamente allo sviluppo delle capacità comunicative, relazionali e cognitive.",
+      },
+      {
+        type: "paragraph",
+        text: "La sfida della ricerca è quindi individuare strumenti capaci di supportare i professionisti senza modificare la centralità della valutazione clinica.",
+      },
+      {
+        type: "heading",
+        text: "Un dispositivo digitale basato sull’intelligenza artificiale",
+      },
+      {
+        type: "paragraph",
+        text: "I ricercatori della University of Missouri School of Medicine hanno sviluppato un dispositivo digitale assistito dall’intelligenza artificiale progettato per raccogliere e analizzare informazioni utili nel processo di valutazione.",
+      },
+      {
+        type: "paragraph",
+        text: "La tecnologia è in grado di elaborare specifici indicatori comportamentali e fornire informazioni aggiuntive che possono aiutare gli specialisti nella fase di analisi.",
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo è creare uno strumento che possa facilitare il lavoro dei professionisti, rendendo più rapido il processo di identificazione dei casi che necessitano di un approfondimento clinico.",
+      },
+      {
+        type: "paragraph",
+        text: "L’intelligenza artificiale, grazie alla capacità di analizzare grandi quantità di dati e riconoscere determinati schemi, può quindi rappresentare un supporto importante nell’organizzazione dei percorsi diagnostici.",
+      },
+      {
+        type: "heading",
+        text: "La tecnologia come supporto alla competenza clinica",
+      },
+      {
+        type: "paragraph",
+        text: "Un aspetto fondamentale nello sviluppo di questi strumenti riguarda il loro ruolo all’interno del percorso diagnostico.",
+      },
+      {
+        type: "paragraph",
+        text: "L’intelligenza artificiale non sostituisce il lavoro degli specialisti e non può sostituire l’osservazione clinica, il confronto con la famiglia e la valutazione complessiva della storia della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "La diagnosi dell’autismo richiede infatti un approccio multidisciplinare, nel quale esperienza professionale, conoscenza dello sviluppo individuale e contesto familiare rimangono elementi indispensabili.",
+      },
+      {
+        type: "paragraph",
+        text: "La tecnologia può però diventare un alleato prezioso, contribuendo a:",
+      },
+      {
+        type: "paragraph",
+        text: "•	individuare più rapidamente le situazioni che richiedono ulteriori approfondimenti;",
+      },
+      {
+        type: "paragraph",
+        text: "•	migliorare la gestione delle informazioni raccolte durante la valutazione;",
+      },
+      {
+        type: "paragraph",
+        text: "•	rendere più efficiente l’organizzazione dei servizi;",
+      },
+      {
+        type: "paragraph",
+        text: "•	facilitare l’accesso delle famiglie ai percorsi specialistici.",
+      },
+      {
+        type: "heading",
+        text: "Ridurre i tempi significa creare nuove opportunità",
+      },
+      {
+        type: "paragraph",
+        text: "Una diagnosi tempestiva non rappresenta soltanto un risultato clinico, ma può avere un impatto significativo sulla qualità della vita delle persone autistiche e delle loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "Ridurre i tempi di attesa significa permettere un accesso più rapido a interventi educativi e terapeutici personalizzati, strumenti di supporto adeguati ai bisogni individuali, percorsi di accompagnamento per le famiglie e maggiori opportunità di sviluppo e partecipazione sociale.",
+      },
+      {
+        type: "paragraph",
+        text: "Il fattore tempo assume quindi un valore importante: ogni mese guadagnato nell’accesso ai servizi può rappresentare un’opportunità in più per costruire un percorso di crescita più consapevole e supportato.",
+      },
+      {
+        type: "heading",
+        text: "L’intelligenza artificiale al servizio di una sanità più accessibile",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sviluppata dalla University of Missouri School of Medicine si inserisce in un più ampio percorso internazionale che vede l’intelligenza artificiale protagonista dell’innovazione sanitaria.",
+      },
+      {
+        type: "paragraph",
+        text: "Dall’analisi dei dati clinici alla ricerca di nuovi strumenti diagnostici, l’IA sta offrendo nuove possibilità per migliorare l’efficienza dei sistemi sanitari e rendere i servizi più accessibili.",
+      },
+      {
+        type: "paragraph",
+        text: "Tuttavia, il vero valore di queste tecnologie risiede nella capacità di integrarsi con il lavoro umano, mettendo a disposizione degli specialisti strumenti più avanzati senza perdere di vista la centralità della persona.",
+      },
+      {
+        type: "heading",
+        text: "Tecnologia e inclusione: costruire il futuro della diagnosi",
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo della ricerca non è semplicemente velocizzare un processo, ma contribuire alla costruzione di un modello sanitario più vicino ai bisogni delle persone.",
+      },
+      {
+        type: "paragraph",
+        text: "L’intelligenza artificiale può diventare un importante strumento per superare alcune barriere di accesso, migliorare l’organizzazione delle valutazioni e favorire percorsi più tempestivi e personalizzati.",
+      },
+      {
+        type: "paragraph",
+        text: "Nel campo dell’autismo, dove ogni persona presenta caratteristiche e necessità differenti, la tecnologia può rappresentare un supporto concreto per accompagnare professionisti e famiglie verso una maggiore conoscenza, comprensione e inclusione.",
+      },
+      {
+        type: "paragraph",
+        text: "Perché ridurre i tempi della diagnosi significa aumentare le possibilità di intervento e offrire nuove opportunità per il futuro.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "University of Missouri School of Medicine – “AI-assisted device can improve autism care access”. - 18/12/2025",
+        url: "https://medicine.missouri.edu/news/ai-assisted-device-can-improve-autism-care-access",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-9",
+  },
+  //articolo10
+  {
+    id: 13,
+    titolo:
+      "La medicina genetica apre una nuova fase nella ricerca sull’autismo",
+    sottotitolo:
+      "La genetica apre nuove prospettive per comprendere la complessità dell’autismo e sviluppare percorsi più personalizzati.",
+    categoria: "Articoli",
+    data: "2026-08-24",
+    immagine: articolo_10,
+    alt: "Illustrazione ad acquarello di una mano che tiene una piantina",
+
+    estratto:
+      "I progressi della medicina genetica stanno cambiando il modo di studiare l’autismo, offrendo strumenti sempre più avanzati per comprenderne i meccanismi biologici. L’obiettivo è favorire diagnosi più accurate, supporti personalizzati e una ricerca sempre centrata sulla persona.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Negli ultimi anni la ricerca sull’autismo ha compiuto importanti passi avanti grazie allo sviluppo di nuove tecnologie genetiche e genomiche, che stanno permettendo agli studiosi di comprendere in modo sempre più approfondito i meccanismi biologici alla base dei disturbi dello spettro autistico.",
+      },
+      {
+        type: "paragraph",
+        text: "La medicina genetica sta aprendo una nuova fase nello studio dell’autismo: non più soltanto orientata all’identificazione dei geni coinvolti, ma sempre più focalizzata sulla comprensione di come le informazioni genetiche possano contribuire a sviluppare approcci maggiormente personalizzati e centrati sulla persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Durante l’International Society for Autism Research (INSAR), uno dei principali appuntamenti mondiali dedicati alla ricerca sull’autismo, numerosi esperti hanno evidenziato come i progressi della genetica stiano modificando il modo di studiare questa complessa condizione del neurosviluppo.",
+      },
+      {
+        type: "heading",
+        text: "Dalla scoperta dei geni alla medicina di precisione",
+      },
+      {
+        type: "paragraph",
+        text: "Per molti anni uno degli obiettivi principali della ricerca genetica è stato individuare le varianti associate a un maggiore rischio di sviluppare un disturbo dello spettro autistico.",
+      },
+      {
+        type: "paragraph",
+        text: "Grazie ai progressi delle tecnologie di sequenziamento del DNA, oggi i ricercatori hanno identificato numerose alterazioni genetiche che possono essere coinvolte nei processi dello sviluppo neurologico.",
+      },
+      {
+        type: "paragraph",
+        text: "Tuttavia, la ricerca ha mostrato anche un aspetto fondamentale: l’autismo non è determinato da un singolo gene o da una singola causa biologica.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo spettro autistico comprende infatti una grande varietà di caratteristiche, manifestazioni e percorsi individuali. Questa complessità rende necessario un approccio che vada oltre la semplice identificazione delle varianti genetiche, cercando di comprendere come queste informazioni possano essere utilizzate per migliorare la conoscenza, la diagnosi e il supporto alle persone.",
+      },
+      {
+        type: "paragraph",
+        text: "È proprio questa la direzione della medicina di precisione: utilizzare le informazioni biologiche disponibili per costruire una visione più completa e personalizzata della persona.",
+      },
+      {
+        type: "heading",
+        text: "Nuove tecnologie genomiche per comprendere meglio l’autismo",
+      },
+      {
+        type: "paragraph",
+        text: "Le innovazioni nel campo della genetica stanno offrendo strumenti sempre più avanzati per analizzare il rapporto tra patrimonio genetico e sviluppo neurologico.",
+      },
+      {
+        type: "paragraph",
+        text: "Durante l’INSAR, gli studiosi hanno sottolineato il ruolo di alcune aree di ricerca particolarmente promettenti:",
+      },
+      {
+        type: "paragraph",
+        text: "•	analisi genomiche sempre più sofisticate, capaci di individuare variazioni genetiche con maggiore precisione;",
+      },
+      {
+        type: "paragraph",
+        text: "•	studio delle varianti genetiche rare, che possono fornire importanti informazioni sui meccanismi biologici coinvolti;",
+      },
+      {
+        type: "paragraph",
+        text: "•	integrazione tra dati genetici e informazioni sullo sviluppo neurologico, per comprendere meglio come determinati cambiamenti possano influenzare il funzionamento cerebrale.",
+      },
+      {
+        type: "paragraph",
+        text: "Questi strumenti stanno trasformando il modo in cui viene studiato l’autismo, permettendo di passare da una visione generale a un’analisi sempre più dettagliata dei diversi profili biologici presenti all’interno dello spettro.",
+      },
+      {
+        type: "heading",
+        text: "La complessità dell’autismo richiede una ricerca sempre più personalizzata",
+      },
+      {
+        type: "paragraph",
+        text: "Uno dei principali contributi della medicina genetica è la possibilità di riconoscere che non tutte le persone autistiche presentano gli stessi meccanismi biologici alla base della condizione.",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sta infatti cercando di identificare differenti sottogruppi o profili biologici, caratterizzati da specifiche combinazioni di fattori genetici e di sviluppo.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo approccio potrebbe, in futuro, contribuire a progettare interventi maggiormente personalizzati, tenendo conto delle caratteristiche individuali e delle specifiche necessità di ogni persona.",
+      },
+      {
+        type: "paragraph",
+        text: "La medicina di precisione non significa creare percorsi standardizzati sulla base della genetica, ma utilizzare le conoscenze scientifiche per comprendere meglio la diversità dello spettro autistico e offrire strumenti di supporto più adeguati.",
+      },
+      {
+        type: "heading",
+        text: "La genetica come strumento di conoscenza, non come definizione della persona",
+      },
+      {
+        type: "paragraph",
+        text: "Un aspetto fondamentale sottolineato dalla comunità scientifica riguarda il ruolo che la genetica deve avere nella ricerca sull’autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Le informazioni genetiche rappresentano uno strumento per comprendere meglio i processi biologici, ma non definiscono l’identità, le capacità o il valore di una persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Ogni individuo è il risultato di una complessa interazione tra caratteristiche biologiche, ambiente, esperienze personali e relazioni sociali.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo, la ricerca genetica deve essere accompagnata da un approccio globale, nel quale la tecnologia e la conoscenza scientifica siano sempre orientate al miglioramento della qualità della vita.",
+      },
+      {
+        type: "heading",
+        text: "Verso nuove possibilità per la diagnosi e il supporto",
+      },
+      {
+        type: "paragraph",
+        text: "I progressi della medicina genetica potrebbero avere importanti implicazioni future in diversi ambiti della ricerca sull’autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Una maggiore comprensione dei meccanismi biologici potrebbe contribuire a migliorare l'identificazione dei diversi profili presenti nello spettro autistico, sviluppare strumenti diagnostici sempre più acccurati, individuare nuovi possibili bersagli per la ricerca terapeutica e costruire percorsi di supporto maggiormente personalizzati.",
+      },
+      {
+        type: "paragraph",
+        text: "Tuttavia, la ricerca genetica si trova ancora in una fase di continua evoluzione e molte domande devono essere approfondite prima che queste conoscenze possano tradursi pienamente nella pratica clinica.",
+      },
+      {
+        type: "heading",
+        text: "Il futuro della ricerca: innovazione e centralità della persona",
+      },
+      {
+        type: "paragraph",
+        text: "La medicina genetica rappresenta una delle frontiere più promettenti nella ricerca sull’autismo, perché permette di guardare alla complessità dello spettro con strumenti sempre più avanzati.",
+      },
+      {
+        type: "paragraph",
+        text: "Il futuro della ricerca non sarà soltanto nella scoperta di nuovi geni o nuove tecnologie, ma nella capacità di utilizzare queste conoscenze per costruire percorsi più efficaci, inclusivi e rispettosi delle caratteristiche individuali.",
+      },
+      {
+        type: "paragraph",
+        text: "Conoscere meglio i meccanismi biologici dell’autismo significa creare nuove opportunità di comprensione e supporto, mantenendo sempre al centro la persona nella sua unicità.",
+      },
+      {
+        type: "paragraph",
+        text: "La sfida della ricerca sarà continuare a unire innovazione scientifica, medicina personalizzata e attenzione alla qualità della vita, per trasformare le nuove scoperte in strumenti concreti al servizio delle persone autistiche e delle loro famiglie.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "The Transmitter – Spectrum, “Advances in genetic medicine took center stage at INSAR” - 05/05/2026",
+        url: "https://www.thetransmitter.org/spectrum/advances-in-genetic-medicine-took-center-stage-at-insar/",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-10",
   },
 ];
