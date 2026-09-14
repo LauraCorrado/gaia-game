@@ -10,7 +10,7 @@ import articolo_7 from "../assets/img/newsletter/gaia_articolo_7.webp";
 import articolo_8 from "../assets/img/newsletter/gaia_articolo_8.webp";
 import articolo_9 from "../assets/img/newsletter/gaia_articolo_9.webp";
 import articolo_10 from "../assets/img/newsletter/gaia_articolo_10.webp";
-
+import articolo_11 from "../assets/img/newsletter/gaia_articolo_11.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -1839,5 +1839,339 @@ export const news: NewsItem[] = [
       },
     ],
     slug: "articolo-10",
+  },
+  //articolo11
+  {
+    id: 14,
+    titolo:
+      "Abilismo e autismo: parlare di “funzionamento” può essere abilista?",
+    sottotitolo:
+      "Il linguaggio con cui parliamo di autismo conta.",
+    categoria: "Articoli",
+    data: "2026-09-19",
+    immagine: articolo_11,
+    alt: "Bambino seduto tra delicate sfumature ad acquarello",
+
+    estratto:
+      "Parlare di autismo significa anche scegliere parole capaci di rispettare la complessità delle persone. Superare le etichette di “alto” e “basso funzionamento” aiuta a descrivere meglio bisogni, capacità e supporti necessari.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Parlare di autismo significa confrontarsi con una realtà estremamente eterogenea. Le caratteristiche, le abilità, le difficoltà e i bisogni di supporto possono variare significativamente da una persona all’altra e, per la stessa persona, anche in relazione al contesto e al momento della vita.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo, il linguaggio che utilizziamo per descrivere l’autismo non è un elemento secondario. Le parole possono contribuire a rappresentare la complessità delle esperienze autistiche oppure, al contrario, possono ridurle a categorie semplicistiche.",
+      },
+      {
+        type: "paragraph",
+        text: "Uno dei temi più discussi riguarda l’utilizzo delle espressioni “alto funzionamento” e “basso funzionamento”. Queste definizioni sono state utilizzate a lungo nel linguaggio comune e clinico, ma oggi sono sempre più messe in discussione perché rischiano di non rappresentare adeguatamente i bisogni e le capacità della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "L’articolo di GAM Medical sull’abilismo nell’autismo sottolinea proprio come queste etichette possano ridurre la persona a una valutazione generale delle sue capacità, senza considerare la complessità del suo profilo individuale.",
+      },
+      {
+        type: "heading",
+        text: "Che cos’è l’abilismo?",
+      },
+      {
+        type: "paragraph",
+        text: "Il termine abilismo deriva dall’inglese ableism e indica l’insieme di atteggiamenti, pregiudizi, pratiche e strutture sociali che tendono a considerare alcune abilità come superiori o più desiderabili rispetto ad altre.",
+      },
+      {
+        type: "paragraph",
+        text: "Nel caso dell’autismo, l’abilismo può manifestarsi quando le modalità di comunicare, apprendere, relazionarsi o comportarsi tipiche delle persone neurotipiche vengono considerate come il modello di riferimento a cui tutti dovrebbero conformarsi.",
+      },
+      {
+        type: "paragraph",
+        text: "Non si tratta quindi soltanto di discriminazioni esplicite.",
+      },
+      {
+        type: "paragraph",
+        text: "L’abilismo può essere presente anche nelle aspettative sociali, nei sistemi educativi e lavorativi, nella progettazione degli ambienti e nel modo in cui vengono valutate le capacità delle persone autistiche.",
+      },
+      {
+        type: "paragraph",
+        text: "Ad esempio, un ambiente scolastico che propone una sola modalità di apprendimento, senza prevedere adattamenti sensoriali o comunicativi, può creare una barriera che non dipende esclusivamente dalle caratteristiche della persona, ma anche dal modo in cui l’ambiente è organizzato.",
+      },
+      {
+        type: "paragraph",
+        text: "Allo stesso modo, considerare una persona autistica come “poco capace” perché comunica in modo diverso può portare a sottovalutarne competenze, preferenze e possibilità di partecipazione.",
+      },
+      {
+        type: "paragraph",
+        text: "Questi aspetti sono evidenziati anche nella letteratura dedicata al linguaggio non abilista nell’autismo, che invita a descrivere in modo specifico capacità, difficoltà e necessità di supporto anziché ricorrere a categorie generiche.",
+      },
+      {
+        type: "heading",
+        text: "Perché parlare di “alto” e “basso funzionamento” può essere problematico?",
+      },
+      {
+        type: "paragraph",
+        text: "Le espressioni “autismo ad alto funzionamento” e “autismo a basso funzionamento” sembrano fornire una descrizione immediata, ma in realtà possono nascondere una grande complessità.",
+      },
+      {
+        type: "paragraph",
+        text: "Una persona definita “ad alto funzionamento” può, ad esempio, avere buone capacità linguistiche o cognitive e contemporaneamente necessitare di un supporto significativo nella gestione delle interazioni sociali, delle situazioni imprevedibili o degli stimoli sensoriali.",
+      },
+      {
+        type: "paragraph",
+        text: "Al contrario, una persona definita “a basso funzionamento” può presentare importanti necessità di supporto in alcune aree, ma possedere capacità, preferenze, interessi e modalità di comunicazione che un’etichetta generale non riesce a rappresentare.",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca che ha raccolto direttamente le prospettive di oltre 500 persone autistiche evidenzia proprio le criticità associate alle etichette di funzionamento. I partecipanti hanno sottolineato come il funzionamento possa cambiare nel tempo e a seconda delle situazioni e come queste categorie possano portare, da una parte, a sottovalutare i bisogni di chi viene definito “alto funzionamento” e, dall’altra, a sottostimare le capacità delle persone definite “basso funzionamento”.",
+      },
+      {
+        type: "heading",
+        text: "Il rischio di “alto funzionamento”: quando i bisogni diventano invisibili",
+      },
+      {
+        type: "paragraph",
+        text: "L’etichetta “alto funzionamento” può sembrare positiva, ma può produrre conseguenze problematiche.",
+      },
+      {
+        type: "paragraph",
+        text: "Se una persona viene percepita come sufficientemente autonoma o competente, il suo bisogno di supporto può essere sottovalutato.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo può tradursi in frasi come:",
+      },
+      {
+        type: "plus",
+        text: "“Ma se riesci a fare questo, allora puoi fare anche quello.”",
+      },
+      {
+        type: "paragraph",
+        text: "Oppure:",
+      },
+      {
+        type: "plus",
+        text: "“Non sembri autistico.”",
+      },
+      {
+        type: "paragraph",
+        text: "Queste affermazioni partono dall’idea che alcune capacità debbano necessariamente essere accompagnate da un determinato livello di autonomia in tutte le altre aree.",
+      },
+      {
+        type: "paragraph",
+        text: "In realtà, le capacità non sono distribuite in modo uniforme.",
+      },
+      {
+        type: "paragraph",
+        text: "Una persona può avere ottime competenze in un ambito e incontrare contemporaneamente importanti difficoltà in un altro.",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sul linguaggio utilizzato per descrivere l’autismo evidenzia proprio che le etichette di funzionamento possono mascherare la variabilità delle capacità e dei bisogni e, in alcuni casi, contribuire a ridurre l’accesso agli accomodamenti necessari.",
+      },
+      {
+        type: "heading",
+        text: "E il “basso funzionamento”?",
+      },
+      {
+        type: "paragraph",
+        text: "Anche l’espressione “basso funzionamento” presenta importanti criticità.",
+      },
+      {
+        type: "paragraph",
+        text: "Definire una persona attraverso ciò che non riesce a fare può portare a concentrarsi esclusivamente sulle difficoltà, trascurando capacità, interessi, preferenze e possibilità di partecipazione.",
+      },
+      {
+        type: "paragraph",
+        text: "Una definizione globale rischia inoltre di diventare un'aspettativa: se una persona viene considerata incapace di apprendere, comunicare o prendere decisioni, potrebbe ricevere meno opportunità per sviluppare queste competenze o per esprimere le proprie preferenze.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo è importante distinguere tra necessità di supporto e valore o potenzialità della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Avere bisogno di un supporto significativo non significa avere meno valore, meno diritti o meno possibilità di partecipare alla vita sociale.",
+      },
+      {
+        type: "heading",
+        text: "Cosa utilizza il DSM-5-TR?",
+      },
+      {
+        type: "paragraph",
+        text: "Il DSM-5-TR descrive l’autismo anche attraverso \"livelli di supporto necessari\", distinguendo tra:",
+      },
+      {
+        type: "paragraph",
+        text: "•	Livello 1: richiede supporto",
+      },
+      {
+        type: "paragraph",
+        text: "•	Livello 2: richiede supporto sostanziale",
+      },
+      {
+        type: "paragraph",
+        text: "•	Livello 3: richiede supporto molto sostanziale",
+      },
+      {
+        type: "paragraph",
+        text: "Questi livelli riguardano principalmente il grado di supporto necessario nelle aree della comunicazione sociale e dei comportamenti e interessi ristretti e ripetitivi.",
+      },
+      {
+        type: "paragraph",
+        text: "È importante, tuttavia, non interpretarli come una graduatoria del “valore”, dell’intelligenza o delle capacità complessive di una persona.",
+      },
+      {
+        type: "paragraph",
+        text: "La stessa persona può presentare bisogni differenti in contesti diversi e le necessità di supporto possono cambiare nel corso della vita.",
+      },
+      {
+        type: "paragraph",
+        text: "Anche fonti professionali dedicate alla comunicazione sull’autismo raccomandano di evitare le definizioni “high-functioning” e “low-functioning” e di descrivere invece in modo specifico le necessità e le caratteristiche individuali.",
+      },
+      {
+        type: "heading",
+        text: "Parlare di bisogni, non di gerarchie"
+      },
+      {
+        type: "paragraph",
+        text: "Superare le etichette di funzionamento non significa smettere di parlare delle difficoltà."
+      },
+      {
+        type: "paragraph",
+        text: "Al contrario, significa descriverle in modo più preciso."
+      },
+      {
+        type: "paragraph",
+        text: "Invece di dire \"È una persona autistica ad alto funzionamento\", può essere più utile specificare: \"Presenta buone competenze linguistiche, ma necessita di supporto nella gestione delle situazioni sociali imprevedibili e degli stimoli sensoriali.\""
+      },
+      {
+        type: "paragraph",
+        text: "Oppure, invece di definire una persona “a basso funzionamento”, è possibile descrivere concretamente: “Necessita di un supporto significativo nella comunicazione e nelle attività quotidiane e utilizza modalità comunicative alternative.”"
+      },
+      {
+        type: "paragraph",
+        text: "Questo tipo di descrizione restituisce una fotografia più completa della persona e permette di individuare con maggiore precisione i supporti necessari."
+      },
+      {
+        type: "heading",
+        text: "Dall’individuo all’ambiente: l’importanza dell’inclusione"
+      },
+      {
+        type: "paragraph",
+        text: "Una prospettiva realmente inclusiva non si limita a chiedersi “che cosa non riesce a fare questa persona?”, ma considera anche il contesto nel quale quella persona vive."
+      },
+      {
+        type: "paragraph",
+        text: "Quali barriere incontra?"
+      },
+      {
+        type: "paragraph",
+        text: "Quali adattamenti possono facilitare la partecipazione?"
+      },
+      {
+        type: "paragraph",
+        text: "Quali modalità comunicative possono essere utilizzate?"
+      },
+      {
+        type: "paragraph",
+        text: "Come può essere reso l’ambiente più accessibile?"
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sull’abilismo nell’autismo evidenzia infatti come molte difficoltà possano essere aggravate da aspettative sociali rigide, ambienti poco flessibili e dalla mancanza di supporti adeguati."
+      },
+      {
+        type: "paragraph",
+        text: "Questo approccio è particolarmente importante in ambito educativo, dove la progettazione di ambienti accessibili e flessibili può favorire la partecipazione e l’apprendimento."
+      },
+      {
+        type: "heading",
+        text: "Il punto di vista del Progetto GAIA"
+      },
+      {
+        type: "paragraph",
+        text: "Per il Progetto GAIA – Giochi Accessibili e Inclusivi per Bambini con Autismo, parlare di inclusione significa anche interrogarsi sul modo in cui vengono progettati gli strumenti, gli ambienti e le attività rivolte ai bambini autistici."
+      },
+      {
+        type: "paragraph",
+        text: "L’obiettivo non è chiedere alla persona di adattarsi continuamente a un unico modello di funzionamento."
+      },
+      {
+        type: "paragraph",
+        text: "È, quando possibile, adattare il contesto ai diversi modi di comunicare, apprendere, giocare e partecipare."
+      },
+      {
+        type: "paragraph",
+        text: "Questo significa riconoscere che non esiste un’unica esperienza dell’autismo e che una stessa persona può avere punti di forza e necessità di supporto molto differenti."
+      },
+      {
+        type: "heading",
+        text: "Comprendere la persona nella sua complessità"
+      },
+      {
+        type: "paragraph",
+        text: "Parlare di autismo in modo rispettoso non significa scegliere semplicemente le “parole giuste”."
+      },
+      {
+        type: "paragraph",
+        text: "Significa cambiare prospettiva."
+      },
+      {
+        type: "paragraph",
+        text: "Significa passare dal giudizio alla comprensione, dalla classificazione alla descrizione, dalla ricerca della “normalità” alla costruzione di contesti accessibili."
+      },
+      {
+        type: "paragraph",
+        text: "E soprattutto significa ricordare che una persona non coincide con il suo livello di autonomia, con le sue difficoltà o con la quantità di supporto di cui necessita."
+      },
+      {
+        type: "plus",
+        text: "Non chiediamoci quanto una persona “funziona”. Chiediamoci di quali supporti ha bisogno per comunicare, partecipare, apprendere e stare bene."
+      },
+      {
+        type: "paragraph",
+        text: "Fonti primarie:",
+      },
+      {
+        type: "paragraph",
+        text: "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR). American Psychiatric Publishing.",
+      },
+      {
+        type: "link",
+        text: "GAM Medical. (2024). Abilismo e Autismo: parlare di funzionamento è Abilista? Articolo divulgativo, revisionato dal team clinico di GAM Medical.",
+        url: "https://gam-medical.com/abilismo-e-autismo/?srsltid=AfmBOorn7gdOq0lpSgGdpMr7k47tnMC5OHc2bleG4XQdMfDQt2EoNHAR"
+      },
+      {
+        type: "paragraph",
+        text: "Keating, C. T., et al. (2023). Autism-related language preferences of English-speaking individuals across the globe: A mixed methods investigation. Autism Research. Lo studio evidenzia, tra gli altri aspetti, le criticità percepite dalle persone autistiche rispetto alle etichette di funzionamento.",
+      },
+      {
+        type: "paragraph",
+        text: "Brosnan, M., et al. (2024). Autistic People's Perspectives on Functioning Labels and Associated Reasons, and Community Connectedness. Journal of Autism and Developmental Disorders. Lo studio raccoglie le opinioni di 516 persone autistiche sull'utilizzo delle etichette di funzionamento e sul linguaggio relativo all'autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "Bottema-Beutel, K., Kapp, S. K., Lester, J. N., Sasson, N. J., & Hand, B. N. (2021). Avoiding Ableist Language: Suggestions for Autism Researchers. Autism in Adulthood, 3(1), 18–29.",
+      },
+      {
+        type: "paragraph",
+        text: "American Speech-Language-Hearing Association (ASHA). Communication About Autism: Terminology Considerations. Indicazioni professionali sull'utilizzo di un linguaggio rispettoso e sulla preferenza per descrizioni specifiche dei bisogni di supporto rispetto alle etichette “high/low functioning”.",
+      },
+      {
+        type: "paragraph",
+        text: "National Institutes of Health (NIH). NIH Style Guide – Autism. Indicazioni terminologiche che raccomandano di evitare le espressioni “high-functioning” e “low-functioning” e di descrivere in modo specifico le necessità della persona.",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-11",
   },
 ];

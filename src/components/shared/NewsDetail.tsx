@@ -139,7 +139,7 @@ export default function NewsDetail() {
           return (
             <p
               key={i}
-              className="italic font-bold pt-5 text-lm-text-secondary dark:text-dm-text-secondary"
+              className="italic font-bold py-5 text-lm-text-secondary dark:text-dm-text-secondary"
             >
               {block.text}
             </p>
