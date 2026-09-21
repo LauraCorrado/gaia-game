@@ -39,10 +39,24 @@ const kickoffGallery = createGallerySection(
   "kickoff"
 );
 
+// meeting settembre
+const septemberMeetingImages = import.meta.glob(
+  "../assets/img/gallery/meeting_2026_09_18/*.webp",
+  { eager: true }
+) as Record<string, { default: string }>;
+
+const septemberMeetingGallery = createGallerySection(
+  septemberMeetingImages,
+  "Riunione intermedia | 18/09/2026",
+  "september-meeting",
+  kickoffGallery.length //startIndex value per id unici e sequenziali
+);
+
 // altre immagini future da workshop, test, ecc.
 // const workshopImages = import.meta.glob(...)
 
 export const galleryItems: GalleryItem[] = [
   ...kickoffGallery,
+  ...septemberMeetingGallery,
   // ...workshopGallery
 ];

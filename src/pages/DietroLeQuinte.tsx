@@ -7,6 +7,15 @@ import { galleryItems } from "../data/gallery";
 
 export default function DietroLeQuinte() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const ITEMS_PER_LOAD = 6;
+
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_LOAD);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
+
+  const loaderRef = useRef<HTMLDivElement>(null);
+
+  const visibleItems = galleryItems.slice(0, visibleCount);
+  const hasMoreItems = visibleCount < galleryItems.length;
 
   const currentIndex = galleryItems.findIndex(
     (item) => item.id === selectedImage,
@@ -28,6 +37,35 @@ export default function DietroLeQuinte() {
   };
 
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const element = loaderRef.current;
+
+    if (!element || !hasMoreItems || isLoadingMore) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setIsLoadingMore(true);
+
+        setTimeout(() => {
+          setVisibleCount((current) =>
+            Math.min(current + ITEMS_PER_LOAD, galleryItems.length),
+          );
+
+          setIsLoadingMore(false);
+        }, 500);
+      },
+      {
+        rootMargin: "100px",
+      },
+    );
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, [visibleCount, hasMoreItems, isLoadingMore]);
 
   useEffect(() => {
     if (selectedImage !== null) {
@@ -87,7 +125,7 @@ export default function DietroLeQuinte() {
 
         <section aria-label="Galleria multimediale">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryItems.map((item) => (
+            {visibleItems.map((item) => (
               <button
                 key={item.id}
                 type="button"
@@ -100,11 +138,46 @@ export default function DietroLeQuinte() {
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
-                  className="w-full h-full object-cover transition duration-300 group-hover:scale-105 group-hover:brightness-110"
+                  className="
+            w-full h-full object-cover
+            transition duration-300
+            group-hover:scale-105
+            group-hover:brightness-110
+          "
                 />
               </button>
             ))}
           </div>
+
+          {hasMoreItems && (
+            <div
+              ref={loaderRef}
+              className="h-24 flex items-center justify-center"
+              aria-live="polite"
+            >
+              {isLoadingMore && (
+                <div className="flex items-center gap-3">
+                  <div
+                    className="
+              w-7 h-7
+              rounded-full
+              border-3
+              border-lm-pink/20
+              border-t-lm-pink
+              dark:border-dm-pink/20
+              dark:border-t-dm-pink
+              animate-spin
+            "
+                    aria-hidden="true"
+                  />
+
+                  <span className="text-sm text-lm-text-secondary dark:text-dm-text-secondary">
+                    Caricamento...
+                  </span>
+                </div>
+              )}
+            </div>
+          )}
         </section>
       </div>
 
@@ -194,6 +267,14 @@ export default function DietroLeQuinte() {
               <div className="mt-6 text-center flex flex-col items-center text-white">
                 {activeItem.category === "kickoff" && (
                   <Badge label="Kick-off Meeting" color="pink" size="sm" />
+                )}
+
+                {activeItem.category === "september-meeting" && (
+                  <Badge
+                    label="Incontro con i partner"
+                    color="blue"
+                    size="sm"
+                  />
                 )}
 
                 <p

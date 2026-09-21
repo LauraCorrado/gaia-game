@@ -19,12 +19,12 @@ type ContentBlock =
   | { type: "link"; text: string; url: string }
   | { type: "plus"; text: string }
   | {
-      type: "highlight";
-      label: string;
-      to?: string;
-      url?: string;
-      variant?: "primary" | "secondary";
-    };
+    type: "highlight";
+    label: string;
+    to?: string;
+    url?: string;
+    variant?: "primary" | "secondary";
+  };
 export interface NewsItem {
   id: number;
   indice?: string;
@@ -1848,7 +1848,7 @@ export const news: NewsItem[] = [
     sottotitolo:
       "Il linguaggio con cui parliamo di autismo conta.",
     categoria: "Articoli",
-    data: "2026-09-19",
+    data: "2026-09-15",
     immagine: articolo_11,
     alt: "Bambino seduto tra delicate sfumature ad acquarello",
 
