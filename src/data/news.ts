@@ -12,7 +12,7 @@ import articolo_9 from "../assets/img/newsletter/gaia_articolo_9.webp";
 import articolo_10 from "../assets/img/newsletter/gaia_articolo_10.webp";
 import articolo_11 from "../assets/img/newsletter/gaia_articolo_11.webp";
 import articolo_12 from "../assets/img/newsletter/gaia_articolo_12.webp";
-import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
+// import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
