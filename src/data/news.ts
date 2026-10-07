@@ -12,7 +12,7 @@ import articolo_9 from "../assets/img/newsletter/gaia_articolo_9.webp";
 import articolo_10 from "../assets/img/newsletter/gaia_articolo_10.webp";
 import articolo_11 from "../assets/img/newsletter/gaia_articolo_11.webp";
 import articolo_12 from "../assets/img/newsletter/gaia_articolo_12.webp";
-// import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
+import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -2366,398 +2366,398 @@ export const news: NewsItem[] = [
     ],
     slug: "articolo-12",
   },
-  // //articolo13
-  // {
-  //   id: 16,
-  //   titolo:
-  //     "Token economy: cos’è, come funziona e come può essere utilizzata nell’autismo",
-  //   sottotitolo:
-  //     "Un sistema di rinforzo per sostenere apprendimento, motivazione e autonomia nei percorsi educativi",
-  //   categoria: "Articoli",
-  //   data: "2026-10-07",
-  //   immagine: articolo_13,
-  //   alt: "Illustrazione ad acquarello di un bambino che utilizza una tabella di rinforzo con gettoni a forma di stella",
+  //articolo13
+ {
+   id: 16,
+   titolo:
+     "Token economy: cos’è, come funziona e come può essere utilizzata nell’autismo",
+   sottotitolo:
+     "Un sistema di rinforzo per sostenere apprendimento, motivazione e autonomia nei percorsi educativi",
+   categoria: "Articoli",
+   data: "2026-10-07",
+   immagine: articolo_13,
+   alt: "Illustrazione ad acquarello di un bambino che utilizza una tabella di rinforzo con gettoni a forma di stella",
 
-  //   estratto:
-  //     "La token economy è uno strumento educativo basato sul rinforzo, utile per rendere più chiari e prevedibili alcuni obiettivi di apprendimento.",
+   estratto:
+     "La token economy è uno strumento educativo basato sul rinforzo, utile per rendere più chiari e prevedibili alcuni obiettivi di apprendimento.",
 
-  //   contenuti: [
-  //      {
-  //       type: "heading",
-  //       text: "Un sistema di rinforzo per sostenere l’apprendimento",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Nel percorso educativo di bambini e ragazzi con Disturbo dello Spettro Autistico possono essere utilizzati diversi strumenti per favorire l’acquisizione di nuove abilità, aumentare la motivazione e rendere più prevedibili alcune attività.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Tra questi strumenti rientra la token economy, un sistema basato sui principi del rinforzo comportamentale che permette di associare a un comportamento o a un’abilità acquisita un simbolo, un gettone o un altro elemento che può successivamente essere scambiato con un rinforzatore.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La token economy è una procedura utilizzata da molti anni nell’ambito dell’analisi comportamentale applicata e dell’educazione. Una revisione specificamente dedicata ai bambini con disabilità intellettiva e/o autismo ha evidenziato il potenziale di questi sistemi nel creare ambienti strutturati e nel sostenere l’apprendimento di diversi comportamenti.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Che cos’è una token economy?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il principio alla base è relativamente semplice. La persona riceve un token dopo aver messo in atto un comportamento precedentemente individuato e concordato. Una volta raggiunto un determinato numero di token, questi possono essere scambiati con un rinforzatore, cioè qualcosa che per quella persona ha un valore motivazionale.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il token può assumere forme differenti: un gettone, un adesivo, una stellina, un'immagine, un simbolo, un punto o un qualunque elemento inserito all'interno di una tabella.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il token, inizialmente, acquisisce valore perché viene associato a qualcosa di motivante. In termini comportamentali, diventa quindi un rinforzatore condizionato.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La letteratura descrive la token economy come un sistema composto da diversi elementi: il comportamento target, il token, i rinforzatori utilizzabili per lo scambio e specifiche modalità di somministrazione dei token e di accesso al rinforzatore.",
-  //     },
-  //      {
-  //       type: "heading",
-  //       text: "Come funziona?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per costruire una token economy è necessario innanzitutto stabilire quale comportamento si vuole sostenere.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'obiettivo deve essere il più possibile concreto e osservabile.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Ad esempio, invece di formulare un obiettivo generico come:",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "“Comportarsi bene a scuola”",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "è preferibile individuare un comportamento specifico:",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "“Rimanere seduto durante l’attività per il tempo concordato.”",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Ogni volta che il comportamento viene messo in atto secondo i criteri stabiliti, viene consegnato un token. Una volta raggiunto il numero di token previsto, la persona può accedere al rinforzatore concordato.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il meccanismo può quindi essere rappresentato in questo modo:",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "COMPORTAMENTO → TOKEN → RACCOLTA DEI TOKEN → RINFORZATORE",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La chiarezza delle regole è fondamentale. La persona deve poter comprendere, in relazione alle proprie capacità comunicative e cognitive, che cosa permette di ottenere il token e cosa succede quando viene raggiunto il numero stabilito.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Un esempio pratico",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Immaginiamo un bambino che stia imparando a completare una breve routine quotidiana in autonomia.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'obiettivo potrebbe essere:",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "completare la routine del mattino seguendo i passaggi concordati",
-  //     },
-  //      {
-  //       type: "paragraph",
-  //       text: "Ogni volta che completa correttamente la routine:",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "+ 1 token",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Dopo aver raccolto 5 token, si accede al rinforzatore scelto.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il rinforzatore deve essere individuato considerando le preferenze individuali del bambino.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Non esiste infatti una ricompensa universalmente efficace: ciò che è motivante per una persona potrebbe non esserlo per un'altra.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La scelta del rinforzatore e delle modalità di utilizzo del sistema deve quindi essere personalizzata.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Quali comportamenti possono essere sostenuti?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La token economy può essere utilizzata per sostenere diversi tipi di obiettivi, a seconda delle necessità della persona.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La letteratura ha documentato applicazioni rivolte, tra le altre cose, alla partecipazione alle attività, all'attenzione, ai comportamenti sociali, alle attività scolastiche e alle abilità di autonomia.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "In un contesto educativo, ad esempio, può essere utilizzata per favorire:",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	la partecipazione a un'attività;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	il completamento di un compito;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	l'acquisizione di una routine;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	alcune abilità di autonomia;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	comportamenti sociali specifici;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	la permanenza in un'attività per un determinato periodo;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	l'utilizzo di una modalità comunicativa precedentemente acquisita.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È importante, però, che l'obiettivo sia realistico, significativo e adeguato alle caratteristiche della persona.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Il ruolo della motivazione",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Uno degli aspetti centrali della token economy è la motivazione. Il sistema funziona infatti soltanto se il token ha per la persona un valore e se il rinforzatore finale è realmente significativo.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per questo motivo, nella progettazione è importante conoscere gli interessi e le preferenze individuali.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Un rinforzatore può essere costituito, ad esempio, da un'attività piacevole, da un gioco, da un momento dedicato a un interesse specifico o da un'altra esperienza significativa per la persona.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La scelta non dovrebbe essere standardizzata.",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "La persona viene prima del sistema.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "La token economy deve essere sempre utilizzata?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "No. La token economy non dovrebbe essere considerata una soluzione universale né applicata automaticamente a ogni comportamento.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È uno strumento educativo, che deve essere inserito all'interno di una progettazione più ampia e coerente con gli obiettivi individuali.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La ricerca mostra che l'efficacia dei sistemi a token dipende anche dalla qualità con cui vengono progettati e applicati. Una revisione del 2024 sottolinea proprio la necessità di trasformare le conoscenze disponibili dalla ricerca in procedure pratiche ben strutturate e personalizzate.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Inoltre, una revisione sistematica condotta in ambito scolastico ha rilevato risultati favorevoli in diversi studi, ma ha evidenziato anche differenze legate alle modalità di utilizzo dei componenti della token economy e al contesto educativo.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Un aspetto fondamentale: cosa succede quando i token non servono più?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Uno degli obiettivi più importanti non dovrebbe essere quello di rendere la persona permanentemente dipendente dal sistema di token.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Al contrario, quando il comportamento è sufficientemente consolidato, il sistema può essere gradualmente modificato e ridotto, favorendo il passaggio verso rinforzi più naturali.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Questo aspetto è particolarmente importante perché l'obiettivo dell'intervento educativo non è semplicemente ottenere un comportamento mentre è presente una ricompensa, ma favorire la generalizzazione e il mantenimento dell'abilità nel tempo e nei diversi contesti.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Già nella letteratura classica sulla token economy la generalizzazione dei comportamenti acquisiti e il mantenimento dopo la riduzione del rinforzo venivano indicati come aspetti fondamentali da considerare.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Token economy e autismo: attenzione alla personalizzazione",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Nel caso dell'autismo, la personalizzazione assume un'importanza particolare.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Le persone autistiche presentano caratteristiche, preferenze, modalità comunicative e bisogni molto differenti.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per questo motivo non è sufficiente predisporre una semplice tabella di gettoni e applicarla nello stesso modo a tutti.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È necessario chiedersi:",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Qual è l'obiettivo?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	È realmente significativo per la persona?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Il comportamento richiesto è comprensibile e raggiungibile?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Il token è facilmente riconoscibile?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Il rinforzatore è realmente motivante?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Il sistema è adatto alle modalità comunicative della persona?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Come verrà progressivamente ridotto?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Queste domande permettono di trasformare la token economy da una semplice raccolta di gettoni a uno strumento inserito in un progetto educativo individualizzato.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Non solo “premi”: costruire opportunità di apprendimento",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È importante evitare di interpretare la token economy semplicemente come un sistema di “premi e punizioni”.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il suo obiettivo, se correttamente progettata, è creare una relazione chiara e prevedibile tra un comportamento e una conseguenza positiva, sostenendo la motivazione durante l'apprendimento.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La token economy può quindi essere utilizzata per accompagnare la persona nell'acquisizione di nuove competenze, soprattutto quando un'attività richiede uno sforzo iniziale significativo o quando il rinforzo naturale dell'attività non è ancora sufficiente a sostenere la partecipazione.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Il punto di vista del Progetto GAIA",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Nel Progetto GAIA – Giochi Accessibili e Inclusivi per Bambini con Autismo, strumenti come la token economy possono essere considerati all'interno di una prospettiva più ampia: quella della progettazione di esperienze accessibili, prevedibili e personalizzate.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Un sistema di token può essere utile quando risponde realmente alle esigenze del bambino e quando viene inserito in un percorso educativo strutturato.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'obiettivo non è semplicemente ottenere un determinato comportamento. L'obiettivo è favorire l'apprendimento, la partecipazione e l'autonomia, rispettando caratteristiche e preferenze individuali.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per questo, anche quando si utilizza una strategia comportamentale, è fondamentale mantenere al centro la persona.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Comprendere, personalizzare, accompagnare",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La token economy può essere uno strumento efficace, ma la sua efficacia non dipende dal semplice utilizzo di gettoni o premi.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Dipende dalla capacità di progettare il sistema intorno alla persona, scegliere obiettivi significativi, utilizzare rinforzatori adeguati e accompagnare progressivamente l'acquisizione dell'abilità verso una maggiore autonomia.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il token è uno strumento, non l'obiettivo. L'obiettivo è aiutare la persona ad apprendere e partecipare in modo sempre più autonomo.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Fonti primarie:",
-  //     },
-  //     {
-  //       type: "link",
-  //       text: "•	Centro Medico Riabilitativo (CMR). Token economy: cos’è e come metterla in pratica. Fonte divulgativa di riferimento per la descrizione della procedura e delle sue modalità applicative.",
-  //       url: "https://www.centromedicoriabilitativo.it/blog/token-economy/"
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	degli Espinosa, F., & Hackenberg, T. D. (2024). Token economies: Evidence-based recommendations for practitioners. Behavioral Interventions, 39(4), e2051. DOI: 10.1002/bin.2051. La revisione propone raccomandazioni evidence-based per la progettazione e l'applicazione dei sistemi a token.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Matson, J. L., & Boisjoli, J. A. (2009). The token economy for children with intellectual disability and/or autism: A review. Research in Developmental Disabilities, 30(2), 240–248. DOI: 10.1016/j.ridd.2008.04.001. La revisione analizza l'utilizzo della token economy nei bambini con disabilità intellettiva e/o autismo.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Kazdin, A. E., & Bootzin, R. R. (1972). The token economy: An evaluative review. Journal of Applied Behavior Analysis, 5(3), 343–372. DOI: 10.1901/jaba.1972.5-343. Lo studio rappresenta una delle revisioni classiche della letteratura sulla token economy e discute anche il problema della generalizzazione e del mantenimento dei comportamenti acquisiti.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Maggin, D. M., Chafouleas, S. M., Goddard, K. M., & Johnson, A. H. (2011). A systematic evaluation of token economies as a classroom management tool for students with challenging behavior. Journal of School Psychology, 49(5), 529–554. DOI: 10.1016/j.jsp.2011.05.001. La revisione evidenzia risultati promettenti per programmi ben realizzati, sottolineando al contempo alcune limitazioni metodologiche della letteratura.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Filcheck, H. A., et al. (2017). Token Economy: A Systematic Review of Procedural Descriptions. La revisione analizza gli elementi procedurali necessari per descrivere e implementare correttamente una token economy.",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
-  //     },
-  //     {
-  //       type: "highlight",
-  //       label: "Contattaci!",
-  //       to: "/contatti",
-  //       variant: "secondary",
-  //     },
-  //   ],
-  //   slug: "articolo-13",
-  // },
+   contenuti: [
+      {
+       type: "heading",
+       text: "Un sistema di rinforzo per sostenere l’apprendimento",
+     },
+     {
+       type: "paragraph",
+       text: "Nel percorso educativo di bambini e ragazzi con Disturbo dello Spettro Autistico possono essere utilizzati diversi strumenti per favorire l’acquisizione di nuove abilità, aumentare la motivazione e rendere più prevedibili alcune attività.",
+     },
+     {
+       type: "paragraph",
+       text: "Tra questi strumenti rientra la token economy, un sistema basato sui principi del rinforzo comportamentale che permette di associare a un comportamento o a un’abilità acquisita un simbolo, un gettone o un altro elemento che può successivamente essere scambiato con un rinforzatore.",
+     },
+     {
+       type: "paragraph",
+       text: "La token economy è una procedura utilizzata da molti anni nell’ambito dell’analisi comportamentale applicata e dell’educazione. Una revisione specificamente dedicata ai bambini con disabilità intellettiva e/o autismo ha evidenziato il potenziale di questi sistemi nel creare ambienti strutturati e nel sostenere l’apprendimento di diversi comportamenti.",
+     },
+     {
+       type: "heading",
+       text: "Che cos’è una token economy?",
+     },
+     {
+       type: "paragraph",
+       text: "Il principio alla base è relativamente semplice. La persona riceve un token dopo aver messo in atto un comportamento precedentemente individuato e concordato. Una volta raggiunto un determinato numero di token, questi possono essere scambiati con un rinforzatore, cioè qualcosa che per quella persona ha un valore motivazionale.",
+     },
+     {
+       type: "paragraph",
+       text: "Il token può assumere forme differenti: un gettone, un adesivo, una stellina, un'immagine, un simbolo, un punto o un qualunque elemento inserito all'interno di una tabella.",
+     },
+     {
+       type: "paragraph",
+       text: "Il token, inizialmente, acquisisce valore perché viene associato a qualcosa di motivante. In termini comportamentali, diventa quindi un rinforzatore condizionato.",
+     },
+     {
+       type: "paragraph",
+       text: "La letteratura descrive la token economy come un sistema composto da diversi elementi: il comportamento target, il token, i rinforzatori utilizzabili per lo scambio e specifiche modalità di somministrazione dei token e di accesso al rinforzatore.",
+     },
+      {
+       type: "heading",
+       text: "Come funziona?",
+     },
+     {
+       type: "paragraph",
+       text: "Per costruire una token economy è necessario innanzitutto stabilire quale comportamento si vuole sostenere.",
+     },
+     {
+       type: "paragraph",
+       text: "L'obiettivo deve essere il più possibile concreto e osservabile.",
+     },
+     {
+       type: "paragraph",
+       text: "Ad esempio, invece di formulare un obiettivo generico come:",
+     },
+     {
+       type: "plus",
+       text: "“Comportarsi bene a scuola”",
+     },
+     {
+       type: "paragraph",
+       text: "è preferibile individuare un comportamento specifico:",
+     },
+     {
+       type: "plus",
+       text: "“Rimanere seduto durante l’attività per il tempo concordato.”",
+     },
+     {
+       type: "paragraph",
+       text: "Ogni volta che il comportamento viene messo in atto secondo i criteri stabiliti, viene consegnato un token. Una volta raggiunto il numero di token previsto, la persona può accedere al rinforzatore concordato.",
+     },
+     {
+       type: "paragraph",
+       text: "Il meccanismo può quindi essere rappresentato in questo modo:",
+     },
+     {
+       type: "plus",
+       text: "COMPORTAMENTO → TOKEN → RACCOLTA DEI TOKEN → RINFORZATORE",
+     },
+     {
+       type: "paragraph",
+       text: "La chiarezza delle regole è fondamentale. La persona deve poter comprendere, in relazione alle proprie capacità comunicative e cognitive, che cosa permette di ottenere il token e cosa succede quando viene raggiunto il numero stabilito.",
+     },
+     {
+       type: "heading",
+       text: "Un esempio pratico",
+     },
+     {
+       type: "paragraph",
+       text: "Immaginiamo un bambino che stia imparando a completare una breve routine quotidiana in autonomia.",
+     },
+     {
+       type: "paragraph",
+       text: "L'obiettivo potrebbe essere:",
+     },
+     {
+       type: "plus",
+       text: "completare la routine del mattino seguendo i passaggi concordati",
+     },
+      {
+       type: "paragraph",
+       text: "Ogni volta che completa correttamente la routine:",
+     },
+     {
+       type: "plus",
+       text: "+ 1 token",
+     },
+     {
+       type: "paragraph",
+       text: "Dopo aver raccolto 5 token, si accede al rinforzatore scelto.",
+     },
+     {
+       type: "paragraph",
+       text: "Il rinforzatore deve essere individuato considerando le preferenze individuali del bambino.",
+     },
+     {
+       type: "paragraph",
+       text: "Non esiste infatti una ricompensa universalmente efficace: ciò che è motivante per una persona potrebbe non esserlo per un'altra.",
+     },
+     {
+       type: "paragraph",
+       text: "La scelta del rinforzatore e delle modalità di utilizzo del sistema deve quindi essere personalizzata.",
+     },
+     {
+       type: "heading",
+       text: "Quali comportamenti possono essere sostenuti?",
+     },
+     {
+       type: "paragraph",
+       text: "La token economy può essere utilizzata per sostenere diversi tipi di obiettivi, a seconda delle necessità della persona.",
+     },
+     {
+       type: "paragraph",
+       text: "La letteratura ha documentato applicazioni rivolte, tra le altre cose, alla partecipazione alle attività, all'attenzione, ai comportamenti sociali, alle attività scolastiche e alle abilità di autonomia.",
+     },
+     {
+       type: "paragraph",
+       text: "In un contesto educativo, ad esempio, può essere utilizzata per favorire:",
+     },
+     {
+       type: "paragraph",
+       text: "•	la partecipazione a un'attività;",
+     },
+     {
+       type: "paragraph",
+       text: "•	il completamento di un compito;",
+     },
+     {
+       type: "paragraph",
+       text: "•	l'acquisizione di una routine;",
+     },
+     {
+       type: "paragraph",
+       text: "•	alcune abilità di autonomia;",
+     },
+     {
+       type: "paragraph",
+       text: "•	comportamenti sociali specifici;",
+     },
+     {
+       type: "paragraph",
+       text: "•	la permanenza in un'attività per un determinato periodo;",
+     },
+     {
+       type: "paragraph",
+       text: "•	l'utilizzo di una modalità comunicativa precedentemente acquisita.",
+     },
+     {
+       type: "paragraph",
+       text: "È importante, però, che l'obiettivo sia realistico, significativo e adeguato alle caratteristiche della persona.",
+     },
+     {
+       type: "heading",
+       text: "Il ruolo della motivazione",
+     },
+     {
+       type: "paragraph",
+       text: "Uno degli aspetti centrali della token economy è la motivazione. Il sistema funziona infatti soltanto se il token ha per la persona un valore e se il rinforzatore finale è realmente significativo.",
+     },
+     {
+       type: "paragraph",
+       text: "Per questo motivo, nella progettazione è importante conoscere gli interessi e le preferenze individuali.",
+     },
+     {
+       type: "paragraph",
+       text: "Un rinforzatore può essere costituito, ad esempio, da un'attività piacevole, da un gioco, da un momento dedicato a un interesse specifico o da un'altra esperienza significativa per la persona.",
+     },
+     {
+       type: "paragraph",
+       text: "La scelta non dovrebbe essere standardizzata.",
+     },
+     {
+       type: "plus",
+       text: "La persona viene prima del sistema.",
+     },
+     {
+       type: "heading",
+       text: "La token economy deve essere sempre utilizzata?",
+     },
+     {
+       type: "paragraph",
+       text: "No. La token economy non dovrebbe essere considerata una soluzione universale né applicata automaticamente a ogni comportamento.",
+     },
+     {
+       type: "paragraph",
+       text: "È uno strumento educativo, che deve essere inserito all'interno di una progettazione più ampia e coerente con gli obiettivi individuali.",
+     },
+     {
+       type: "paragraph",
+       text: "La ricerca mostra che l'efficacia dei sistemi a token dipende anche dalla qualità con cui vengono progettati e applicati. Una revisione del 2024 sottolinea proprio la necessità di trasformare le conoscenze disponibili dalla ricerca in procedure pratiche ben strutturate e personalizzate.",
+     },
+     {
+       type: "paragraph",
+       text: "Inoltre, una revisione sistematica condotta in ambito scolastico ha rilevato risultati favorevoli in diversi studi, ma ha evidenziato anche differenze legate alle modalità di utilizzo dei componenti della token economy e al contesto educativo.",
+     },
+     {
+       type: "heading",
+       text: "Un aspetto fondamentale: cosa succede quando i token non servono più?",
+     },
+     {
+       type: "paragraph",
+       text: "Uno degli obiettivi più importanti non dovrebbe essere quello di rendere la persona permanentemente dipendente dal sistema di token.",
+     },
+     {
+       type: "paragraph",
+       text: "Al contrario, quando il comportamento è sufficientemente consolidato, il sistema può essere gradualmente modificato e ridotto, favorendo il passaggio verso rinforzi più naturali.",
+     },
+     {
+       type: "paragraph",
+       text: "Questo aspetto è particolarmente importante perché l'obiettivo dell'intervento educativo non è semplicemente ottenere un comportamento mentre è presente una ricompensa, ma favorire la generalizzazione e il mantenimento dell'abilità nel tempo e nei diversi contesti.",
+     },
+     {
+       type: "paragraph",
+       text: "Già nella letteratura classica sulla token economy la generalizzazione dei comportamenti acquisiti e il mantenimento dopo la riduzione del rinforzo venivano indicati come aspetti fondamentali da considerare.",
+     },
+     {
+       type: "heading",
+       text: "Token economy e autismo: attenzione alla personalizzazione",
+     },
+     {
+       type: "paragraph",
+       text: "Nel caso dell'autismo, la personalizzazione assume un'importanza particolare.",
+     },
+     {
+       type: "paragraph",
+       text: "Le persone autistiche presentano caratteristiche, preferenze, modalità comunicative e bisogni molto differenti.",
+     },
+     {
+       type: "paragraph",
+       text: "Per questo motivo non è sufficiente predisporre una semplice tabella di gettoni e applicarla nello stesso modo a tutti.",
+     },
+     {
+       type: "paragraph",
+       text: "È necessario chiedersi:",
+     },
+     {
+       type: "paragraph",
+       text: "•	Qual è l'obiettivo?",
+     },
+     {
+       type: "paragraph",
+       text: "•	È realmente significativo per la persona?",
+     },
+     {
+       type: "paragraph",
+       text: "•	Il comportamento richiesto è comprensibile e raggiungibile?",
+     },
+     {
+       type: "paragraph",
+       text: "•	Il token è facilmente riconoscibile?",
+     },
+     {
+       type: "paragraph",
+       text: "•	Il rinforzatore è realmente motivante?",
+     },
+     {
+       type: "paragraph",
+       text: "•	Il sistema è adatto alle modalità comunicative della persona?",
+     },
+     {
+       type: "paragraph",
+       text: "•	Come verrà progressivamente ridotto?",
+     },
+     {
+       type: "paragraph",
+       text: "Queste domande permettono di trasformare la token economy da una semplice raccolta di gettoni a uno strumento inserito in un progetto educativo individualizzato.",
+     },
+     {
+       type: "heading",
+       text: "Non solo “premi”: costruire opportunità di apprendimento",
+     },
+     {
+       type: "paragraph",
+       text: "È importante evitare di interpretare la token economy semplicemente come un sistema di “premi e punizioni”.",
+     },
+     {
+       type: "paragraph",
+       text: "Il suo obiettivo, se correttamente progettata, è creare una relazione chiara e prevedibile tra un comportamento e una conseguenza positiva, sostenendo la motivazione durante l'apprendimento.",
+     },
+     {
+       type: "paragraph",
+       text: "La token economy può quindi essere utilizzata per accompagnare la persona nell'acquisizione di nuove competenze, soprattutto quando un'attività richiede uno sforzo iniziale significativo o quando il rinforzo naturale dell'attività non è ancora sufficiente a sostenere la partecipazione.",
+     },
+     {
+       type: "heading",
+       text: "Il punto di vista del Progetto GAIA",
+     },
+     {
+       type: "paragraph",
+       text: "Nel Progetto GAIA – Giochi Accessibili e Inclusivi per Bambini con Autismo, strumenti come la token economy possono essere considerati all'interno di una prospettiva più ampia: quella della progettazione di esperienze accessibili, prevedibili e personalizzate.",
+     },
+     {
+       type: "paragraph",
+       text: "Un sistema di token può essere utile quando risponde realmente alle esigenze del bambino e quando viene inserito in un percorso educativo strutturato.",
+     },
+     {
+       type: "paragraph",
+       text: "L'obiettivo non è semplicemente ottenere un determinato comportamento. L'obiettivo è favorire l'apprendimento, la partecipazione e l'autonomia, rispettando caratteristiche e preferenze individuali.",
+     },
+     {
+       type: "paragraph",
+       text: "Per questo, anche quando si utilizza una strategia comportamentale, è fondamentale mantenere al centro la persona.",
+     },
+     {
+       type: "heading",
+       text: "Comprendere, personalizzare, accompagnare",
+     },
+     {
+       type: "paragraph",
+       text: "La token economy può essere uno strumento efficace, ma la sua efficacia non dipende dal semplice utilizzo di gettoni o premi.",
+     },
+     {
+       type: "paragraph",
+       text: "Dipende dalla capacità di progettare il sistema intorno alla persona, scegliere obiettivi significativi, utilizzare rinforzatori adeguati e accompagnare progressivamente l'acquisizione dell'abilità verso una maggiore autonomia.",
+     },
+     {
+       type: "paragraph",
+       text: "Il token è uno strumento, non l'obiettivo. L'obiettivo è aiutare la persona ad apprendere e partecipare in modo sempre più autonomo.",
+     },
+     {
+       type: "paragraph",
+       text: "Fonti primarie:",
+     },
+     {
+       type: "link",
+       text: "•	Centro Medico Riabilitativo (CMR). Token economy: cos’è e come metterla in pratica. Fonte divulgativa di riferimento per la descrizione della procedura e delle sue modalità applicative.",
+       url: "httpswww.centromedicoriabilitativo.it/blog/token-economy/"
+     },
+     {
+       type: "paragraph",
+       text: "•	degli Espinosa, F., & Hackenberg, T. D. (2024). Token economies: Evidence-based recommendations for practitioners. Behavioral Interventions, 39(4), e2051. DOI: 10.1002/bin.2051. La revisione propone raccomandazioni evidence-based per la progettazione e l'applicazione dei sistemi a token.",
+     },
+     {
+       type: "paragraph",
+       text: "•	Matson, J. L., & Boisjoli, J. A. (2009). The token economy for children with intellectual disability and/or autism: A review. Research in Developmental Disabilities, 30(2), 240–248. DOI: 10.1016/j.ridd.2008.04.001. La revisione analizza l'utilizzo della token economy nei bambini con disabilità intellettiva e/o autismo.",
+     },
+     {
+       type: "paragraph",
+       text: "•	Kazdin, A. E., & Bootzin, R. R. (1972). The token economy: An evaluative review. Journal of Applied Behavior Analysis, 5(3), 343–372. DOI: 10.1901/jaba.1972.5-343. Lo studio rappresenta una delle revisioni classiche della letteratura sulla token economy e discute anche il problema della generalizzazione e del mantenimento dei comportamenti acquisiti.",
+     },
+     {
+       type: "paragraph",
+       text: "•	Maggin, D. M., Chafouleas, S. M., Goddard, K. M., & Johnson, A. H. (2011). A systematic evaluation of token economies as a classroom management tool for students with challenging behavior. Journal of School Psychology, 49(5), 529–554. DOI: 10.1016/j.jsp.2011.05.001. La revisione evidenzia risultati promettenti per programmi ben realizzati, sottolineando al contempo alcune limitazioni metodologiche della letteratura.",
+     },
+     {
+       type: "paragraph",
+       text: "•	Filcheck, H. A., et al. (2017). Token Economy: A Systematic Review of Procedural Descriptions. La revisione analizza gli elementi procedurali necessari per descrivere e implementare correttamente una token economy.",
+     },
+     {
+       type: "plus",
+       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+     },
+     {
+       type: "highlight",
+       label: "Contattaci!",
+       to: "/contatti",
+       variant: "secondary",
+     },
+   ],
+   slug: "articolo-13",
+ },
 ];
