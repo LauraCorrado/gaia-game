@@ -14,9 +14,9 @@ import articolo_11 from "../assets/img/newsletter/gaia_articolo_11.webp";
 import articolo_12 from "../assets/img/newsletter/gaia_articolo_12.webp";
 import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
 import articolo_14 from "../assets/img/newsletter/gaia_articolo_14.webp";
-import articolo_15 from "../assets/img/newsletter/gaia_articolo_15.webp";
-import articolo_16 from "../assets/img/newsletter/gaia_articolo_16.webp";
-import articolo_17 from "../assets/img/newsletter/gaia_articolo_17.webp";
+// import articolo_15 from "../assets/img/newsletter/gaia_articolo_15.webp";
+// import articolo_16 from "../assets/img/newsletter/gaia_articolo_16.webp";
+// import articolo_17 from "../assets/img/newsletter/gaia_articolo_17.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
