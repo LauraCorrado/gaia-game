@@ -13,6 +13,10 @@ import articolo_10 from "../assets/img/newsletter/gaia_articolo_10.webp";
 import articolo_11 from "../assets/img/newsletter/gaia_articolo_11.webp";
 import articolo_12 from "../assets/img/newsletter/gaia_articolo_12.webp";
 import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
+import articolo_14 from "../assets/img/newsletter/gaia_articolo_14.webp";
+import articolo_15 from "../assets/img/newsletter/gaia_articolo_15.webp";
+import articolo_16 from "../assets/img/newsletter/gaia_articolo_16.webp";
+import articolo_17 from "../assets/img/newsletter/gaia_articolo_17.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
 type ContentBlock =
@@ -2725,7 +2729,7 @@ export const news: NewsItem[] = [
      {
        type: "link",
        text: "•	Centro Medico Riabilitativo (CMR). Token economy: cos’è e come metterla in pratica. Fonte divulgativa di riferimento per la descrizione della procedura e delle sue modalità applicative.",
-       url: "httpswww.centromedicoriabilitativo.it/blog/token-economy/"
+       url: "www.centromedicoriabilitativo.it/blog/token-economy/"
      },
      {
        type: "paragraph",
@@ -2760,4 +2764,941 @@ export const news: NewsItem[] = [
    ],
    slug: "articolo-13",
  },
+  //articolo14
+  {
+    id: 17,
+    titolo:
+      "Burnout autistico",
+    sottotitolo:
+      "Cos’è e in cosa si differenzia dal burnout tradizionale",
+    categoria: "Articoli",
+    data: "2026-10-14",
+    immagine: articolo_14,
+    alt: "Persona stesa sul letto con un cuscino sulla testa, avvolta da sfumature verdi ad acquarello",
+
+    estratto:
+      "Il burnout autistico può nascere da un sovraccarico prolungato di stimoli, richieste sociali, cambiamenti e adattamenti continui. Riconoscerlo aiuta a distinguere l’esaurimento dalla mancanza di volontà e a costruire contesti più accessibili.",
+
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Quando si parla di burnout, si pensa spesso a una condizione di forte esaurimento legata al lavoro, allo stress e a periodi prolungati di pressione. Esiste però anche una forma di burnout che può riguardare le persone autistiche e che presenta caratteristiche specifiche: il \"burnout autistico\".",
+      },
+      {
+        type: "paragraph",
+        text: "Comprenderlo è importante perché alcune difficoltà che possono emergere durante questa fase rischiano di essere interpretate come mancanza di volontà, disinteresse o perdita di motivazione, quando possono invece essere il risultato di un intenso e prolungato sovraccarico.",
+      },
+      {
+        type: "heading",
+        text: "Che cos’è il burnout autistico?",
+      },
+      {
+        type: "paragraph",
+        text: "Il burnout autistico può essere descritto come uno stato di esaurimento fisico, mentale ed emotivo che può verificarsi dopo un periodo prolungato di stress e di richieste superiori alle risorse disponibili.",
+      },
+      {
+        type: "paragraph",
+        text: "Nel caso delle persone autistiche, il sovraccarico può derivare da diversi fattori: non soltanto dalle attività lavorative o scolastiche, ma anche dalla necessità di affrontare continuamente stimoli sensoriali, interazioni sociali, cambiamenti, aspettative e situazioni che richiedono un costante adattamento.",
+      },
+      {
+        type: "paragraph",
+        text: "Un elemento importante è quindi la possibile presenza di una distanza tra ciò che l'ambiente richiede e le risorse che la persona ha a disposizione in quel determinato momento.",
+      },
+      {
+        type: "heading",
+        text: "Il ruolo del sovraccarico",
+      },
+      {
+        type: "paragraph",
+        text: "La quotidianità può richiedere alla persona autistica un notevole dispendio di energie.",
+      },
+      {
+        type: "paragraph",
+        text: "Rumori, luci, affollamento, interazioni sociali, cambiamenti nella routine o la necessità di adattare continuamente il proprio comportamento possono contribuire, soprattutto se prolungati nel tempo, ad aumentare il livello di stress.",
+      },
+      {
+        type: "paragraph",
+        text: "Anche il \"masking\", cioè l'insieme delle strategie attraverso cui una persona può cercare di nascondere o compensare alcune proprie caratteristiche per adeguarsi alle aspettative sociali, può rappresentare una fonte significativa di consumo delle risorse.",
+      },
+      {
+        type: "paragraph",
+        text: "Quando questo sovraccarico diventa persistente e non è accompagnato da adeguati momenti di recupero, può contribuire all'insorgenza del burnout.",
+      },
+      {
+        type: "heading",
+        text: "Quali segnali possono comparire?",
+      },
+      {
+        type: "paragraph",
+        text: "Il burnout autistico può manifestarsi in modi differenti da persona a persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Tra le possibili manifestazioni possono esserci:",
+      },
+      {
+        type: "paragraph",
+        text: "•	forte stanchezza fisica e mentale;",
+      },
+      {
+        type: "paragraph",
+        text: "•	maggiore difficoltà nella gestione delle attività quotidiane;",
+      },
+      {
+        type: "paragraph",
+        text: "•	aumento della sensibilità agli stimoli sensoriali;",
+      },
+      {
+        type: "paragraph",
+        text: "•	maggiore difficoltà nelle interazioni e nella comunicazione;",
+      },
+      {
+        type: "paragraph",
+        text: "•	bisogno di trascorrere più tempo da soli;",
+      },
+      {
+        type: "paragraph",
+        text: "•	maggiore difficoltà ad affrontare cambiamenti o richieste;",
+      },
+      {
+        type: "paragraph",
+        text: "•	riduzione temporanea delle capacità che normalmente la persona riesce a utilizzare nella vita quotidiana.",
+      },
+      {
+        type: "paragraph",
+        text: "Proprio quest'ultimo aspetto può essere particolarmente significativo.",
+      },
+      {
+        type: "paragraph",
+        text: "Una persona può, ad esempio, riuscire normalmente a gestire determinate situazioni ma, durante un periodo di burnout, non avere più le risorse necessarie per affrontarle allo stesso modo.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo non significa necessariamente che quelle capacità siano scomparse: può indicare che, in quel momento, le risorse disponibili non sono sufficienti per utilizzarle come prima.",
+      },
+      {
+        type: "heading",
+        text: "Burnout autistico e burnout tradizionale: qual è la differenza?",
+      },
+      {
+        type: "paragraph",
+        text: "Il termine \"burnout\" viene utilizzato in diversi contesti e non tutte le forme di esaurimento hanno la stessa origine.",
+      },
+      {
+        type: "paragraph",
+        text: "Il burnout tradizionale viene generalmente associato a uno stress cronico legato all'attività lavorativa e alle condizioni in cui questa viene svolta.",
+      },
+      {
+        type: "paragraph",
+        text: "Nel burnout autistico, invece, le fonti di sovraccarico possono essere più ampie e riguardare diversi ambiti della vita quotidiana.",
+      },
+      {
+        type: "paragraph",
+        text: "Non è quindi necessariamente il lavoro, o un singolo contesto, a determinare l'esaurimento. Possono concorrere fattori legati all'ambiente, agli stimoli sensoriali, alle richieste sociali, ai cambiamenti, alle aspettative e alla necessità di adattarsi continuamente.",
+      },
+      {
+        type: "paragraph",
+        text: "La distinzione non significa che le due condizioni siano completamente separate: una persona autistica può naturalmente sperimentare anche un burnout legato al lavoro. Il punto è comprendere che, nel burnout autistico, il sovraccarico può avere una natura più ampia e coinvolgere il funzionamento quotidiano nel suo complesso.",
+      },
+      {
+        type: "heading",
+        text: "Perché è importante riconoscerlo?",
+      },
+      {
+        type: "paragraph",
+        text: "Uno dei rischi principali è attribuire le difficoltà esclusivamente alla mancanza di motivazione.",
+      },
+      {
+        type: "paragraph",
+        text: "Dire che una persona \"non si impegna abbastanza\", \"non vuole collaborare\" o \"prima riusciva a farlo\" non aiuta necessariamente a comprendere ciò che sta accadendo.",
+      },
+      {
+        type: "paragraph",
+        text: "Durante un burnout, infatti, continuare ad aumentare le richieste può contribuire ad accrescere ulteriormente il sovraccarico.",
+      },
+      {
+        type: "paragraph",
+        text: "Un approccio più utile parte invece dall'osservazione dei segnali e dalla domanda: quali richieste o condizioni stanno consumando le risorse della persona?",
+      },
+      {
+        type: "heading",
+        text: "Ridurre il sovraccarico e favorire il recupero",
+      },
+      {
+        type: "paragraph",
+        text: "Riconoscere un possibile burnout significa anche interrogarsi sull'ambiente e sulle condizioni che lo stanno alimentando.",
+      },
+      {
+        type: "paragraph",
+        text: "A seconda della situazione, può essere utile intervenire sulle richieste, prevedere momenti di recupero, ridurre gli stimoli eccessivi, aumentare la prevedibilità delle attività e adattare le modalità con cui vengono proposte determinate richieste.",
+      },
+      {
+        type: "paragraph",
+        text: "Non si tratta di \"fare meno\", ma di creare condizioni nelle quali la persona possa recuperare le proprie risorse e tornare gradualmente a gestire le attività quotidiane.",
+      },
+      {
+        type: "paragraph",
+        text: "Anche il supporto delle persone che fanno parte dell'ambiente familiare, scolastico o lavorativo può avere un ruolo importante.",
+      },
+      {
+        type: "heading",
+        text: "Comprendere prima di giudicare",
+      },
+      {
+        type: "paragraph",
+        text: "Il burnout autistico ci invita a guardare oltre il comportamento osservabile.",
+      },
+      {
+        type: "paragraph",
+        text: "Quando una persona improvvisamente non riesce più a fare qualcosa che prima riusciva a gestire, la domanda non dovrebbe essere \"Perché non lo fa più?\", ma anche \"Cosa è cambiato? Quanto è stato il carico sostenuto fino a questo momento?\"",
+      },
+      {
+        type: "paragraph",
+        text: "Comprendere il burnout significa quindi riconoscere che le capacità di una persona possono essere influenzate dalle condizioni ambientali e dal livello di sovraccarico.",
+      },
+      {
+        type: "paragraph",
+        text: "Promuovere contesti più prevedibili, accessibili e rispettosi delle diverse modalità di funzionamento può contribuire non solo a prevenire situazioni di forte stress, ma anche a costruire ambienti realmente più inclusivi.",
+      },      
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "Spazio Asperger, Il burnout autistico: cos'è e in che modo si distingue dal burnout tradizionale?",
+        url: "https://www.spazioasperger.it/il-burnout-autistico-cose-e-in-che-modo-si-distingue-dal-burnout-tradizionale/"
+      },
+      {
+        type: "plus",
+        text: "I contenuti hanno finalità informative e di sensibilizzazione e non sostituiscono la valutazione o il supporto di professionisti qualificati.",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-14",
+  },
+  // todo I SEGUENTI ARTICOLI VANNO COMMENTATI E DECOMMENTATI IL GIORNO DELLA PUBBLICAZIONE
+  //articolo15
+  // {
+  //   id: 18,
+  //   titolo:
+  //     "Autismo, ansia e depressione",
+  //   sottotitolo:
+  //     "Come cambiano durante l’infanzia e l’adolescenza",
+  //   categoria: "Articoli",
+  //   data: "2026-10-22",
+  //   immagine: articolo_15,
+  //   alt: "Illustrazione ad acquarello di una giovane figura in diverse fasi di crescita",
+
+  //   estratto:
+  //     "Un nuovo studio longitudinale analizza come ansia e depressione cambiano dall’infanzia all’adolescenza nei giovani autistici. I risultati mostrano traiettorie diverse ma spesso collegate, confermando l’importanza di osservare il benessere emotivo nel tempo.",
+
+  //   contenuti: [
+  //     {
+  //       type: "paragraph",
+  //       text: "Un nuovo studio longitudinale analizza l’evoluzione dei sintomi emotivi nei giovani autistici",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Infanzia e adolescenza sono periodi caratterizzati da importanti cambiamenti sul piano personale, scolastico, sociale e relazionale. Per i giovani autistici, l’aumento delle richieste e delle aspettative può accompagnarsi a nuove difficoltà emotive, tra cui sintomi di ansia e depressione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Ma questi sintomi rimangono stabili nel tempo? E ansia e depressione seguono percorsi indipendenti oppure tendono a evolvere insieme?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "A queste domande ha cercato di rispondere un recente studio pubblicato nel 2026 su \"Frontiers in Psychiatry\", che ha analizzato proprio le traiettorie congiunte dei sintomi di ansia e depressione durante il passaggio dall’infanzia all’adolescenza.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Lo studio: seguire i cambiamenti nel tempo",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La ricerca, condotta nell’ambito dello studio longitudinale canadese Pathways in ASD, ha preso in esame un campione di 277 giovani autistici, seguendone lo sviluppo dalla tarda infanzia alla prima adolescenza.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "I ricercatori hanno analizzato i sintomi di ansia e depressione riportati dai caregiver attraverso il Child Behavior Checklist, osservandone l'andamento nel corso degli anni.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "L'analisi ha riguardato principalmente il periodo compreso tra i 7 e i 16 anni, una fase particolarmente importante perché coincide con un progressivo aumento delle richieste sociali e scolastiche.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "L'obiettivo non era quindi fotografare una situazione in un singolo momento, ma comprendere come i sintomi potessero cambiare durante lo sviluppo e se i percorsi di ansia e depressione fossero collegati.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Ansia e depressione non seguono esattamente lo stesso andamento",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Uno dei risultati principali riguarda la differenza tra le due traiettorie.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Nel campione analizzato, i sintomi ansiosi sono rimasti relativamente stabili in media tra l'infanzia e l'adolescenza.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "I sintomi depressivi, invece, hanno mostrato un aumento medio nel corso dello sviluppo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo non significa, però, che tutti i giovani abbiano seguito lo stesso percorso. I ricercatori hanno infatti rilevato una significativa variabilità individuale: dietro le tendenze osservate a livello di gruppo esistono traiettorie personali differenti.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "È un elemento importante perché evita di interpretare i risultati come una previsione valida per ogni persona autistica.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Ansia e depressione possono evolvere insieme",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Un altro risultato rilevante riguarda il rapporto tra i due fenomeni.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "I livelli di ansia e depressione risultavano associati nello stesso momento e, soprattutto, le loro traiettorie nel corso dello sviluppo erano correlate positivamente.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "In altre parole, pur mostrando tendenze medie differenti, i cambiamenti individuali nei sintomi di ansia e depressione tendevano a essere collegati.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo dato suggerisce l'importanza di non osservare il benessere emotivo attraverso una sola dimensione. Un cambiamento nei sintomi ansiosi o depressivi può infatti essere inserito all'interno di un quadro più ampio, che merita di essere seguito nel tempo.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Quali fattori erano associati ai sintomi?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Lo studio ha preso in considerazione anche alcuni possibili fattori associati all'andamento dei sintomi.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Una maggiore presenza di tratti autistici e una maggiore reattività emotiva a 7 anni risultavano associate a livelli iniziali più elevati sia di ansia sia di depressione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Tuttavia, questi fattori non risultavano associati al cambiamento dei sintomi nel tempo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "È una distinzione importante: essere associati a livelli iniziali più elevati non significa necessariamente prevedere come quei sintomi evolveranno negli anni successivi.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Anche le capacità comunicative hanno mostrato un'associazione interessante. Una maggiore capacità comunicativa a 7 anni era associata a livelli iniziali più elevati di ansia, ma anche a una diminuzione dei sintomi ansiosi nel corso del tempo. Non è stata invece osservata una relazione significativa con i livelli iniziali di depressione.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Perché osservare l'evoluzione è importante?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Uno degli aspetti più interessanti della ricerca riguarda proprio il valore del monitoraggio nel tempo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Un singolo momento di valutazione può fornire informazioni importanti, ma osservare come cambiano ansia e depressione permette di cogliere anche tendenze individuali che potrebbero non essere evidenti in una singola rilevazione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Gli autori sottolineano quindi l'importanza di un monitoraggio congiunto dei sintomi ansiosi e depressivi durante l'infanzia e l'adolescenza. I cambiamenti osservati potrebbero fornire indicazioni utili per l'identificazione precoce delle difficoltà e per eventuali interventi di supporto.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo approccio è particolarmente rilevante considerando che l'adolescenza comporta nuove richieste sociali, scolastiche e relazionali e rappresenta una fase nella quale possono emergere o modificarsi diverse difficoltà emotive.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Un risultato da leggere con attenzione",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Come per ogni ricerca scientifica, anche questi risultati devono essere interpretati considerando le caratteristiche del campione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il gruppo studiato era composto prevalentemente da partecipanti di sesso maschile (84,5%) e di etnia bianca (74,3%). Inoltre, le informazioni relative ai sintomi di ansia e depressione provenivano principalmente dai caregiver.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo significa che i risultati non possono essere automaticamente generalizzati a tutte le persone autistiche.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Sono quindi necessari ulteriori studi che coinvolgano campioni più diversificati e che integrino, quando possibile, differenti fonti di informazione, comprese le prospettive dirette delle persone autistiche.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Guardare oltre il singolo sintomo",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La ricerca aggiunge un elemento importante alla comprensione del benessere emotivo dei giovani autistici: ansia e depressione possono presentare traiettorie diverse, ma allo stesso tempo mostrare un'evoluzione collegata.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per questo, durante la crescita, può essere utile prestare attenzione non soltanto alla presenza di un singolo sintomo, ma anche ai cambiamenti nel tempo e alla loro possibile relazione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Non esiste infatti un unico percorso di sviluppo valido per tutte le persone autistiche.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Comprendere queste differenze significa poter costruire un'osservazione più attenta e, quando necessario, individuare più precocemente i bisogni di supporto.",
+  //     },
+            
+  //     {
+  //       type: "paragraph",
+  //       text: "Fonte primaria:",
+  //     },
+  //     {
+  //       type: "link",
+  //       text: "Hunsche MC, Zaidman-Zait A, Olana M, Szatmari P, Bennett T, Duku E, Georgiades S, Smith IM, Zwaigenbaum L, Elsabbagh M, Vaillancourt T, Bedford R and Kerns CM (2026) Brief report: joint trajectories of anxiety and depression symptoms in an inception cohort of autistic youth. Front. Psychiatry 17:1741956",
+  //       url: "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1741956/full"
+  //     },
+  //     {
+  //       type: "plus",
+  //       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+  //     },
+  //     {
+  //       type: "highlight",
+  //       label: "Contattaci!",
+  //       to: "/contatti",
+  //       variant: "secondary",
+  //     },
+  //   ],
+  //   slug: "articolo-15",
+  // },
+  //articolo16
+  // {
+  //   id: 19,
+  //   titolo:
+  //     "Autismo e sessualità",
+  //   sottotitolo:
+  //     "5 cose da sapere",
+  //   categoria: "Articoli",
+  //   data: "2026-10-27",
+  //   immagine: articolo_16,
+  //   alt: "Illustrazione ad acquarello di due giovani figure sedute una di fronte all’altra",
+
+  //   estratto:
+  //     "La sessualità fa parte anche della vita delle persone autistiche e non può essere ridotta a stereotipi. Un’educazione affettivo-sessuale accessibile e personalizzata è fondamentale per promuovere consapevolezza, sicurezza e relazioni rispettose.",
+
+  //   contenuti: [
+  //     {
+  //       type: "paragraph",
+  //       text: "Quando si parla di autismo, la sessualità è ancora un tema spesso circondato da stereotipi e reticenze. Si tende, per esempio, a pensare che le persone autistiche siano poco interessate alle relazioni affettive o alla sessualità, oppure che non abbiano bisogno di una vera educazione affettivo-sessuale.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La realtà è più complessa.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La sessualità fa parte della vita delle persone autistiche, così come di quella della popolazione generale, anche se il modo di viverla, comunicarla e comprenderla può essere molto diverso da persona a persona. La ricerca scientifica sottolinea inoltre l'importanza di un'educazione sessuale accessibile e personalizzata, soprattutto per favorire consapevolezza, autonomia, sicurezza e relazioni rispettose.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "1. La sessualità non è assente nell'autismo",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Essere nello spettro autistico non significa non provare attrazione, desiderio o interesse per le relazioni.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Uno studio pubblicato su \"Autism Research\", che ha coinvolto 2.386 persone, di cui 1.183 autistiche, ha analizzato proprio sessualità, orientamento e attività sessuale negli adolescenti e negli adulti. I risultati mostrano che le persone autistiche possono essere interessate alle relazioni sessuali e affettive e possono presentare una varietà di orientamenti sessuali.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "È quindi importante evitare generalizzazioni: non esiste un unico modo di vivere la sessualità nell'autismo.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "2. L'educazione sessuale è importante, ma deve essere accessibile",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Uno degli aspetti più rilevanti riguarda l'accesso a un'educazione sessuale adeguata.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Le persone autistiche possono incontrare difficoltà quando le informazioni vengono trasmesse attraverso regole implicite, metafore o situazioni sociali poco chiare. Per questo, l'educazione affettivo-sessuale può avere bisogno di essere più esplicita, concreta, strutturata e adattata alle caratteristiche comunicative della persona.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Una revisione sistematica pubblicata nel 2023 ha analizzato gli interventi di educazione psicosessuale rivolti specificamente a giovani e adulti autistici. Gli autori evidenziano la necessità di programmi personalizzati e facilmente traducibili nella pratica, pur sottolineando che le evidenze disponibili sono ancora limitate e che servono ulteriori studi per individuare gli interventi più efficaci.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Educare alla sessualità significa quindi parlare anche di:",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	corpo e intimità;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	relazioni;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	consenso;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	confini personali;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	sicurezza;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	comportamenti pubblici e privati;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	salute sessuale.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "3. Consenso e confini sono fondamentali",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il consenso è un elemento centrale di qualsiasi relazione affettiva o sessuale.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per alcune persone autistiche, comprendere alcuni segnali sociali impliciti o interpretare correttamente la comunicazione non verbale può essere più complesso. Questo non significa che non possano comprendere il consenso: significa che, in alcuni casi, può essere utile renderne più esplicite le regole e i significati.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Dire chiaramente che cosa significa accettare, rifiutare, fermarsi o cambiare idea può contribuire a sviluppare maggiore consapevolezza dei propri confini e di quelli dell'altra persona.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "L'educazione sessuale può quindi diventare anche uno strumento di prevenzione e di tutela.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "4. Famiglia, scuola e professionisti hanno un ruolo importante",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Parlare di sessualità con un bambino, un adolescente o un adulto autistico può mettere in difficoltà anche genitori ed educatori.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Eppure evitare completamente l'argomento non elimina il bisogno di informazioni.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Al contrario, è importante costruire una comunicazione coerente tra le figure che accompagnano la persona, utilizzando modalità comunicative adeguate alla sua età, al suo livello di comprensione e alle sue esigenze.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "L'obiettivo non dovrebbe essere semplicemente insegnare \"che cosa è appropriato\", ma aiutare la persona a sviluppare strumenti per comprendere il proprio corpo, riconoscere i propri desideri e limiti, rispettare quelli degli altri e affrontare le relazioni in maggiore sicurezza.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "5. Superare gli stereotipi",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Esistono ancora numerose convinzioni sulla sessualità delle persone autistiche:",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	\"non sono interessate al sesso\"",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	\"non possono avere relazioni sentimentali\"",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	\"non hanno bisogno di educazione sessuale\"",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Sono generalizzazioni che non tengono conto della grande variabilità presente nello spettro autistico.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La letteratura scientifica evidenzia infatti che le esperienze di sessualità, relazione e intimità sono diverse tra le persone autistiche e possono essere influenzate da caratteristiche individuali, esperienze personali, aspetti sensoriali, modalità comunicative e contesto sociale.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per questo è più utile parlare di bisogni individuali piuttosto che cercare una risposta unica valida per tutte le persone autistiche.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Parlare di sessualità significa parlare anche di autonomia e sicurezza",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "L'educazione affettivo-sessuale non dovrebbe essere considerata un argomento secondario.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per le persone autistiche, avere accesso a informazioni comprensibili e adeguate può contribuire alla costruzione di una maggiore consapevolezza del proprio corpo, delle relazioni, del consenso e dei propri confini.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La ricerca sottolinea però anche un dato importante: gli interventi di educazione sessuale specificamente studiati per le persone autistiche sono ancora relativamente pochi e non esiste, al momento, un modello universalmente validato come efficace. Sono quindi necessari ulteriori studi e percorsi costruiti sulle caratteristiche e sui bisogni della singola persona.",
+  //     },
+      
+      
+  //     {
+  //       type: "paragraph",
+  //       text: "Fonti primarie:",
+  //     },
+  //     {
+  //       type: "link",
+  //       text: "•	GAM Medical, Autismo e sessualità: 5 cose da sapere, 22 marzo 2025",
+  //       url: "https://gam-medical.com/autismo-e-sessualita-5-cose-da-sapere/?srsltid=AfmBOoqcTRmfH2Hj4Fx2C9H_o5KkeDCHpcJKexO0Wqcem4JmJSZQaja9"
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Weir E., Allison C., Baron-Cohen S., The sexual health, orientation, and activity of autistic adolescents and adults, Autism Research, 2021",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Ragaglia B., Caputi M., Bulgarelli D., Psychosexual Education Interventions for Autistic Youth and Adults—A Systematic Review, Education Sciences, 2023",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Pecora L.A. et al., Sexuality and Gender Issues in Individuals with Autism Spectrum Disorder, Psychiatric Clinics of North America, 2021",
+  //     },
+  //     {
+  //       type: "plus",
+  //       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+  //     },
+  //     {
+  //       type: "highlight",
+  //       label: "Contattaci!",
+  //       to: "/contatti",
+  //       variant: "secondary",
+  //     },
+  //   ],
+  //   slug: "articolo-16",
+  // },
+  //articolo17
+  // {
+  //   id: 20,
+  //   titolo:
+  //     "Autismo e gioco simbolico",
+  //   sottotitolo:
+  //     "Comprendere le diverse modalità di giocare",
+  //   categoria: "Articoli",
+  //   data: "2026-11-04",
+  //   immagine: articolo_17,
+  //   alt: "Illustrazione ad acquarello di una bimba mentre gioca dentro una scatola trasformata in automobile",
+
+  //   estratto:
+  //     "Il gioco simbolico permette ai bambini di trasformare oggetti e situazioni in nuove rappresentazioni della realtà. Nell’autismo può svilupparsi in modi differenti, offrendo indicazioni importanti su comunicazione, immaginazione e modalità di relazione.",
+
+  //   contenuti: [
+  //     {
+  //       type: "paragraph",
+  //       text: "Una scatola può diventare una casa, un cucchiaio può trasformarsi in un telefono e un peluche può diventare il protagonista di una storia. È attraverso il \"gioco simbolico\" che il bambino inizia a utilizzare oggetti, gesti e situazioni andando oltre la loro funzione immediata, attribuendo loro significati nuovi e costruendo piccole rappresentazioni della realtà.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Ma cosa accade quando il gioco simbolico si sviluppa in modo differente? E quale relazione può avere con l’autismo?",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Che cos’è il gioco simbolico?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il gioco simbolico, chiamato anche \"gioco di finzione\" o \"pretend play\", consiste nella capacità di rappresentare qualcosa attraverso un oggetto, un gesto o una situazione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Un bambino può, per esempio:",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	far finta di dare da mangiare a una bambola;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	utilizzare una scatola come se fosse una macchina;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	fingere di telefonare usando un oggetto qualsiasi;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	mettere in scena una situazione quotidiana, come andare dal medico o cucinare;",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	inventare una storia coinvolgendo più personaggi.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questa modalità di gioco si sviluppa progressivamente e si collega a diverse competenze cognitive, comunicative e sociali.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Prima del gioco simbolico, infatti, il bambino attraversa altre forme di esplorazione e di gioco, imparando gradualmente a conoscere gli oggetti e a utilizzarli secondo la loro funzione. Successivamente può iniziare a modificarne il significato e a utilizzarli all'interno di situazioni immaginate.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Il gioco simbolico nell'autismo",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La ricerca scientifica ha evidenziato che nei bambini autistici possono essere presenti differenze nello sviluppo del gioco simbolico.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Una revisione della letteratura che ha analizzato 22 studi ha rilevato, nei bambini con autismo, maggiori difficoltà nel gioco simbolico rispetto ai bambini con sviluppo tipico e, in diversi studi, anche rispetto a bambini con altri disturbi del neurosviluppo. Le differenze risultavano particolarmente evidenti nelle situazioni di gioco libero e spontaneo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo può manifestarsi, per esempio, attraverso una minore frequenza di giochi di finzione spontanei, una maggiore attenzione alle caratteristiche concrete degli oggetti oppure una modalità di gioco più ripetitiva e meno orientata alla costruzione di una storia.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "È però importante evitare una lettura semplicistica.",
+  //     },
+  //     {
+  //       type: "plus",
+  //       text: "Non tutti i bambini autistici giocano nello stesso modo e l'assenza o la ridotta presenza di gioco simbolico, da sola, non permette di stabilire una diagnosi.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il gioco deve essere osservato all'interno di un quadro più ampio dello sviluppo del bambino.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Gioco funzionale e gioco simbolico: qual è la differenza?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per comprendere meglio queste differenze può essere utile distinguere due modalità di gioco.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Nel \"gioco funzionale\", il bambino utilizza un oggetto in relazione alla sua funzione:",
+  //     },
+  //     {
+  //       type: "plus",
+  //       text: "una macchinina viene fatta correre, un telefono giocattolo viene portato all'orecchio, una tazza viene utilizzata per bere.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Nel gioco simbolico, invece, l'oggetto può assumere un significato diverso:",
+  //     },
+  //     {
+  //       type: "plus",
+  //       text: "una scatola diventa una macchina, un bastoncino diventa un cucchiaio, una bambola viene trattata come una persona da accudire.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il passaggio dalla funzione concreta alla rappresentazione simbolica richiede quindi di poter immaginare qualcosa che non è immediatamente presente.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Il ruolo dell'attenzione condivisa",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il gioco simbolico non riguarda soltanto l'immaginazione individuale. Quando viene condiviso con un'altra persona, entra in gioco anche la capacità di condividere l'attenzione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per esempio, un bambino può guardare un adulto, mostrargli un oggetto e coinvolgerlo nella propria storia di gioco.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La relazione tra attenzione condivisa e gioco simbolico è stata studiata nella ricerca sull'autismo. Alcuni studi hanno evidenziato un'associazione tra queste competenze, anche se la natura precisa della relazione rimane oggetto di ricerca.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo aiuta a comprendere perché il gioco possa rappresentare uno spazio importante non soltanto per l'esplorazione, ma anche per la comunicazione e l'interazione.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Quando il gioco appare diverso",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Un bambino autistico può mostrare interesse per un giocattolo senza utilizzarlo secondo le modalità che ci aspetteremmo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Può, ad esempio, concentrarsi maggiormente sui dettagli di un oggetto, ripetere determinati movimenti, osservare una parte specifica del giocattolo oppure preferire attività caratterizzate da maggiore prevedibilità.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Questo non significa necessariamente che il bambino non abbia immaginazione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Significa piuttosto che il suo modo di esplorare e utilizzare il gioco può essere differente.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per questo motivo, osservare il gioco significa andare oltre la domanda \"gioca come gli altri bambini?\" e chiedersi:",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	cosa interessa al bambino?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	come utilizza gli oggetti?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	quanto è spontaneo il suo gioco?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	riesce a imitare una semplice azione?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	riesce a coinvolgere un'altra persona?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	come reagisce quando il gioco cambia?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	quali modalità di gioco gli permettono di comunicare meglio?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Sono proprio queste osservazioni, considerate nel loro insieme, a fornire informazioni più significative sullo sviluppo.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Il gioco simbolico può essere sostenuto?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "La ricerca ha esplorato anche interventi finalizzati a sostenere il gioco simbolico e l'attenzione condivisa.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Uno studio randomizzato condotto su bambini autistici di 3 e 4 anni ha rilevato miglioramenti in specifiche competenze di gioco simbolico nei bambini coinvolti nell'intervento dedicato al gioco, rispetto al gruppo di controllo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Anche studi successivi hanno esplorato approcci basati sul gioco condiviso e guidato, osservando possibili miglioramenti nelle competenze di gioco di finzione. Tuttavia, alcuni di questi studi hanno campioni molto piccoli e devono quindi essere interpretati con cautela.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "L'obiettivo, quindi, non dovrebbe essere quello di \"insegnare a tutti i bambini a giocare nello stesso modo\", ma di creare condizioni che permettano loro di esplorare, comunicare e partecipare al gioco secondo le proprie modalità, offrendo nuove possibilità quando risultano utili.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Perché osservare il gioco è importante?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il gioco è uno dei principali contesti attraverso cui i bambini sperimentano il mondo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Attraverso il gioco possono emergere modalità di comunicazione, imitazione, esplorazione, problem solving, interazione, condivisione dell'attenzione e rappresentazione e immaginazione.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Per questo motivo, osservare il gioco può aiutare genitori, educatori e professionisti a comprendere meglio le caratteristiche e i bisogni del singolo bambino.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Ma è fondamentale evitare interpretazioni automatiche: un comportamento di gioco isolato non definisce un bambino e non permette, da solo, di identificare l'autismo.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       text: "Giocare non significa giocare tutti allo stesso modo",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Il gioco simbolico rappresenta una tappa importante dello sviluppo, ma può assumere forme, tempi e caratteristiche differenti.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Nel caso dell'autismo, comprendere queste differenze significa soprattutto imparare a osservare il bambino senza confrontarlo continuamente con un unico modello di sviluppo.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Perché il gioco non è soltanto qualcosa che il bambino fa. È anche un modo attraverso cui esplora il mondo, costruisce significati e può entrare in relazione con gli altri.",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "Fonti primarie:",
+  //     },
+  //     {
+  //       type: "link",
+  //       text: "•	GAM Medical, \"Autismo e gioco simbolico\", approfondimento sul rapporto tra autismo e sviluppo del gioco simbolico",
+  //       url: "https://gam-medical.com/autismo-e-gioco-simbolico/?srsltid=AfmBOooq8CojhW9m6fyfiqwGQEVo7AuLCafFxqDN3el_wGlCNSpubJ6b"
+  //     },
+  //     {
+  //       type: "link",
+  //       text: "•	González-Sala F, Gómez-Marí I, Tárraga-Mínguez R, Vicente-Carvajal A, Pastor-Cerezuela G. Symbolic Play among Children with Autism Spectrum Disorder: A Scoping Review. Children (Basel). 2021 Sep 12;8(9):801. doi: 10.3390/children8090801. PMID: 34572233; PMCID: PMC8470741",
+  //       url: "https://pubmed.ncbi.nlm.nih.gov/34572233/"
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Almenara et al., \"Symbolic Play among Children with Autism Spectrum Disorder: A Scoping Review\", Children, 2021. La revisione ha analizzato 22 studi sul gioco simbolico nell'autismo",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Charman, T., \"The relationship between joint attention and pretend play in autism\", Development and Psychopathology, 1997",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Kasari, C., Freeman, S., Paparella, T., \"Joint attention and symbolic play in young children with autism: a randomized controlled intervention study\", Journal of Child Psychology and Psychiatry, 2006",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       text: "•	Westby, C., \"Playing to Pretend or 'Pretending' to Play: Play in Children with Autism Spectrum Disorder\", Seminars in Speech and Language, 2022",
+  //     },
+  //     {
+  //       type: "plus",
+  //       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+  //     },
+  //     {
+  //       type: "highlight",
+  //       label: "Contattaci!",
+  //       to: "/contatti",
+  //       variant: "secondary",
+  //     },
+  //   ],
+  //   slug: "articolo-17",
+  // },
 ];
