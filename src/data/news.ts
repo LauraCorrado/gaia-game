@@ -14,7 +14,7 @@ import articolo_11 from "../assets/img/newsletter/gaia_articolo_11.webp";
 import articolo_12 from "../assets/img/newsletter/gaia_articolo_12.webp";
 import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
 import articolo_14 from "../assets/img/newsletter/gaia_articolo_14.webp";
-// import articolo_15 from "../assets/img/newsletter/gaia_articolo_15.webp";
+import articolo_15 from "../assets/img/newsletter/gaia_articolo_15.webp";
 // import articolo_16 from "../assets/img/newsletter/gaia_articolo_16.webp";
 // import articolo_17 from "../assets/img/newsletter/gaia_articolo_17.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
@@ -2986,210 +2986,210 @@ export const news: NewsItem[] = [
     ],
     slug: "articolo-14",
   },
-  // todo I SEGUENTI ARTICOLI VANNO COMMENTATI E DECOMMENTATI IL GIORNO DELLA PUBBLICAZIONE
   //articolo15
-  // {
-  //   id: 18,
-  //   titolo:
-  //     "Autismo, ansia e depressione",
-  //   sottotitolo:
-  //     "Come cambiano durante l’infanzia e l’adolescenza",
-  //   categoria: "Articoli",
-  //   data: "2026-10-22",
-  //   immagine: articolo_15,
-  //   alt: "Illustrazione ad acquarello di una giovane figura in diverse fasi di crescita",
+ {
+   id: 18,
+   titolo:
+     "Autismo, ansia e depressione",
+   sottotitolo:
+     "Come cambiano durante l’infanzia e l’adolescenza",
+   categoria: "Articoli",
+   data: "2026-10-22",
+   immagine: articolo_15,
+   alt: "Illustrazione ad acquarello di una giovane figura in diverse fasi di crescita",
 
-  //   estratto:
-  //     "Un nuovo studio longitudinale analizza come ansia e depressione cambiano dall’infanzia all’adolescenza nei giovani autistici. I risultati mostrano traiettorie diverse ma spesso collegate, confermando l’importanza di osservare il benessere emotivo nel tempo.",
+   estratto:
+     "Un nuovo studio longitudinale analizza come ansia e depressione cambiano dall’infanzia all’adolescenza nei giovani autistici. I risultati mostrano traiettorie diverse ma spesso collegate, confermando l’importanza di osservare il benessere emotivo nel tempo.",
 
-  //   contenuti: [
-  //     {
-  //       type: "paragraph",
-  //       text: "Un nuovo studio longitudinale analizza l’evoluzione dei sintomi emotivi nei giovani autistici",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Infanzia e adolescenza sono periodi caratterizzati da importanti cambiamenti sul piano personale, scolastico, sociale e relazionale. Per i giovani autistici, l’aumento delle richieste e delle aspettative può accompagnarsi a nuove difficoltà emotive, tra cui sintomi di ansia e depressione.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Ma questi sintomi rimangono stabili nel tempo? E ansia e depressione seguono percorsi indipendenti oppure tendono a evolvere insieme?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "A queste domande ha cercato di rispondere un recente studio pubblicato nel 2026 su \"Frontiers in Psychiatry\", che ha analizzato proprio le traiettorie congiunte dei sintomi di ansia e depressione durante il passaggio dall’infanzia all’adolescenza.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Lo studio: seguire i cambiamenti nel tempo",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La ricerca, condotta nell’ambito dello studio longitudinale canadese Pathways in ASD, ha preso in esame un campione di 277 giovani autistici, seguendone lo sviluppo dalla tarda infanzia alla prima adolescenza.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "I ricercatori hanno analizzato i sintomi di ansia e depressione riportati dai caregiver attraverso il Child Behavior Checklist, osservandone l'andamento nel corso degli anni.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'analisi ha riguardato principalmente il periodo compreso tra i 7 e i 16 anni, una fase particolarmente importante perché coincide con un progressivo aumento delle richieste sociali e scolastiche.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'obiettivo non era quindi fotografare una situazione in un singolo momento, ma comprendere come i sintomi potessero cambiare durante lo sviluppo e se i percorsi di ansia e depressione fossero collegati.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Ansia e depressione non seguono esattamente lo stesso andamento",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Uno dei risultati principali riguarda la differenza tra le due traiettorie.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Nel campione analizzato, i sintomi ansiosi sono rimasti relativamente stabili in media tra l'infanzia e l'adolescenza.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "I sintomi depressivi, invece, hanno mostrato un aumento medio nel corso dello sviluppo.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Questo non significa, però, che tutti i giovani abbiano seguito lo stesso percorso. I ricercatori hanno infatti rilevato una significativa variabilità individuale: dietro le tendenze osservate a livello di gruppo esistono traiettorie personali differenti.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È un elemento importante perché evita di interpretare i risultati come una previsione valida per ogni persona autistica.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Ansia e depressione possono evolvere insieme",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Un altro risultato rilevante riguarda il rapporto tra i due fenomeni.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "I livelli di ansia e depressione risultavano associati nello stesso momento e, soprattutto, le loro traiettorie nel corso dello sviluppo erano correlate positivamente.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "In altre parole, pur mostrando tendenze medie differenti, i cambiamenti individuali nei sintomi di ansia e depressione tendevano a essere collegati.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Questo dato suggerisce l'importanza di non osservare il benessere emotivo attraverso una sola dimensione. Un cambiamento nei sintomi ansiosi o depressivi può infatti essere inserito all'interno di un quadro più ampio, che merita di essere seguito nel tempo.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Quali fattori erano associati ai sintomi?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Lo studio ha preso in considerazione anche alcuni possibili fattori associati all'andamento dei sintomi.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Una maggiore presenza di tratti autistici e una maggiore reattività emotiva a 7 anni risultavano associate a livelli iniziali più elevati sia di ansia sia di depressione.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Tuttavia, questi fattori non risultavano associati al cambiamento dei sintomi nel tempo.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È una distinzione importante: essere associati a livelli iniziali più elevati non significa necessariamente prevedere come quei sintomi evolveranno negli anni successivi.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Anche le capacità comunicative hanno mostrato un'associazione interessante. Una maggiore capacità comunicativa a 7 anni era associata a livelli iniziali più elevati di ansia, ma anche a una diminuzione dei sintomi ansiosi nel corso del tempo. Non è stata invece osservata una relazione significativa con i livelli iniziali di depressione.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Perché osservare l'evoluzione è importante?",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Uno degli aspetti più interessanti della ricerca riguarda proprio il valore del monitoraggio nel tempo.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Un singolo momento di valutazione può fornire informazioni importanti, ma osservare come cambiano ansia e depressione permette di cogliere anche tendenze individuali che potrebbero non essere evidenti in una singola rilevazione.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Gli autori sottolineano quindi l'importanza di un monitoraggio congiunto dei sintomi ansiosi e depressivi durante l'infanzia e l'adolescenza. I cambiamenti osservati potrebbero fornire indicazioni utili per l'identificazione precoce delle difficoltà e per eventuali interventi di supporto.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Questo approccio è particolarmente rilevante considerando che l'adolescenza comporta nuove richieste sociali, scolastiche e relazionali e rappresenta una fase nella quale possono emergere o modificarsi diverse difficoltà emotive.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Un risultato da leggere con attenzione",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Come per ogni ricerca scientifica, anche questi risultati devono essere interpretati considerando le caratteristiche del campione.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il gruppo studiato era composto prevalentemente da partecipanti di sesso maschile (84,5%) e di etnia bianca (74,3%). Inoltre, le informazioni relative ai sintomi di ansia e depressione provenivano principalmente dai caregiver.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Questo significa che i risultati non possono essere automaticamente generalizzati a tutte le persone autistiche.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Sono quindi necessari ulteriori studi che coinvolgano campioni più diversificati e che integrino, quando possibile, differenti fonti di informazione, comprese le prospettive dirette delle persone autistiche.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Guardare oltre il singolo sintomo",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La ricerca aggiunge un elemento importante alla comprensione del benessere emotivo dei giovani autistici: ansia e depressione possono presentare traiettorie diverse, ma allo stesso tempo mostrare un'evoluzione collegata.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per questo, durante la crescita, può essere utile prestare attenzione non soltanto alla presenza di un singolo sintomo, ma anche ai cambiamenti nel tempo e alla loro possibile relazione.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Non esiste infatti un unico percorso di sviluppo valido per tutte le persone autistiche.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Comprendere queste differenze significa poter costruire un'osservazione più attenta e, quando necessario, individuare più precocemente i bisogni di supporto.",
-  //     },
+   contenuti: [
+     {
+       type: "paragraph",
+       text: "Un nuovo studio longitudinale analizza l’evoluzione dei sintomi emotivi nei giovani autistici",
+     },
+     {
+       type: "paragraph",
+       text: "Infanzia e adolescenza sono periodi caratterizzati da importanti cambiamenti sul piano personale, scolastico, sociale e relazionale. Per i giovani autistici, l’aumento delle richieste e delle aspettative può accompagnarsi a nuove difficoltà emotive, tra cui sintomi di ansia e depressione.",
+     },
+     {
+       type: "paragraph",
+       text: "Ma questi sintomi rimangono stabili nel tempo? E ansia e depressione seguono percorsi indipendenti oppure tendono a evolvere insieme?",
+     },
+     {
+       type: "paragraph",
+       text: "A queste domande ha cercato di rispondere un recente studio pubblicato nel 2026 su \"Frontiers in Psychiatry\", che ha analizzato proprio le traiettorie congiunte dei sintomi di ansia e depressione durante il passaggio dall’infanzia all’adolescenza.",
+     },
+     {
+       type: "heading",
+       text: "Lo studio: seguire i cambiamenti nel tempo",
+     },
+     {
+       type: "paragraph",
+       text: "La ricerca, condotta nell’ambito dello studio longitudinale canadese Pathways in ASD, ha preso in esame un campione di 277 giovani autistici, seguendone lo sviluppo dalla tarda infanzia alla prima adolescenza.",
+     },
+     {
+       type: "paragraph",
+       text: "I ricercatori hanno analizzato i sintomi di ansia e depressione riportati dai caregiver attraverso il Child Behavior Checklist, osservandone l'andamento nel corso degli anni.",
+     },
+     {
+       type: "paragraph",
+       text: "L'analisi ha riguardato principalmente il periodo compreso tra i 7 e i 16 anni, una fase particolarmente importante perché coincide con un progressivo aumento delle richieste sociali e scolastiche.",
+     },
+     {
+       type: "paragraph",
+       text: "L'obiettivo non era quindi fotografare una situazione in un singolo momento, ma comprendere come i sintomi potessero cambiare durante lo sviluppo e se i percorsi di ansia e depressione fossero collegati.",
+     },
+     {
+       type: "heading",
+       text: "Ansia e depressione non seguono esattamente lo stesso andamento",
+     },
+     {
+       type: "paragraph",
+       text: "Uno dei risultati principali riguarda la differenza tra le due traiettorie.",
+     },
+     {
+       type: "paragraph",
+       text: "Nel campione analizzato, i sintomi ansiosi sono rimasti relativamente stabili in media tra l'infanzia e l'adolescenza.",
+     },
+     {
+       type: "paragraph",
+       text: "I sintomi depressivi, invece, hanno mostrato un aumento medio nel corso dello sviluppo.",
+     },
+     {
+       type: "paragraph",
+       text: "Questo non significa, però, che tutti i giovani abbiano seguito lo stesso percorso. I ricercatori hanno infatti rilevato una significativa variabilità individuale: dietro le tendenze osservate a livello di gruppo esistono traiettorie personali differenti.",
+     },
+     {
+       type: "paragraph",
+       text: "È un elemento importante perché evita di interpretare i risultati come una previsione valida per ogni persona autistica.",
+     },
+     {
+       type: "heading",
+       text: "Ansia e depressione possono evolvere insieme",
+     },
+     {
+       type: "paragraph",
+       text: "Un altro risultato rilevante riguarda il rapporto tra i due fenomeni.",
+     },
+     {
+       type: "paragraph",
+       text: "I livelli di ansia e depressione risultavano associati nello stesso momento e, soprattutto, le loro traiettorie nel corso dello sviluppo erano correlate positivamente.",
+     },
+     {
+       type: "paragraph",
+       text: "In altre parole, pur mostrando tendenze medie differenti, i cambiamenti individuali nei sintomi di ansia e depressione tendevano a essere collegati.",
+     },
+     {
+       type: "paragraph",
+       text: "Questo dato suggerisce l'importanza di non osservare il benessere emotivo attraverso una sola dimensione. Un cambiamento nei sintomi ansiosi o depressivi può infatti essere inserito all'interno di un quadro più ampio, che merita di essere seguito nel tempo.",
+     },
+     {
+       type: "heading",
+       text: "Quali fattori erano associati ai sintomi?",
+     },
+     {
+       type: "paragraph",
+       text: "Lo studio ha preso in considerazione anche alcuni possibili fattori associati all'andamento dei sintomi.",
+     },
+     {
+       type: "paragraph",
+       text: "Una maggiore presenza di tratti autistici e una maggiore reattività emotiva a 7 anni risultavano associate a livelli iniziali più elevati sia di ansia sia di depressione.",
+     },
+     {
+       type: "paragraph",
+       text: "Tuttavia, questi fattori non risultavano associati al cambiamento dei sintomi nel tempo.",
+     },
+     {
+       type: "paragraph",
+       text: "È una distinzione importante: essere associati a livelli iniziali più elevati non significa necessariamente prevedere come quei sintomi evolveranno negli anni successivi.",
+     },
+     {
+       type: "paragraph",
+       text: "Anche le capacità comunicative hanno mostrato un'associazione interessante. Una maggiore capacità comunicativa a 7 anni era associata a livelli iniziali più elevati di ansia, ma anche a una diminuzione dei sintomi ansiosi nel corso del tempo. Non è stata invece osservata una relazione significativa con i livelli iniziali di depressione.",
+     },
+     {
+       type: "heading",
+       text: "Perché osservare l'evoluzione è importante?",
+     },
+     {
+       type: "paragraph",
+       text: "Uno degli aspetti più interessanti della ricerca riguarda proprio il valore del monitoraggio nel tempo.",
+     },
+     {
+       type: "paragraph",
+       text: "Un singolo momento di valutazione può fornire informazioni importanti, ma osservare come cambiano ansia e depressione permette di cogliere anche tendenze individuali che potrebbero non essere evidenti in una singola rilevazione.",
+     },
+     {
+       type: "paragraph",
+       text: "Gli autori sottolineano quindi l'importanza di un monitoraggio congiunto dei sintomi ansiosi e depressivi durante l'infanzia e l'adolescenza. I cambiamenti osservati potrebbero fornire indicazioni utili per l'identificazione precoce delle difficoltà e per eventuali interventi di supporto.",
+     },
+     {
+       type: "paragraph",
+       text: "Questo approccio è particolarmente rilevante considerando che l'adolescenza comporta nuove richieste sociali, scolastiche e relazionali e rappresenta una fase nella quale possono emergere o modificarsi diverse difficoltà emotive.",
+     },
+     {
+       type: "heading",
+       text: "Un risultato da leggere con attenzione",
+     },
+     {
+       type: "paragraph",
+       text: "Come per ogni ricerca scientifica, anche questi risultati devono essere interpretati considerando le caratteristiche del campione.",
+     },
+     {
+       type: "paragraph",
+       text: "Il gruppo studiato era composto prevalentemente da partecipanti di sesso maschile (84,5%) e di etnia bianca (74,3%). Inoltre, le informazioni relative ai sintomi di ansia e depressione provenivano principalmente dai caregiver.",
+     },
+     {
+       type: "paragraph",
+       text: "Questo significa che i risultati non possono essere automaticamente generalizzati a tutte le persone autistiche.",
+     },
+     {
+       type: "paragraph",
+       text: "Sono quindi necessari ulteriori studi che coinvolgano campioni più diversificati e che integrino, quando possibile, differenti fonti di informazione, comprese le prospettive dirette delle persone autistiche.",
+     },
+     {
+       type: "heading",
+       text: "Guardare oltre il singolo sintomo",
+     },
+     {
+       type: "paragraph",
+       text: "La ricerca aggiunge un elemento importante alla comprensione del benessere emotivo dei giovani autistici: ansia e depressione possono presentare traiettorie diverse, ma allo stesso tempo mostrare un'evoluzione collegata.",
+     },
+     {
+       type: "paragraph",
+       text: "Per questo, durante la crescita, può essere utile prestare attenzione non soltanto alla presenza di un singolo sintomo, ma anche ai cambiamenti nel tempo e alla loro possibile relazione.",
+     },
+     {
+       type: "paragraph",
+       text: "Non esiste infatti un unico percorso di sviluppo valido per tutte le persone autistiche.",
+     },
+     {
+       type: "paragraph",
+       text: "Comprendere queste differenze significa poter costruire un'osservazione più attenta e, quando necessario, individuare più precocemente i bisogni di supporto.",
+     },
             
-  //     {
-  //       type: "paragraph",
-  //       text: "Fonte primaria:",
-  //     },
-  //     {
-  //       type: "link",
-  //       text: "Hunsche MC, Zaidman-Zait A, Olana M, Szatmari P, Bennett T, Duku E, Georgiades S, Smith IM, Zwaigenbaum L, Elsabbagh M, Vaillancourt T, Bedford R and Kerns CM (2026) Brief report: joint trajectories of anxiety and depression symptoms in an inception cohort of autistic youth. Front. Psychiatry 17:1741956",
-  //       url: "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1741956/full"
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
-  //     },
-  //     {
-  //       type: "highlight",
-  //       label: "Contattaci!",
-  //       to: "/contatti",
-  //       variant: "secondary",
-  //     },
-  //   ],
-  //   slug: "articolo-15",
-  // },
+     {
+       type: "paragraph",
+       text: "Fonte primaria:",
+     },
+     {
+       type: "link",
+       text: "Hunsche MC, Zaidman-Zait A, Olana M, Szatmari P, Bennett T, Duku E, Georgiades S, Smith IM, Zwaigenbaum L, Elsabbagh M, Vaillancourt T, Bedford R and Kerns CM (2026) Brief report: joint trajectories of anxiety and depression symptoms in an inception cohort of autistic youth. Front. Psychiatry 17:1741956",
+       url: "httpswww.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1741956/full"
+     },
+     {
+       type: "plus",
+       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+     },
+     {
+       type: "highlight",
+       label: "Contattaci!",
+       to: "/contatti",
+       variant: "secondary",
+     },
+   ],
+   slug: "articolo-15",
+ },
+   // todo I SEGUENTI ARTICOLI VANNO COMMENTATI E DECOMMENTATI IL GIORNO DELLA PUBBLICAZIONE
   //articolo16
   // {
   //   id: 19,
