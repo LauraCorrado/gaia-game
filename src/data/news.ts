@@ -15,7 +15,7 @@ import articolo_12 from "../assets/img/newsletter/gaia_articolo_12.webp";
 import articolo_13 from "../assets/img/newsletter/gaia_articolo_13.webp";
 import articolo_14 from "../assets/img/newsletter/gaia_articolo_14.webp";
 import articolo_15 from "../assets/img/newsletter/gaia_articolo_15.webp";
-// import articolo_16 from "../assets/img/newsletter/gaia_articolo_16.webp";
+import articolo_16 from "../assets/img/newsletter/gaia_articolo_16.webp";
 // import articolo_17 from "../assets/img/newsletter/gaia_articolo_17.webp";
 import social_1 from "../assets/img/newsletter/gaia_social_1.webp";
 
@@ -2312,7 +2312,7 @@ export const news: NewsItem[] = [
         type: "paragraph",
         text: "Per questo motivo, migliorare la capacità di riconoscere le diverse manifestazioni dell’autismo rappresenta un passaggio importante per rendere il percorso diagnostico più inclusivo.",
       },
-       {
+      {
         type: "heading",
         text: "L’autismo non ha un unico volto",
       },
@@ -2371,399 +2371,399 @@ export const news: NewsItem[] = [
     slug: "articolo-12",
   },
   //articolo13
- {
-   id: 16,
-   titolo:
-     "Token economy: cos’è, come funziona e come può essere utilizzata nell’autismo",
-   sottotitolo:
-     "Un sistema di rinforzo per sostenere apprendimento, motivazione e autonomia nei percorsi educativi",
-   categoria: "Articoli",
-   data: "2026-10-07",
-   immagine: articolo_13,
-   alt: "Illustrazione ad acquarello di un bambino che utilizza una tabella di rinforzo con gettoni a forma di stella",
+  {
+    id: 16,
+    titolo:
+      "Token economy: cos’è, come funziona e come può essere utilizzata nell’autismo",
+    sottotitolo:
+      "Un sistema di rinforzo per sostenere apprendimento, motivazione e autonomia nei percorsi educativi",
+    categoria: "Articoli",
+    data: "2026-10-07",
+    immagine: articolo_13,
+    alt: "Illustrazione ad acquarello di un bambino che utilizza una tabella di rinforzo con gettoni a forma di stella",
 
-   estratto:
-     "La token economy è uno strumento educativo basato sul rinforzo, utile per rendere più chiari e prevedibili alcuni obiettivi di apprendimento.",
+    estratto:
+      "La token economy è uno strumento educativo basato sul rinforzo, utile per rendere più chiari e prevedibili alcuni obiettivi di apprendimento.",
 
-   contenuti: [
+    contenuti: [
       {
-       type: "heading",
-       text: "Un sistema di rinforzo per sostenere l’apprendimento",
-     },
-     {
-       type: "paragraph",
-       text: "Nel percorso educativo di bambini e ragazzi con Disturbo dello Spettro Autistico possono essere utilizzati diversi strumenti per favorire l’acquisizione di nuove abilità, aumentare la motivazione e rendere più prevedibili alcune attività.",
-     },
-     {
-       type: "paragraph",
-       text: "Tra questi strumenti rientra la token economy, un sistema basato sui principi del rinforzo comportamentale che permette di associare a un comportamento o a un’abilità acquisita un simbolo, un gettone o un altro elemento che può successivamente essere scambiato con un rinforzatore.",
-     },
-     {
-       type: "paragraph",
-       text: "La token economy è una procedura utilizzata da molti anni nell’ambito dell’analisi comportamentale applicata e dell’educazione. Una revisione specificamente dedicata ai bambini con disabilità intellettiva e/o autismo ha evidenziato il potenziale di questi sistemi nel creare ambienti strutturati e nel sostenere l’apprendimento di diversi comportamenti.",
-     },
-     {
-       type: "heading",
-       text: "Che cos’è una token economy?",
-     },
-     {
-       type: "paragraph",
-       text: "Il principio alla base è relativamente semplice. La persona riceve un token dopo aver messo in atto un comportamento precedentemente individuato e concordato. Una volta raggiunto un determinato numero di token, questi possono essere scambiati con un rinforzatore, cioè qualcosa che per quella persona ha un valore motivazionale.",
-     },
-     {
-       type: "paragraph",
-       text: "Il token può assumere forme differenti: un gettone, un adesivo, una stellina, un'immagine, un simbolo, un punto o un qualunque elemento inserito all'interno di una tabella.",
-     },
-     {
-       type: "paragraph",
-       text: "Il token, inizialmente, acquisisce valore perché viene associato a qualcosa di motivante. In termini comportamentali, diventa quindi un rinforzatore condizionato.",
-     },
-     {
-       type: "paragraph",
-       text: "La letteratura descrive la token economy come un sistema composto da diversi elementi: il comportamento target, il token, i rinforzatori utilizzabili per lo scambio e specifiche modalità di somministrazione dei token e di accesso al rinforzatore.",
-     },
+        type: "heading",
+        text: "Un sistema di rinforzo per sostenere l’apprendimento",
+      },
       {
-       type: "heading",
-       text: "Come funziona?",
-     },
-     {
-       type: "paragraph",
-       text: "Per costruire una token economy è necessario innanzitutto stabilire quale comportamento si vuole sostenere.",
-     },
-     {
-       type: "paragraph",
-       text: "L'obiettivo deve essere il più possibile concreto e osservabile.",
-     },
-     {
-       type: "paragraph",
-       text: "Ad esempio, invece di formulare un obiettivo generico come:",
-     },
-     {
-       type: "plus",
-       text: "“Comportarsi bene a scuola”",
-     },
-     {
-       type: "paragraph",
-       text: "è preferibile individuare un comportamento specifico:",
-     },
-     {
-       type: "plus",
-       text: "“Rimanere seduto durante l’attività per il tempo concordato.”",
-     },
-     {
-       type: "paragraph",
-       text: "Ogni volta che il comportamento viene messo in atto secondo i criteri stabiliti, viene consegnato un token. Una volta raggiunto il numero di token previsto, la persona può accedere al rinforzatore concordato.",
-     },
-     {
-       type: "paragraph",
-       text: "Il meccanismo può quindi essere rappresentato in questo modo:",
-     },
-     {
-       type: "plus",
-       text: "COMPORTAMENTO → TOKEN → RACCOLTA DEI TOKEN → RINFORZATORE",
-     },
-     {
-       type: "paragraph",
-       text: "La chiarezza delle regole è fondamentale. La persona deve poter comprendere, in relazione alle proprie capacità comunicative e cognitive, che cosa permette di ottenere il token e cosa succede quando viene raggiunto il numero stabilito.",
-     },
-     {
-       type: "heading",
-       text: "Un esempio pratico",
-     },
-     {
-       type: "paragraph",
-       text: "Immaginiamo un bambino che stia imparando a completare una breve routine quotidiana in autonomia.",
-     },
-     {
-       type: "paragraph",
-       text: "L'obiettivo potrebbe essere:",
-     },
-     {
-       type: "plus",
-       text: "completare la routine del mattino seguendo i passaggi concordati",
-     },
+        type: "paragraph",
+        text: "Nel percorso educativo di bambini e ragazzi con Disturbo dello Spettro Autistico possono essere utilizzati diversi strumenti per favorire l’acquisizione di nuove abilità, aumentare la motivazione e rendere più prevedibili alcune attività.",
+      },
       {
-       type: "paragraph",
-       text: "Ogni volta che completa correttamente la routine:",
-     },
-     {
-       type: "plus",
-       text: "+ 1 token",
-     },
-     {
-       type: "paragraph",
-       text: "Dopo aver raccolto 5 token, si accede al rinforzatore scelto.",
-     },
-     {
-       type: "paragraph",
-       text: "Il rinforzatore deve essere individuato considerando le preferenze individuali del bambino.",
-     },
-     {
-       type: "paragraph",
-       text: "Non esiste infatti una ricompensa universalmente efficace: ciò che è motivante per una persona potrebbe non esserlo per un'altra.",
-     },
-     {
-       type: "paragraph",
-       text: "La scelta del rinforzatore e delle modalità di utilizzo del sistema deve quindi essere personalizzata.",
-     },
-     {
-       type: "heading",
-       text: "Quali comportamenti possono essere sostenuti?",
-     },
-     {
-       type: "paragraph",
-       text: "La token economy può essere utilizzata per sostenere diversi tipi di obiettivi, a seconda delle necessità della persona.",
-     },
-     {
-       type: "paragraph",
-       text: "La letteratura ha documentato applicazioni rivolte, tra le altre cose, alla partecipazione alle attività, all'attenzione, ai comportamenti sociali, alle attività scolastiche e alle abilità di autonomia.",
-     },
-     {
-       type: "paragraph",
-       text: "In un contesto educativo, ad esempio, può essere utilizzata per favorire:",
-     },
-     {
-       type: "paragraph",
-       text: "•	la partecipazione a un'attività;",
-     },
-     {
-       type: "paragraph",
-       text: "•	il completamento di un compito;",
-     },
-     {
-       type: "paragraph",
-       text: "•	l'acquisizione di una routine;",
-     },
-     {
-       type: "paragraph",
-       text: "•	alcune abilità di autonomia;",
-     },
-     {
-       type: "paragraph",
-       text: "•	comportamenti sociali specifici;",
-     },
-     {
-       type: "paragraph",
-       text: "•	la permanenza in un'attività per un determinato periodo;",
-     },
-     {
-       type: "paragraph",
-       text: "•	l'utilizzo di una modalità comunicativa precedentemente acquisita.",
-     },
-     {
-       type: "paragraph",
-       text: "È importante, però, che l'obiettivo sia realistico, significativo e adeguato alle caratteristiche della persona.",
-     },
-     {
-       type: "heading",
-       text: "Il ruolo della motivazione",
-     },
-     {
-       type: "paragraph",
-       text: "Uno degli aspetti centrali della token economy è la motivazione. Il sistema funziona infatti soltanto se il token ha per la persona un valore e se il rinforzatore finale è realmente significativo.",
-     },
-     {
-       type: "paragraph",
-       text: "Per questo motivo, nella progettazione è importante conoscere gli interessi e le preferenze individuali.",
-     },
-     {
-       type: "paragraph",
-       text: "Un rinforzatore può essere costituito, ad esempio, da un'attività piacevole, da un gioco, da un momento dedicato a un interesse specifico o da un'altra esperienza significativa per la persona.",
-     },
-     {
-       type: "paragraph",
-       text: "La scelta non dovrebbe essere standardizzata.",
-     },
-     {
-       type: "plus",
-       text: "La persona viene prima del sistema.",
-     },
-     {
-       type: "heading",
-       text: "La token economy deve essere sempre utilizzata?",
-     },
-     {
-       type: "paragraph",
-       text: "No. La token economy non dovrebbe essere considerata una soluzione universale né applicata automaticamente a ogni comportamento.",
-     },
-     {
-       type: "paragraph",
-       text: "È uno strumento educativo, che deve essere inserito all'interno di una progettazione più ampia e coerente con gli obiettivi individuali.",
-     },
-     {
-       type: "paragraph",
-       text: "La ricerca mostra che l'efficacia dei sistemi a token dipende anche dalla qualità con cui vengono progettati e applicati. Una revisione del 2024 sottolinea proprio la necessità di trasformare le conoscenze disponibili dalla ricerca in procedure pratiche ben strutturate e personalizzate.",
-     },
-     {
-       type: "paragraph",
-       text: "Inoltre, una revisione sistematica condotta in ambito scolastico ha rilevato risultati favorevoli in diversi studi, ma ha evidenziato anche differenze legate alle modalità di utilizzo dei componenti della token economy e al contesto educativo.",
-     },
-     {
-       type: "heading",
-       text: "Un aspetto fondamentale: cosa succede quando i token non servono più?",
-     },
-     {
-       type: "paragraph",
-       text: "Uno degli obiettivi più importanti non dovrebbe essere quello di rendere la persona permanentemente dipendente dal sistema di token.",
-     },
-     {
-       type: "paragraph",
-       text: "Al contrario, quando il comportamento è sufficientemente consolidato, il sistema può essere gradualmente modificato e ridotto, favorendo il passaggio verso rinforzi più naturali.",
-     },
-     {
-       type: "paragraph",
-       text: "Questo aspetto è particolarmente importante perché l'obiettivo dell'intervento educativo non è semplicemente ottenere un comportamento mentre è presente una ricompensa, ma favorire la generalizzazione e il mantenimento dell'abilità nel tempo e nei diversi contesti.",
-     },
-     {
-       type: "paragraph",
-       text: "Già nella letteratura classica sulla token economy la generalizzazione dei comportamenti acquisiti e il mantenimento dopo la riduzione del rinforzo venivano indicati come aspetti fondamentali da considerare.",
-     },
-     {
-       type: "heading",
-       text: "Token economy e autismo: attenzione alla personalizzazione",
-     },
-     {
-       type: "paragraph",
-       text: "Nel caso dell'autismo, la personalizzazione assume un'importanza particolare.",
-     },
-     {
-       type: "paragraph",
-       text: "Le persone autistiche presentano caratteristiche, preferenze, modalità comunicative e bisogni molto differenti.",
-     },
-     {
-       type: "paragraph",
-       text: "Per questo motivo non è sufficiente predisporre una semplice tabella di gettoni e applicarla nello stesso modo a tutti.",
-     },
-     {
-       type: "paragraph",
-       text: "È necessario chiedersi:",
-     },
-     {
-       type: "paragraph",
-       text: "•	Qual è l'obiettivo?",
-     },
-     {
-       type: "paragraph",
-       text: "•	È realmente significativo per la persona?",
-     },
-     {
-       type: "paragraph",
-       text: "•	Il comportamento richiesto è comprensibile e raggiungibile?",
-     },
-     {
-       type: "paragraph",
-       text: "•	Il token è facilmente riconoscibile?",
-     },
-     {
-       type: "paragraph",
-       text: "•	Il rinforzatore è realmente motivante?",
-     },
-     {
-       type: "paragraph",
-       text: "•	Il sistema è adatto alle modalità comunicative della persona?",
-     },
-     {
-       type: "paragraph",
-       text: "•	Come verrà progressivamente ridotto?",
-     },
-     {
-       type: "paragraph",
-       text: "Queste domande permettono di trasformare la token economy da una semplice raccolta di gettoni a uno strumento inserito in un progetto educativo individualizzato.",
-     },
-     {
-       type: "heading",
-       text: "Non solo “premi”: costruire opportunità di apprendimento",
-     },
-     {
-       type: "paragraph",
-       text: "È importante evitare di interpretare la token economy semplicemente come un sistema di “premi e punizioni”.",
-     },
-     {
-       type: "paragraph",
-       text: "Il suo obiettivo, se correttamente progettata, è creare una relazione chiara e prevedibile tra un comportamento e una conseguenza positiva, sostenendo la motivazione durante l'apprendimento.",
-     },
-     {
-       type: "paragraph",
-       text: "La token economy può quindi essere utilizzata per accompagnare la persona nell'acquisizione di nuove competenze, soprattutto quando un'attività richiede uno sforzo iniziale significativo o quando il rinforzo naturale dell'attività non è ancora sufficiente a sostenere la partecipazione.",
-     },
-     {
-       type: "heading",
-       text: "Il punto di vista del Progetto GAIA",
-     },
-     {
-       type: "paragraph",
-       text: "Nel Progetto GAIA – Giochi Accessibili e Inclusivi per Bambini con Autismo, strumenti come la token economy possono essere considerati all'interno di una prospettiva più ampia: quella della progettazione di esperienze accessibili, prevedibili e personalizzate.",
-     },
-     {
-       type: "paragraph",
-       text: "Un sistema di token può essere utile quando risponde realmente alle esigenze del bambino e quando viene inserito in un percorso educativo strutturato.",
-     },
-     {
-       type: "paragraph",
-       text: "L'obiettivo non è semplicemente ottenere un determinato comportamento. L'obiettivo è favorire l'apprendimento, la partecipazione e l'autonomia, rispettando caratteristiche e preferenze individuali.",
-     },
-     {
-       type: "paragraph",
-       text: "Per questo, anche quando si utilizza una strategia comportamentale, è fondamentale mantenere al centro la persona.",
-     },
-     {
-       type: "heading",
-       text: "Comprendere, personalizzare, accompagnare",
-     },
-     {
-       type: "paragraph",
-       text: "La token economy può essere uno strumento efficace, ma la sua efficacia non dipende dal semplice utilizzo di gettoni o premi.",
-     },
-     {
-       type: "paragraph",
-       text: "Dipende dalla capacità di progettare il sistema intorno alla persona, scegliere obiettivi significativi, utilizzare rinforzatori adeguati e accompagnare progressivamente l'acquisizione dell'abilità verso una maggiore autonomia.",
-     },
-     {
-       type: "paragraph",
-       text: "Il token è uno strumento, non l'obiettivo. L'obiettivo è aiutare la persona ad apprendere e partecipare in modo sempre più autonomo.",
-     },
-     {
-       type: "paragraph",
-       text: "Fonti primarie:",
-     },
-     {
-       type: "link",
-       text: "•	Centro Medico Riabilitativo (CMR). Token economy: cos’è e come metterla in pratica. Fonte divulgativa di riferimento per la descrizione della procedura e delle sue modalità applicative.",
-       url: "www.centromedicoriabilitativo.it/blog/token-economy/"
-     },
-     {
-       type: "paragraph",
-       text: "•	degli Espinosa, F., & Hackenberg, T. D. (2024). Token economies: Evidence-based recommendations for practitioners. Behavioral Interventions, 39(4), e2051. DOI: 10.1002/bin.2051. La revisione propone raccomandazioni evidence-based per la progettazione e l'applicazione dei sistemi a token.",
-     },
-     {
-       type: "paragraph",
-       text: "•	Matson, J. L., & Boisjoli, J. A. (2009). The token economy for children with intellectual disability and/or autism: A review. Research in Developmental Disabilities, 30(2), 240–248. DOI: 10.1016/j.ridd.2008.04.001. La revisione analizza l'utilizzo della token economy nei bambini con disabilità intellettiva e/o autismo.",
-     },
-     {
-       type: "paragraph",
-       text: "•	Kazdin, A. E., & Bootzin, R. R. (1972). The token economy: An evaluative review. Journal of Applied Behavior Analysis, 5(3), 343–372. DOI: 10.1901/jaba.1972.5-343. Lo studio rappresenta una delle revisioni classiche della letteratura sulla token economy e discute anche il problema della generalizzazione e del mantenimento dei comportamenti acquisiti.",
-     },
-     {
-       type: "paragraph",
-       text: "•	Maggin, D. M., Chafouleas, S. M., Goddard, K. M., & Johnson, A. H. (2011). A systematic evaluation of token economies as a classroom management tool for students with challenging behavior. Journal of School Psychology, 49(5), 529–554. DOI: 10.1016/j.jsp.2011.05.001. La revisione evidenzia risultati promettenti per programmi ben realizzati, sottolineando al contempo alcune limitazioni metodologiche della letteratura.",
-     },
-     {
-       type: "paragraph",
-       text: "•	Filcheck, H. A., et al. (2017). Token Economy: A Systematic Review of Procedural Descriptions. La revisione analizza gli elementi procedurali necessari per descrivere e implementare correttamente una token economy.",
-     },
-     {
-       type: "plus",
-       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
-     },
-     {
-       type: "highlight",
-       label: "Contattaci!",
-       to: "/contatti",
-       variant: "secondary",
-     },
-   ],
-   slug: "articolo-13",
- },
+        type: "paragraph",
+        text: "Tra questi strumenti rientra la token economy, un sistema basato sui principi del rinforzo comportamentale che permette di associare a un comportamento o a un’abilità acquisita un simbolo, un gettone o un altro elemento che può successivamente essere scambiato con un rinforzatore.",
+      },
+      {
+        type: "paragraph",
+        text: "La token economy è una procedura utilizzata da molti anni nell’ambito dell’analisi comportamentale applicata e dell’educazione. Una revisione specificamente dedicata ai bambini con disabilità intellettiva e/o autismo ha evidenziato il potenziale di questi sistemi nel creare ambienti strutturati e nel sostenere l’apprendimento di diversi comportamenti.",
+      },
+      {
+        type: "heading",
+        text: "Che cos’è una token economy?",
+      },
+      {
+        type: "paragraph",
+        text: "Il principio alla base è relativamente semplice. La persona riceve un token dopo aver messo in atto un comportamento precedentemente individuato e concordato. Una volta raggiunto un determinato numero di token, questi possono essere scambiati con un rinforzatore, cioè qualcosa che per quella persona ha un valore motivazionale.",
+      },
+      {
+        type: "paragraph",
+        text: "Il token può assumere forme differenti: un gettone, un adesivo, una stellina, un'immagine, un simbolo, un punto o un qualunque elemento inserito all'interno di una tabella.",
+      },
+      {
+        type: "paragraph",
+        text: "Il token, inizialmente, acquisisce valore perché viene associato a qualcosa di motivante. In termini comportamentali, diventa quindi un rinforzatore condizionato.",
+      },
+      {
+        type: "paragraph",
+        text: "La letteratura descrive la token economy come un sistema composto da diversi elementi: il comportamento target, il token, i rinforzatori utilizzabili per lo scambio e specifiche modalità di somministrazione dei token e di accesso al rinforzatore.",
+      },
+      {
+        type: "heading",
+        text: "Come funziona?",
+      },
+      {
+        type: "paragraph",
+        text: "Per costruire una token economy è necessario innanzitutto stabilire quale comportamento si vuole sostenere.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo deve essere il più possibile concreto e osservabile.",
+      },
+      {
+        type: "paragraph",
+        text: "Ad esempio, invece di formulare un obiettivo generico come:",
+      },
+      {
+        type: "plus",
+        text: "“Comportarsi bene a scuola”",
+      },
+      {
+        type: "paragraph",
+        text: "è preferibile individuare un comportamento specifico:",
+      },
+      {
+        type: "plus",
+        text: "“Rimanere seduto durante l’attività per il tempo concordato.”",
+      },
+      {
+        type: "paragraph",
+        text: "Ogni volta che il comportamento viene messo in atto secondo i criteri stabiliti, viene consegnato un token. Una volta raggiunto il numero di token previsto, la persona può accedere al rinforzatore concordato.",
+      },
+      {
+        type: "paragraph",
+        text: "Il meccanismo può quindi essere rappresentato in questo modo:",
+      },
+      {
+        type: "plus",
+        text: "COMPORTAMENTO → TOKEN → RACCOLTA DEI TOKEN → RINFORZATORE",
+      },
+      {
+        type: "paragraph",
+        text: "La chiarezza delle regole è fondamentale. La persona deve poter comprendere, in relazione alle proprie capacità comunicative e cognitive, che cosa permette di ottenere il token e cosa succede quando viene raggiunto il numero stabilito.",
+      },
+      {
+        type: "heading",
+        text: "Un esempio pratico",
+      },
+      {
+        type: "paragraph",
+        text: "Immaginiamo un bambino che stia imparando a completare una breve routine quotidiana in autonomia.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo potrebbe essere:",
+      },
+      {
+        type: "plus",
+        text: "completare la routine del mattino seguendo i passaggi concordati",
+      },
+      {
+        type: "paragraph",
+        text: "Ogni volta che completa correttamente la routine:",
+      },
+      {
+        type: "plus",
+        text: "+ 1 token",
+      },
+      {
+        type: "paragraph",
+        text: "Dopo aver raccolto 5 token, si accede al rinforzatore scelto.",
+      },
+      {
+        type: "paragraph",
+        text: "Il rinforzatore deve essere individuato considerando le preferenze individuali del bambino.",
+      },
+      {
+        type: "paragraph",
+        text: "Non esiste infatti una ricompensa universalmente efficace: ciò che è motivante per una persona potrebbe non esserlo per un'altra.",
+      },
+      {
+        type: "paragraph",
+        text: "La scelta del rinforzatore e delle modalità di utilizzo del sistema deve quindi essere personalizzata.",
+      },
+      {
+        type: "heading",
+        text: "Quali comportamenti possono essere sostenuti?",
+      },
+      {
+        type: "paragraph",
+        text: "La token economy può essere utilizzata per sostenere diversi tipi di obiettivi, a seconda delle necessità della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "La letteratura ha documentato applicazioni rivolte, tra le altre cose, alla partecipazione alle attività, all'attenzione, ai comportamenti sociali, alle attività scolastiche e alle abilità di autonomia.",
+      },
+      {
+        type: "paragraph",
+        text: "In un contesto educativo, ad esempio, può essere utilizzata per favorire:",
+      },
+      {
+        type: "paragraph",
+        text: "•	la partecipazione a un'attività;",
+      },
+      {
+        type: "paragraph",
+        text: "•	il completamento di un compito;",
+      },
+      {
+        type: "paragraph",
+        text: "•	l'acquisizione di una routine;",
+      },
+      {
+        type: "paragraph",
+        text: "•	alcune abilità di autonomia;",
+      },
+      {
+        type: "paragraph",
+        text: "•	comportamenti sociali specifici;",
+      },
+      {
+        type: "paragraph",
+        text: "•	la permanenza in un'attività per un determinato periodo;",
+      },
+      {
+        type: "paragraph",
+        text: "•	l'utilizzo di una modalità comunicativa precedentemente acquisita.",
+      },
+      {
+        type: "paragraph",
+        text: "È importante, però, che l'obiettivo sia realistico, significativo e adeguato alle caratteristiche della persona.",
+      },
+      {
+        type: "heading",
+        text: "Il ruolo della motivazione",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli aspetti centrali della token economy è la motivazione. Il sistema funziona infatti soltanto se il token ha per la persona un valore e se il rinforzatore finale è realmente significativo.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo, nella progettazione è importante conoscere gli interessi e le preferenze individuali.",
+      },
+      {
+        type: "paragraph",
+        text: "Un rinforzatore può essere costituito, ad esempio, da un'attività piacevole, da un gioco, da un momento dedicato a un interesse specifico o da un'altra esperienza significativa per la persona.",
+      },
+      {
+        type: "paragraph",
+        text: "La scelta non dovrebbe essere standardizzata.",
+      },
+      {
+        type: "plus",
+        text: "La persona viene prima del sistema.",
+      },
+      {
+        type: "heading",
+        text: "La token economy deve essere sempre utilizzata?",
+      },
+      {
+        type: "paragraph",
+        text: "No. La token economy non dovrebbe essere considerata una soluzione universale né applicata automaticamente a ogni comportamento.",
+      },
+      {
+        type: "paragraph",
+        text: "È uno strumento educativo, che deve essere inserito all'interno di una progettazione più ampia e coerente con gli obiettivi individuali.",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca mostra che l'efficacia dei sistemi a token dipende anche dalla qualità con cui vengono progettati e applicati. Una revisione del 2024 sottolinea proprio la necessità di trasformare le conoscenze disponibili dalla ricerca in procedure pratiche ben strutturate e personalizzate.",
+      },
+      {
+        type: "paragraph",
+        text: "Inoltre, una revisione sistematica condotta in ambito scolastico ha rilevato risultati favorevoli in diversi studi, ma ha evidenziato anche differenze legate alle modalità di utilizzo dei componenti della token economy e al contesto educativo.",
+      },
+      {
+        type: "heading",
+        text: "Un aspetto fondamentale: cosa succede quando i token non servono più?",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli obiettivi più importanti non dovrebbe essere quello di rendere la persona permanentemente dipendente dal sistema di token.",
+      },
+      {
+        type: "paragraph",
+        text: "Al contrario, quando il comportamento è sufficientemente consolidato, il sistema può essere gradualmente modificato e ridotto, favorendo il passaggio verso rinforzi più naturali.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo aspetto è particolarmente importante perché l'obiettivo dell'intervento educativo non è semplicemente ottenere un comportamento mentre è presente una ricompensa, ma favorire la generalizzazione e il mantenimento dell'abilità nel tempo e nei diversi contesti.",
+      },
+      {
+        type: "paragraph",
+        text: "Già nella letteratura classica sulla token economy la generalizzazione dei comportamenti acquisiti e il mantenimento dopo la riduzione del rinforzo venivano indicati come aspetti fondamentali da considerare.",
+      },
+      {
+        type: "heading",
+        text: "Token economy e autismo: attenzione alla personalizzazione",
+      },
+      {
+        type: "paragraph",
+        text: "Nel caso dell'autismo, la personalizzazione assume un'importanza particolare.",
+      },
+      {
+        type: "paragraph",
+        text: "Le persone autistiche presentano caratteristiche, preferenze, modalità comunicative e bisogni molto differenti.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo motivo non è sufficiente predisporre una semplice tabella di gettoni e applicarla nello stesso modo a tutti.",
+      },
+      {
+        type: "paragraph",
+        text: "È necessario chiedersi:",
+      },
+      {
+        type: "paragraph",
+        text: "•	Qual è l'obiettivo?",
+      },
+      {
+        type: "paragraph",
+        text: "•	È realmente significativo per la persona?",
+      },
+      {
+        type: "paragraph",
+        text: "•	Il comportamento richiesto è comprensibile e raggiungibile?",
+      },
+      {
+        type: "paragraph",
+        text: "•	Il token è facilmente riconoscibile?",
+      },
+      {
+        type: "paragraph",
+        text: "•	Il rinforzatore è realmente motivante?",
+      },
+      {
+        type: "paragraph",
+        text: "•	Il sistema è adatto alle modalità comunicative della persona?",
+      },
+      {
+        type: "paragraph",
+        text: "•	Come verrà progressivamente ridotto?",
+      },
+      {
+        type: "paragraph",
+        text: "Queste domande permettono di trasformare la token economy da una semplice raccolta di gettoni a uno strumento inserito in un progetto educativo individualizzato.",
+      },
+      {
+        type: "heading",
+        text: "Non solo “premi”: costruire opportunità di apprendimento",
+      },
+      {
+        type: "paragraph",
+        text: "È importante evitare di interpretare la token economy semplicemente come un sistema di “premi e punizioni”.",
+      },
+      {
+        type: "paragraph",
+        text: "Il suo obiettivo, se correttamente progettata, è creare una relazione chiara e prevedibile tra un comportamento e una conseguenza positiva, sostenendo la motivazione durante l'apprendimento.",
+      },
+      {
+        type: "paragraph",
+        text: "La token economy può quindi essere utilizzata per accompagnare la persona nell'acquisizione di nuove competenze, soprattutto quando un'attività richiede uno sforzo iniziale significativo o quando il rinforzo naturale dell'attività non è ancora sufficiente a sostenere la partecipazione.",
+      },
+      {
+        type: "heading",
+        text: "Il punto di vista del Progetto GAIA",
+      },
+      {
+        type: "paragraph",
+        text: "Nel Progetto GAIA – Giochi Accessibili e Inclusivi per Bambini con Autismo, strumenti come la token economy possono essere considerati all'interno di una prospettiva più ampia: quella della progettazione di esperienze accessibili, prevedibili e personalizzate.",
+      },
+      {
+        type: "paragraph",
+        text: "Un sistema di token può essere utile quando risponde realmente alle esigenze del bambino e quando viene inserito in un percorso educativo strutturato.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo non è semplicemente ottenere un determinato comportamento. L'obiettivo è favorire l'apprendimento, la partecipazione e l'autonomia, rispettando caratteristiche e preferenze individuali.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo, anche quando si utilizza una strategia comportamentale, è fondamentale mantenere al centro la persona.",
+      },
+      {
+        type: "heading",
+        text: "Comprendere, personalizzare, accompagnare",
+      },
+      {
+        type: "paragraph",
+        text: "La token economy può essere uno strumento efficace, ma la sua efficacia non dipende dal semplice utilizzo di gettoni o premi.",
+      },
+      {
+        type: "paragraph",
+        text: "Dipende dalla capacità di progettare il sistema intorno alla persona, scegliere obiettivi significativi, utilizzare rinforzatori adeguati e accompagnare progressivamente l'acquisizione dell'abilità verso una maggiore autonomia.",
+      },
+      {
+        type: "paragraph",
+        text: "Il token è uno strumento, non l'obiettivo. L'obiettivo è aiutare la persona ad apprendere e partecipare in modo sempre più autonomo.",
+      },
+      {
+        type: "paragraph",
+        text: "Fonti primarie:",
+      },
+      {
+        type: "link",
+        text: "•	Centro Medico Riabilitativo (CMR). Token economy: cos’è e come metterla in pratica. Fonte divulgativa di riferimento per la descrizione della procedura e delle sue modalità applicative.",
+        url: "www.centromedicoriabilitativo.it/blog/token-economy/"
+      },
+      {
+        type: "paragraph",
+        text: "•	degli Espinosa, F., & Hackenberg, T. D. (2024). Token economies: Evidence-based recommendations for practitioners. Behavioral Interventions, 39(4), e2051. DOI: 10.1002/bin.2051. La revisione propone raccomandazioni evidence-based per la progettazione e l'applicazione dei sistemi a token.",
+      },
+      {
+        type: "paragraph",
+        text: "•	Matson, J. L., & Boisjoli, J. A. (2009). The token economy for children with intellectual disability and/or autism: A review. Research in Developmental Disabilities, 30(2), 240–248. DOI: 10.1016/j.ridd.2008.04.001. La revisione analizza l'utilizzo della token economy nei bambini con disabilità intellettiva e/o autismo.",
+      },
+      {
+        type: "paragraph",
+        text: "•	Kazdin, A. E., & Bootzin, R. R. (1972). The token economy: An evaluative review. Journal of Applied Behavior Analysis, 5(3), 343–372. DOI: 10.1901/jaba.1972.5-343. Lo studio rappresenta una delle revisioni classiche della letteratura sulla token economy e discute anche il problema della generalizzazione e del mantenimento dei comportamenti acquisiti.",
+      },
+      {
+        type: "paragraph",
+        text: "•	Maggin, D. M., Chafouleas, S. M., Goddard, K. M., & Johnson, A. H. (2011). A systematic evaluation of token economies as a classroom management tool for students with challenging behavior. Journal of School Psychology, 49(5), 529–554. DOI: 10.1016/j.jsp.2011.05.001. La revisione evidenzia risultati promettenti per programmi ben realizzati, sottolineando al contempo alcune limitazioni metodologiche della letteratura.",
+      },
+      {
+        type: "paragraph",
+        text: "•	Filcheck, H. A., et al. (2017). Token Economy: A Systematic Review of Procedural Descriptions. La revisione analizza gli elementi procedurali necessari per descrivere e implementare correttamente una token economy.",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-13",
+  },
   //articolo14
   {
     id: 17,
@@ -2959,7 +2959,7 @@ export const news: NewsItem[] = [
       {
         type: "paragraph",
         text: "Promuovere contesti più prevedibili, accessibili e rispettosi delle diverse modalità di funzionamento può contribuire non solo a prevenire situazioni di forte stress, ma anche a costruire ambienti realmente più inclusivi.",
-      },      
+      },
       {
         type: "paragraph",
         text: "Fonte primaria:",
@@ -2987,425 +2987,426 @@ export const news: NewsItem[] = [
     slug: "articolo-14",
   },
   //articolo15
- {
-   id: 18,
-   titolo:
-     "Autismo, ansia e depressione",
-   sottotitolo:
-     "Come cambiano durante l’infanzia e l’adolescenza",
-   categoria: "Articoli",
-   data: "2026-10-22",
-   immagine: articolo_15,
-   alt: "Illustrazione ad acquarello di una giovane figura in diverse fasi di crescita",
+  {
+    id: 18,
+    titolo:
+      "Autismo, ansia e depressione",
+    sottotitolo:
+      "Come cambiano durante l’infanzia e l’adolescenza",
+    categoria: "Articoli",
+    data: "2026-10-22",
+    immagine: articolo_15,
+    alt: "Illustrazione ad acquarello di una giovane figura in diverse fasi di crescita",
 
-   estratto:
-     "Un nuovo studio longitudinale analizza come ansia e depressione cambiano dall’infanzia all’adolescenza nei giovani autistici. I risultati mostrano traiettorie diverse ma spesso collegate, confermando l’importanza di osservare il benessere emotivo nel tempo.",
+    estratto:
+      "Un nuovo studio longitudinale analizza come ansia e depressione cambiano dall’infanzia all’adolescenza nei giovani autistici. I risultati mostrano traiettorie diverse ma spesso collegate, confermando l’importanza di osservare il benessere emotivo nel tempo.",
 
-   contenuti: [
-     {
-       type: "paragraph",
-       text: "Un nuovo studio longitudinale analizza l’evoluzione dei sintomi emotivi nei giovani autistici",
-     },
-     {
-       type: "paragraph",
-       text: "Infanzia e adolescenza sono periodi caratterizzati da importanti cambiamenti sul piano personale, scolastico, sociale e relazionale. Per i giovani autistici, l’aumento delle richieste e delle aspettative può accompagnarsi a nuove difficoltà emotive, tra cui sintomi di ansia e depressione.",
-     },
-     {
-       type: "paragraph",
-       text: "Ma questi sintomi rimangono stabili nel tempo? E ansia e depressione seguono percorsi indipendenti oppure tendono a evolvere insieme?",
-     },
-     {
-       type: "paragraph",
-       text: "A queste domande ha cercato di rispondere un recente studio pubblicato nel 2026 su \"Frontiers in Psychiatry\", che ha analizzato proprio le traiettorie congiunte dei sintomi di ansia e depressione durante il passaggio dall’infanzia all’adolescenza.",
-     },
-     {
-       type: "heading",
-       text: "Lo studio: seguire i cambiamenti nel tempo",
-     },
-     {
-       type: "paragraph",
-       text: "La ricerca, condotta nell’ambito dello studio longitudinale canadese Pathways in ASD, ha preso in esame un campione di 277 giovani autistici, seguendone lo sviluppo dalla tarda infanzia alla prima adolescenza.",
-     },
-     {
-       type: "paragraph",
-       text: "I ricercatori hanno analizzato i sintomi di ansia e depressione riportati dai caregiver attraverso il Child Behavior Checklist, osservandone l'andamento nel corso degli anni.",
-     },
-     {
-       type: "paragraph",
-       text: "L'analisi ha riguardato principalmente il periodo compreso tra i 7 e i 16 anni, una fase particolarmente importante perché coincide con un progressivo aumento delle richieste sociali e scolastiche.",
-     },
-     {
-       type: "paragraph",
-       text: "L'obiettivo non era quindi fotografare una situazione in un singolo momento, ma comprendere come i sintomi potessero cambiare durante lo sviluppo e se i percorsi di ansia e depressione fossero collegati.",
-     },
-     {
-       type: "heading",
-       text: "Ansia e depressione non seguono esattamente lo stesso andamento",
-     },
-     {
-       type: "paragraph",
-       text: "Uno dei risultati principali riguarda la differenza tra le due traiettorie.",
-     },
-     {
-       type: "paragraph",
-       text: "Nel campione analizzato, i sintomi ansiosi sono rimasti relativamente stabili in media tra l'infanzia e l'adolescenza.",
-     },
-     {
-       type: "paragraph",
-       text: "I sintomi depressivi, invece, hanno mostrato un aumento medio nel corso dello sviluppo.",
-     },
-     {
-       type: "paragraph",
-       text: "Questo non significa, però, che tutti i giovani abbiano seguito lo stesso percorso. I ricercatori hanno infatti rilevato una significativa variabilità individuale: dietro le tendenze osservate a livello di gruppo esistono traiettorie personali differenti.",
-     },
-     {
-       type: "paragraph",
-       text: "È un elemento importante perché evita di interpretare i risultati come una previsione valida per ogni persona autistica.",
-     },
-     {
-       type: "heading",
-       text: "Ansia e depressione possono evolvere insieme",
-     },
-     {
-       type: "paragraph",
-       text: "Un altro risultato rilevante riguarda il rapporto tra i due fenomeni.",
-     },
-     {
-       type: "paragraph",
-       text: "I livelli di ansia e depressione risultavano associati nello stesso momento e, soprattutto, le loro traiettorie nel corso dello sviluppo erano correlate positivamente.",
-     },
-     {
-       type: "paragraph",
-       text: "In altre parole, pur mostrando tendenze medie differenti, i cambiamenti individuali nei sintomi di ansia e depressione tendevano a essere collegati.",
-     },
-     {
-       type: "paragraph",
-       text: "Questo dato suggerisce l'importanza di non osservare il benessere emotivo attraverso una sola dimensione. Un cambiamento nei sintomi ansiosi o depressivi può infatti essere inserito all'interno di un quadro più ampio, che merita di essere seguito nel tempo.",
-     },
-     {
-       type: "heading",
-       text: "Quali fattori erano associati ai sintomi?",
-     },
-     {
-       type: "paragraph",
-       text: "Lo studio ha preso in considerazione anche alcuni possibili fattori associati all'andamento dei sintomi.",
-     },
-     {
-       type: "paragraph",
-       text: "Una maggiore presenza di tratti autistici e una maggiore reattività emotiva a 7 anni risultavano associate a livelli iniziali più elevati sia di ansia sia di depressione.",
-     },
-     {
-       type: "paragraph",
-       text: "Tuttavia, questi fattori non risultavano associati al cambiamento dei sintomi nel tempo.",
-     },
-     {
-       type: "paragraph",
-       text: "È una distinzione importante: essere associati a livelli iniziali più elevati non significa necessariamente prevedere come quei sintomi evolveranno negli anni successivi.",
-     },
-     {
-       type: "paragraph",
-       text: "Anche le capacità comunicative hanno mostrato un'associazione interessante. Una maggiore capacità comunicativa a 7 anni era associata a livelli iniziali più elevati di ansia, ma anche a una diminuzione dei sintomi ansiosi nel corso del tempo. Non è stata invece osservata una relazione significativa con i livelli iniziali di depressione.",
-     },
-     {
-       type: "heading",
-       text: "Perché osservare l'evoluzione è importante?",
-     },
-     {
-       type: "paragraph",
-       text: "Uno degli aspetti più interessanti della ricerca riguarda proprio il valore del monitoraggio nel tempo.",
-     },
-     {
-       type: "paragraph",
-       text: "Un singolo momento di valutazione può fornire informazioni importanti, ma osservare come cambiano ansia e depressione permette di cogliere anche tendenze individuali che potrebbero non essere evidenti in una singola rilevazione.",
-     },
-     {
-       type: "paragraph",
-       text: "Gli autori sottolineano quindi l'importanza di un monitoraggio congiunto dei sintomi ansiosi e depressivi durante l'infanzia e l'adolescenza. I cambiamenti osservati potrebbero fornire indicazioni utili per l'identificazione precoce delle difficoltà e per eventuali interventi di supporto.",
-     },
-     {
-       type: "paragraph",
-       text: "Questo approccio è particolarmente rilevante considerando che l'adolescenza comporta nuove richieste sociali, scolastiche e relazionali e rappresenta una fase nella quale possono emergere o modificarsi diverse difficoltà emotive.",
-     },
-     {
-       type: "heading",
-       text: "Un risultato da leggere con attenzione",
-     },
-     {
-       type: "paragraph",
-       text: "Come per ogni ricerca scientifica, anche questi risultati devono essere interpretati considerando le caratteristiche del campione.",
-     },
-     {
-       type: "paragraph",
-       text: "Il gruppo studiato era composto prevalentemente da partecipanti di sesso maschile (84,5%) e di etnia bianca (74,3%). Inoltre, le informazioni relative ai sintomi di ansia e depressione provenivano principalmente dai caregiver.",
-     },
-     {
-       type: "paragraph",
-       text: "Questo significa che i risultati non possono essere automaticamente generalizzati a tutte le persone autistiche.",
-     },
-     {
-       type: "paragraph",
-       text: "Sono quindi necessari ulteriori studi che coinvolgano campioni più diversificati e che integrino, quando possibile, differenti fonti di informazione, comprese le prospettive dirette delle persone autistiche.",
-     },
-     {
-       type: "heading",
-       text: "Guardare oltre il singolo sintomo",
-     },
-     {
-       type: "paragraph",
-       text: "La ricerca aggiunge un elemento importante alla comprensione del benessere emotivo dei giovani autistici: ansia e depressione possono presentare traiettorie diverse, ma allo stesso tempo mostrare un'evoluzione collegata.",
-     },
-     {
-       type: "paragraph",
-       text: "Per questo, durante la crescita, può essere utile prestare attenzione non soltanto alla presenza di un singolo sintomo, ma anche ai cambiamenti nel tempo e alla loro possibile relazione.",
-     },
-     {
-       type: "paragraph",
-       text: "Non esiste infatti un unico percorso di sviluppo valido per tutte le persone autistiche.",
-     },
-     {
-       type: "paragraph",
-       text: "Comprendere queste differenze significa poter costruire un'osservazione più attenta e, quando necessario, individuare più precocemente i bisogni di supporto.",
-     },
-            
-     {
-       type: "paragraph",
-       text: "Fonte primaria:",
-     },
-     {
-       type: "link",
-       text: "Hunsche MC, Zaidman-Zait A, Olana M, Szatmari P, Bennett T, Duku E, Georgiades S, Smith IM, Zwaigenbaum L, Elsabbagh M, Vaillancourt T, Bedford R and Kerns CM (2026) Brief report: joint trajectories of anxiety and depression symptoms in an inception cohort of autistic youth. Front. Psychiatry 17:1741956",
-       url: "httpswww.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1741956/full"
-     },
-     {
-       type: "plus",
-       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
-     },
-     {
-       type: "highlight",
-       label: "Contattaci!",
-       to: "/contatti",
-       variant: "secondary",
-     },
-   ],
-   slug: "articolo-15",
- },
-   // todo I SEGUENTI ARTICOLI VANNO COMMENTATI E DECOMMENTATI IL GIORNO DELLA PUBBLICAZIONE
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Un nuovo studio longitudinale analizza l’evoluzione dei sintomi emotivi nei giovani autistici",
+      },
+      {
+        type: "paragraph",
+        text: "Infanzia e adolescenza sono periodi caratterizzati da importanti cambiamenti sul piano personale, scolastico, sociale e relazionale. Per i giovani autistici, l’aumento delle richieste e delle aspettative può accompagnarsi a nuove difficoltà emotive, tra cui sintomi di ansia e depressione.",
+      },
+      {
+        type: "paragraph",
+        text: "Ma questi sintomi rimangono stabili nel tempo? E ansia e depressione seguono percorsi indipendenti oppure tendono a evolvere insieme?",
+      },
+      {
+        type: "paragraph",
+        text: "A queste domande ha cercato di rispondere un recente studio pubblicato nel 2026 su \"Frontiers in Psychiatry\", che ha analizzato proprio le traiettorie congiunte dei sintomi di ansia e depressione durante il passaggio dall’infanzia all’adolescenza.",
+      },
+      {
+        type: "heading",
+        text: "Lo studio: seguire i cambiamenti nel tempo",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca, condotta nell’ambito dello studio longitudinale canadese Pathways in ASD, ha preso in esame un campione di 277 giovani autistici, seguendone lo sviluppo dalla tarda infanzia alla prima adolescenza.",
+      },
+      {
+        type: "paragraph",
+        text: "I ricercatori hanno analizzato i sintomi di ansia e depressione riportati dai caregiver attraverso il Child Behavior Checklist, osservandone l'andamento nel corso degli anni.",
+      },
+      {
+        type: "paragraph",
+        text: "L'analisi ha riguardato principalmente il periodo compreso tra i 7 e i 16 anni, una fase particolarmente importante perché coincide con un progressivo aumento delle richieste sociali e scolastiche.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo non era quindi fotografare una situazione in un singolo momento, ma comprendere come i sintomi potessero cambiare durante lo sviluppo e se i percorsi di ansia e depressione fossero collegati.",
+      },
+      {
+        type: "heading",
+        text: "Ansia e depressione non seguono esattamente lo stesso andamento",
+      },
+      {
+        type: "paragraph",
+        text: "Uno dei risultati principali riguarda la differenza tra le due traiettorie.",
+      },
+      {
+        type: "paragraph",
+        text: "Nel campione analizzato, i sintomi ansiosi sono rimasti relativamente stabili in media tra l'infanzia e l'adolescenza.",
+      },
+      {
+        type: "paragraph",
+        text: "I sintomi depressivi, invece, hanno mostrato un aumento medio nel corso dello sviluppo.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo non significa, però, che tutti i giovani abbiano seguito lo stesso percorso. I ricercatori hanno infatti rilevato una significativa variabilità individuale: dietro le tendenze osservate a livello di gruppo esistono traiettorie personali differenti.",
+      },
+      {
+        type: "paragraph",
+        text: "È un elemento importante perché evita di interpretare i risultati come una previsione valida per ogni persona autistica.",
+      },
+      {
+        type: "heading",
+        text: "Ansia e depressione possono evolvere insieme",
+      },
+      {
+        type: "paragraph",
+        text: "Un altro risultato rilevante riguarda il rapporto tra i due fenomeni.",
+      },
+      {
+        type: "paragraph",
+        text: "I livelli di ansia e depressione risultavano associati nello stesso momento e, soprattutto, le loro traiettorie nel corso dello sviluppo erano correlate positivamente.",
+      },
+      {
+        type: "paragraph",
+        text: "In altre parole, pur mostrando tendenze medie differenti, i cambiamenti individuali nei sintomi di ansia e depressione tendevano a essere collegati.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo dato suggerisce l'importanza di non osservare il benessere emotivo attraverso una sola dimensione. Un cambiamento nei sintomi ansiosi o depressivi può infatti essere inserito all'interno di un quadro più ampio, che merita di essere seguito nel tempo.",
+      },
+      {
+        type: "heading",
+        text: "Quali fattori erano associati ai sintomi?",
+      },
+      {
+        type: "paragraph",
+        text: "Lo studio ha preso in considerazione anche alcuni possibili fattori associati all'andamento dei sintomi.",
+      },
+      {
+        type: "paragraph",
+        text: "Una maggiore presenza di tratti autistici e una maggiore reattività emotiva a 7 anni risultavano associate a livelli iniziali più elevati sia di ansia sia di depressione.",
+      },
+      {
+        type: "paragraph",
+        text: "Tuttavia, questi fattori non risultavano associati al cambiamento dei sintomi nel tempo.",
+      },
+      {
+        type: "paragraph",
+        text: "È una distinzione importante: essere associati a livelli iniziali più elevati non significa necessariamente prevedere come quei sintomi evolveranno negli anni successivi.",
+      },
+      {
+        type: "paragraph",
+        text: "Anche le capacità comunicative hanno mostrato un'associazione interessante. Una maggiore capacità comunicativa a 7 anni era associata a livelli iniziali più elevati di ansia, ma anche a una diminuzione dei sintomi ansiosi nel corso del tempo. Non è stata invece osservata una relazione significativa con i livelli iniziali di depressione.",
+      },
+      {
+        type: "heading",
+        text: "Perché osservare l'evoluzione è importante?",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli aspetti più interessanti della ricerca riguarda proprio il valore del monitoraggio nel tempo.",
+      },
+      {
+        type: "paragraph",
+        text: "Un singolo momento di valutazione può fornire informazioni importanti, ma osservare come cambiano ansia e depressione permette di cogliere anche tendenze individuali che potrebbero non essere evidenti in una singola rilevazione.",
+      },
+      {
+        type: "paragraph",
+        text: "Gli autori sottolineano quindi l'importanza di un monitoraggio congiunto dei sintomi ansiosi e depressivi durante l'infanzia e l'adolescenza. I cambiamenti osservati potrebbero fornire indicazioni utili per l'identificazione precoce delle difficoltà e per eventuali interventi di supporto.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo approccio è particolarmente rilevante considerando che l'adolescenza comporta nuove richieste sociali, scolastiche e relazionali e rappresenta una fase nella quale possono emergere o modificarsi diverse difficoltà emotive.",
+      },
+      {
+        type: "heading",
+        text: "Un risultato da leggere con attenzione",
+      },
+      {
+        type: "paragraph",
+        text: "Come per ogni ricerca scientifica, anche questi risultati devono essere interpretati considerando le caratteristiche del campione.",
+      },
+      {
+        type: "paragraph",
+        text: "Il gruppo studiato era composto prevalentemente da partecipanti di sesso maschile (84,5%) e di etnia bianca (74,3%). Inoltre, le informazioni relative ai sintomi di ansia e depressione provenivano principalmente dai caregiver.",
+      },
+      {
+        type: "paragraph",
+        text: "Questo significa che i risultati non possono essere automaticamente generalizzati a tutte le persone autistiche.",
+      },
+      {
+        type: "paragraph",
+        text: "Sono quindi necessari ulteriori studi che coinvolgano campioni più diversificati e che integrino, quando possibile, differenti fonti di informazione, comprese le prospettive dirette delle persone autistiche.",
+      },
+      {
+        type: "heading",
+        text: "Guardare oltre il singolo sintomo",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca aggiunge un elemento importante alla comprensione del benessere emotivo dei giovani autistici: ansia e depressione possono presentare traiettorie diverse, ma allo stesso tempo mostrare un'evoluzione collegata.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo, durante la crescita, può essere utile prestare attenzione non soltanto alla presenza di un singolo sintomo, ma anche ai cambiamenti nel tempo e alla loro possibile relazione.",
+      },
+      {
+        type: "paragraph",
+        text: "Non esiste infatti un unico percorso di sviluppo valido per tutte le persone autistiche.",
+      },
+      {
+        type: "paragraph",
+        text: "Comprendere queste differenze significa poter costruire un'osservazione più attenta e, quando necessario, individuare più precocemente i bisogni di supporto.",
+      },
+
+      {
+        type: "paragraph",
+        text: "Fonte primaria:",
+      },
+      {
+        type: "link",
+        text: "Hunsche MC, Zaidman-Zait A, Olana M, Szatmari P, Bennett T, Duku E, Georgiades S, Smith IM, Zwaigenbaum L, Elsabbagh M, Vaillancourt T, Bedford R and Kerns CM (2026) Brief report: joint trajectories of anxiety and depression symptoms in an inception cohort of autistic youth. Front. Psychiatry 17:1741956",
+        url: "httpswww.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1741956/full"
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-15",
+  },
   //articolo16
-  // {
-  //   id: 19,
-  //   titolo:
-  //     "Autismo e sessualità",
-  //   sottotitolo:
-  //     "5 cose da sapere",
-  //   categoria: "Articoli",
-  //   data: "2026-10-27",
-  //   immagine: articolo_16,
-  //   alt: "Illustrazione ad acquarello di due giovani figure sedute una di fronte all’altra",
+ {
+    id: 19,
+    titolo:
+      "Autismo e sessualità",
+    sottotitolo:
+      "5 cose da sapere",
+    categoria: "Articoli",
+    data: "2026-10-27",
+    immagine: articolo_16,
+    alt: "Illustrazione ad acquarello di due giovani figure sedute una di fronte all’altra",
 
-  //   estratto:
-  //     "La sessualità fa parte anche della vita delle persone autistiche e non può essere ridotta a stereotipi. Un’educazione affettivo-sessuale accessibile e personalizzata è fondamentale per promuovere consapevolezza, sicurezza e relazioni rispettose.",
+    estratto:
+      "La sessualità fa parte anche della vita delle persone autistiche e non può essere ridotta a stereotipi. Un’educazione affettivo-sessuale accessibile e personalizzata è fondamentale per promuovere consapevolezza, sicurezza e relazioni rispettose.",
 
-  //   contenuti: [
-  //     {
-  //       type: "paragraph",
-  //       text: "Quando si parla di autismo, la sessualità è ancora un tema spesso circondato da stereotipi e reticenze. Si tende, per esempio, a pensare che le persone autistiche siano poco interessate alle relazioni affettive o alla sessualità, oppure che non abbiano bisogno di una vera educazione affettivo-sessuale.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La realtà è più complessa.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La sessualità fa parte della vita delle persone autistiche, così come di quella della popolazione generale, anche se il modo di viverla, comunicarla e comprenderla può essere molto diverso da persona a persona. La ricerca scientifica sottolinea inoltre l'importanza di un'educazione sessuale accessibile e personalizzata, soprattutto per favorire consapevolezza, autonomia, sicurezza e relazioni rispettose.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "1. La sessualità non è assente nell'autismo",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Essere nello spettro autistico non significa non provare attrazione, desiderio o interesse per le relazioni.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Uno studio pubblicato su \"Autism Research\", che ha coinvolto 2.386 persone, di cui 1.183 autistiche, ha analizzato proprio sessualità, orientamento e attività sessuale negli adolescenti e negli adulti. I risultati mostrano che le persone autistiche possono essere interessate alle relazioni sessuali e affettive e possono presentare una varietà di orientamenti sessuali.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "È quindi importante evitare generalizzazioni: non esiste un unico modo di vivere la sessualità nell'autismo.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "2. L'educazione sessuale è importante, ma deve essere accessibile",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Uno degli aspetti più rilevanti riguarda l'accesso a un'educazione sessuale adeguata.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Le persone autistiche possono incontrare difficoltà quando le informazioni vengono trasmesse attraverso regole implicite, metafore o situazioni sociali poco chiare. Per questo, l'educazione affettivo-sessuale può avere bisogno di essere più esplicita, concreta, strutturata e adattata alle caratteristiche comunicative della persona.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Una revisione sistematica pubblicata nel 2023 ha analizzato gli interventi di educazione psicosessuale rivolti specificamente a giovani e adulti autistici. Gli autori evidenziano la necessità di programmi personalizzati e facilmente traducibili nella pratica, pur sottolineando che le evidenze disponibili sono ancora limitate e che servono ulteriori studi per individuare gli interventi più efficaci.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Educare alla sessualità significa quindi parlare anche di:",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	corpo e intimità;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	relazioni;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	consenso;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	confini personali;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	sicurezza;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	comportamenti pubblici e privati;",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	salute sessuale.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "3. Consenso e confini sono fondamentali",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Il consenso è un elemento centrale di qualsiasi relazione affettiva o sessuale.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per alcune persone autistiche, comprendere alcuni segnali sociali impliciti o interpretare correttamente la comunicazione non verbale può essere più complesso. Questo non significa che non possano comprendere il consenso: significa che, in alcuni casi, può essere utile renderne più esplicite le regole e i significati.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Dire chiaramente che cosa significa accettare, rifiutare, fermarsi o cambiare idea può contribuire a sviluppare maggiore consapevolezza dei propri confini e di quelli dell'altra persona.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'educazione sessuale può quindi diventare anche uno strumento di prevenzione e di tutela.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "4. Famiglia, scuola e professionisti hanno un ruolo importante",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Parlare di sessualità con un bambino, un adolescente o un adulto autistico può mettere in difficoltà anche genitori ed educatori.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Eppure evitare completamente l'argomento non elimina il bisogno di informazioni.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Al contrario, è importante costruire una comunicazione coerente tra le figure che accompagnano la persona, utilizzando modalità comunicative adeguate alla sua età, al suo livello di comprensione e alle sue esigenze.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'obiettivo non dovrebbe essere semplicemente insegnare \"che cosa è appropriato\", ma aiutare la persona a sviluppare strumenti per comprendere il proprio corpo, riconoscere i propri desideri e limiti, rispettare quelli degli altri e affrontare le relazioni in maggiore sicurezza.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "5. Superare gli stereotipi",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Esistono ancora numerose convinzioni sulla sessualità delle persone autistiche:",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	\"non sono interessate al sesso\"",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	\"non possono avere relazioni sentimentali\"",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	\"non hanno bisogno di educazione sessuale\"",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Sono generalizzazioni che non tengono conto della grande variabilità presente nello spettro autistico.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La letteratura scientifica evidenzia infatti che le esperienze di sessualità, relazione e intimità sono diverse tra le persone autistiche e possono essere influenzate da caratteristiche individuali, esperienze personali, aspetti sensoriali, modalità comunicative e contesto sociale.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per questo è più utile parlare di bisogni individuali piuttosto che cercare una risposta unica valida per tutte le persone autistiche.",
-  //     },
-  //     {
-  //       type: "heading",
-  //       text: "Parlare di sessualità significa parlare anche di autonomia e sicurezza",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "L'educazione affettivo-sessuale non dovrebbe essere considerata un argomento secondario.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "Per le persone autistiche, avere accesso a informazioni comprensibili e adeguate può contribuire alla costruzione di una maggiore consapevolezza del proprio corpo, delle relazioni, del consenso e dei propri confini.",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "La ricerca sottolinea però anche un dato importante: gli interventi di educazione sessuale specificamente studiati per le persone autistiche sono ancora relativamente pochi e non esiste, al momento, un modello universalmente validato come efficace. Sono quindi necessari ulteriori studi e percorsi costruiti sulle caratteristiche e sui bisogni della singola persona.",
-  //     },
-      
-      
-  //     {
-  //       type: "paragraph",
-  //       text: "Fonti primarie:",
-  //     },
-  //     {
-  //       type: "link",
-  //       text: "•	GAM Medical, Autismo e sessualità: 5 cose da sapere, 22 marzo 2025",
-  //       url: "https://gam-medical.com/autismo-e-sessualita-5-cose-da-sapere/?srsltid=AfmBOoqcTRmfH2Hj4Fx2C9H_o5KkeDCHpcJKexO0Wqcem4JmJSZQaja9"
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Weir E., Allison C., Baron-Cohen S., The sexual health, orientation, and activity of autistic adolescents and adults, Autism Research, 2021",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Ragaglia B., Caputi M., Bulgarelli D., Psychosexual Education Interventions for Autistic Youth and Adults—A Systematic Review, Education Sciences, 2023",
-  //     },
-  //     {
-  //       type: "paragraph",
-  //       text: "•	Pecora L.A. et al., Sexuality and Gender Issues in Individuals with Autism Spectrum Disorder, Psychiatric Clinics of North America, 2021",
-  //     },
-  //     {
-  //       type: "plus",
-  //       text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
-  //     },
-  //     {
-  //       type: "highlight",
-  //       label: "Contattaci!",
-  //       to: "/contatti",
-  //       variant: "secondary",
-  //     },
-  //   ],
-  //   slug: "articolo-16",
-  // },
+    contenuti: [
+      {
+        type: "paragraph",
+        text: "Quando si parla di autismo, la sessualità è ancora un tema spesso circondato da stereotipi e reticenze. Si tende, per esempio, a pensare che le persone autistiche siano poco interessate alle relazioni affettive o alla sessualità, oppure che non abbiano bisogno di una vera educazione affettivo-sessuale.",
+      },
+      {
+        type: "paragraph",
+        text: "La realtà è più complessa.",
+      },
+      {
+        type: "paragraph",
+        text: "La sessualità fa parte della vita delle persone autistiche, così come di quella della popolazione generale, anche se il modo di viverla, comunicarla e comprenderla può essere molto diverso da persona a persona. La ricerca scientifica sottolinea inoltre l'importanza di un'educazione sessuale accessibile e personalizzata, soprattutto per favorire consapevolezza, autonomia, sicurezza e relazioni rispettose.",
+      },
+      {
+        type: "heading",
+        text: "1. La sessualità non è assente nell'autismo",
+      },
+      {
+        type: "paragraph",
+        text: "Essere nello spettro autistico non significa non provare attrazione, desiderio o interesse per le relazioni.",
+      },
+      {
+        type: "paragraph",
+        text: "Uno studio pubblicato su \"Autism Research\", che ha coinvolto 2.386 persone, di cui 1.183 autistiche, ha analizzato proprio sessualità, orientamento e attività sessuale negli adolescenti e negli adulti. I risultati mostrano che le persone autistiche possono essere interessate alle relazioni sessuali e affettive e possono presentare una varietà di orientamenti sessuali.",
+      },
+      {
+        type: "paragraph",
+        text: "È quindi importante evitare generalizzazioni: non esiste un unico modo di vivere la sessualità nell'autismo.",
+      },
+      {
+        type: "heading",
+        text: "2. L'educazione sessuale è importante, ma deve essere accessibile",
+      },
+      {
+        type: "paragraph",
+        text: "Uno degli aspetti più rilevanti riguarda l'accesso a un'educazione sessuale adeguata.",
+      },
+      {
+        type: "paragraph",
+        text: "Le persone autistiche possono incontrare difficoltà quando le informazioni vengono trasmesse attraverso regole implicite, metafore o situazioni sociali poco chiare. Per questo, l'educazione affettivo-sessuale può avere bisogno di essere più esplicita, concreta, strutturata e adattata alle caratteristiche comunicative della persona.",
+      },
+      {
+        type: "paragraph",
+        text: "Una revisione sistematica pubblicata nel 2023 ha analizzato gli interventi di educazione psicosessuale rivolti specificamente a giovani e adulti autistici. Gli autori evidenziano la necessità di programmi personalizzati e facilmente traducibili nella pratica, pur sottolineando che le evidenze disponibili sono ancora limitate e che servono ulteriori studi per individuare gli interventi più efficaci.",
+      },
+      {
+        type: "paragraph",
+        text: "Educare alla sessualità significa quindi parlare anche di:",
+      },
+      {
+        type: "paragraph",
+        text: "•	corpo e intimità;",
+      },
+      {
+        type: "paragraph",
+        text: "•	relazioni;",
+      },
+      {
+        type: "paragraph",
+        text: "•	consenso;",
+      },
+      {
+        type: "paragraph",
+        text: "•	confini personali;",
+      },
+      {
+        type: "paragraph",
+        text: "•	sicurezza;",
+      },
+      {
+        type: "paragraph",
+        text: "•	comportamenti pubblici e privati;",
+      },
+      {
+        type: "paragraph",
+        text: "•	salute sessuale.",
+      },
+      {
+        type: "heading",
+        text: "3. Consenso e confini sono fondamentali",
+      },
+      {
+        type: "paragraph",
+        text: "Il consenso è un elemento centrale di qualsiasi relazione affettiva o sessuale.",
+      },
+      {
+        type: "paragraph",
+        text: "Per alcune persone autistiche, comprendere alcuni segnali sociali impliciti o interpretare correttamente la comunicazione non verbale può essere più complesso. Questo non significa che non possano comprendere il consenso: significa che, in alcuni casi, può essere utile renderne più esplicite le regole e i significati.",
+      },
+      {
+        type: "paragraph",
+        text: "Dire chiaramente che cosa significa accettare, rifiutare, fermarsi o cambiare idea può contribuire a sviluppare maggiore consapevolezza dei propri confini e di quelli dell'altra persona.",
+      },
+      {
+        type: "paragraph",
+        text: "L'educazione sessuale può quindi diventare anche uno strumento di prevenzione e di tutela.",
+      },
+      {
+        type: "heading",
+        text: "4. Famiglia, scuola e professionisti hanno un ruolo importante",
+      },
+      {
+        type: "paragraph",
+        text: "Parlare di sessualità con un bambino, un adolescente o un adulto autistico può mettere in difficoltà anche genitori ed educatori.",
+      },
+      {
+        type: "paragraph",
+        text: "Eppure evitare completamente l'argomento non elimina il bisogno di informazioni.",
+      },
+      {
+        type: "paragraph",
+        text: "Al contrario, è importante costruire una comunicazione coerente tra le figure che accompagnano la persona, utilizzando modalità comunicative adeguate alla sua età, al suo livello di comprensione e alle sue esigenze.",
+      },
+      {
+        type: "paragraph",
+        text: "L'obiettivo non dovrebbe essere semplicemente insegnare \"che cosa è appropriato\", ma aiutare la persona a sviluppare strumenti per comprendere il proprio corpo, riconoscere i propri desideri e limiti, rispettare quelli degli altri e affrontare le relazioni in maggiore sicurezza.",
+      },
+      {
+        type: "heading",
+        text: "5. Superare gli stereotipi",
+      },
+      {
+        type: "paragraph",
+        text: "Esistono ancora numerose convinzioni sulla sessualità delle persone autistiche:",
+      },
+      {
+        type: "paragraph",
+        text: "•	\"non sono interessate al sesso\"",
+      },
+      {
+        type: "paragraph",
+        text: "•	\"non possono avere relazioni sentimentali\"",
+      },
+      {
+        type: "paragraph",
+        text: "•	\"non hanno bisogno di educazione sessuale\"",
+      },
+      {
+        type: "paragraph",
+        text: "Sono generalizzazioni che non tengono conto della grande variabilità presente nello spettro autistico.",
+      },
+      {
+        type: "paragraph",
+        text: "La letteratura scientifica evidenzia infatti che le esperienze di sessualità, relazione e intimità sono diverse tra le persone autistiche e possono essere influenzate da caratteristiche individuali, esperienze personali, aspetti sensoriali, modalità comunicative e contesto sociale.",
+      },
+      {
+        type: "paragraph",
+        text: "Per questo è più utile parlare di bisogni individuali piuttosto che cercare una risposta unica valida per tutte le persone autistiche.",
+      },
+      {
+        type: "heading",
+        text: "Parlare di sessualità significa parlare anche di autonomia e sicurezza",
+      },
+      {
+        type: "paragraph",
+        text: "L'educazione affettivo-sessuale non dovrebbe essere considerata un argomento secondario.",
+      },
+      {
+        type: "paragraph",
+        text: "Per le persone autistiche, avere accesso a informazioni comprensibili e adeguate può contribuire alla costruzione di una maggiore consapevolezza del proprio corpo, delle relazioni, del consenso e dei propri confini.",
+      },
+      {
+        type: "paragraph",
+        text: "La ricerca sottolinea però anche un dato importante: gli interventi di educazione sessuale specificamente studiati per le persone autistiche sono ancora relativamente pochi e non esiste, al momento, un modello universalmente validato come efficace. Sono quindi necessari ulteriori studi e percorsi costruiti sulle caratteristiche e sui bisogni della singola persona.",
+      },
+
+
+      {
+        type: "paragraph",
+        text: "Fonti primarie:",
+      },
+      {
+        type: "link",
+        text: "•	GAM Medical, Autismo e sessualità: 5 cose da sapere, 22 marzo 2025",
+        url: "httpsgam-medical.com/autismo-e-sessualita-5-cose-da-sapere/?srsltid=AfmBOoqcTRmfH2Hj4Fx2C9H_o5KkeDCHpcJKexO0Wqcem4JmJSZQaja9"
+      },
+      {
+        type: "paragraph",
+        text: "•	Weir E., Allison C., Baron-Cohen S., The sexual health, orientation, and activity of autistic adolescents and adults, Autism Research, 2021",
+      },
+      {
+        type: "paragraph",
+        text: "•	Ragaglia B., Caputi M., Bulgarelli D., Psychosexual Education Interventions for Autistic Youth and Adults—A Systematic Review, Education Sciences, 2023",
+      },
+      {
+        type: "paragraph",
+        text: "•	Pecora L.A. et al., Sexuality and Gender Issues in Individuals with Autism Spectrum Disorder, Psychiatric Clinics of North America, 2021",
+      },
+      {
+        type: "plus",
+        text: "Nella ricerca la collaborazione è fondamentale! Se sei interessato a iscriverti alla nostra newsletter o a ricevere aggiornamenti su eventi e corsi, condividere idee e contribuire allo sviluppo del progetto, non esitare a contattarci.",
+      },
+      {
+        type: "highlight",
+        label: "Contattaci!",
+        to: "/contatti",
+        variant: "secondary",
+      },
+    ],
+    slug: "articolo-16",
+  },
+    // todo I SEGUENTI ARTICOLI VANNO COMMENTATI E DECOMMENTATI IL GIORNO DELLA PUBBLICAZIONE
+
   //articolo17
   // {
   //   id: 20,
